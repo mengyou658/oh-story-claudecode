@@ -149,3 +149,7 @@
 **套词密度优先处理**：`check-ai-patterns.js` 报 `cliche-density-tic` 时，说明禁用词不是零星误用，而是聚成了模板腔。处理顺序不是同义词替换，而是先删抽象总结，再把情绪/判断落到角色当下可见的动作、物件、对话和具体后果。
 
 **套式反应逐处删除测试**：`stock-reaction-tic` 报警时，不代表禁止身体描写。逐处问：删掉后信息、选择、关系、物件或动作结果是否受损？无损就删，不把“指尖轻叩”换成“目光微沉”。伤势、动作失败、人物习惯或情节后果明确时可以保留。
+
+## 三级·成簇扫描（补充）
+
+公文八股、名词化、商业黑话、抒情装腔、EN slop、聊天泄漏 markup 等**不进一级盲替**；成簇、伤阅读再修。运行时补表见 `story-deslop/references/scan-lexicon.md`（部署副本：`story-setup/references/agent-references/scan-lexicon.md`）。一级/二级与毒句式仍以本文件为准。

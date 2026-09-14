@@ -12,6 +12,8 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 **核心信念：AI 味的主要问题并非语法错误；更常见的是过度圆滑、工整、解释充分。改写目标是保留剧情功能，同时增加口语、停顿、跳跃和具体动作。**
 
+**开场定档**：清理（默认）/ 重构（须用户授权）/ 检测 / 新写。合同见 [references/deslop-process.md](references/deslop-process.md)（Never inject、C 级禁动、检测器边界）。正文**写前**约束见 [references/generation-constraints.md](references/generation-constraints.md)。无书短文旁路见 [references/shortform-sidepath.md](references/shortform-sidepath.md)。
+
 ---
 
 > Agent 兼容性：只检查当前运行时的 canonical 目录：Claude `.claude/agents/{agent}.md`、OpenCode `.opencode/agents/{agent}.md`、Codex `.codex/agents/{agent}.toml`、Antigravity `.agents/agents/agent-name/agent.md`（`agent-name` 为目标 agent 名），不得因其他端文件存在而误判。Codex 使用同名 `agent_type`；Antigravity 使用 `invoke_subagent` + `TypeName`。对应运行时未暴露 custom-agent registry / `invoke_subagent` 或返回未知 agent 时，必须降级 solo/direct。检测到 `.zcode/` 时同样直接 solo/direct，因为 ZCode 3.3.4 不执行项目 custom agents；报告 `Fallback: project custom agents unavailable -> solo`。Claude/OpenCode 兼容面保留 `subagent_type`。
@@ -46,7 +48,7 @@ AI味不按语法错误处理，也不需要"修正"。它属于风格问题：�
 
 ### 边界：去AI味只处理读感与叙事功能
 
-去AI味治读感，不承诺任何分数结果。若用户贴出工具报告，只把能对应到正文的问题转成具体修改点；不写“0% AI / 100% 真人”，不注水、故意错字或打乱标点。去AI味仍以原文剧情边界为准，不把表达修复变成新增情节或新增事件链。
+去AI味治读感，不承诺任何分数结果。若用户贴出工具报告，只把能对应到正文的问题转成具体修改点；不写“0% AI / 100% 真人”。**Never inject**：不注水、故意错字、乱序、隐形字符或打乱标点骗「人味」；不编造经历/数字/出处。去AI味仍以原文剧情边界为准，不把表达修复变成新增情节或新增事件链。单工具分数不得单独否决策略（见 deslop-process Detector boundaries）。
 
 ### 作者习惯
 
@@ -85,9 +87,16 @@ AI味不按语法错误处理，也不需要"修正"。它属于风格问题：�
 
 ## 检测流程
 
+### Phase 0：定档与加载
+
+1. 报定档（清理/重构/检测/新写）；未指定 → 清理。
+2. 读 [references/deslop-process.md](references/deslop-process.md)；重构档须已获用户授权。
+3. 文风：`style_resolution` + 可选作者记忆 query（见上）。
+4. 新写或用户只要「写时少 AI」→ 先读 generation-constraints，再写/再改。
+
 ### Phase 1：AI味扫描
 
-对用户提交的文本做快速扫描，标记AI味浓重的位置：
+对用户提交的文本做快速扫描，标记AI味浓重的位置。先过 banned-words 毒句式与一级词，再按 [references/scan-lexicon.md](references/scan-lexicon.md) 成簇扫八股/黑话/装腔/泄漏；遵守 C 级禁动。
 
 ```
 ## AI味检测报告
@@ -246,10 +255,12 @@ node scripts/normalize-punctuation.js <正文文件...>
 
 | 场景 | 操作 |
 |------|------|
-| 用户贴一段文字说"太AI了" | 执行完整检测 + 润色流程 |
-| 用户说"帮我润色" | 先检测AI味，再润色 |
-| 用户说"检查下有没有AI味" | 只做检测，不做修改 |
+| 用户贴一段文字说"太AI了" | 定档清理 → 完整检测 + 润色 |
+| 用户说"帮我润色" | 定档清理 → 先检测再润色 |
+| 用户说"检查下有没有AI味" | 定档检测 → 只做检测，不做修改 |
+| 用户明确授权"重写结构/重构" | 定档重构 → 每章 2–5 个结构动作 + Gate |
 | 用户写作中要求 `仅标注 / 只检测 / 不要改` | 嵌入式提醒模式：执行「AI味扫描」和「诊断与分级」，跳过「逐项清除」「确定性收尾」「输出润色结果」；输出问题标记表（含 Gate 列），不修改原文，不写文件 |
+| 无活跃书，仅润色公众号/小红书等短文 | [references/shortform-sidepath.md](references/shortform-sidepath.md)，不建小说目录 |
 
 ---
 
@@ -259,6 +270,10 @@ node scripts/normalize-punctuation.js <正文文件...>
 
 | 文件 | 何时加载 |
 |------|----------|
+| [references/deslop-process.md](references/deslop-process.md) | **开场必读**：定档、Never inject、C 级禁动、检测器边界 |
+| [references/generation-constraints.md](references/generation-constraints.md) | 新写/写前自检；减少生成阶段模板节奏 |
+| [references/scan-lexicon.md](references/scan-lexicon.md) | 成簇扫描：八股/名词化/黑话/装腔/EN/泄漏 |
+| [references/shortform-sidepath.md](references/shortform-sidepath.md) | 无书短文旁路 |
 | [references/banned-words.md](references/banned-words.md) | 检测和替换禁用词时 |
 | [references/deslop-gates.md](references/deslop-gates.md) | 逐项清除前：删除保护与所选 Gate 的细则、示例 |
 | [references/anti-ai-writing.md](references/anti-ai-writing.md) | **去AI味完整指南**：预防+三遍法+范例 |

@@ -62,7 +62,8 @@
 ### 写作前加载
 
 - 必读：`short-format.md`（正文格式）+ `short-craft.md`（通用底座）
-- 必读：`short-deslop.md`（写作时自检 AI 腔）
+- 必读：`short-deslop.md`（写作时自检 AI 腔；短篇专属口径）
+- 写前硬约束（开场八股/三段升华/假想辩论）：对照 `story-deslop/references/generation-constraints.md`（或部署副本 `story-setup/references/agent-references/generation-constraints.md`）；与 short-deslop 冲突时以 short-deslop 为准
 - 按题材加载 1 个：`genre-styles/{题材}.md`（核心 10 题材）或 `genre-writing-formulas.md`（冷门题材速查表）
 - 按需加载：`villain-and-reveal.md` / `emotional-methods.md`
 

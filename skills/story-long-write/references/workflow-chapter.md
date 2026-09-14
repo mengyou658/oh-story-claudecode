@@ -29,7 +29,7 @@
    - (12) 对标书路径下 `剧情/节奏.md`（按对标书路径查找）— 仅全量召回时读取；关键信息推进、情绪触动点、爆发节奏；缺失按 `project-files.md` 的「缺失文件处理」设置 `missing_primary_contract` 并停止准备
    - (13) `设定/题材正文提示卡.md`（如存在）— 本书正文层题材卡。**加工在 3(c)，本项只列路径与兜底链**，读一次就直接产出 `genre_prose_card`，不在这里先读一遍再去 3(c) 召回一遍；缺失时从 `设定/题材定位.md` + `references/genre-prose-cards.md` 索引 + `references/genre-prose-cards/` 单题材卡目录（按题材分类优先）+ `references/style-genre-modules.md`（兜底）即时生成 `genre_prose_card`，不阻塞写作
 3. **写前准备**（下面的 3 步是核心方法在单章写作中的落地：筛选状态 → 召回模块 → 确认意图）：
-   - **第 0 步：先跑组装脚本**（可用时）。`{PYTHON} {skill 根}/scripts/build_writer_prompt.py --project {项目根} --chapter {N} --out {留档文件}`，脚本统一输出 UTF-8。stdout 的 `====` 分隔线以上是 prompt 正文、以下是核对报告。主会话只填 `［主会话填］` 空槽。退出码 2 ＝ 数据问题，先修数据再重跑，不得手拼绕过；脚本跑不起来才按步骤 7 回落。
+   - **第 0 步：先跑组装脚本**（可用时）。`{PYTHON} {skill 根}/scripts/build_writer_prompt.py --project {项目根} --chapter {N} --out {留档文件}`，脚本统一输出 UTF-8。stdout 的 `====` 分隔线以上是 prompt 正文、以下是核对报告。主会话只填 `［主会话填］` 空槽。退出码 2 ＝ 数据问题，先修数据再重跑，不得手拼绕过；脚本跑不起来才按步骤 7 回落。落笔前对照 `references/generation-constraints.md` 硬约束（无开场八股、无三段升华、无假想辩论）；写后去味仍走 story-deslop。
    - **状态筛选**：从 `追踪/上下文.md` 的 `## 核心角色状态` 取当前角色，从 `## 活跃伏笔` 取需回收/推进项，从 `## 下一章承诺` 取本章必须履行项，输出本节速记（参考 state-tracking.md）。久别角色按名读取 `追踪/角色状态/{名}.md`；只有追查变化原因时才定点查逐章增量。续写状态卡或 meta 不存在时按 workflow-daily 的当前协议处理，不手写替代文件
    - **模块召回、题材卡与文风召回**：写前完整读取 [benchmark-recall.md](benchmark-recall.md)，执行其中 (a)-(g)、成熟项目降档与 explorer 快捷路径。组装脚本的降档结论、情绪/节奏缺失阻断、本书文风全文及主副对标预算均按该文件执行。
 

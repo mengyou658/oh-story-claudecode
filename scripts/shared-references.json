@@ -206,6 +206,28 @@
       ]
     },
     {
+      "name": "deslop-process-contract",
+      "source": "skills/story-deslop/references/deslop-process.md",
+      "targets": [
+        "skills/story-setup/references/agent-references/deslop-process.md"
+      ]
+    },
+    {
+      "name": "deslop-generation-constraints",
+      "source": "skills/story-deslop/references/generation-constraints.md",
+      "targets": [
+        "skills/story-long-write/references/generation-constraints.md",
+        "skills/story-setup/references/agent-references/generation-constraints.md"
+      ]
+    },
+    {
+      "name": "deslop-scan-lexicon",
+      "source": "skills/story-deslop/references/scan-lexicon.md",
+      "targets": [
+        "skills/story-setup/references/agent-references/scan-lexicon.md"
+      ]
+    },
+    {
       "name": "tracking-initialization",
       "source": "skills/story-long-write/references/tracking-initialization.md",
       "targets": [
