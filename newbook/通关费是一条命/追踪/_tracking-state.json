@@ -1,0 +1,32 @@
+{
+  "book_title": "通关费是一条命",
+  "characters": {},
+  "context": {
+    "active_character_names": [],
+    "continuity_risks": [],
+    "long_term_constraints": [
+      "每次死亡/复活/关键通关必须有可见标价或差额镜头",
+      "禁止无脑路人嘲讽打脸当主爽点",
+      "独活年岁与准备过程属后期卖点，前十章只允许异常支付侧面暗示",
+      "陆昭保有定价与是否支付的最终选择权",
+      "发糖必带缺口"
+    ],
+    "next_chapter_commitments": [
+      "第1章完成入场并立「非选角」冒犯感，章尾红号牌倒计时"
+    ],
+    "position": {
+      "scene": "入场登记处外",
+      "story_time": "异界入口开放日·入场前",
+      "volume": "第一卷·入场即标价",
+      "volume_start_chapter": 1
+    },
+    "recent_chapters": []
+  },
+  "foreshadow": {},
+  "imported_through_chapter": 0,
+  "last_committed_chapter": 0,
+  "schema_version": 4,
+  "state_revision": 0,
+  "timeline": {},
+  "wordcount_records": {}
+}
