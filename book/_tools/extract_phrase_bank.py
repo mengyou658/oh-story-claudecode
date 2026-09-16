@@ -1271,7 +1271,7 @@ def main():
     slim = {
         "purpose": "AI/模板句 → 人味句 替换词典（扩充精简版）",
         "usage": "按 category/meaning 选组；替换后改人称语气；禁止无脑全局替换",
-        "version": "2.0-expanded",
+        "version": "2.1-fullrank-partial",
         "pair_count": len(slim_pairs),
         "unique_ai_expr": len(mapping),
         "categories": {k: v for k, v in by_cat.items()},
