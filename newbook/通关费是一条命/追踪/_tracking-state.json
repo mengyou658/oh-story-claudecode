@@ -1,9 +1,62 @@
 {
   "book_title": "通关费是一条命",
-  "characters": {},
+  "characters": {
+    "周晏": {
+      "abilities_resources": [
+        "战力侧偏强（价色暗青）"
+      ],
+      "goal": "物色不瞎跑的队友",
+      "identity": "同批强者位竞争者；潜在队友/曝光风险",
+      "knowledge": [
+        "陆昭预死亡异常仍敢入场",
+        "她用份额询价拒绝组队"
+      ],
+      "location": "新手域人流中（离场）",
+      "open_threads": [
+        "她份额到底指什么",
+        "红号牌异常从何而来"
+      ],
+      "relationships": [
+        "陆昭：被拒的询价对象"
+      ],
+      "state": "邀组被拒后离开，对她红号牌与询价口气起兴趣"
+    },
+    "陆昭": {
+      "abilities_resources": [
+        "命价眼（模糊色档）",
+        "余命支付能力（未展示数字）",
+        "黑市窗临时坐标"
+      ],
+      "goal": "在逾期前找到黑市窗付复活费，且不暴露余命家底",
+      "identity": "重生女主；对外普通新玩家；持余命账本的死商雏形",
+      "knowledge": [
+        "死人会结账",
+        "首次死亡按章结算",
+        "免费复活是幻觉",
+        "自己付得起余命短截"
+      ],
+      "location": "新手域·死亡结算界面",
+      "open_threads": [
+        "复活如何付",
+        "红号牌异常含义",
+        "暗青价色男子会否再缠"
+      ],
+      "relationships": [
+        "拒与暗青价色男子组队",
+        "登记员仅业务接触"
+      ],
+      "state": "已真死；红号牌异常；现金不足；坐标已记；第三列余命短截可付但不想当众付"
+    }
+  },
   "context": {
-    "active_character_names": [],
-    "continuity_risks": [],
+    "active_character_names": [
+      "陆昭",
+      "周晏"
+    ],
+    "continuity_risks": [
+      "复活未付，倒计时仍在；勿写成已复活",
+      "读者尚未正式得知邀组队男子名为周晏"
+    ],
     "long_term_constraints": [
       "每次死亡/复活/关键通关必须有可见标价或差额镜头",
       "禁止无脑路人嘲讽打脸当主爽点",
@@ -12,21 +65,70 @@
       "发糖必带缺口"
     ],
     "next_chapter_commitments": [
-      "第1章完成入场并立「非选角」冒犯感，章尾红号牌倒计时"
+      "前往黑市窗找柳望舒议价付现（细纲第4章起）",
+      "复活倒计时仍在跳，须在逾期前完成支付选择"
     ],
     "position": {
-      "scene": "入场登记处外",
-      "story_time": "异界入口开放日·入场前",
+      "scene": "新手域结算黑暗 / 复活账单界面",
+      "story_time": "异界入口开放日·首次死亡结算中",
       "volume": "第一卷·入场即标价",
       "volume_start_chapter": 1
     },
-    "recent_chapters": []
+    "recent_chapters": [
+      {
+        "chapter": 1,
+        "summary": "正文第1章 ← 细纲第1–3章。陆昭赶截止入场，被登记为待结算库存并领到红号牌；命价眼初亮、拒暗青价色男子组队；训练场事故中真死，复活三列账单弹出，现金不足，黑市窗坐标写入视野。"
+      }
+    ]
   },
-  "foreshadow": {},
+  "foreshadow": {
+    "F001": {
+      "id": "F001",
+      "importance": "高",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 1,
+      "status": "已埋",
+      "summary": "陆昭盯着余命短截一栏不眨眼，暗示她付得起非常规复活，但未当众支付",
+      "updated_chapter": 1
+    },
+    "F003": {
+      "id": "F003",
+      "importance": "中",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 1,
+      "status": "已埋",
+      "summary": "暗青价色男子两次扫她红号牌后离开，对支付异常过敏的端倪",
+      "updated_chapter": 1
+    }
+  },
   "imported_through_chapter": 0,
-  "last_committed_chapter": 0,
+  "last_committed_chapter": 1,
   "schema_version": 4,
-  "state_revision": 0,
-  "timeline": {},
-  "wordcount_records": {}
+  "state_revision": 1,
+  "timeline": {
+    "E001": {
+      "characters": [
+        "陆昭",
+        "周晏"
+      ],
+      "first_recorded_chapter": 1,
+      "id": "E001",
+      "objective_fact": "陆昭完成入场登记（待结算库存），号牌预死亡异常变红；新手域命价眼初亮；训练场事故导致她真死并弹出复活三列账单；现金不足，系统写入黑市窗临时挂单点坐标",
+      "reader_knowledge": "读者已知：入场是库存登记而非选角；别人身上有价色；首次死亡按章结算且复活要付钱；陆昭现金不够，坐标指向黑市窗",
+      "reveal_chapter": 1,
+      "reveal_status": "已揭示",
+      "story_time": "异界入口开放日·入场截止前后",
+      "updated_chapter": 1
+    }
+  },
+  "wordcount_records": {
+    "1": {
+      "actual": 2270,
+      "body_sha256": "e1cee8cf0a670fe07f9c8cf765642fb2cf6feae4d2c825a59224a086a8da3d95",
+      "metric": "visible_chars_v1",
+      "resolution": "within_user_band",
+      "status": "internal_pass",
+      "target": 2400
+    }
+  }
 }
