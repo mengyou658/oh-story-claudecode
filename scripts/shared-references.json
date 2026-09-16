@@ -213,6 +213,13 @@
       ]
     },
     {
+      "name": "deslop-phrase-bank-humanize",
+      "source": "skills/story-deslop/references/phrase-bank-humanize.md",
+      "targets": [
+        "skills/story-setup/references/agent-references/phrase-bank-humanize.md"
+      ]
+    },
+    {
       "name": "deslop-generation-constraints",
       "source": "skills/story-deslop/references/generation-constraints.md",
       "targets": [

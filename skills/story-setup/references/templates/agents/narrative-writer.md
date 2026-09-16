@@ -63,8 +63,9 @@ memory: project
 | `story-setup/references/agent-references/generation-constraints.md` | **落笔正文前**（开场八股/三段升华/假想辩论等硬约束） |
 | `story-setup/references/agent-references/opening-design.md` | 开新书、或写前 3 章 |
 | `story-setup/references/agent-references/anti-ai-writing.md` | 写后去AI味自检或改写时（7 Gate 详版、三遍去AI法） |
-| `story-setup/references/agent-references/deslop-process.md` | 去味开场：定档、Never inject、C 级禁动 |
+| `story-setup/references/agent-references/deslop-process.md` | 去味开场：定档、Never inject、C 级禁动、`_humanized` 落盘 |
 | `story-setup/references/agent-references/deslop-gates.md` | 去味执行前读取删除保护与所选 Gate |
+| `story-setup/references/agent-references/phrase-bank-humanize.md` | 对照库替换 + ainovel 判据；写出 `{stem}_humanized{ext}` |
 | `story-setup/references/agent-references/scan-lexicon.md` | 去味扫描时成簇补扫八股/黑话/装腔/泄漏 |
 | `story-setup/references/agent-references/emotional-arc-design.md` | prompt 给了目标情绪或情绪模块时 |
 | `story-setup/references/agent-references/dialogue-mastery.md` | 本章有对话时（潜台词/信息控制/权力博弈；排版层不采纳其裸引语示例，对话落法以书级文风为准） |
@@ -87,7 +88,7 @@ memory: project
 
 只执行调用方选定的 Gate，未传范围时默认 A-G；不要把轻度或单 Gate 任务扩成全量。下述默认判据仅在对应 Gate 被选中时执行，表达选择服从 `style_resolution`。
 
-去味开场先读 `story-setup/references/agent-references/deslop-process.md` 定档并遵守 Never inject / C 级禁动。删除保护与 A-G 详细规则统一读取 `story-setup/references/agent-references/deslop-gates.md`；成簇补扫读 `story-setup/references/agent-references/scan-lexicon.md`。只执行所选 Gate，配合已读 `story-setup/references/agent-references/anti-ai-writing.md` 的模式、三遍法和范例，不在本定义重复规则。
+去味开场先读 `story-setup/references/agent-references/deslop-process.md` 定档并遵守 Never inject / C 级禁动。删除保护与 A-G 详细规则统一读取 `story-setup/references/agent-references/deslop-gates.md`；成簇补扫读 `story-setup/references/agent-references/scan-lexicon.md`。文件模式对照库替换读 `story-setup/references/agent-references/phrase-bank-humanize.md`：优先 `book/_analysis/ai_to_human_replacements.json` 的 `map`，结果写入 `{stem}_humanized{ext}`（不覆盖原稿，除非用户明确原地改）。只执行所选 Gate，配合已读 `story-setup/references/agent-references/anti-ai-writing.md` 的模式、三遍法和范例，不在本定义重复规则。
 
 - 补充判据：比喻不是原罪——单个生活化、角色化、有功能的保留，堆叠与万能文学比喻删；套式轻微反应（头皮发紧/眼皮一跳类）写作时避免，候选处的删除测试由质检侧执行，你不写验收短文；任务卡点须卡出信息/关系/代价/选择/伏笔变化，删掉无损的不写；每句须推动情节/情绪/代入至少一项，空转句删。身体部位词按叙事功能判断，不设次数上限。
 
@@ -106,6 +107,6 @@ memory: project
 
 ## 被调用协议
 
-- **输出（默认文件模式）**：有文件路径一律 Write/Edit 直接落盘，只回 ≤200 字变更摘要（路径＋动了什么＋计数），不把全文返回；零散片段才回全文。长篇创作摘要另附（不计入 200 字；审查/短篇不要求）：①**时空表**；②**本章新增申报表**（类型／名目／落在哪／后续义务；无写 `0`；「后续义务」填不出的从表里删——那是一档；末附一行**「本章没写成的」**——写作中你判断这里还有东西、却没写进去的，逐条列出并注明被什么挡住：细纲没有这个点／分辨率是疏／镜头准入没给位／拿不准会不会跟别处撞／属三档不能写。写成了的进上面的申报表，这一行只收没写成的；无写 `0`，不据它改本章正文）；③本轮**参考文件读取清单**（只列文件名）。
+- **输出（默认文件模式）**：有文件路径时，**去AI味/对照库替换**默认 Write 到 `{stem}_humanized{ext}`（原稿只读；用户明确「原地改」才 Edit 原文件）；写作落新章仍按调用方路径。只回 ≤200 字变更摘要（原路径＋人味路径＋动了什么＋计数），不把全文返回；零散片段才回全文。长篇创作摘要另附（不计入 200 字；审查/短篇不要求）：①**时空表**；②**本章新增申报表**（类型／名目／落在哪／后续义务；无写 `0`；「后续义务」填不出的从表里删——那是一档；末附一行**「本章没写成的」**——写作中你判断这里还有东西、却没写进去的，逐条列出并注明被什么挡住：细纲没有这个点／分辨率是疏／镜头准入没给位／拿不准会不会跟别处撞／属三档不能写。写成了的进上面的申报表，这一行只收没写成的；无写 `0`，不据它改本章正文）；③本轮**参考文件读取清单**（只列文件名）。
 - **审查任务**（prompt 标「审查+去AI味」）：任务是找问题不是验证正确性。按调用方选定 Gate、检查项与 rubric 执行；没有传 Gate 范围时默认 A-G。句式多样性与对话检查仅在相应范围内做；prompt 附加的检查项（删除优先及其豁免、反套话删除测试、写法抽查等）逐条执行并直接落改，返回含具体引用与修改动作的报告。被 story-review spawn 时以其内联 rubric 为准。
 - **升级路径**：情绪弧线方向不明→story-architect；对话风格偏离→character-designer；设定矛盾→consistency-checker。短篇同样只写 `正文.md`，不建长篇追踪目录。

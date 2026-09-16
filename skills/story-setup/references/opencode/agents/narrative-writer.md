@@ -64,6 +64,7 @@ steps: 30
 | `story-setup/references/agent-references/opening-design.md` | 开新书、或写前 3 章 |
 | `story-setup/references/agent-references/anti-ai-writing.md` | 写后去AI味自检或改写时（7 Gate 详版、三遍去AI法） |
 | `story-setup/references/agent-references/deslop-gates.md` | 去味执行前读取删除保护与所选 Gate |
+| `story-setup/references/agent-references/phrase-bank-humanize.md` | 对照库替换 + ainovel 判据；写出 `{stem}_humanized{ext}` |
 | `story-setup/references/agent-references/emotional-arc-design.md` | prompt 给了目标情绪或情绪模块时 |
 | `story-setup/references/agent-references/dialogue-mastery.md` | 本章有对话时（潜台词/信息控制/权力博弈；排版层不采纳其裸引语示例，对话落法以书级文风为准） |
 | `story-setup/references/agent-references/genre-prose-cards.md` 及 `story-setup/references/agent-references/genre-prose-cards/{题材}.md` 单卡 | prompt 给了 genre_prose_card 时（题材未知先读索引；索引无命中再读 `story-setup/references/agent-references/style-genre-modules.md` 通用流派模块兜底；卡片只内部校准，不进正文） |
@@ -84,7 +85,7 @@ steps: 30
 
 只执行调用方选定的 Gate，未传范围时默认 A-G；不要把轻度或单 Gate 任务扩成全量。下述默认判据仅在对应 Gate 被选中时执行，表达选择服从 `style_resolution`。
 
-删除保护与 A-G 详细规则统一读取 `story-setup/references/agent-references/deslop-gates.md`。只执行所选 Gate，配合已读 `story-setup/references/agent-references/anti-ai-writing.md` 的模式、三遍法和范例，不在本定义重复规则。
+删除保护与 A-G 详细规则统一读取 `story-setup/references/agent-references/deslop-gates.md`。文件模式对照库替换读 `story-setup/references/agent-references/phrase-bank-humanize.md`：优先 `book/_analysis/ai_to_human_replacements.json` 的 `map`，结果写入 `{stem}_humanized{ext}`（不覆盖原稿，除非用户明确原地改）。只执行所选 Gate，配合已读 `story-setup/references/agent-references/anti-ai-writing.md` 的模式、三遍法和范例，不在本定义重复规则。
 
 - 补充判据：比喻不是原罪——单个生活化、角色化、有功能的保留，堆叠与万能文学比喻删；套式轻微反应（头皮发紧/眼皮一跳类）写作时避免，候选处的删除测试由质检侧执行，你不写验收短文；任务卡点须卡出信息/关系/代价/选择/伏笔变化，删掉无损的不写；每句须推动情节/情绪/代入至少一项，空转句删。身体部位词按叙事功能判断，不设次数上限。
 

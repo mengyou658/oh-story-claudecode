@@ -59,9 +59,13 @@
 
 > novel-write-produce 合并层曾默认保留功能性破折号/省略号。本仓仍以番茄样本与脚本默认为准；需要保留时走白名单/文风，不静默翻转全局默认。
 
+## 对照库与 `_humanized` 落盘
+
+文件模式默认叠加 [phrase-bank-humanize.md](phrase-bank-humanize.md)（ainovel-cli 机械/语义判据 + `book/_analysis` 对照库）。对照库替换结果写入 `{stem}_humanized{ext}`，**不覆盖原稿**（用户明确「原地改」除外）。Phase 4 脚本跑在人味产物上。
+
 ## 与 Gate / 脚本关系
 
 1. 定档 → 文风 / `style_resolution` → 扫描（含 [scan-lexicon.md](scan-lexicon.md) 成簇）
-2. 定级轻/中/重 → 选 Gate（见 `SKILL.md`）
-3. 清除时遵守 Never inject、C 级禁动、删除比例
-4. 文件模式收尾：`check-ai-patterns.js` → `check-degeneration.js` →（按策略）`normalize-punctuation.js`
+2. 定级轻/中/重 → 选 Gate（见 `SKILL.md`）；加载 phrase-bank-humanize（文件模式默认）
+3. 清除时遵守 Never inject、C 级禁动、删除比例；对照库优先 `ai_to_human_replacements.json` 的 `map`
+4. 写入 `_humanized` 产物（默认）→ 文件模式收尾：`check-ai-patterns.js` → `check-degeneration.js` →（按策略）`normalize-punctuation.js`

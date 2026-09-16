@@ -14,6 +14,8 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 **开场定档**：清理（默认）/ 重构（须用户授权）/ 检测 / 新写。合同见 [references/deslop-process.md](references/deslop-process.md)（Never inject、C 级禁动、检测器边界）。正文**写前**约束见 [references/generation-constraints.md](references/generation-constraints.md)。无书短文旁路见 [references/shortform-sidepath.md](references/shortform-sidepath.md)。
 
+**对照库 + ainovel 判据**：文件模式默认叠加 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)（ainovel-cli 机械基线/五类语义判据/自定义规则映射 + `book/_analysis` 语句对照库）。对照库替换**必须**写出 `{原名}_humanized{后缀}`，默认不覆盖原稿（见该文件「输出契约」）。
+
 ---
 
 > Agent 兼容性：只检查当前运行时的 canonical 目录：Claude `.claude/agents/{agent}.md`、OpenCode `.opencode/agents/{agent}.md`、Codex `.codex/agents/{agent}.toml`、Antigravity `.agents/agents/agent-name/agent.md`（`agent-name` 为目标 agent 名），不得因其他端文件存在而误判。Codex 使用同名 `agent_type`；Antigravity 使用 `invoke_subagent` + `TypeName`。对应运行时未暴露 custom-agent registry / `invoke_subagent` 或返回未知 agent 时，必须降级 solo/direct。检测到 `.zcode/` 时同样直接 solo/direct，因为 ZCode 3.3.4 不执行项目 custom agents；报告 `Fallback: project custom agents unavailable -> solo`。Claude/OpenCode 兼容面保留 `subagent_type`。
@@ -93,6 +95,7 @@ AI味不按语法错误处理，也不需要"修正"。它属于风格问题：�
 2. 读 [references/deslop-process.md](references/deslop-process.md)；重构档须已获用户授权。
 3. 文风：`style_resolution` + 可选作者记忆 query（见上）。
 4. 新写或用户只要「写时少 AI」→ 先读 generation-constraints，再写/再改。
+5. **文件模式（章节/正文路径）且非「只要检测」**：加载 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)；确定输出路径为 `{stem}_humanized{ext}`（原稿只读）。用户原话要求「原地改/覆盖原稿」时除外。
 
 ### Phase 1：AI味扫描
 
@@ -181,21 +184,30 @@ node scripts/check-ai-patterns.js --check --fail-on=blocking <正文文件...>
 「诊断与分级」完成后，按以下顺序选择执行路径：
 
 1. **已在 narrative-writer 子代理内**：按选定 Gate 范围 inline 执行，不再 spawn（嵌套 spawn 会被静默降级）。
-2. **未在子代理内且按顶部顺序找到 `narrative-writer` agent**：按当前运行时调用；Antigravity 用 `invoke_subagent(TypeName: "narrative-writer")`，Claude/OpenCode/Codex 用各自字段。prompt 保持：`项目目录：{dir}\n任务描述：去AI味\nGate 细则：执行前按你的参考表读取 deslop-gates.md 的删除保护与所选 Gate（部署副本与本 skill 同源）\n检查分工：你负责本次语义去味；父流程负责 Phase 4 最终文件扫描，不重复整轮改稿\n检查范围：{待处理的正文文件}\n文风路径：{本书文风全文路径，无则写无}\nstyle_resolution：{本次生效要求及来源、被覆盖的默认条款、事实边界}\n作者偏好：{query 命中的 prose_style 项}\nAI味等级：{诊断与分级结果}\n处理策略：{实际选定的 Gate 范围；优先使用用户指定范围}\n删除优先：每条 AI 味项先判能否删除——删后不丢伏笔/钩子/角色/情节/人物记忆/情绪承接/因果锚点/必要信息/必要转折的直接删，会丢才进 Gate 润色；看似解释/评价但承担小连贯的句子，压成白话承接、动作或物件锚点，不机械删除；已有任务/手续/物件/证据缺口可以压成角色当下要处理的具体卡点，但不新增原文没有的事件链；删除服从比例上限与字数下限，跌破下限改降AI重写。\n模式处理：按 references/anti-ai-writing.md 的问题模式目录执行；模式 8（解释腔/上帝视角/安排感）归入 Gate G，其余新增模式归入 Gate A-F 的对应处理。相邻段重复表达同一信息/动作/情绪时，按 Gate C/D 合并去重；`。
+2. **未在子代理内且按顶部顺序找到 `narrative-writer` agent**：按当前运行时调用；Antigravity 用 `invoke_subagent(TypeName: "narrative-writer")`，Claude/OpenCode/Codex 用各自字段。prompt 保持：`项目目录：{dir}\n任务描述：去AI味\nGate 细则：执行前按你的参考表读取 deslop-gates.md 的删除保护与所选 Gate（部署副本与本 skill 同源）\n对照库：读取 phrase-bank-humanize.md；替换优先用 book/_analysis/ai_to_human_replacements.json 的 map；写出 {stem}_humanized{ext}，不覆盖原稿（用户明确原地改除外）\n检查分工：你负责本次语义去味；父流程负责 Phase 4 最终文件扫描，不重复整轮改稿\n检查范围：{待处理的正文文件}\n文风路径：{本书文风全文路径，无则写无}\nstyle_resolution：{本次生效要求及来源、被覆盖的默认条款、事实边界}\n作者偏好：{query 命中的 prose_style 项}\nAI味等级：{诊断与分级结果}\n处理策略：{实际选定的 Gate 范围；优先使用用户指定范围}\n删除优先：每条 AI 味项先判能否删除——删后不丢伏笔/钩子/角色/情节/人物记忆/情绪承接/因果锚点/必要信息/必要转折的直接删，会丢才进 Gate 润色；看似解释/评价但承担小连贯的句子，压成白话承接、动作或物件锚点，不机械删除；已有任务/手续/物件/证据缺口可以压成角色当下要处理的具体卡点，但不新增原文没有的事件链；删除服从比例上限与字数下限，跌破下限改降AI重写。\n模式处理：按 references/anti-ai-writing.md 的问题模式目录执行；模式 8（解释腔/上帝视角/安排感）归入 Gate G，其余新增模式归入 Gate A-F 的对应处理。相邻段重复表达同一信息/动作/情绪时，按 Gate C/D 合并去重；`。
 3. **agent 不存在或 spawn 失败**：主线程 inline 执行。
 
 #### Gate 规则入口
 
 实际执行者在逐项清除前读取 [references/deslop-gates.md](references/deslop-gates.md) 的删除保护与所选 Gate 细则；inline 与 agent 使用同源规则。三遍法仍按前文安排所选 Gate 的执行顺序，不另起一次全篇去味。
 
+#### 对照库替换（文件模式默认）
+
+按 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md) 执行：
+
+1. 优先用 `book/_analysis/ai_to_human_replacements.json` 的 **`map` 按键查** `replace_with`；辅以 `pairs`、以及 `ai_human_phrase_bank.json` 的 buckets/精选组、`phrase_bank_index.md` 类目示例。
+2. **禁止无脑全局替换**；按 category/meaning 与人称语气适配；剧情保护与疲劳词阈值同时生效。
+3. 将 Gate 润色 + 对照库替换的结果写入 **`{stem}_humanized{ext}`**，原稿不动（除非用户明确要求原地改）。
+4. 报告统计 map 命中、挑词替换数、跳过/`[需复核]` 数，并列出原文件与人味文件路径。
+
 ### Phase 4：确定性收尾（文件模式）
 
-当输入是正文文件路径，且「逐项清除」已落盘修改后，**先**做句式/段落复扫，**再**做机械标点兜底（破折号要按功能改写，故先于机械替换报出）：
+当输入是正文文件路径，且「逐项清除」+对照库替换已写入 **`_humanized` 产物**（或用户授权的原地文件）后，对**产出文件**（不是未改的原稿）**先**做句式/段落复扫，**再**做机械标点兜底（破折号要按功能改写，故先于机械替换报出）：
 
 ```bash
-node scripts/check-ai-patterns.js --check --fail-on=blocking <正文文件...>
-node scripts/check-degeneration.js --check <正文文件...>
-node scripts/normalize-punctuation.js <正文文件...>
+node scripts/check-ai-patterns.js --check --fail-on=blocking <人味或已改正文文件...>
+node scripts/check-degeneration.js --check <人味或已改正文文件...>
+node scripts/normalize-punctuation.js <人味或已改正文文件...>
 ```
 
 作用边界：
@@ -215,6 +227,8 @@ node scripts/normalize-punctuation.js <正文文件...>
 ## 去AI味润色报告
 
 ### 字数协议
+- 原文件：{path}
+- 人味文件：{path_humanized 或「原地改」}
 - 原文字符数：{N0}
 - 修订后字符数：{N1}
 - 净变化：{N1 - N0}（{百分比}）
@@ -222,6 +236,7 @@ node scripts/normalize-punctuation.js <正文文件...>
 
 ### 修改统计
 - 总修改数：{N} 处
+- 对照库 map 命中/替换：{N}/{N}（跳过或 [需复核] {N}）
 - 禁用词替换：{N} 处
 - 句式调整：{N} 处（含否定翻转句式 {N}、"，带着..." {N}、声音描写 {N}）
 - 修饰词清扫：{N} 处
@@ -239,7 +254,7 @@ node scripts/normalize-punctuation.js <正文文件...>
 {逐段展示修改，标注改动类型；超过 30 处时仅展示前 10 处 + 末 5 处 + 其余按 Gate 分桶计数}
 
 ### 润色后全文
-{**文件模式（默认；章节/正文文件、批量与长篇去AI）**：通过 Edit/Write 直接改写落盘，本节只回 ≤200 字代表性片段，不向父会话返回全文。**文本模式（仅限交互式贴入、无文件路径的零散片段）**：完整输出润色后的文本。}
+{**文件模式（默认；章节/正文文件、批量与长篇去AI）**：写入 `{原名}_humanized{后缀}`（对照库启用时强制；见 phrase-bank-humanize），本节只回 ≤200 字代表性片段 + 原/人味路径，不向父会话返回全文。**文本模式（仅限交互式贴入、无文件路径的零散片段）**：完整输出润色后的文本。}
 ```
 
 **字数硬约束**：删除比例不得超过「诊断与分级」对应上限（轻度 ≤15%、中度 ≤25%、重度 ≤35%）。超限时分段输出并在报告里标记，不得整段删除正文。
@@ -260,6 +275,8 @@ node scripts/normalize-punctuation.js <正文文件...>
 | 用户说"检查下有没有AI味" | 定档检测 → 只做检测，不做修改 |
 | 用户明确授权"重写结构/重构" | 定档重构 → 每章 2–5 个结构动作 + Gate |
 | 用户写作中要求 `仅标注 / 只检测 / 不要改` | 嵌入式提醒模式：执行「AI味扫描」和「诊断与分级」，跳过「逐项清除」「确定性收尾」「输出润色结果」；输出问题标记表（含 Gate 列），不修改原文，不写文件 |
+| 章节文件去味（默认） | 对照库 + Gate → 写出 `{stem}_humanized{ext}`，原稿不动 |
+| 用户说「原地改 / 覆盖原稿」 | 对照库 + Gate → 直接改原文件 |
 | 无活跃书，仅润色公众号/小红书等短文 | [references/shortform-sidepath.md](references/shortform-sidepath.md)，不建小说目录 |
 
 ---
@@ -275,6 +292,7 @@ node scripts/normalize-punctuation.js <正文文件...>
 | [references/scan-lexicon.md](references/scan-lexicon.md) | 成簇扫描：八股/名词化/黑话/装腔/EN/泄漏 |
 | [references/shortform-sidepath.md](references/shortform-sidepath.md) | 无书短文旁路 |
 | [references/banned-words.md](references/banned-words.md) | 检测和替换禁用词时 |
+| [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md) | **文件模式必读（默认）**：ainovel-cli 判据合并 + 对照库替换 + `_humanized` 输出契约 |
 | [references/deslop-gates.md](references/deslop-gates.md) | 逐项清除前：删除保护与所选 Gate 的细则、示例 |
 | [references/anti-ai-writing.md](references/anti-ai-writing.md) | **去AI味完整指南**：预防+三遍法+范例 |
 | [scripts/normalize-punctuation.js](scripts/normalize-punctuation.js) | 文件模式落盘后做确定性标点收尾；默认保留引号风格 |
