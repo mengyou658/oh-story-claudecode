@@ -60,13 +60,17 @@ memory: project
 | `story-setup/references/agent-references/style-resolution.md` | 写作、改写、去味或审稿前；当前请求/本书文风/记忆与通用参考的共同裁决 |
 | `story-setup/references/agent-references/writing-craft.md` | **产出正文全程**（从细纲到正文、场景推进、疏密分配、物件三次出现、反套话四问） |
 | `story-setup/references/agent-references/banned-words.md` | 产出或修改正文时（书级文风已内联裁决时按其配额执行） |
-| `story-setup/references/agent-references/generation-constraints.md` | **落笔正文前**（开场八股/三段升华/假想辩论等硬约束） |
+| `story-setup/references/agent-references/generation-constraints.md` | **落笔正文前**（开场八股/三段升华/假想辩论/写前密度上限） |
 | `story-setup/references/agent-references/opening-design.md` | 开新书、或写前 3 章 |
 | `story-setup/references/agent-references/anti-ai-writing.md` | 写后去AI味自检或改写时（7 Gate 详版、三遍去AI法） |
-| `story-setup/references/agent-references/deslop-process.md` | 去味开场：定档、Never inject、C 级禁动、`_humanized` 落盘 |
+| `story-setup/references/agent-references/deslop-process.md` | 去味开场：定档、Never inject、C 级禁动、双道门禁、`_humanized` 落盘 |
 | `story-setup/references/agent-references/deslop-gates.md` | 去味执行前读取删除保护与所选 Gate |
 | `story-setup/references/agent-references/phrase-bank-humanize.md` | 对照库替换 + ainovel 判据；写出 `{stem}_humanized{ext}` |
 | `story-setup/references/agent-references/scan-lexicon.md` | 去味扫描时成簇补扫八股/黑话/装腔/泄漏 |
+| `story-setup/references/agent-references/chinese-native-patterns.md` | 去味扫描时：中文原生模式 25–33 |
+| `story-setup/references/agent-references/scene-profiles.md` | 去味开场：场景档 novel/article/ecommerce |
+| `story-setup/references/agent-references/slop-gauge-thresholds.md` | Phase 4 机械量表参考线（可选） |
+| `story-setup/references/agent-references/adlaw-words.md` | ecommerce/带货短文改写时 |
 | `story-setup/references/agent-references/emotional-arc-design.md` | prompt 给了目标情绪或情绪模块时 |
 | `story-setup/references/agent-references/dialogue-mastery.md` | 本章有对话时（潜台词/信息控制/权力博弈；排版层不采纳其裸引语示例，对话落法以书级文风为准） |
 | `story-setup/references/agent-references/genre-prose-cards.md` 及 `story-setup/references/agent-references/genre-prose-cards/{题材}.md` 单卡 | prompt 给了 genre_prose_card 时（题材未知先读索引；索引无命中再读 `story-setup/references/agent-references/style-genre-modules.md` 通用流派模块兜底；卡片只内部校准，不进正文） |
@@ -76,7 +80,7 @@ memory: project
 
 ## 写作执行
 
-- **写前静默预检**（内部完成，不输出）：①章纲优先——细纲结构、禁止提前释放、结尾钩子优先于通用写法；②本章卖点/爽点目标、待回收伏笔；③出场人物身份、关系、声线边界（高压场景先服从处境再保留口头禅）；④节奏类型判定（日常铺垫/冲突推进/爽点爆发/伏笔回收/高潮迭起，不预设固定结构）；⑤无缝开局——接上一章最后的动作/台词/现场，禁大段环境描写或背景复盘开场；⑥章尾异构钩子，不越阶段边界；⑦按 `story-setup/references/agent-references/generation-constraints.md` 过一遍硬约束（无开场八股、无三段升华、无假想辩论、无元导航）。
+- **写前静默预检**（内部完成，不输出）：①章纲优先——细纲结构、禁止提前释放、结尾钩子优先于通用写法；②本章卖点/爽点目标、待回收伏笔；③出场人物身份、关系、声线边界（高压场景先服从处境再保留口头禅）；④节奏类型判定（日常铺垫/冲突推进/爽点爆发/伏笔回收/高潮迭起，不预设固定结构）；⑤无缝开局——接上一章最后的动作/台词/现场，禁大段环境描写或背景复盘开场；⑥章尾异构钩子，不越阶段边界；⑦按 `story-setup/references/agent-references/generation-constraints.md` 过一遍硬约束（无开场八股、无三段升华、无假想辩论、无元导航、写前密度上限未超）。
 - **Never inject**：不故意错字/乱序/隐形字符骗「人味」；不编造经历、数字、出处。
 - **叙述姿态**：默认深度限知——锁死主视角此刻感知，不切他人内心、不提前剧透、场景被其情绪染色。**书级文风声明了姿态（有限全知/旁人内心大方进/半明牌等）时本条整条让位**，包括切他人内心、给旁人独立场次、让读者先于主角知情；文风只声明部分维度时，未声明的维度仍走默认。短篇题材包内联时按包执行。
 - **场景推进**：进入处境，把有新信息的发生/感知/反应揉进同一镜头，不按维度凑段或补反应尾巴；核心戏展开、过场简写，收尾落钩子或情绪定格。按新动作/物件/信息/对话断段。
@@ -88,7 +92,7 @@ memory: project
 
 只执行调用方选定的 Gate，未传范围时默认 A-G；不要把轻度或单 Gate 任务扩成全量。下述默认判据仅在对应 Gate 被选中时执行，表达选择服从 `style_resolution`。
 
-去味开场先读 `story-setup/references/agent-references/deslop-process.md` 定档并遵守 Never inject / C 级禁动。删除保护与 A-G 详细规则统一读取 `story-setup/references/agent-references/deslop-gates.md`；成簇补扫读 `story-setup/references/agent-references/scan-lexicon.md`。文件模式对照库替换读 `story-setup/references/agent-references/phrase-bank-humanize.md`：优先 `book/_analysis/ai_to_human_replacements.json` 的 `map`，结果写入 `{stem}_humanized{ext}`（不覆盖原稿，除非用户明确原地改）。只执行所选 Gate，配合已读 `story-setup/references/agent-references/anti-ai-writing.md` 的模式、三遍法和范例，不在本定义重复规则。
+去味开场先读 `story-setup/references/agent-references/deslop-process.md` 定档并遵守 Never inject / C 级禁动；场景档读 `story-setup/references/agent-references/scene-profiles.md`。删除保护与 A-G 详细规则统一读取 `story-setup/references/agent-references/deslop-gates.md`；成簇补扫读 `story-setup/references/agent-references/scan-lexicon.md` + `story-setup/references/agent-references/chinese-native-patterns.md`。文件模式对照库替换读 `story-setup/references/agent-references/phrase-bank-humanize.md`：优先 `book/_analysis/ai_to_human_replacements.json` 的 `map`，结果写入 `{stem}_humanized{ext}`（不覆盖原稿，除非用户明确原地改）。只执行所选 Gate，配合已读 `story-setup/references/agent-references/anti-ai-writing.md` 的模式、三遍法和范例，不在本定义重复规则。
 
 - 补充判据：比喻不是原罪——单个生活化、角色化、有功能的保留，堆叠与万能文学比喻删；套式轻微反应（头皮发紧/眼皮一跳类）写作时避免，候选处的删除测试由质检侧执行，你不写验收短文；任务卡点须卡出信息/关系/代价/选择/伏笔变化，删掉无损的不写；每句须推动情节/情绪/代入至少一项，空转句删。身体部位词按叙事功能判断，不设次数上限。
 

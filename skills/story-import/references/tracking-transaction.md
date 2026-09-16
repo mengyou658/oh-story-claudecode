@@ -27,7 +27,7 @@ Markdown 只负责给作者和 Agent 阅读，工具不再反向解析 Markdown�
 
 - `init`：只在 `_tracking-state.json` 不存在时执行，绝不覆盖已初始化项目。
 - `wordcount measure` / `wordcount checkpoint`：纯测量入口；不写正文、不写 tracking、不做语义判断。长篇正文流程一次写完整章，**不在章中调用测量**，长度由 `chapter check` 一次收口；这两个入口供导入、审查等其他场景使用。
-- `chapter check`：重新读取当前正文与细纲目标，返回确定性长度状态、现有 blocking quality、`state_revision` 和当前可执行动作，不保存 approval。`under` 不提供自动补写；`over` 额外返回一次净删型 `compress-once` 及进入内带/用户带所需的机器删除区间。
+- `chapter check`：重新读取当前正文与细纲目标，返回确定性长度状态、现有 blocking quality、`state_revision` 和当前可执行动作，不保存 approval。`under` 不提供自动补写/加厚/水话回填：实际 **≥2000** → 接受自然长度（`accept-current-length`）；仅 **<2000** 且情节已齐才另议合并；`over` 额外返回一次净删型 `compress-once`（优先紧凑）。本仓库默认正文第 B 章对应细纲 A–C（见 [local-production-rules.md](local-production-rules.md)）；提交后须更新 `追踪/章号映射.md`。
 - `chapter commit`：再次读取当前文件、重新计数并重跑 blocking quality；只接受用户带内章节，把简短字数记录与逐章事务一起原子提交。
 - `chapter accept-current-length`：只接受带外但 quality pass 的章节；接受动作发生时重新读取、重新计数并立即原子提交，不保存可陈旧的历史决议。
 - `check`：严格验证 state schema、逐章记录连续性/规范名/体积、固定 7 栏、角色快照硬上限、派生文件集合，以及所有派生视图与 state 的逐字一致性。
@@ -140,3 +140,13 @@ Markdown 只负责给作者和 Agent 阅读，工具不再反向解析 Markdown�
 7. `## 连贯性风险`
 
 其中活跃角色最多 6 人、活跃伏笔确定性选取最多 8 条、近章只保留 3 章。这些是下一章热上下文容量，不是完整角色状态的容量限制。
+
+## 章号映射（本仓库）
+
+`追踪/章号映射.md` **不属于** `_tracking-state.json` 派生视图，由主会话在每次正文 `commit` / `accept-current-length` 成功后手写更新（模板见 [local-production-rules.md](local-production-rules.md) §2）。必须同时记录：
+
+- 正文已写到第几章（与 `last_committed_chapter` 一致）
+- 细纲已消费到第几章（默认 = 3 × 正文章号）
+- 最近一次「正文 ← 细纲区间」映射
+
+裸调用诊断与日更开场必须读此文件并双进度汇报。

@@ -1,6 +1,6 @@
 ---
 name: story-deslop
-version: 1.0.0
+version: 1.1.0
 description: "网文去AI味。检测并清除文本中的AI写作痕迹，让文字回归自然、非模板化。触发方式：/story-deslop、/去AI味、「去AI味」「这篇太AI了」「网文去AI味」。"
 metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudecode"}}
 ---
@@ -12,7 +12,7 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 **核心信念：AI 味的主要问题并非语法错误；更常见的是过度圆滑、工整、解释充分。改写目标是保留剧情功能，同时增加口语、停顿、跳跃和具体动作。**
 
-**开场定档**：清理（默认）/ 重构（须用户授权）/ 检测 / 新写。合同见 [references/deslop-process.md](references/deslop-process.md)（Never inject、C 级禁动、检测器边界）。正文**写前**约束见 [references/generation-constraints.md](references/generation-constraints.md)。无书短文旁路见 [references/shortform-sidepath.md](references/shortform-sidepath.md)。
+**开场定档**：清理（默认）/ 重构（须用户授权）/ 检测 / 新写。合同见 [references/deslop-process.md](references/deslop-process.md)（Never inject、C 级禁动、检测器边界、双道门禁）。正文**写前**约束见 [references/generation-constraints.md](references/generation-constraints.md)。中文原生模式 25–33 见 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)。场景档见 [references/scene-profiles.md](references/scene-profiles.md)。无书短文旁路见 [references/shortform-sidepath.md](references/shortform-sidepath.md)。
 
 **对照库 + ainovel 判据**：文件模式默认叠加 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)（ainovel-cli 机械基线/五类语义判据/自定义规则映射 + `book/_analysis` 语句对照库）。对照库替换**必须**写出 `{原名}_humanized{后缀}`，默认不覆盖原稿（见该文件「输出契约」）。
 
@@ -92,10 +92,11 @@ AI味不按语法错误处理，也不需要"修正"。它属于风格问题：�
 ### Phase 0：定档与加载
 
 1. 报定档（清理/重构/检测/新写）；未指定 → 清理。
-2. 读 [references/deslop-process.md](references/deslop-process.md)；重构档须已获用户授权。
+2. 读 [references/deslop-process.md](references/deslop-process.md)；重构档须已获用户授权。选场景档（默认 novel），见 [references/scene-profiles.md](references/scene-profiles.md)。
 3. 文风：`style_resolution` + 可选作者记忆 query（见上）。
-4. 新写或用户只要「写时少 AI」→ 先读 generation-constraints，再写/再改。
+4. 新写或用户只要「写时少 AI」→ 先读 generation-constraints（含写前密度上限），再写/再改。
 5. **文件模式（章节/正文路径）且非「只要检测」**：加载 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)；确定输出路径为 `{stem}_humanized{ext}`（原稿只读）。用户原话要求「原地改/覆盖原稿」时除外。
+6. 扫描前可对照 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)（模式 25–33）与 [references/scan-lexicon.md](references/scan-lexicon.md)。
 
 ### Phase 1：AI味扫描
 
@@ -202,19 +203,22 @@ node scripts/check-ai-patterns.js --check --fail-on=blocking <正文文件...>
 
 ### Phase 4：确定性收尾（文件模式）
 
-当输入是正文文件路径，且「逐项清除」+对照库替换已写入 **`_humanized` 产物**（或用户授权的原地文件）后，对**产出文件**（不是未改的原稿）**先**做句式/段落复扫，**再**做机械标点兜底（破折号要按功能改写，故先于机械替换报出）：
+当输入是正文文件路径，且「逐项清除」+对照库替换已写入 **`_humanized` 产物**（或用户授权的原地文件）后，对**产出文件**（不是未改的原稿）**先**做句式/段落复扫，**再**做机械标点兜底（破折号要按功能改写，故先于机械替换报出），**再**做机械量表（可选但对账推荐）：
 
 ```bash
 node scripts/check-ai-patterns.js --check --fail-on=blocking <人味或已改正文文件...>
 node scripts/check-degeneration.js --check <人味或已改正文文件...>
 node scripts/normalize-punctuation.js <人味或已改正文文件...>
+python scripts/slop_gauge.py --profile novel <人味或已改正文文件...>
+# 推荐对账：python scripts/slop_gauge.py --diff --profile novel <原稿> <人味文件>
 ```
 
 作用边界：
 - `check-ai-patterns.js` 只报告不改写：severity=blocking 的类别优先改正文并复扫；advisory 先通读判断，确属提纲感、解释腔或模板腔再改，功能性写法标 `[需复核]`。
-- 它只是读感提示；完整类别、例外和修法见 `references/anti-ai-writing.md`。
+- 它只是读感提示；完整类别、例外和修法见 `references/anti-ai-writing.md` 与 `references/chinese-native-patterns.md`。
 - `check-degeneration.js` 报告模型退化（逐字复读/打转、末尾截断、占位符、工程词泄漏 `细纲`/`情节点` 等），每条带 `severity: blocking|advisory`。blocking 是退化信号，去AI味改不掉，应回去重新生成那一段再 deslop；advisory（tier2 章节/歧义词）只提示。
 - `normalize-punctuation.js` 机械兜底：保留书级白名单获准的停顿，清除其余残留的 `……`、漏网破折号 `——`/`—`、双连字符 `--` 和独立行 `---`；默认不改变引号风格，也不把有功能的 `？` / 少量 `！` 改成句号。
+- `slop_gauge.py` 确定性量化（词表/标点/节奏/结构/归因）；score ≥55 为机械参考线，低于标 `[机械未达标]`，**不单独否决**。阈值与 Gate 映射见 [references/slop-gauge-thresholds.md](references/slop-gauge-thresholds.md)。ecommerce 用 `--profile ecommerce` 且 adlaw 应为 0。
 - 知乎盐言短篇可保留 `「」`；只有用户或项目明确要求时，才给标点脚本加 `--quote-mode ascii` 或 `--quote-mode yan`。
 
 ---
@@ -249,6 +253,7 @@ node scripts/normalize-punctuation.js <人味或已改正文文件...>
 - 对话优化：{N} 处
 - 标点节奏调整：{N} 处（保留有功能 `？`/少量 `！`，将 `……`/`——` 改为动作、短句、逗号或句号，并清理无功能堆砌）
 - 结尾修正：{N} 处
+- slop-gauge：score {N}/100（profile={novel|…}）；AI 密度 {x}/千字；CV {x}；diff 要点：{1-5 条或未跑}
 
 ### 修改前后对比
 {逐段展示修改，标注改动类型；超过 30 处时仅展示前 10 处 + 末 5 处 + 其余按 Gate 分桶计数}

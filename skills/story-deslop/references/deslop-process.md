@@ -42,11 +42,27 @@
 
 先列**完整缺陷清单**，再从深层到表层修。无清单直接改，容易换成另一种 AI 指纹。
 
+修补顺序：**结构 → 语气 → 句式 → 词语**（与 de-AI-writing 一致）。
+
 清理档：每章只挑 **2～5** 个结构/表达动作（症状可全报，大改要授权）。
+
+## 场景档
+
+网文正文默认 **novel**；设定说明用 **article**；带货短文用 **ecommerce**。差异与标点冲突裁决见 [scene-profiles.md](scene-profiles.md)。中文原生模式 25–33 见 [chinese-native-patterns.md](chinese-native-patterns.md)。
+
+## 双道门禁（机械 + 观感）
+
+| 侧 | 工具 | 参考线 | 语义 |
+|----|------|--------|------|
+| 机械 | `python scripts/slop_gauge.py --profile novel`（见 [slop-gauge-thresholds.md](slop-gauge-thresholds.md)） | score ≥55 | Phase 4 推荐；低于标 `[机械未达标]`；**不单独否决** |
+| 观感 | stop-slop 五维自评 | ≥35/50 | Agent 参考，不得替代 Gate |
+| 主定级 | 本 skill 禁用词/千字 + 六指标 | 轻/中/重 | **保留为主** |
+
+改写前后可用 `--diff` 把 3–5 项数字变化写入润色报告。ecommerce 档另要求 adlaw=0（[adlaw-words.md](adlaw-words.md)）。
 
 ## Detector boundaries
 
-- 单工具、单百分比**不得**单独否决或驱动策略
+- 单工具、单百分比**不得**单独否决或驱动策略（含 slop-gauge、stop-slop、朱雀）
 - 对照须同检测器、相近字数、同体裁；**<3000 字片段只作方向性观察**
 - 若工具对重复粘贴/无关文本稳定判「人写」、对完整小说草稿稳定判 AI → **弃用为 gate**
 - Pattern ≠ 作者身份证明；正式文体/非母语易误报
@@ -57,7 +73,7 @@
 
 本仓默认：无功能的 `……` / `——` / `--` / 独立 `---` 在文件模式由 `normalize-punctuation.js` 硬清；功能性停顿经本书 `设定/文风.md` 或书目录 `.deslop-whitelist` 登记后保留。
 
-> novel-write-produce 合并层曾默认保留功能性破折号/省略号。本仓仍以番茄样本与脚本默认为准；需要保留时走白名单/文风，不静默翻转全局默认。
+> novel-write-produce / humanizer-zh-plus novel 档曾默认对话内破折号豁免。本仓仍以番茄样本与脚本默认为准：叙述层硬清；对话内 `？`/少量 `！`/语气词保留；对话破折号需白名单/文风显式登记。slop-gauge novel profile 的对话内豁免只影响机械分数。详见 [scene-profiles.md](scene-profiles.md)。
 
 ## 对照库与 `_humanized` 落盘
 
@@ -65,7 +81,7 @@
 
 ## 与 Gate / 脚本关系
 
-1. 定档 → 文风 / `style_resolution` → 扫描（含 [scan-lexicon.md](scan-lexicon.md) 成簇）
+1. 定档 → 场景档（默认 novel）→ 文风 / `style_resolution` → 扫描（含 [scan-lexicon.md](scan-lexicon.md) 成簇 + [chinese-native-patterns.md](chinese-native-patterns.md)）
 2. 定级轻/中/重 → 选 Gate（见 `SKILL.md`）；加载 phrase-bank-humanize（文件模式默认）
 3. 清除时遵守 Never inject、C 级禁动、删除比例；对照库优先 `ai_to_human_replacements.json` 的 `map`
-4. 写入 `_humanized` 产物（默认）→ 文件模式收尾：`check-ai-patterns.js` → `check-degeneration.js` →（按策略）`normalize-punctuation.js`
+4. 写入 `_humanized` 产物（默认）→ 文件模式收尾：`check-ai-patterns.js` → `check-degeneration.js` →（按策略）`normalize-punctuation.js` →（推荐）`slop_gauge.py --profile novel`〔可选 `--diff`〕

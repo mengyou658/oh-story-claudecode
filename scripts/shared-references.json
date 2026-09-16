@@ -235,6 +235,34 @@
       ]
     },
     {
+      "name": "deslop-chinese-native-patterns",
+      "source": "skills/story-deslop/references/chinese-native-patterns.md",
+      "targets": [
+        "skills/story-setup/references/agent-references/chinese-native-patterns.md"
+      ]
+    },
+    {
+      "name": "deslop-scene-profiles",
+      "source": "skills/story-deslop/references/scene-profiles.md",
+      "targets": [
+        "skills/story-setup/references/agent-references/scene-profiles.md"
+      ]
+    },
+    {
+      "name": "deslop-slop-gauge-thresholds",
+      "source": "skills/story-deslop/references/slop-gauge-thresholds.md",
+      "targets": [
+        "skills/story-setup/references/agent-references/slop-gauge-thresholds.md"
+      ]
+    },
+    {
+      "name": "deslop-adlaw-words",
+      "source": "skills/story-deslop/references/adlaw-words.md",
+      "targets": [
+        "skills/story-setup/references/agent-references/adlaw-words.md"
+      ]
+    },
+    {
       "name": "tracking-initialization",
       "source": "skills/story-long-write/references/tracking-initialization.md",
       "targets": [
