@@ -4,53 +4,42 @@
     "沈烬": {
       "abilities_resources": [
         "前世经验",
-        "假先知道具",
-        "顾衡铜牌订金"
+        "旧手机（时间戳确认）"
       ],
-      "goal": "验货接下顾衡首单",
-      "identity": "重生女主；假先知壳下的死契庄家雏形",
+      "goal": "弄清活着这笔税该怎么收（暂不赴死）",
+      "identity": "重生女主；尚未开盘",
       "knowledge": [
-        "入场将开",
-        "官方复活宣传不可信"
+        "入场报名还剩最后两天",
+        "自己重生了"
       ],
-      "location": "旧城巷口摊位",
+      "location": "二十二岁出租屋",
       "open_threads": [
-        "今晚旧厂验货",
-        "账本尚未具现"
+        "这笔税怎么收 / 死亡如何标价（方向未落地）"
       ],
       "relationships": [
-        "顾衡：待验货买方",
-        "已故队友：照片执念"
+        "已故队友：照片执念（阿棠、老七、小满、渡）"
       ],
-      "state": "赴死惯性被压住；壳子已开张"
+      "state": "赴死失败；年轻身体；「想死」已暂记账"
     },
     "顾衡": {
-      "abilities_resources": [
-        "旧铜牌"
-      ],
-      "goal": "拿到死一次的资格",
-      "identity": "要买死一次资格的询价人",
-      "knowledge": [
-        "三成命数报价",
-        "她拒假复活"
-      ],
-      "location": "离开巷口",
+      "abilities_resources": [],
+      "goal": "",
+      "identity": "未出场",
+      "knowledge": [],
+      "location": "",
       "open_threads": [
-        "为何要死一次"
+        "第3章询价「死一次」"
       ],
-      "relationships": [
-        "沈烬：卖方试探中"
-      ],
-      "state": "已付铜牌、接受验货"
+      "relationships": [],
+      "state": ""
     }
   },
   "context": {
     "active_character_names": [
-      "沈烬",
-      "顾衡"
+      "沈烬"
     ],
     "continuity_risks": [
-      "验货勿提前具现账本高阶"
+      "第2章前勿提前放出顾衡与账本具现"
     ],
     "long_term_constraints": [
       "战斗是结算不是日常刷怪",
@@ -58,19 +47,19 @@
       "定价权与拒单权归沈烬"
     ],
     "next_chapter_commitments": [
-      "旧厂验货，死契账本具现",
-      "草约成交条件"
+      "核对时间线，看见入场宣传",
+      "否决无意义再赴死，定「死亡可标价」与假先知壳"
     ],
     "position": {
-      "scene": "旧城巷口算命摊",
-      "story_time": "重生后次日巷口支摊，约当晚旧厂验货",
+      "scene": "二十二岁出租屋床沿",
+      "story_time": "重生当日上午约9:17，入场报名截止前两日",
       "volume": "第一卷·假摊真账",
       "volume_start_chapter": 1
     },
     "recent_chapters": [
       {
         "chapter": 1,
-        "summary": "正文第1章 ← 细纲第1–3章。沈烬赴死失败重生，支假先知摊，接下顾衡死一次询价并约验货。"
+        "summary": "沈烬对照片道早安后赴死，失败重生回入场前夜；按住想死，账未结。"
       }
     ]
   },
@@ -88,27 +77,26 @@
   "imported_through_chapter": 0,
   "last_committed_chapter": 1,
   "schema_version": 4,
-  "state_revision": 1,
+  "state_revision": 2,
   "timeline": {
     "E001": {
       "characters": [
-        "沈烬",
-        "顾衡"
+        "沈烬"
       ],
       "first_recorded_chapter": 1,
       "id": "E001",
-      "objective_fact": "沈烬重生并支摊，与顾衡约定当晚旧厂验货",
-      "reader_knowledge": "读者已知她前世巅峰独守、赴死失败；顾衡要买死一次",
+      "objective_fact": "沈烬赴死失败并重生至3月19日上午9:17",
+      "reader_knowledge": "读者已知她前世巅峰独守、赴死失败、确认重生回入场前夜",
       "reveal_chapter": 1,
       "reveal_status": "已揭示",
-      "story_time": "入场报名截止前两日",
+      "story_time": "入场报名截止前两日（3月19日 9:17）",
       "updated_chapter": 1
     }
   },
   "wordcount_records": {
     "1": {
-      "actual": 1995,
-      "body_sha256": "175e70e104fceb33958ba587559f63d8a6eff72b3e4e1c5e313d0876630f8678",
+      "actual": 2002,
+      "body_sha256": "93544dc53da34735bf48f988d922439718db89117136e09b867bfef43d26d6ef",
       "metric": "visible_chars_v1",
       "resolution": "within_user_band",
       "status": "internal_pass",
