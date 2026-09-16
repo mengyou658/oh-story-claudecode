@@ -298,7 +298,9 @@
     },
     "note": "同义近义对照；替换时按语境改人称/时态，禁止无脑全局替换",
     "version": "2.1-fullrank-partial",
-    "corpus_note": "含游戏体育榜+全题材阅读榜已下载部分；未下完见 book/_pending_download_全题材_20260916.*"
+    "corpus_note": "含游戏体育榜+全题材阅读榜已下载部分；未下完见 book/_pending_download_全题材_20260916.*",
+    "name_placeholder": "{xx}",
+    "name_placeholder_note": "仅 human_expr（及 replacements.buckets_summary.human_top）中的人名已换成 {xx}；去 AI 味选用人味句后，按本书 设定/角色 回填"
   },
   "buckets": [
     {
@@ -4604,7 +4606,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "程友善看着这一幕，眼神复杂，最终只是叹了口气，对另外两个男知青",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -4653,7 +4655,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "将人蒸发的攻击，下一秒就会落到自己头上",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -4709,7 +4711,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚清瑶接过令牌，眉头微皱，“我哥哥的令牌呢，他的无垢",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -4758,7 +4760,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "邻居们再次议论纷纷",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -4842,7 +4844,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "没有心动和心疼，反而，还眉头微皱，有了一丝，丢人的感觉",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -4884,7 +4886,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "想到这，陈长生当即准备转身离开",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -4898,14 +4900,14 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "外面的徐之圭听得头皮发麻",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "陆宇头皮发麻：“妈的，这玩意儿长得也",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -4926,7 +4928,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "刘伯不再犹豫：“不用再派人去醉仙楼请人了",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -4954,7 +4956,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "他看着卫生队陌生的天花板，第一个念头不是我在哪里",
-      "human_expr": "向骑，马小帅的脑子才算彻底清醒过来",
+      "human_expr": "{xx}，{xx}的脑子才算彻底清醒过来",
       "source": "harvested"
     },
     {
@@ -5052,7 +5054,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "系统沉默片刻，直接弹出属性点选择面板，让她分",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -5248,7 +5250,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "大家围在一起，指指点点，议论纷纷",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -5332,7 +5334,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "龚煜瞳孔骤缩",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -5367,7 +5369,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，李念生转身离开了，只不过在门口的时候，李念生的",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -5388,7 +5390,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "疯狂狗叫的小白狼，陈长生嘴角微微上扬，随后大步走向夜月国招亲现场",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -5409,7 +5411,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "沉默片刻后，松本秀明缓缓说道：“帝国为兰芳提供的武器并没有什",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -5507,7 +5509,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "jamyoung和汉堡恍然大悟",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -5528,7 +5530,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "苏婉柔看得头皮发麻",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -5591,7 +5593,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "她猛地抬头，瞳孔骤缩",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -5633,7 +5635,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "陈景承眉头微皱，眼睛里也闪过一丝冰冷，看着",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -5675,7 +5677,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "瞳孔涣散的那一秒，邮差的双眼惊惧地瞪大了",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -5738,7 +5740,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "他看着卫生队陌生的天花板，第一个念头不是我在哪里",
-      "human_expr": "马小帅瞬间清醒过来",
+      "human_expr": "{xx}瞬间清醒过来",
       "source": "harvested"
     },
     {
@@ -5822,7 +5824,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，刘恩官终于开了口：“你...",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -5885,7 +5887,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "她顿时头皮发麻，连滚带爬回到涂身边",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -5906,7 +5908,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "她嘴角上扬打开微信，然后脸色垮了下来",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -5976,7 +5978,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，李念生转身离开了",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -6088,7 +6090,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "胤禛心头掠过一丝不忍，沉默片刻开口：“欢宜香味重，你怀相弱，别",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -6151,7 +6153,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "黑衣男看到下方景象，瞳孔骤缩",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -6172,7 +6174,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，刘恩官终于开了口：“你...",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -6186,7 +6188,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "充满祈求的话语，李晓生的嘴角上扬",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -6207,7 +6209,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "众人面面相觑，似乎觉得很有道理",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -6221,14 +6223,14 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "闻言，狼王嘴角微微上扬，笑道：“好一颗真心，就冲你这颗真心",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "扎石榴是什么，老观众已经嘴角上扬了",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -6298,7 +6300,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "语毕，站起身来转身离开，把空间还给害怕但能吃的绵绵松鼠",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -6424,7 +6426,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "裴念卿看到那一幕，头皮发麻“靠",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -6438,7 +6440,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "之后，她盯着那串肉，眼神复杂，仿佛在进行激烈的思想斗争",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -6473,7 +6475,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "龟老转身离开，狼王的脸色也冷了下来",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -6487,7 +6489,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，别墅里面的景象，让谢柠呼吸一滞",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -6557,21 +6559,21 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "而这时候，李素梅眉头微皱，拍了拍陈大川的后背，摇头道",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，李念生转身离开了，只不过在门口的时候，李念生的",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "外面的徐之圭听得头皮发麻",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -6585,7 +6587,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "面对曲谭风的问题，岑厌嘴角上扬，露出个难以捉摸的笑容",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -6606,7 +6608,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "他抬眼看向赵大虎，缓缓开口：“其实解局的关键，还是在于沟通",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -6676,7 +6678,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "一种不祥的预感油然而生",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -6788,7 +6790,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "沈湄顿觉头皮发麻，脸上霎时白得没有一丝血",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -6900,7 +6902,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "屋内沉默片刻，胤禛才缓缓开口：“宫内不比潜邸，人心复杂，朝堂",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -6914,7 +6916,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "苏婉柔沉默片刻：“可是，万一呢",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -6935,7 +6937,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "鲍勃恍然大悟：“我就说吗，我的酒量千杯不倒",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -7208,7 +7210,7 @@
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而全员刚跑出去没几步，就撞到了一堵人墙上",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -7285,7 +7287,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "了一口气，柳清对着电话，沉默片刻后，轻轻叹息，道：“倩姐，你确定",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -7348,7 +7350,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，她面前的空气微微扭曲，一辆庞然大物凭空出现，稳稳地停在公路中央",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -7362,7 +7364,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，陈长生转身离开了破旧的上清观",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -7425,7 +7427,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "陆宇头皮发麻：“妈的，这玩意儿长得也",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -7453,14 +7455,14 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，她回到了旅游餐车",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "钟临眉头微皱",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -7607,7 +7609,7 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "碎的画面，在他的脑海中闪过：“原来如此，我现在叫做雷克斯，犹格·雷克斯",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -7649,14 +7651,14 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "侍从室主任钱大军只感觉头皮发麻，如果不是今天自己当值",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "苏婉柔沉默片刻：“可是，万一呢",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -7754,7 +7756,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "之后，她盯着那串肉，眼神复杂，仿佛在进行激烈的思想斗争",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -7775,7 +7777,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "尔出现的细声低语更是让人头皮发麻",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -7838,7 +7840,7 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "然后他想起了脑海中浮现的那行金字",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -7866,7 +7868,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "白野不怀好意的笑容，李右恍然大悟：“你是想让他们帮你探路，就跟那",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -7992,7 +7994,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "她嘴角上扬打开微信，然后脸色垮了下来",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -8006,7 +8008,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "屋内沉默片刻，胤禛才缓缓开口：“宫内不比潜邸，人心复杂，朝堂",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -8027,7 +8029,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "大礼之后，狐耳娘当即当即转身离开",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -8048,7 +8050,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "罗子君缓缓说道:“既然你在录音里多次跟凌玲保证",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -8139,7 +8141,7 @@
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而，预想中的撞击和惨叫并未发生",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -8181,7 +8183,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "她说“顿顿管饱”的时候，嘴角微微上翘，像话里还藏着话",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -8216,7 +8218,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "裴念卿看到那一幕，头皮发麻“靠",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -8230,7 +8232,7 @@
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而，就在车轮即将触碰到斗篷的刹那",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -8272,7 +8274,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "苏婉柔沉默片刻：“可是，万一呢",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -8314,7 +8316,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，谢柠将唐刀收入了背包中，跟着车载音乐哼唱起来",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -8391,7 +8393,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，松本秀明缓缓说道：“帝国为兰",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -8405,7 +8407,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "谢柠眉头微皱",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -8517,7 +8519,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "总觉得哪里不对，但细细想来，李学文话里",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -8615,7 +8617,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "应先生沉默片刻：“我也不清楚具体内容，我只知道",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -8629,7 +8631,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "还是你聪明，当机立断的离婚了，等陈俊生后悔不该把",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -8643,7 +8645,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "陈景承眉头微皱，眼睛里也闪过一丝冰冷，看着",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -8678,7 +8680,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "己的话，便不再多说什么，转身离开了这里",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -8692,7 +8694,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "着对他们笑，结果下一秒就发现林驰被埋进了人堆里",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -8713,7 +8715,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "他转头，瞳孔瞬间放大",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -8776,7 +8778,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "听完以后沉思了片刻，缓缓开口说道：“借助日寇的海军力量是步险",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -8790,7 +8792,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "李县长眉头微皱，随后看向了高主任，然后想了",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -8825,7 +8827,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "目光幽深，其中似乎闪烁着一些复杂的神采",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -8846,7 +8848,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "钟临的瞳孔兴奋地放大，她俯身避过这一拳，一个上",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -8874,14 +8876,14 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "沈思晴看着那口锅，总觉得哪里不对劲，但中午那盘清蒸鱼的震",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "赵大虎靠在沙发背上，缓缓开口，目光落在李安平身上，“这事你应",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -8902,7 +8904,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "他缓缓开口，声音低得只有自己能听见，带着一",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -8930,7 +8932,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "李知顿时头皮发麻",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -8979,7 +8981,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "沈湄顿觉头皮发麻，脸上霎时白得没有一丝血",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -9028,7 +9030,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "沈思晴看着那口锅，总觉得哪里不对劲，但中午那盘清蒸鱼的震",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -9098,7 +9100,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "胤禛心头掠过一丝不忍，沉默片刻开口：“欢宜香味重，你怀相弱，别",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -9126,7 +9128,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚清瑶接过令牌，眉头微皱，“我哥哥的令牌呢，他的无垢",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -9217,7 +9219,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "男人缓缓说道，“你知道那条路上有什么吗",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -9287,7 +9289,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "脑袋微微刺痛，记忆如潮水般涌来，许博很快整理好了当下的",
-      "human_expr": "向骑，马小帅的脑子才算彻底清醒过来",
+      "human_expr": "{xx}，{xx}的脑子才算彻底清醒过来",
       "source": "harvested"
     },
     {
@@ -9343,7 +9345,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "想到这，陈长生当即准备转身离开",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -9371,7 +9373,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "龟老转身离开，狼王的脸色也冷了下来",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -9413,7 +9415,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "侍从室主任钱大军只感觉头皮发麻，如果不是今天自己当值",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -9483,7 +9485,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "她说“顿顿管饱”的时候，嘴角微微上翘，像话里还藏着话",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -9588,7 +9590,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "胤禛心头掠过一丝不忍，沉默片刻开口：“欢宜香味重，你怀相弱，别",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -9602,14 +9604,14 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "李知顿时头皮发麻",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "叹了口气，不再多说什么，转身离开了",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -9665,14 +9667,14 @@
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而，没过多久他发现，他好像多余纠结",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "谢柠头皮发麻，起了一身鸡皮疙瘩",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -9686,7 +9688,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "当看见属性时，谢柠倒吸一口凉气",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -9714,7 +9716,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "取而代之的是一种让人头皮发麻的酥痒",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -9798,7 +9800,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "大古目光一凝：“这是，精神思念体吗",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -9875,7 +9877,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "众人围拢在破酒楼门前，议论纷纷",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -9945,7 +9947,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，左皇转身离开了",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -9980,14 +9982,14 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚清瑶眉头微皱，脸上带着忧虑，她虽然性格大",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，她面前的空气微微扭曲，一辆庞然大物凭空出现，稳稳地停在公路中央",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -10008,7 +10010,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，陈长生转身离开，同时还挥了挥手说道",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -10036,7 +10038,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "大礼之后，狐耳娘当即当即转身离开",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -10078,14 +10080,14 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，她面前的空气微微扭曲，一辆庞然大物凭空出现，稳稳地停在公路中央",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "黑影丧尸缓缓开口，声音沙哑低沉：“人类.....",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -10099,7 +10101,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "祖师端坐云床，目光深邃如古井，静静看了宁辰片刻，却未追问缘由",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -10113,7 +10115,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "李右看的头皮发麻，要不是觉得场合不合适",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -10127,7 +10129,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "杨逸恍然大悟，立刻调整了鱼线长度，去掉浮标",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -10155,7 +10157,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "龚煜瞳孔骤缩",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -10169,14 +10171,14 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "众人围拢在破酒楼门前，议论纷纷",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "一种不祥的预感油然而生",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -10197,7 +10199,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "有不少灰尘，粟陌也忍不住嘴角上扬，高兴的握了握手，试着跳了一下",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -10211,7 +10213,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "起手，打断了她的话，缓缓说道：“她不适合在宫里生活",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -10267,14 +10269,14 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "陌生的天花板，熟悉的话术",
-      "human_expr": "马小帅瞬间清醒过来",
+      "human_expr": "{xx}瞬间清醒过来",
       "source": "harvested"
     },
     {
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "向白野的眼神变了又变，他沉默片刻：“我可以帮你解决鬣狗群",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -10386,7 +10388,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "钟临捕捉到了她瞳孔中那转瞬即逝的紧缩，以及身体下意识绷",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -10400,7 +10402,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "她这样让我总觉得哪里不对劲，你帮我分析一下好吗",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -10421,7 +10423,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "那熟悉的房子，陈长生不由嘴角上扬了一下，随后开口道：“请问念慈在吗",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -10470,7 +10472,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "裴念卿看到那一幕，头皮发麻“靠",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -10505,7 +10507,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，谢柠将唐刀收入了背包中，跟着车载音乐哼唱起来",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -10526,7 +10528,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "起手，打断了她的话，缓缓说道：“她不适合在宫里生活",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -10631,7 +10633,7 @@
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而，不待她趁护盾碎裂的时机发动攻击，一层全新的半透明护盾再次撑起",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -10673,7 +10675,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "沉默片刻后，松本秀明缓缓说道：“帝国为兰芳提供的武器并没有什",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -10694,7 +10696,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "韩局长眉头微皱，把手中的麻将直接扔在了桌子",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -10722,7 +10724,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "小豆子瞬间恍然大悟，自家娘娘这是惦记着出宫做生意挣",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -10743,7 +10745,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "程友善看着这一幕，眼神复杂，最终只是叹了口气，对另外两个男知青",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -10792,7 +10794,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "谢柠眉头微皱",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -10904,7 +10906,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "他转头，瞳孔瞬间放大",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -10953,7 +10955,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "待宫人扶稳她，才缓缓开口：“你刚生产完，身子亏虚，好生休",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -11009,7 +11011,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "应先生沉默片刻：“我也不清楚具体内容，我只知道",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -11030,14 +11032,14 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，刘恩官终于开了口：“你...",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "着对他们笑，结果下一秒就发现林驰被埋进了人堆里",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -11065,7 +11067,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "祖师端坐云床，目光深邃如古井，静静看了宁辰片刻，却未追问缘由",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -11086,7 +11088,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "苏婉柔沉默片刻：“可是，万一呢",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -11128,7 +11130,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "文打量了好一会，这才缓缓开口：“薛伯陵",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -11177,7 +11179,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，谢柠的私信图标瞬间炸成了一个疯狂闪烁的红点",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -11233,7 +11235,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，她的速度暴跌，持续了足足五秒钟",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -11359,7 +11361,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "她猛地抬头，瞳孔骤缩",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -11450,7 +11452,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "蒂奇沉默片刻，大笑道：“哈哈哈兵贵精不贵多",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -11527,7 +11529,7 @@
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而林驰最不怕别人跟他比速度",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -11604,7 +11606,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "谢柠头皮发麻，起了一身鸡皮疙瘩",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -11772,7 +11774,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "陆沉看着凯特的背影，目光深邃",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -11877,7 +11879,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "他嘴角上扬，露出个真心实意开心的笑",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -11919,7 +11921,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "文打量了好一会，这才缓缓开口：“薛伯陵",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -11975,7 +11977,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "她咬着嘴唇，眼神复杂",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -12010,7 +12012,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "方挤压过来，又在下一秒轰然炸开",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -12024,7 +12026,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "邻居们再次议论纷纷",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -12108,7 +12110,7 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "谢柠深吸一口气，快速思考对策",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -12129,7 +12131,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "这看的陈景承有些头皮发麻了，怀疑自己是不是脸上没",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -12185,7 +12187,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "听完以后沉思了片刻，缓缓开口说道：“借助日寇的海军力量是步险",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -12367,7 +12369,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "是何人特意禀报，只是后宫议论纷纷，难免落人口实",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -12430,14 +12432,14 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "谢柠眉头微皱：“未知之路",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚少野眉头微皱，手中寒光一闪，千星出现在手",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -12493,7 +12495,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "戈林当机立断，立刻做出战术调整",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -12549,14 +12551,14 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "惊愕的眼神中，李学文缓缓开口：“一获得了日寇的军援，补足了我",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "己的话，便不再多说什么，转身离开了这里",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -12577,7 +12579,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "众人面面相觑",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -12710,7 +12712,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "她这样让我总觉得哪里不对劲，你帮我分析一下好吗",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -12787,7 +12789,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，刘恩官试探性的问道：“通电下",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -12801,14 +12803,14 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，伴随着刺耳的破风声，一道银光闪过",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "凌玲倒吸一口凉气，那时陈俊生不答应她的条",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -12878,7 +12880,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "人群重新议论纷纷",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -12955,7 +12957,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "谢柠嘴角一勾，大运重卡引擎发出野兽般的咆哮，直奔",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -12969,7 +12971,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "谢柠瞬间头皮发麻，她刚想逃跑，却发现那五",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -12990,14 +12992,14 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "待宫人扶稳她，才缓缓开口：“你刚生产完，身子亏虚，好生休",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "叶七言收回脚，正要转身离开时，忽然注意在这骸骨身下存在着一",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -13018,7 +13020,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "赵鹏飞虽然嘴角上扬，但并没有沉醉在新兵们的夸赞声里，而",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -13032,14 +13034,14 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "了一口气，柳清对着电话，沉默片刻后，轻轻叹息，道：“倩姐，你确定",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "陌生的天花板，熟悉的话术",
-      "human_expr": "岑厌晃了晃脑袋清醒过来，对着菜鸟玩家们说：“回寝室",
+      "human_expr": "{xx}晃了晃脑袋清醒过来，对着菜鸟玩家们说：“回寝室",
       "source": "harvested"
     },
     {
@@ -13067,14 +13069,14 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，谢柠浑身一激灵",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "想到这，陈长生当即准备转身离开",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -13214,7 +13216,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "大家围在一起，指指点点，议论纷纷",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -13228,7 +13230,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，她的速度暴跌，持续了足足五秒钟",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -13284,7 +13286,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "谢柠瞬间头皮发麻，她刚想逃跑，却发现那五",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -13312,7 +13314,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "蒂奇沉默片刻，大笑道：“哈哈哈兵贵精不贵多",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -13375,7 +13377,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，谢柠浑身一激灵",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -13403,7 +13405,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "江揽月恍然大悟：原来结晶石是这么用的",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -13501,7 +13503,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "他缓缓开口，声音低得只有自己能听见，带着一",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -13620,7 +13622,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "太后见状，缓缓开口提起后宫选秀之事，言后宫妃嫔单薄",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -13753,7 +13755,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "陈景承眉头微皱，眼睛里也闪过一丝冰冷，看着",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -13802,7 +13804,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，满屏都是竞价的信息",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -13970,7 +13972,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "发问，只是沉吟片刻，目光深邃打量了他良久",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -13998,7 +14000,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "杨逸头皮发麻，身体微颤",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -14026,7 +14028,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "取而代之的是一种让人头皮发麻的酥痒",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -14082,7 +14084,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "目光幽深，其中似乎闪烁着一些复杂的神采",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -14096,7 +14098,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "卡蜜拉目光一凝，声音中带着些许凝重：“光之……巨人",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -14201,7 +14203,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "是何人特意禀报，只是后宫议论纷纷，难免落人口实",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -14236,7 +14238,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "高，眼窝处的阴影几乎覆盖了他琥珀色的瞳孔",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -14285,21 +14287,21 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "罗子君缓缓说道:“既然你在录音里多次跟凌玲保证",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "系统沉默片刻，直接弹出属性点选择面板，让她分",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "柳清眉头微皱，声音有些说不出的复杂了起来",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -14334,7 +14336,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "叶七言收回脚，正要转身离开时，忽然注意在这骸骨身下存在着一",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -14383,7 +14385,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，刘恩官试探性的问道：“通电下",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -14404,7 +14406,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "瞳孔涣散的那一秒，邮差的双眼惊惧地瞪大了",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -14432,7 +14434,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "这看的陈景承有些头皮发麻了，怀疑自己是不是脸上没",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -14467,14 +14469,14 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "她深吸一口气，不退反进，朝着歼灭者冲了过去",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "有人倒吸一口凉气，更多的人则不以为意，觉",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -14558,14 +14560,14 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "屋内沉默片刻，胤禛才缓缓开口：“宫内不比潜邸",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "看着几人满脸渴求，李右沉默片刻，又掏出几根蟑螂蛋白棒分给了他们",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -14607,7 +14609,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "沈湄转身离开了明镜的办公室",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -14635,7 +14637,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "将人蒸发的攻击，下一秒就会落到自己头上",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -14649,7 +14651,7 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "只能无奈的摇摇头，她深吸一口气，大声喊道:“别吵了",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -14684,7 +14686,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，陈长生转身离开，同时还挥了挥手说道",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -14789,7 +14791,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "罗子君缓缓说道:“既然你在录音里多次跟凌玲保证",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -14852,7 +14854,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "他看着卫生队陌生的天花板，第一个念头不是我在哪里",
-      "human_expr": "长珏的好感度提醒，沈湄猛地清醒过来，从训练课程中退出",
+      "human_expr": "长珏的好感度提醒，{xx}猛地清醒过来，从训练课程中退出",
       "source": "harvested"
     },
     {
@@ -14950,7 +14952,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "谢柠头皮发麻，起了一身鸡皮疙瘩",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -15062,7 +15064,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "陌生的天花板，熟悉的话术",
-      "human_expr": "向骑，马小帅的脑子才算彻底清醒过来",
+      "human_expr": "{xx}，{xx}的脑子才算彻底清醒过来",
       "source": "harvested"
     },
     {
@@ -15118,7 +15120,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "敌人的第一道防线后，威廉当机立断，果断下令投入更多的兵力扩大",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -15202,7 +15204,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "没想到李学文会这么直接，沉默片刻后，依旧维持着礼貌的微笑：“李司",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -15307,7 +15309,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "周浩瞳孔猛地一缩：“你这破重卡怎么可能这么快",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -15384,7 +15386,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "侍从室主任钱大军只感觉头皮发麻，如果不是今天自己当值",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -15489,7 +15491,7 @@
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而，她却总能在最短的时间内找回重心，再撑回来",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -15538,14 +15540,14 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "他深吸一口气，压了压心里的火气，“好了，这件事我知道了，总算当时没有",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "微微刺痛，记忆如潮水般涌来，许博很快整理好了当下的情况",
-      "human_expr": "岑厌晃了晃脑袋清醒过来，对着菜鸟玩家们说：“回寝室",
+      "human_expr": "{xx}晃了晃脑袋清醒过来，对着菜鸟玩家们说：“回寝室",
       "source": "harvested"
     },
     {
@@ -15559,7 +15561,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "叶力至不再犹豫，直接大脚步跑去",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -15643,7 +15645,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "交易区提了出来，下一秒脑中传来了一道声音",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -15699,7 +15701,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "这看的陈景承有些头皮发麻了，怀疑自己是不是脸上没",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -15776,7 +15778,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "语毕，站起身来转身离开，把空间还给害怕但能吃的绵绵松鼠",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -15818,7 +15820,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "在院子里忙活的背影，眼神复杂",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -15839,7 +15841,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "棺材收进了系统空间，从而转身离开了这间呆了四十三年的棺材铺",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -15867,7 +15869,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "钟临瞳孔紧缩，左手举起圆盾，狠狠砸向猎枪的枪",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -15937,7 +15939,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "高，眼窝处的阴影几乎覆盖了他琥珀色的瞳孔",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -16035,7 +16037,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，谢柠的私信图标瞬间炸成了一个疯狂闪烁的红点",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -16063,7 +16065,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，她回到了旅游餐车",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -16154,7 +16156,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，松本秀明缓缓说道：“帝国为兰",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -16189,7 +16191,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "鳞片摩擦声汇聚成令人头皮发麻的震颤，数量之多，足以让",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -16350,7 +16352,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，左皇转身离开了",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -16392,14 +16394,14 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "谢柠下意识地望向窗外，瞳孔微微一缩",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
       "category": "设定呈现",
       "meaning": "系统提示/面板弹出",
       "ai_expr": "系统冰冷的机械音随即响起，不带丝毫情绪：“此人命数已",
-      "human_expr": "温苓笑了笑，正准备继续开车，系统又响了",
+      "human_expr": "{xx}笑了笑，正准备继续开车，系统又响了",
       "source": "harvested"
     },
     {
@@ -16427,7 +16429,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "众人面面相觑，似乎觉得很有道理",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -16511,7 +16513,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "钟临眉头微皱",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -16581,7 +16583,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "么、该怎么破解，下一秒，他看到她仰头闷了一瓶药水",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -16609,7 +16611,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "宫里宫人私下议论纷纷，都说华妃恃宠而骄，气焰滔天",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -16665,7 +16667,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，1600金到账了",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -16700,7 +16702,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，1600金到账了",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -16742,7 +16744,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "灯光下，那金属物的反光恰好刺入龚煜的瞳孔，晃了他的眼",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -16798,7 +16800,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "在被子里蜷成一团的背影，总觉得哪里不对劲",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -16833,7 +16835,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "向白野的眼神变了又变，他沉默片刻：“我可以帮你解决鬣狗群",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -16875,7 +16877,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "苏诺寒见状嘴角一勾，“看来晚上又有得加餐了",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -16966,7 +16968,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，陈长生转身离开了破旧的上清观",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -16994,7 +16996,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "李知沉默片刻：“如果没有刚才的事情，我可能愿",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -17050,14 +17052,14 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "柳清眉头微皱，声音有些说不出的复杂了起来",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "杨逸头皮发麻，身体微颤",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -17120,7 +17122,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，别墅里面的景象，让谢柠呼吸一滞",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -17148,14 +17150,14 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "赵大虎靠在沙发背上，缓缓开口，目光落在李安平身上，“这事你应",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "一种不祥的预感油然而生",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -17204,7 +17206,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，刘恩官试探性的问道：“通电下",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -17232,7 +17234,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "小世恍然大悟：“他用的双头弹，直接换了我的六",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -17253,7 +17255,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "么、该怎么破解，下一秒，他看到她仰头闷了一瓶药水",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -17295,7 +17297,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "霜月转身离开溶洞，就在它即将踏出水潭时，脚下",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -17316,7 +17318,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "陆沉看着凯特的背影，目光深邃",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -17344,7 +17346,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "系统沉默片刻，直接弹出属性点选择面板，让她分",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -17379,7 +17381,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚清瑶眉头微皱，脸上带着忧虑，她虽然性格大",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -17484,7 +17486,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "霜月转身离开溶洞，就在它即将踏出水潭时，脚下",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -17505,7 +17507,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "扎石榴是什么，老观众已经嘴角上扬了",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -17582,14 +17584,14 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "棺材收进了系统空间，从而转身离开了这间呆了四十三年的棺材铺",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "岑厌恍然大悟",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -17631,7 +17633,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "谢柠瞳孔猛地收缩，嘴巴张的老大",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -17645,7 +17647,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "为了保住性命，那位灵主当机立断，立刻解除了与爆裂熔岩蚁的契",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -17785,7 +17787,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "待宫人扶稳她，才缓缓开口：“你刚生产完，身子亏虚，好生休",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -17876,7 +17878,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，李念生转身离开了",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -17911,7 +17913,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "钟临瞳孔微缩",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -17939,7 +17941,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "绒族族长沉默片刻，叹息道：“……做",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -17967,7 +17969,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "王差拨听完，恍然大悟地点了点头",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -17995,7 +17997,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "许博的嘴角微微上扬",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -18023,7 +18025,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "着对他们笑，结果下一秒就发现林驰被埋进了人堆里",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -18065,7 +18067,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "穆宁沉默片刻，缓缓放下手中药碗，反倒扬起一抹",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -18093,7 +18095,7 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "原，皱了皱眉头，暗暗想道：果然没那么容易，泉水的效果还是不能完全替代药物",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -18128,7 +18130,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "这样的场景让菜鸟玩家们头皮发麻",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -18156,7 +18158,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "众人面面相觑",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -18184,7 +18186,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "柳清眉头微皱，声音有些说不出的复杂了起来",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -18198,7 +18200,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "叶七言收回脚，正要转身离开时，忽然注意在这骸骨身下存在着一",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -18254,7 +18256,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "苏诺寒挑了挑眉，嘴角上扬",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -18310,7 +18312,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "凌玲倒吸一口凉气，那时陈俊生不答应她的条",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -18359,7 +18361,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "谢柠瞳孔一缩，这绝对不是普通丧尸",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -18394,7 +18396,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "钟临眉头微皱",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -18478,7 +18480,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "凌玲听完后，她才恍然大悟，陈俊生不是旧情难忘，也不是老实",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -18541,7 +18543,7 @@
       "category": "设定呈现",
       "meaning": "系统提示/面板弹出",
       "ai_expr": "熟悉的光幕浮现眼前",
-      "human_expr": "温苓笑了笑，正准备继续开车，系统又响了",
+      "human_expr": "{xx}笑了笑，正准备继续开车，系统又响了",
       "source": "harvested"
     },
     {
@@ -18583,14 +18585,14 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "叹了口气，不再多说什么，转身离开了",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "鳞片摩擦声汇聚成令人头皮发麻的震颤，数量之多，足以让",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -18653,7 +18655,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，松本秀明缓缓说道：“帝国为兰",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -18681,7 +18683,7 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "她脑海中闪过关于长珏的剧情，一时心中也多了几分憋闷",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -18709,7 +18711,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "而这时候，李素梅眉头微皱，拍了拍陈大川的后背，摇头道",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -18730,14 +18732,14 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "雷克斯心中暗道",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "好半晌以后，老人缓缓开口：“你的意思是，不急着要名分",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -18765,7 +18767,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "谢柠嘴角一勾，大运重卡引擎发出野兽般的咆哮，直奔",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -18814,7 +18816,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "沈思晴看着那口锅，总觉得哪里不对劲，但中午那盘清蒸鱼的震",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -18849,7 +18851,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚少野眉头微皱，手中寒光一闪，千星出现在手",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -18877,7 +18879,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "村民们议论纷纷，不过大多在劝导苏诺寒坐诊",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -18940,7 +18942,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "萧临不再犹豫，快速前往三号走廊尽头的转角，背",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -18968,7 +18970,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "李知沉默片刻：“如果没有刚才的事情，我可能愿",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -18982,7 +18984,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "韩局长眉头微皱，把手中的麻将直接扔在了桌子",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -19038,7 +19040,7 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "裴青靠在椅背上，脑海中浮现出白天在西市的场景",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -19129,7 +19131,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "谢柠眉头微皱：“未知之路",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -19185,14 +19187,14 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "谢柠深吸一口气，迈步走上石台，站到了中央的法阵上",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "罗战天抬手打断了他，目光深邃",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -19220,14 +19222,14 @@
       "category": "设定呈现",
       "meaning": "系统提示/面板弹出",
       "ai_expr": "还不等求生者消化完更新内容，冰冷的机械音再次响起",
-      "human_expr": "温苓笑了笑，正准备继续开车，系统又响了",
+      "human_expr": "{xx}笑了笑，正准备继续开车，系统又响了",
       "source": "harvested"
     },
     {
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "沈湄脑海中闪过这个名字",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -19248,7 +19250,7 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "谢柠深吸一口气，把心一横",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -19276,7 +19278,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "总觉得哪里不对，但细细想来，李学文话里",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -19290,7 +19292,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "周浩瞳孔猛地一缩：“你这破重卡怎么可能这么快",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -19353,7 +19355,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "没有心动和心疼，反而，还眉头微皱，有了一丝，丢人的感觉",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -19458,7 +19460,7 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "钟临深吸一口气",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -19493,7 +19495,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "李右看的头皮发麻，要不是觉得场合不合适",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -19521,7 +19523,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "鳞片摩擦声汇聚成令人头皮发麻的震颤，数量之多，足以让",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -19542,7 +19544,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "她说“顿顿管饱”的时候，嘴角微微上翘，像话里还藏着话",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -19661,7 +19663,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "李右目光如炬道",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -19731,7 +19733,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "警察同志，”李安平眉头微皱，目光落在章丽丽渗血的伤口和",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -19752,7 +19754,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "谢柠眉头微皱：“未知之路",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -19780,7 +19782,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，谢柠将唐刀收入了背包中，跟着车载音乐哼唱起来",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -19857,7 +19859,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "文打量了好一会，这才缓缓开口：“薛伯陵",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -19878,14 +19880,14 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚清瑶接过令牌，眉头微皱，“我哥哥的令牌呢，他的无垢",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，陈长生转身离开，同时还挥了挥手说道",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -19976,14 +19978,14 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "粟陌当机立断，就要扯断鱼线，把现在钓的东",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，别墅里面的景象，让谢柠呼吸一滞",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -20032,7 +20034,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "好半晌以后，老人缓缓开口：“你的意思是，不急着要名分",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -20046,7 +20048,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "方挤压过来，又在下一秒轰然炸开",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -20081,7 +20083,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，伴随着刺耳的破风声，一道银光闪过",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -20095,14 +20097,14 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "好半晌以后，老人缓缓开口：“你的意思是，不急着要名分",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "众人面面相觑，“小鹅",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -20144,7 +20146,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "和蒸汽的热浪扑面而来，眼前的景象让她瞳孔骤缩",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -20249,7 +20251,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "他看着卫生队陌生的天花板，第一个念头不是我在哪里",
-      "human_expr": "岑厌晃了晃脑袋清醒过来，对着菜鸟玩家们说：“回寝室",
+      "human_expr": "{xx}晃了晃脑袋清醒过来，对着菜鸟玩家们说：“回寝室",
       "source": "harvested"
     },
     {
@@ -20368,7 +20370,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "毫不掩饰的欣喜样子，眼神复杂",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -20382,7 +20384,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "充满祈求的话语，李晓生的嘴角上扬",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -20424,7 +20426,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "凌初也没想打扰它，默默地转身离开",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -20466,7 +20468,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "裴念卿看到那一幕，头皮发麻“靠",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -20487,7 +20489,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "这样的场景让菜鸟玩家们头皮发麻",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -20515,7 +20517,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，谢柠浑身一激灵",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -20557,7 +20559,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "沈湄顿觉头皮发麻，脸上霎时白得没有一丝血",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -20620,7 +20622,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "许博的嘴角微微上扬",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -20655,7 +20657,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "陆宇头皮发麻：“妈的，这玩意儿长得也",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -20676,7 +20678,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "狐族少女当机立断，飞快扑入帐篷，拿出个兽皮囊",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -20718,14 +20720,14 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "忆起当时的阵法，脑海中闪过的只有满天的血色",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "那辆简陋至极的马车，瞬间恍然大悟，也觉自己刚才问得愚笨",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -20774,7 +20776,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "他抬眼看向赵大虎，缓缓开口：“其实解局的关键，还是在于沟通",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -20788,7 +20790,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "李县长眉头微皱，随后看向了高主任，然后想了",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -20809,7 +20811,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "起手，打断了她的话，缓缓说道：“她不适合在宫里生活",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -20851,7 +20853,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "绒族族长沉默片刻，叹息道：“……做",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -20879,7 +20881,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "少野所在的树下时，楚少野当机立断，把网撒了下去",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -21082,7 +21084,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "脑袋微微刺痛，记忆如潮水般涌来，许博很快整理好了当下的",
-      "human_expr": "岑厌晃了晃脑袋清醒过来，对着菜鸟玩家们说：“回寝室",
+      "human_expr": "{xx}晃了晃脑袋清醒过来，对着菜鸟玩家们说：“回寝室",
       "source": "harvested"
     },
     {
@@ -21103,7 +21105,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "工作人员客客气气说完，转身离开了",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -21236,7 +21238,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "谢柠嘴角一勾，大运重卡引擎发出野兽般的咆哮，直奔",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -21313,14 +21315,14 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "卡蜜拉目光一凝，声音中带着些许凝重：“光之……巨人",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "钟临捕捉到了她瞳孔中那转瞬即逝的紧缩，以及身体下意识绷",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -21355,7 +21357,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，她的速度暴跌，持续了足足五秒钟",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -21432,7 +21434,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "陈景承眉头微皱，眼睛里也闪过一丝冰冷，看着",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -21446,7 +21448,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "脑袋微微刺痛，记忆如潮水般涌来，许博很快整理好了当下的",
-      "human_expr": "长珏的好感度提醒，沈湄猛地清醒过来，从训练课程中退出",
+      "human_expr": "长珏的好感度提醒，{xx}猛地清醒过来，从训练课程中退出",
       "source": "harvested"
     },
     {
@@ -21460,7 +21462,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "柳清眉头微皱，声音有些说不出的复杂了起来",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -21544,7 +21546,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "齐原恍然大悟：原来如此",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -21572,7 +21574,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "穆宁沉默片刻，缓缓放下手中药碗，反倒扬起一抹",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -21593,7 +21595,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "警察同志，”李安平眉头微皱，目光落在章丽丽渗血的伤口和",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -21649,7 +21651,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "穆宁沉默片刻，缓缓放下手中药碗，反倒扬起一抹",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -21670,7 +21672,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，那群丧尸像潮水一样涌了过来",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -21691,7 +21693,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "黑影丧尸缓缓开口，声音沙哑低沉：“人类.....",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -21712,7 +21714,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "看着几人满脸渴求，李右沉默片刻，又掏出几根蟑螂蛋白棒分给了他们",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -21740,7 +21742,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "龟老转身离开，狼王的脸色也冷了下来",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -21754,7 +21756,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "他抬眼看向赵大虎，缓缓开口：“其实解局的关键，还是在于沟通",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -21782,7 +21784,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "总觉得哪里不对，但细细想来，李学文话里",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -21817,7 +21819,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "么、该怎么破解，下一秒，他看到她仰头闷了一瓶药水",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -21852,7 +21854,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "棺材收进了系统空间，从而转身离开了这间呆了四十三年的棺材铺",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -21873,7 +21875,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "开车门爬了上去，内饰更是让她倒吸一口凉气",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -21915,7 +21917,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "她不再犹豫，点击“接取委托",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -21936,7 +21938,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "他眼神复杂地看着沈湄的侧脸，短短几天时间，怎么",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -21957,14 +21959,14 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "人群重新议论纷纷",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "乱七八糟的，他眯着眼睛，嘴角微微上翘，不知道在想什么，也不知道有没有在想",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -22013,7 +22015,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "他缓缓开口，声音低得只有自己能听见，带着一",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -22062,7 +22064,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，那群丧尸像潮水一样涌了过来",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -22139,7 +22141,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "微微刺痛，记忆如潮水般涌来，许博很快整理好了当下的情况",
-      "human_expr": "马小帅瞬间清醒过来",
+      "human_expr": "{xx}瞬间清醒过来",
       "source": "harvested"
     },
     {
@@ -22188,14 +22190,14 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "他不再犹豫，划破手指滴血烙印",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "谢柠瞳孔一缩，想都没想就挂上倒档，猛踩油门",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -22230,7 +22232,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "向白野的眼神变了又变，他沉默片刻：“我可以帮你解决鬣狗群",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -22244,7 +22246,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "起手，打断了她的话，缓缓说道：“她不适合在宫里生活",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -22265,7 +22267,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "当看见属性时，谢柠倒吸一口凉气",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -22335,7 +22337,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，宝箱猛地一颤",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -22349,7 +22351,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "警察同志，”李安平眉头微皱，目光落在章丽丽渗血的伤口和",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -22370,7 +22372,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "苏诺寒挑了挑眉，嘴角上扬",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -22412,7 +22414,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "断渗落粘稠的血珠，看着就让人背脊发寒",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -22440,7 +22442,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "在被子里蜷成一团的背影，总觉得哪里不对劲",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -22699,7 +22701,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "屋内沉默片刻，胤禛才缓缓开口：“宫内不比潜邸",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -22790,14 +22792,14 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "男人缓缓说道，“你知道那条路上有什么吗",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而他一个都没抓住，足球技术在大脑中如滑滑梯一般溜走",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -22839,14 +22841,14 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "陆宇头皮发麻：“妈的，这玩意儿长得也",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "赵鹏飞虽然嘴角上扬，但并没有沉醉在新兵们的夸赞声里，而",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -22895,14 +22897,14 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "叹了口气，不再多说什么，转身离开了",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "取而代之的是一种让人头皮发麻的酥痒",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -23042,7 +23044,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "有不少灰尘，粟陌也忍不住嘴角上扬，高兴的握了握手，试着跳了一下",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -23091,7 +23093,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "一种不祥的预感油然而生",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -23112,7 +23114,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "有人倒吸一口凉气，更多的人则不以为意，觉",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -23343,14 +23345,14 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "苏诺寒挑了挑眉，嘴角上扬",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "凌初也没想打扰它，默默地转身离开",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -23448,7 +23450,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "钟临瞳孔紧缩，左手举起圆盾，狠狠砸向猎枪的枪",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -23588,7 +23590,7 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "齐原心中暗道",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -23616,14 +23618,14 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "雨后晴光、马场青草，缓缓开口",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "许博的嘴角微微上扬",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -23882,14 +23884,14 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "李知沉默片刻：“如果没有刚才的事情，我可能愿",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "而这时候，李素梅眉头微皱，拍了拍陈大川的后背，摇头道",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -23903,7 +23905,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "裴愿一脸恍然大悟“这是好心大哥哥",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -23924,7 +23926,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "待宫人扶稳她，才缓缓开口：“你刚生产完，身子亏虚，好生休",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -23945,7 +23947,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，宝箱猛地一颤",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -23959,7 +23961,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "了一口气，柳清对着电话，沉默片刻后，轻轻叹息，道：“倩姐，你确定",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -23994,7 +23996,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "在院子里忙活的背影，眼神复杂",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -24099,7 +24101,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚少野眉头微皱，手中寒光一闪，千星出现在手",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -24120,7 +24122,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "将人蒸发的攻击，下一秒就会落到自己头上",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -24148,7 +24150,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "钟临的瞳孔兴奋地放大，她俯身避过这一拳，一个上",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -24190,7 +24192,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "充满祈求的话语，李晓生的嘴角上扬",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -24323,7 +24325,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "在被子里蜷成一团的背影，总觉得哪里不对劲",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -24344,7 +24346,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "韩局长眉头微皱，把手中的麻将直接扔在了桌子",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -24372,21 +24374,21 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "开车门爬了上去，内饰更是让她倒吸一口凉气",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "这看的陈景承有些头皮发麻了，怀疑自己是不是脸上没",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "过了大约一分钟，谢柠深吸一口气，试着握了握拳",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -24428,14 +24430,14 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "谢柠瞳孔微缩，还有额外收获",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "向白野的眼神变了又变，他沉默片刻：“我可以帮你解决鬣狗群",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -24484,7 +24486,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "他沉默片刻，小心翼翼的开口道：“假设人能活",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -24575,7 +24577,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "到水玲珑沉默不语，李念生嘴角上扬道",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -24631,7 +24633,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "没想到李学文会这么直接，沉默片刻后，依旧维持着礼貌的微笑：“李司",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -24701,7 +24703,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "她顿时头皮发麻，连滚带爬回到涂身边",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -24743,7 +24745,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "街坊邻居们你一言我一语，议论纷纷，唾沫星子都快把林婉芳母女淹",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -24799,7 +24801,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "苏婉柔看得头皮发麻",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -24813,7 +24815,7 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "她深吸一口气，唐刀用力一挑",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -24827,7 +24829,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "她嘴角上扬打开微信，然后脸色垮了下来",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -24890,7 +24892,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚清瑶眉头微皱，脸上带着忧虑，她虽然性格大",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -24953,7 +24955,7 @@
       "category": "设定呈现",
       "meaning": "系统提示/面板弹出",
       "ai_expr": "着太奶奶跑去，脑海中响起系统机械的提示音",
-      "human_expr": "温苓笑了笑，正准备继续开车，系统又响了",
+      "human_expr": "{xx}笑了笑，正准备继续开车，系统又响了",
       "source": "harvested"
     },
     {
@@ -25023,14 +25025,14 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "得了准话，穆宁不再犹豫，当即抬步，径直走进了待选偏殿",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，松本秀明缓缓说道：“帝国为兰",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -25100,7 +25102,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "尊贵的女士轻叹了一声，转身离开了人群",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -25142,7 +25144,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "陌生的天花板，熟悉的话术",
-      "human_expr": "长珏的好感度提醒，沈湄猛地清醒过来，从训练课程中退出",
+      "human_expr": "长珏的好感度提醒，{xx}猛地清醒过来，从训练课程中退出",
       "source": "harvested"
     },
     {
@@ -25219,7 +25221,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "李右目光如炬道",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -25268,7 +25270,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "谢柠头皮发麻，起了一身鸡皮疙瘩",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -25324,14 +25326,14 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "他沉默片刻，小心翼翼的开口道：“假设人能活",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "一出，人群霎时安静下来，众人面面相觑",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -25387,7 +25389,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "到水玲珑沉默不语，李念生嘴角上扬道",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -25506,7 +25508,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "总觉得哪里不对，但细细想来，李学文话里",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -25534,7 +25536,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "乱七八糟的，他眯着眼睛，嘴角微微上翘，不知道在想什么，也不知道有没有在想",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -25562,7 +25564,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "杨逸头皮发麻，身体微颤",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -25597,7 +25599,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "村民们议论纷纷，不过大多在劝导苏诺寒坐诊",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -25611,7 +25613,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "有不少灰尘，粟陌也忍不住嘴角上扬，高兴的握了握手，试着跳了一下",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -25674,21 +25676,21 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "褪去，转而凝起几分深思，沉默片刻后，才缓缓开口，语气里多了几分深",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "绒族族长沉默片刻，叹息道：“……做",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "面对曲谭风的问题，岑厌嘴角上扬，露出个难以捉摸的笑容",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -25723,7 +25725,7 @@
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而，在前排队列中，一名身材尤为高大挺拔的男战士，眼神却与其他人不同",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -25758,7 +25760,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "系统沉默片刻，直接弹出属性点选择面板，让她分",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -25772,7 +25774,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "儒生们议论纷纷，有疑心谢铸被策反的，也有坚",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -25793,7 +25795,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，李念生转身离开了",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -25807,7 +25809,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚清瑶接过令牌，眉头微皱，“我哥哥的令牌呢，他的无垢",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -25828,7 +25830,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "他缓缓开口，声音低得只有自己能听见，带着一",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -25849,7 +25851,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "她看着格雷格，眼神复杂难明",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -25884,7 +25886,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "闻言，狼王嘴角微微上扬，笑道：“好一颗真心，就冲你这颗真心",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -25905,14 +25907,14 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "赵大虎靠在沙发背上，缓缓开口，目光落在李安平身上，“这事你应",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "那熟悉的房子，陈长生不由嘴角上扬了一下，随后开口道：“请问念慈在吗",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -25926,7 +25928,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "尔出现的细声低语更是让人头皮发麻",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -25940,7 +25942,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "没想到李学文会这么直接，沉默片刻后，依旧维持着礼貌的微笑：“李司",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -25968,7 +25970,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "黑影丧尸缓缓开口，声音沙哑低沉：“人类.....",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -25989,7 +25991,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "罗战天抬手打断了他，目光深邃",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -26010,7 +26012,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "凌初也没想打扰它，默默地转身离开",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -26024,7 +26026,7 @@
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "一股敬意油然而生",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -26066,7 +26068,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "罗子君缓缓说道:“既然你在录音里多次跟凌玲保证",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -26094,7 +26096,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "己的话，便不再多说什么，转身离开了这里",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -26164,7 +26166,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "外面的徐之圭听得头皮发麻",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -26199,7 +26201,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "屋内沉默片刻，胤禛才缓缓开口：“宫内不比潜邸",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -26332,7 +26334,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，满屏都是竞价的信息",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -26353,7 +26355,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "田果不再犹豫，运起自己全身的精神力，猛地发起",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -26367,7 +26369,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，刘恩官试探性的问道：“通电下",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -26444,7 +26446,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "太后见状，缓缓开口提起后宫选秀之事，言后宫妃嫔单薄",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -26549,7 +26551,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "发问，只是沉吟片刻，目光深邃打量了他良久",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -26570,7 +26572,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "看着几人满脸渴求，李右沉默片刻，又掏出几根蟑螂蛋白棒分给了他们",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -26619,7 +26621,7 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "钟临深吸一口气，将重心放低，微闭上眼，用精神感受着自己的每一寸血肉",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -26661,7 +26663,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "他嘴角上扬，露出个真心实意开心的笑",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -26689,7 +26691,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "不然朝臣们怕是要借着这事议论纷纷，追问缘由",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -26766,7 +26768,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "深思，沉默片刻后，才缓缓开口，语气里多了几分深意：“难怪……",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -26864,14 +26866,14 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "李知沉默片刻：“如果没有刚才的事情，我可能愿",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "文打量了好一会，这才缓缓开口：“薛伯陵",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -26990,14 +26992,14 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "交易区提了出来，下一秒脑中传来了一道声音",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "疯狂狗叫的小白狼，陈长生嘴角微微上扬，随后大步走向夜月国招亲现场",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -27011,14 +27013,14 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "她顿时头皮发麻，连滚带爬回到涂身边",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "外面的徐之圭听得头皮发麻",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -27046,7 +27048,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "不然朝臣们怕是要借着这事议论纷纷，追问缘由",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -27060,14 +27062,14 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "断渗落粘稠的血珠，看着就让人背脊发寒",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "蒂奇沉默片刻，大笑道：“哈哈哈兵贵精不贵多",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -27109,14 +27111,14 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "听完以后沉思了片刻，缓缓开口说道：“借助日寇的海军力量是步险",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "蒂奇沉默片刻，大笑道：“哈哈哈兵贵精不贵多",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -27200,7 +27202,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，陈长生转身离开了破旧的上清观",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -27235,7 +27237,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "李知顿时头皮发麻",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -27333,7 +27335,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "他沉默片刻，小心翼翼的开口道：“假设人能活",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -27361,7 +27363,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "沉默片刻后，刘恩官终于开了口：“你...",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -27459,7 +27461,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "苏婉柔看得头皮发麻",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -27487,7 +27489,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "他嘴角上扬，露出个真心实意开心的笑",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -27529,7 +27531,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "惊愕的眼神中，李学文缓缓开口：“一获得了日寇的军援，补足了我",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -27592,7 +27594,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "他抬眼看向赵大虎，缓缓开口：“其实解局的关键，还是在于沟通",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -27634,7 +27636,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "微微刺痛，记忆如潮水般涌来，许博很快整理好了当下的情况",
-      "human_expr": "向骑，马小帅的脑子才算彻底清醒过来",
+      "human_expr": "{xx}，{xx}的脑子才算彻底清醒过来",
       "source": "harvested"
     },
     {
@@ -27718,14 +27720,14 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "他不再犹豫，当即运转法力，张嘴将一口口精气",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而着急没用，他根本碰不到球，谈何……",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -27781,7 +27783,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "杨逸头皮发麻，身体微颤",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -27795,7 +27797,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "太后见状，缓缓开口提起后宫选秀之事，言后宫妃嫔单薄",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -27837,7 +27839,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "赵大虎靠在沙发背上，缓缓开口，目光落在李安平身上，“这事你应",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -27865,7 +27867,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "和蒸汽的热浪扑面而来，眼前的景象让她瞳孔骤缩",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -27886,14 +27888,14 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "胤禛心头掠过一丝不忍，沉默片刻开口：“欢宜香味重，你怀相弱，别",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，宝箱猛地一颤",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -27914,7 +27916,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "深思，沉默片刻后，才缓缓开口，语气里多了几分深意：“难怪……",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -27942,7 +27944,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，那群丧尸像潮水一样涌了过来",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -27956,7 +27958,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "褪去，转而凝起几分深思，沉默片刻后，才缓缓开口，语气里多了几分深",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -28019,7 +28021,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "宫里宫人私下议论纷纷，都说华妃恃宠而骄，气焰滔天",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -28166,21 +28168,21 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "钟临瞳孔微缩",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "面对曲谭风的问题，岑厌嘴角上扬，露出个难以捉摸的笑容",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "沉默片刻后，松本秀明缓缓说道：“帝国为兰芳提供的武器并没有什",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -28201,7 +28203,7 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "谢柠深吸一口气，强迫自己冷静下来",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -28264,14 +28266,14 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "谢柠瞬间头皮发麻，她刚想逃跑，却发现那五",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而，还没等林驰尴尬的情绪升起来，他就看到球门前的布冯动了",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -28285,7 +28287,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "男人缓缓说道，“你知道那条路上有什么吗",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -28348,7 +28350,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "李知顿时头皮发麻",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -28397,14 +28399,14 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，谢柠的私信图标瞬间炸成了一个疯狂闪烁的红点",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "霜月转身离开溶洞，就在它即将踏出水潭时，脚下",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -28418,14 +28420,14 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "他深吸一口气，快步走到办公桌前，拿起听筒，压下声音里的颤抖：“喂，宣",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "乱七八糟的，他眯着眼睛，嘴角微微上翘，不知道在想什么，也不知道有没有在想",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -28481,7 +28483,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "尊贵的女士轻叹了一声，转身离开了人群",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -28495,14 +28497,14 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "雨后晴光、马场青草，缓缓开口",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而，第四枚子弹仍旧擦破了她的腰侧",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -28572,14 +28574,14 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "谢柠下意识地望向窗外，瞳孔微微一缩",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "他沉默片刻，小心翼翼的开口道：“假设人能活",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -28607,7 +28609,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "李县长眉头微皱，随后看向了高主任，然后想了",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -28628,7 +28630,7 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "齐原自我安慰地暗暗想道",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -28698,7 +28700,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "李县长眉头微皱，随后看向了高主任，然后想了",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -28733,7 +28735,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "太后见状，缓缓开口提起后宫选秀之事，言后宫妃嫔单薄",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -28789,7 +28791,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，1600金到账了",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -28803,7 +28805,7 @@
       "category": "设定呈现",
       "meaning": "系统提示/面板弹出",
       "ai_expr": "下一秒，检测仪器冰冷的机械音响起，给出了最终综合评价，“B级",
-      "human_expr": "温苓笑了笑，正准备继续开车，系统又响了",
+      "human_expr": "{xx}笑了笑，正准备继续开车，系统又响了",
       "source": "harvested"
     },
     {
@@ -28824,7 +28826,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "沉默片刻后，松本秀明缓缓说道：“帝国为兰芳提供的武器并没有什",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -28852,21 +28854,21 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "微微刺痛，记忆如潮水般涌来，许博很快整理好了当下的情况",
-      "human_expr": "长珏的好感度提醒，沈湄猛地清醒过来，从训练课程中退出",
+      "human_expr": "长珏的好感度提醒，{xx}猛地清醒过来，从训练课程中退出",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "尔出现的细声低语更是让人头皮发麻",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "惊愕的眼神中，李学文缓缓开口：“一获得了日寇的军援，补足了我",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -29034,7 +29036,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "扎石榴是什么，老观众已经嘴角上扬了",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -29118,14 +29120,14 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "谢柠深吸一口气，身形一闪，直接冲进了矿室",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "赵鹏飞虽然嘴角上扬，但并没有沉醉在新兵们的夸赞声里，而",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -29216,7 +29218,7 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "楚少野哭笑不得，心中暗道，饭量也需要练吗",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -29440,7 +29442,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "谢柠恍然大悟，她以为击杀了丧尸boss，隐藏",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -29503,7 +29505,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "绒族族长沉默片刻，叹息道：“……做",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -29517,7 +29519,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "工作人员客客气气说完，转身离开了",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
@@ -29580,7 +29582,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "友善倒是看着苏诺寒，眼神复杂，嘴唇动了动，似乎想说什么，但最终只",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -29622,7 +29624,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "儒生们议论纷纷，有疑心谢铸被策反的，也有坚",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -29636,7 +29638,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "街坊邻居们你一言我一语，议论纷纷，唾沫星子都快把林婉芳母女淹",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -29664,14 +29666,14 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "雨后晴光、马场青草，缓缓开口",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "他深吸一口气，用力压下翻涌的思绪，指尖按下开机键",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -29692,7 +29694,7 @@
       "category": "叙事转折",
       "meaning": "但是/然而类转折",
       "ai_expr": "然而，几乎是在同一时刻，意想不到的事情发生了",
-      "human_expr": "该往前凑的，但是机会难得，李学文也就厚着脸皮去磕头了",
+      "human_expr": "该往前凑的，但是机会难得，{xx}也就厚着脸皮去磕头了",
       "source": "harvested"
     },
     {
@@ -29811,7 +29813,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "走到五丫身边后，他却目光一凝，俯身从地上捡起一块石头",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -29881,7 +29883,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "没有心动和心疼，反而，还眉头微皱，有了一丝，丢人的感觉",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -29895,7 +29897,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "这样的场景让菜鸟玩家们头皮发麻",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -29923,7 +29925,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "谢柠眉头微皱",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -30042,7 +30044,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "张景目光一凝",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -30056,14 +30058,14 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，左皇转身离开了",
-      "human_expr": "秦风走过去，居高临下的看着摔了个屁股蹲儿的李家",
+      "human_expr": "{xx}走过去，居高临下的看着摔了个屁股蹲儿的李家",
       "source": "harvested"
     },
     {
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "在东楼经理室里面了，立马恍然大悟",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -30084,7 +30086,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "谢柠眉头微皱：“未知之路",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -30133,7 +30135,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，满屏都是竞价的信息",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -30343,14 +30345,14 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "提起单位，陆霆锋脑海中闪过一个身影，他莫名的不想将自己订婚的消息传到单位",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "这是他脑海中闪过的第一个念头",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -30518,7 +30520,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "李右看的头皮发麻，要不是觉得场合不合适",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -30532,7 +30534,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，她回到了旅游餐车",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -30602,7 +30604,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "随口乱说，没想到金币一副恍然大悟的模样，很信服地点点头：“您说得",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -30693,7 +30695,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "钟临眉头微皱",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -30714,7 +30716,7 @@
       "category": "设定呈现",
       "meaning": "系统提示/面板弹出",
       "ai_expr": "在他的眼中展开，并伴随着一声机械的提示音",
-      "human_expr": "温苓笑了笑，正准备继续开车，系统又响了",
+      "human_expr": "{xx}笑了笑，正准备继续开车，系统又响了",
       "source": "harvested"
     },
     {
@@ -30840,7 +30842,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "钟伟杰恍然大悟，不过凭借他对天禄现在实力的了解",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -30903,7 +30905,7 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "他心中暗道，已下了杀心",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -31057,7 +31059,7 @@
       "category": "设定呈现",
       "meaning": "穿越/醒来反应",
       "ai_expr": "脑袋微微刺痛，记忆如潮水般涌来，许博很快整理好了当下的",
-      "human_expr": "马小帅瞬间清醒过来",
+      "human_expr": "{xx}瞬间清醒过来",
       "source": "harvested"
     },
     {
@@ -31253,7 +31255,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "侍从室主任钱大军只感觉头皮发麻，如果不是今天自己当值",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -31274,7 +31276,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "交易区提了出来，下一秒脑中传来了一道声音",
-      "human_expr": "倒抽冷气的声音，紧接着就骂沈湄，想钱想疯了",
+      "human_expr": "倒抽冷气的声音，紧接着就骂{xx}，想钱想疯了",
       "source": "harvested"
     },
     {
@@ -31316,7 +31318,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "穆宁沉默片刻，缓缓放下手中药碗，反倒扬起一抹",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -31330,7 +31332,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "语毕，站起身来转身离开，把空间还给害怕但能吃的绵绵松鼠",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -31344,7 +31346,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "下一秒，伴随着刺耳的破风声，一道银光闪过",
-      "human_expr": "紧接着，陈长生随口给狐耳娘讲述了一些筑基时的心得感悟",
+      "human_expr": "紧接着，{xx}随口给狐耳娘讲述了一些筑基时的心得感悟",
       "source": "harvested"
     },
     {
@@ -31379,7 +31381,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚清瑶眉头微皱，脸上带着忧虑，她虽然性格大",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -31393,7 +31395,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "张景目光一凝",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -31498,7 +31500,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "不再犹豫，齐原把《迷雾求生手册》翻到庇护",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -31526,7 +31528,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "苏诺寒见状嘴角一勾，“看来晚上又有得加餐了",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -31575,7 +31577,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "沈湄转身离开了明镜的办公室",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -31617,14 +31619,14 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "闻言，狼王嘴角微微上扬，笑道：“好一颗真心，就冲你这颗真心",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "他深吸一口气，压下心底的波澜，抬眼看向司机：“师傅，不去老温城排档了",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -31638,7 +31640,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "殿内宫人尽数退下，才缓缓开口，语气平和：“你放心，我不是那种",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -31680,7 +31682,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "了一口气，柳清对着电话，沉默片刻后，轻轻叹息，道：“倩姐，你确定",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -31694,7 +31696,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "谢柠瞳孔一缩，这绝对不是普通丧尸",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -31743,7 +31745,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "楚少野眉头微皱，手中寒光一闪，千星出现在手",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -31855,14 +31857,14 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "她看着格雷格，眼神复杂难明",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "应先生沉默片刻：“我也不清楚具体内容，我只知道",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -31939,7 +31941,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "谢柠瞬间头皮发麻，她刚想逃跑，却发现那五",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -31953,7 +31955,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "走到五丫身边后，他却目光一凝，俯身从地上捡起一块石头",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -32030,7 +32032,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "殿内宫人尽数退下，才缓缓开口，语气平和：“你放心，我不是那种",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -32121,7 +32123,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "谢柠眉头微皱",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
@@ -32261,7 +32263,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "没有心动和心疼，反而，还眉头微皱，有了一丝，丢人的感觉",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -32282,7 +32284,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "谢柠瞳孔一缩，想都没想就挂上倒档，猛踩油门",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -32345,7 +32347,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "深思，沉默片刻后，才缓缓开口，语气里多了几分深意：“难怪……",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -32394,7 +32396,7 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "他深吸一口气，拎着行李箱，转身走到路边，再次拦了辆出租车，报了公租房",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -32408,7 +32410,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "灯光下，那金属物的反光恰好刺入龚煜的瞳孔，晃了他的眼",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -32422,7 +32424,7 @@
       "category": "叙事转折",
       "meaning": "突然转折/下一拍",
       "ai_expr": "方挤压过来，又在下一秒轰然炸开",
-      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对陈长生谩骂",
+      "human_expr": "是谁在喊了一声，紧接着，众多妖族开始对{xx}谩骂",
       "source": "harvested"
     },
     {
@@ -32562,7 +32564,7 @@
       "category": "心理活动",
       "meaning": "恍然大悟/反应过来",
       "ai_expr": "裴念念恍然大悟“五哥好细心哦",
-      "human_expr": "沈湄还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
+      "human_expr": "{xx}还没反应过来，面前就凭空浮现出一个金灿灿的盒子",
       "source": "harvested"
     },
     {
@@ -32604,7 +32606,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "她咬着嘴唇，眼神复杂",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -32674,7 +32676,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "一出，人群霎时安静下来，众人面面相觑",
-      "human_expr": "许博人数不多的直播间闪过一条弹幕",
+      "human_expr": "{xx}人数不多的直播间闪过一条弹幕",
       "source": "harvested"
     },
     {
@@ -32688,7 +32690,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "应先生沉默片刻：“我也不清楚具体内容，我只知道",
-      "human_expr": "张桂兰没吭声，三角眼在柳淑芬身上又剜了一",
+      "human_expr": "{xx}没吭声，三角眼在柳淑芬身上又剜了一",
       "source": "harvested"
     },
     {
@@ -32751,14 +32753,14 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "她这样让我总觉得哪里不对劲，你帮我分析一下好吗",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "谢柠瞳孔猛地收缩，嘴巴张的老大",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -32793,7 +32795,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "褪去，转而凝起几分深思，沉默片刻后，才缓缓开口，语气里多了几分深",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -32821,7 +32823,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "随即，不再犹豫，她点开工作台，使用了工作台升级",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -32863,7 +32865,7 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "他的脑海中浮现出了沙娅抓住了小女孩顷刻炼化的场景",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -32891,7 +32893,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "长生拱手行礼的样子，左皇嘴角上扬道",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -32912,7 +32914,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "她顿时头皮发麻，连滚带爬回到涂身边",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -32940,14 +32942,14 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "这样的场景让菜鸟玩家们头皮发麻",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "毫不掩饰的欣喜样子，眼神复杂",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
@@ -32961,7 +32963,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "惊愕的眼神中，李学文缓缓开口：“一获得了日寇的军援，补足了我",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -33024,7 +33026,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "工作人员客客气气说完，转身离开了",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
@@ -33073,7 +33075,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "褪去，转而凝起几分深思，沉默片刻后，才缓缓开口，语气里多了几分深",
-      "human_expr": "凌昭没吭声",
+      "human_expr": "{xx}没吭声",
       "source": "harvested"
     },
     {
@@ -33087,7 +33089,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "沈湄转身离开了明镜的办公室",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -33108,7 +33110,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "长生拱手行礼的样子，左皇嘴角上扬道",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -33262,7 +33264,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "深思，沉默片刻后，才缓缓开口，语气里多了几分深意：“难怪……",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -33297,7 +33299,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "没想到李学文会这么直接，沉默片刻后，依旧维持着礼貌的微笑：“李司",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {
@@ -33325,7 +33327,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "他眼神复杂地看着沈湄的侧脸，短短几天时间，怎么",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -33395,7 +33397,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "屋内沉默片刻，胤禛才缓缓开口：“宫内不比潜邸",
-      "human_expr": "李学文瞥了他一眼，没吭声",
+      "human_expr": "{xx}瞥了他一眼，没吭声",
       "source": "harvested"
     },
     {
@@ -33479,7 +33481,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "长生拱手行礼的样子，左皇嘴角上扬道",
-      "human_expr": "小光头一本正经的样子，陈长生笑了",
+      "human_expr": "小光头一本正经的样子，{xx}笑了",
       "source": "harvested"
     },
     {
@@ -33500,7 +33502,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "断渗落粘稠的血珠，看着就让人背脊发寒",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -33584,7 +33586,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "警察同志，”李安平眉头微皱，目光落在章丽丽渗血的伤口和",
-      "human_expr": "的想法，王蛇、谭杰两人却感到不对劲",
+      "human_expr": "的想法，{xx}、{xx}两人却感到不对劲",
       "source": "harvested"
     },
     {
@@ -33619,7 +33621,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "好半晌以后，老人缓缓开口：“你的意思是，不急着要名分",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -33668,14 +33670,14 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "他深吸一口气，指尖依旧攥得紧紧的，眼底的迷茫和温和早已消失不见，取而",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "尔出现的细声低语更是让人头皮发麻",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -33787,14 +33789,14 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "大礼之后，狐耳娘当即当即转身离开",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "那熟悉的房子，陈长生不由嘴角上扬了一下，随后开口道：“请问念慈在吗",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -33822,7 +33824,7 @@
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "黑衣男看到下方景象，瞳孔骤缩",
-      "human_expr": "子不在了，但我看李瘸子的棺材铺还在，我去他那里住一段时间",
+      "human_expr": "子不在了，但我看{xx}的棺材铺还在，我去他那里住一段时间",
       "source": "harvested"
     },
     {
@@ -33892,7 +33894,7 @@
       "category": "心理活动",
       "meaning": "内心独白/暗自判断",
       "ai_expr": "李家胜心中暗道：不行，回头必须得严肃的找秦风谈谈这个问题",
-      "human_expr": "用问李学文就知道他想说什么",
+      "human_expr": "用问{xx}就知道他想说什么",
       "source": "harvested"
     },
     {
@@ -33906,7 +33908,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "屋内沉默片刻，胤禛才缓缓开口：“宫内不比潜邸，人心复杂，朝堂",
-      "human_expr": "李学文是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
+      "human_expr": "{xx}是穿越来的，确切地说，他是两年多前醒在了这副皮囊里",
       "source": "harvested"
     },
     {
@@ -34004,7 +34006,7 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "友善倒是看着苏诺寒，眼神复杂，嘴唇动了动，似乎想说什么，但最终只",
-      "human_expr": "李学文看了一眼桌上的支票，脸上表现出惊喜的表情，心",
+      "human_expr": "{xx}看了一眼桌上的支票，脸上表现出惊喜的表情，心",
       "source": "harvested"
     },
     {
@@ -34032,14 +34034,14 @@
       "category": "表情动作",
       "meaning": "眼神/目光",
       "ai_expr": "大古目光一凝：“这是，精神思念体吗",
-      "human_expr": "看了一眼李念生的背影，又看了一眼空荡荡的棺材铺",
+      "human_expr": "看了一眼{xx}的背影，又看了一眼空荡荡的棺材铺",
       "source": "harvested"
     },
     {
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "殿内宫人尽数退下，才缓缓开口，语气平和：“你放心，我不是那种",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -34074,7 +34076,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "鳞片摩擦声汇聚成令人头皮发麻的震颤，数量之多，足以让",
-      "human_expr": "秦风无所谓的态度，让李家胜更加来毛了",
+      "human_expr": "{xx}无所谓的态度，让{xx}更加来毛了",
       "source": "harvested"
     },
     {
@@ -34088,7 +34090,7 @@
       "category": "心理活动",
       "meaning": "下定决心/做出决定",
       "ai_expr": "宁辰不再犹豫将心念沉入识海，沟通神境功能",
-      "human_expr": "衡分配，可穆宁压根不听，拍板就这么定了",
+      "human_expr": "衡分配，可{xx}压根不听，拍板就这么定了",
       "source": "harvested"
     },
     {
@@ -34130,7 +34132,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "黑影丧尸缓缓开口，声音沙哑低沉：“人类.....",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -34144,7 +34146,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "苏婉柔看得头皮发麻",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -34221,14 +34223,14 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "沈思晴看着那口锅，总觉得哪里不对劲，但中午那盘清蒸鱼的震",
-      "human_expr": "凌昭越听越不对劲，面前两货是戏精附体还是错频了",
+      "human_expr": "{xx}越听越不对劲，面前两货是戏精附体还是错频了",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "震惊/吓一跳",
       "ai_expr": "谢柠瞳孔微缩，还有额外收获",
-      "human_expr": "李念生行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
+      "human_expr": "{xx}行了一礼说道：“多谢仙人，且容我去处理好一些琐事",
       "source": "harvested"
     },
     {
@@ -34389,7 +34391,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "苏诺寒见状嘴角一勾，“看来晚上又有得加餐了",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -34473,7 +34475,7 @@
       "category": "情绪反应",
       "meaning": "强压情绪/让自己冷静",
       "ai_expr": "做好准备后，谢柠深吸一口气，缓缓开启了宝箱",
-      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是李学文，而是自己的",
+      "human_expr": "这些都算了，眼下最头疼的，恐怕还不是{xx}，而是自己的",
       "source": "harvested"
     },
     {
@@ -34536,7 +34538,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "她这样让我总觉得哪里不对劲，你帮我分析一下好吗",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -34599,7 +34601,7 @@
       "category": "人物出场",
       "meaning": "众人反应/围观",
       "ai_expr": "众人面面相觑，“小鹅",
-      "human_expr": "在前世，有人骂岑厌是管理局的走狗，也有人骂岑厌是伥",
+      "human_expr": "在前世，有人骂{xx}是管理局的走狗，也有人骂{xx}是伥",
       "source": "harvested"
     },
     {
@@ -34627,7 +34629,7 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "说完，李念生转身离开了，只不过在门口的时候，李念生的",
-      "human_expr": "唾沫，握着三齿子朝马小帅走过去，“操你妈的，吓死老子了",
+      "human_expr": "唾沫，握着三齿子朝{xx}走过去，“操你妈的，吓死老子了",
       "source": "harvested"
     },
     {
@@ -34662,7 +34664,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "李右看的头皮发麻，要不是觉得场合不合适",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -34718,7 +34720,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "雨后晴光、马场青草，缓缓开口",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -34732,7 +34734,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "而这时候，李素梅眉头微皱，拍了拍陈大川的后背，摇头道",
-      "human_expr": "腾腾的威胁，一休立马意识到了不对劲",
+      "human_expr": "腾腾的威胁，{xx}立马意识到了不对劲",
       "source": "harvested"
     },
     {
@@ -34746,7 +34748,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "取而代之的是一种让人头皮发麻的酥痒",
-      "human_expr": "团就要来袭，沈湄顿时又觉得火烧眉毛了",
+      "human_expr": "团就要来袭，{xx}顿时又觉得火烧眉毛了",
       "source": "harvested"
     },
     {
@@ -34858,7 +34860,7 @@
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "韩局长眉头微皱，把手中的麻将直接扔在了桌子",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
@@ -34900,21 +34902,21 @@
       "category": "动作场面",
       "meaning": "走动/离开/靠近",
       "ai_expr": "尊贵的女士轻叹了一声，转身离开了人群",
-      "human_expr": "沈湄轻咳一声，快步走过去",
+      "human_expr": "{xx}轻咳一声，快步走过去",
       "source": "harvested"
     },
     {
       "category": "态度口吻",
       "meaning": "怀疑/不确定",
       "ai_expr": "在被子里蜷成一团的背影，总觉得哪里不对劲",
-      "human_expr": "可穆宁心里总觉得不对劲，一切进展得太过顺遂了",
+      "human_expr": "可{xx}心里总觉得不对劲，一切进展得太过顺遂了",
       "source": "harvested"
     },
     {
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "断渗落粘稠的血珠，看着就让人背脊发寒",
-      "human_expr": "温苓睁大了眼睛，尾巴都炸毛了",
+      "human_expr": "{xx}睁大了眼睛，尾巴都炸毛了",
       "source": "harvested"
     },
     {
@@ -34928,7 +34930,7 @@
       "category": "情绪反应",
       "meaning": "恐惧/发毛",
       "ai_expr": "沈湄顿觉头皮发麻，脸上霎时白得没有一丝血",
-      "human_expr": "这下子，直接把秦风惹毛了",
+      "human_expr": "这下子，直接把{xx}惹毛了",
       "source": "harvested"
     },
     {
@@ -35019,7 +35021,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "到水玲珑沉默不语，李念生嘴角上扬道",
-      "human_expr": "李念生倔强的模样，陈长生不由笑了笑，然后来到她的面前",
+      "human_expr": "{xx}倔强的模样，{xx}不由笑了笑，然后来到她的面前",
       "source": "harvested"
     },
     {
@@ -35082,7 +35084,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "男人缓缓说道，“你知道那条路上有什么吗",
-      "human_expr": "上一世他叫李学文，干的人事工作，可能由于工作时不怎",
+      "human_expr": "上一世他叫{xx}，干的人事工作，可能由于工作时不怎",
       "source": "harvested"
     },
     {
@@ -35131,7 +35133,7 @@
       "category": "表情动作",
       "meaning": "得意/轻笑",
       "ai_expr": "疯狂狗叫的小白狼，陈长生嘴角微微上扬，随后大步走向夜月国招亲现场",
-      "human_expr": "刀肉的态度，陈长生顿时就给逗乐了",
+      "human_expr": "刀肉的态度，{xx}顿时就给逗乐了",
       "source": "harvested"
     },
     {
@@ -35187,7 +35189,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "屋内沉默片刻，胤禛才缓缓开口：“宫内不比潜邸，人心复杂，朝堂",
-      "human_expr": "别说二等县了，只要让李学文守着诏安县，给个专",
+      "human_expr": "别说二等县了，只要让{xx}守着诏安县，给个专",
       "source": "harvested"
     },
     {
@@ -35215,7 +35217,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "殿内宫人尽数退下，才缓缓开口，语气平和：“你放心，我不是那种",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -35292,7 +35294,7 @@
       "category": "表情动作",
       "meaning": "说话动作（道/开口）",
       "ai_expr": "听完以后沉思了片刻，缓缓开口说道：“借助日寇的海军力量是步险",
-      "human_expr": "按理来说这种时候，李学文的身份尴尬，是不该往前凑",
+      "human_expr": "按理来说这种时候，{xx}的身份尴尬，是不该往前凑",
       "source": "harvested"
     },
     {
@@ -35327,7 +35329,7 @@
       "category": "节奏停顿",
       "meaning": "沉默/停顿",
       "ai_expr": "看着几人满脸渴求，李右沉默片刻，又掏出几根蟑螂蛋白棒分给了他们",
-      "human_expr": "秦风没吭声，也没回答",
+      "human_expr": "{xx}没吭声，也没回答",
       "source": "harvested"
     },
     {

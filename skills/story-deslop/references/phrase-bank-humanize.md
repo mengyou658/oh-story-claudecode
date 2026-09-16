@@ -106,19 +106,23 @@ ainovel-cli：`~/.ainovel/rules/*.md`（全局）与 `./.ainovel/rules/*.md`（�
 
 | 文件 | 用途 |
 |------|------|
-| `book/_analysis/ai_to_human_replacements.json` | **替换优先**：`map` 按 AI 表达键查 `replace_with[]`；`pairs` 为对照条目；`categories` 选题 |
-| `book/_analysis/ai_human_phrase_bank.json` | 全量：`buckets` + `curated_groups` + `replacement_pairs`；扩检索、补语义桶 |
+| `book/_analysis/ai_to_human_replacements.json` | **替换优先**：`map` 按 AI 表达键查 `replace_with[]`；`pairs[].human_expr` / `buckets_summary[].human_top` 为人味句（人名已作 `{xx}`） |
+| `book/_analysis/ai_human_phrase_bank.json` | 全量：`buckets` + `curated_groups` + `replacement_pairs`；其中 `replacement_pairs[].human_expr` 人名已作 `{xx}` |
 | `book/_analysis/phrase_bank_index.md` | 分类索引与精选示例表；快速人工扫类目 |
 
 ### 替换协议（禁止无脑全局替换）
 
 1. **先扫描再替换**：只处理正文中真实出现的 AI/模板串；未出现的键不要预替换。
-2. **查表顺序**：`ai_to_human_replacements.json` 的 `map[原文片段]` → 有则从 `replace_with` **按语境挑 1 条**（兼顾人称、语气、前后句）；无 map 命中再查 `pairs` / phrase_bank 的 `replacement_pairs`；仍无则走 Gate 润色或删。
+2. **查表顺序**：`ai_to_human_replacements.json` 的 `map[原文片段]` → 有则从 `replace_with` **按语境挑 1 条**（兼顾人称、语气、前后句）；无 map 命中再查 `pairs` / phrase_bank 的 `replacement_pairs`（用人味侧的 `human_expr` / `human_top`）；仍无则走 Gate 润色或删。
 3. **按 category / meaning 选组**：情绪反应、表情动作、心理活动、叙事转折、人物出场、设定呈现、动作场面、环境氛围、态度口吻、节奏停顿——同类内换，不跨类硬套。
-4. **改人称与语气**：表内多为第三人称口语示例；目标章若是第一人称/角色声线，替换后必须改到与上下文一致。
-5. **剧情保护优先**：会丢伏笔、钩子、因果、人物记忆、必要信息的命中 → 不替或降 AI 重写，标 `[需复核]`。
-6. **密度**：同一人味短句（如「我靠」「行吧」）同章不要刷屏；疲劳词表与本协议同时生效。
-7. **与 Gate 顺序**：建议先对照库替换明显模板句，再跑选定 Gate；或 Gate 中遇到 map 键能直接查表时优先用表，避免另造近义 AI 腔。
+4. **`{xx}` 角色名回填（硬性）**：`human_expr` / `human_top` 里的人名已统一写成占位符 `{xx}`（`ai_*` / `replace_with` / `human_examples` 未改）。选用人味句写入正文前，**必须**把每个 `{xx}` 换成**本书**角色名，禁止把 `{xx}` 或源书角色名写进产物。
+   - **角色名来源**（按序）：本章正文已出场名 → `{书根}/设定/角色/*.md` 文件名与卡内本名/别名 → `设定/关系.md` 表内角色 → 追踪/细纲里的当前 POV。缺名册时用本章主语/POV；仍无法判定则标 `[需复核：角色名]`，不硬填。
+   - **多槽**：一句多个 `{xx}` 时，按语序对应「动作主体 / 被看对象 / 旁人」等，分别填不同角色；不要全句刷成同一个名字，除非原文语境就是同一人。
+   - **人称**：回填后若章为第一人称，把「{角色}愣住」等改成「我愣住」等与 POV 一致的说法。
+5. **改人称与语气**：表内多为第三人称口语示例；目标章若是第一人称/角色声线，替换后必须改到与上下文一致（与上条一并完成）。
+6. **剧情保护优先**：会丢伏笔、钩子、因果、人物记忆、必要信息的命中 → 不替或降 AI 重写，标 `[需复核]`。
+7. **密度**：同一人味短句（如「我靠」「行吧」）同章不要刷屏；疲劳词表与本协议同时生效。
+8. **与 Gate 顺序**：建议先对照库替换明显模板句（含 `{xx}` 回填），再跑选定 Gate；或 Gate 中遇到 map 键能直接查表时优先用表，避免另造近义 AI 腔。
 
 ### 精选方向速查（完整表见 phrase_bank_index.md）
 
@@ -146,7 +150,7 @@ ainovel-cli：`~/.ainovel/rules/*.md`（全局）与 `./.ainovel/rules/*.md`（�
    - 规则：`{stem}_humanized{ext}`。例：`03.md` → `03_humanized.md`；`foo.正文.md` → `foo.正文_humanized.md`。
 2. 若输入路径的 stem **已以 `_humanized` 结尾**：在该文件上更新（视为再人味），不再叠套 `_humanized_humanized`。
 3. Phase 4 脚本（`check-ai-patterns.js` / `check-degeneration.js` / `normalize-punctuation.js`）对 **`_humanized` 产物**跑，不对原稿跑（除非用户只要检测原稿）。
-4. 报告必须写明：`原文件`、`人味文件`、对照库命中条数、map 替换数、未替换 `[需复核]` 数。
+4. 报告必须写明：`原文件`、`人味文件`、对照库命中条数、map 替换数、`{xx}` 回填数、未替换/`[需复核]` 数。产物中**不得残留** `{xx}`。
 5. **例外（须用户原话）**：仅当用户明确说「原地改 / 覆盖原稿 / edit in place」时，才改原文件；检测档不写文件。
 
 文本模式（粘贴片段、无路径）：仍回传润色全文，不强制落盘；若用户同时给了保存路径，按上述命名写 `_humanized` 文件。

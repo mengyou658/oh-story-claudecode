@@ -88,11 +88,11 @@
 
 ## 对照库与 `_humanized` 落盘
 
-文件模式默认叠加 [phrase-bank-humanize.md](phrase-bank-humanize.md)（ainovel-cli 机械/语义判据 + `book/_analysis` 对照库）。对照库替换结果写入 `{stem}_humanized{ext}`，**不覆盖原稿**（用户明确「原地改」除外）。Phase 4 脚本跑在人味产物上。
+文件模式默认叠加 [phrase-bank-humanize.md](phrase-bank-humanize.md)（ainovel-cli 机械/语义判据 + `book/_analysis` 对照库）。对照库替换结果写入 `{stem}_humanized{ext}`，**不覆盖原稿**（用户明确「原地改」除外）。人味句中的 `{xx}` 写入前须回填为本书角色名（见 phrase-bank-humanize）。Phase 4 脚本跑在人味产物上。
 
 ## 与 Gate / 脚本关系
 
 1. 定档 → 场景档（默认 novel）→ 文风 / `style_resolution` → 扫描（含 [scan-lexicon.md](scan-lexicon.md) 成簇 + [chinese-native-patterns.md](chinese-native-patterns.md)）；保真边界见 [fidelity-constraints.md](fidelity-constraints.md)
 2. 定级轻/中/重 → 选 Gate（见 `SKILL.md`）；加载 phrase-bank-humanize（文件模式默认）
-3. 清除时遵守 Never inject、保真/scope、C 级禁动、删除比例；真删套话不换汤；对照库优先 `ai_to_human_replacements.json` 的 `map`
+3. 清除时遵守 Never inject、保真/scope、C 级禁动、删除比例；真删套话不换汤；对照库优先 `ai_to_human_replacements.json` 的 `map`；人味侧 `{xx}` 回填本书角色名后再落盘；人味句 `{xx}` 回填本书角色名后再落盘
 4. 写入 `_humanized` 产物（默认）→ 文件模式收尾：`check-ai-patterns.js` → `check-degeneration.js` →（按策略）`normalize-punctuation.js` →（推荐）`slop_gauge.py --profile novel`〔可选 `--diff`〕
