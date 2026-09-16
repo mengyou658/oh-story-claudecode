@@ -114,5 +114,7 @@
 | 戏剧化揭露 | 遮羞布/扯下/戳穿/剥开+表象 | 删隐喻，给事实 | G |
 | 极值判断框架 | 最…的地方在于 / 真正…的是 / …之处在于 | 删框架留事实；全文 ≤1 | G |
 | 关联句式堆叠 | 一旦…就 / 只有…才 / 无论…都 / 正是因为…所以 | 合计 ≤2 | B |
+| 无立场退让 | 因人而异 / 视情况而定 / 各有优劣 | 叙述层删或给具体判断；角色真犹豫可留 | G/B |
+| 真删不换汤 | 「首先→首先呢」/ 黑话换黑话 | 直接删；见 fidelity-constraints | A |
 
-密度硬门槛见 [generation-constraints.md](generation-constraints.md)「写前密度上限」。
+密度硬门槛见 [generation-constraints.md](generation-constraints.md)「写前密度上限」。保真与浓度计边界见 [fidelity-constraints.md](fidelity-constraints.md)。

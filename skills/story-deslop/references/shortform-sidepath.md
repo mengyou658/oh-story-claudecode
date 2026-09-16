@@ -2,6 +2,8 @@
 
 公众号 / 小红书 / 短视频文案 / 说明短文。**不建**小说工作区。
 
+> 编辑边界与保真蒸馏自 `refs/shuorenhua`；浓度计边界与「真删」蒸馏自 `refs/694410194__hanyu-skill`。完整细则见 [fidelity-constraints.md](fidelity-constraints.md)。
+
 网文专项去味仍走 `SKILL.md` + Gates。本路径仅在用户粘贴短文且无活跃书时使用。
 
 总合同见 [deslop-process.md](deslop-process.md)；词表见 [scan-lexicon.md](scan-lexicon.md)。
@@ -36,13 +38,13 @@
 
 ## Edit moves
 
-- 删纯招呼、空预告、无指代填充
+- 删纯招呼、空预告、无指代填充（**真删**，不换成「首先呢」）
 - 拆排比三件套；删段尾升华
 - 去名词化（进行优化→优化）
 - 抽象主语→具体行动者（等义时）
 - **Portability test**：句原样可搬到别的产品/公司 → 删或换成本文事实
 - **Colon reveal**：禁「关键细节：／大多数人搞错的是：」假戏剧 → 改平句
-- 空洞段：标出，**不编造**观点填空
+- 空洞段：标出，**不编造**观点填空；可把原文已有数字/场景推到前台
 
 ## Do not
 

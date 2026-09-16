@@ -213,6 +213,13 @@
       ]
     },
     {
+      "name": "deslop-fidelity-constraints",
+      "source": "skills/story-deslop/references/fidelity-constraints.md",
+      "targets": [
+        "skills/story-setup/references/agent-references/fidelity-constraints.md"
+      ]
+    },
+    {
       "name": "deslop-phrase-bank-humanize",
       "source": "skills/story-deslop/references/phrase-bank-humanize.md",
       "targets": [

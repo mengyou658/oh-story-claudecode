@@ -12,7 +12,7 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 **核心信念：AI 味的主要问题并非语法错误；更常见的是过度圆滑、工整、解释充分。改写目标是保留剧情功能，同时增加口语、停顿、跳跃和具体动作。**
 
-**开场定档**：清理（默认）/ 重构（须用户授权）/ 检测 / 新写。合同见 [references/deslop-process.md](references/deslop-process.md)（Never inject、C 级禁动、检测器边界、双道门禁）。正文**写前**约束见 [references/generation-constraints.md](references/generation-constraints.md)。中文原生模式 25–33 见 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)。场景档见 [references/scene-profiles.md](references/scene-profiles.md)。无书短文旁路见 [references/shortform-sidepath.md](references/shortform-sidepath.md)。
+**开场定档**：清理（默认）/ 重构（须用户授权）/ 检测 / 新写。合同见 [references/deslop-process.md](references/deslop-process.md)（Never inject、保真/浓度计、C 级禁动、检测器边界、双道门禁）。保真细则见 [references/fidelity-constraints.md](references/fidelity-constraints.md)（蒸馏自说人话 + 韩愈）。正文**写前**约束见 [references/generation-constraints.md](references/generation-constraints.md)。中文原生模式 25–33 见 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)。场景档见 [references/scene-profiles.md](references/scene-profiles.md)。无书短文旁路见 [references/shortform-sidepath.md](references/shortform-sidepath.md)。
 
 **对照库 + ainovel 判据**：文件模式默认叠加 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)（ainovel-cli 机械基线/五类语义判据/自定义规则映射 + `book/_analysis` 语句对照库）。对照库替换**必须**写出 `{原名}_humanized{后缀}`，默认不覆盖原稿（见该文件「输出契约」）。
 
@@ -96,7 +96,7 @@ AI味不按语法错误处理，也不需要"修正"。它属于风格问题：�
 3. 文风：`style_resolution` + 可选作者记忆 query（见上）。
 4. 新写或用户只要「写时少 AI」→ 先读 generation-constraints（含写前密度上限），再写/再改。
 5. **文件模式（章节/正文路径）且非「只要检测」**：加载 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)；确定输出路径为 `{stem}_humanized{ext}`（原稿只读）。用户原话要求「原地改/覆盖原稿」时除外。
-6. 扫描前可对照 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)（模式 25–33）与 [references/scan-lexicon.md](references/scan-lexicon.md)。
+6. 扫描前可对照 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)（模式 25–33）、[references/scan-lexicon.md](references/scan-lexicon.md) 与 [references/fidelity-constraints.md](references/fidelity-constraints.md)（保真/真删/浓度计）。
 
 ### Phase 1：AI味扫描
 
@@ -292,9 +292,10 @@ python scripts/slop_gauge.py --profile novel <人味或已改正文文件...>
 
 | 文件 | 何时加载 |
 |------|----------|
-| [references/deslop-process.md](references/deslop-process.md) | **开场必读**：定档、Never inject、C 级禁动、检测器边界 |
+| [references/deslop-process.md](references/deslop-process.md) | **开场必读**：定档、Never inject、保真摘要、C 级禁动、检测器边界 |
+| [references/fidelity-constraints.md](references/fidelity-constraints.md) | 保真/scope/引号用途/无源分流/真删不换汤/浓度计边界（说人话×韩愈） |
 | [references/generation-constraints.md](references/generation-constraints.md) | 新写/写前自检；减少生成阶段模板节奏 |
-| [references/scan-lexicon.md](references/scan-lexicon.md) | 成簇扫描：八股/名词化/黑话/装腔/EN/泄漏 |
+| [references/scan-lexicon.md](references/scan-lexicon.md) | 成簇扫描：八股/名词化/黑话/无立场退让/装腔/EN/泄漏 |
 | [references/shortform-sidepath.md](references/shortform-sidepath.md) | 无书短文旁路 |
 | [references/banned-words.md](references/banned-words.md) | 检测和替换禁用词时 |
 | [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md) | **文件模式必读（默认）**：ainovel-cli 判据合并 + 对照库替换 + `_humanized` 输出契约 |

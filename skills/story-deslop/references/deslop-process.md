@@ -23,9 +23,18 @@
 
 与 `SKILL.md`「治读感、不承诺分数」一致；本表为显式硬禁。
 
+## 保真与浓度计（shuorenhua × hanyu）
+
+细则见 [fidelity-constraints.md](fidelity-constraints.md)。摘要：
+
+- **保真**：条件/否定/情态/归属/比较方向不因去味漂移；不按词表命中次数盲换；真删套话，不把「首先」换成「首先呢」
+- **Scope**：`structural` / `bounded` / `in-place`（用户优先；清理档默认 structural，少改时收窄）
+- **浓度计**：hanyu / 任意 AI 分只作改前改后相对参考，**不能**判定作者身份；领域黑话（闭环/链路等）成簇且空用才动
+- **网文「补」**：只把原文已有具体物推到前台；不造数字/案例；空转无剧情功能才可整段删
+
 ## Protected spans（默认不动）
 
-引语、代码块、表格、公式、法律/标准原文、他人 attributed 文本、用户明确要求保留的片段。周边可改衔接；内容需单独授权。
+引语、代码块（含注释/文档字符串，改注释须用户点名）、表格、公式、法律/标准原文、他人 attributed 文本、用户明确要求保留的片段。周边可改衔接；内容需单独授权。引号按用途判断，见 fidelity-constraints。
 
 ## 网文 C 级禁动（看着像 AI 也别乱碰）
 
@@ -62,12 +71,14 @@
 
 ## Detector boundaries
 
-- 单工具、单百分比**不得**单独否决或驱动策略（含 slop-gauge、stop-slop、朱雀）
+- 单工具、单百分比**不得**单独否决或驱动策略（含 slop-gauge、stop-slop、朱雀、hanyu_detect）
 - 对照须同检测器、相近字数、同体裁；**<3000 字片段只作方向性观察**
 - 若工具对重复粘贴/无关文本稳定判「人写」、对完整小说草稿稳定判 AI → **弃用为 gate**
 - Pattern ≠ 作者身份证明；正式文体/非母语易误报
+- 讨论 AI 味、列举禁用词的文章会被词表型检测器系统性高估（引用≠使用）——勿据此定级
+- AI/商业/技术主题稿：领域术语易被当成黑话，绝对值可虚高 5–10 分；只看相对降幅
 
-结果可写入报告，不作唯一验收。去AI味治读感，不承诺过朱雀等分数。
+结果可写入报告，不作唯一验收。去AI味治读感，不承诺过朱雀等分数。可选相对读数：`python refs/694410194__hanyu-skill/scripts/hanyu_detect.py <file.md>`（见 fidelity-constraints）。
 
 ## 标点策略（与本仓默认一致）
 
@@ -81,7 +92,7 @@
 
 ## 与 Gate / 脚本关系
 
-1. 定档 → 场景档（默认 novel）→ 文风 / `style_resolution` → 扫描（含 [scan-lexicon.md](scan-lexicon.md) 成簇 + [chinese-native-patterns.md](chinese-native-patterns.md)）
+1. 定档 → 场景档（默认 novel）→ 文风 / `style_resolution` → 扫描（含 [scan-lexicon.md](scan-lexicon.md) 成簇 + [chinese-native-patterns.md](chinese-native-patterns.md)）；保真边界见 [fidelity-constraints.md](fidelity-constraints.md)
 2. 定级轻/中/重 → 选 Gate（见 `SKILL.md`）；加载 phrase-bank-humanize（文件模式默认）
-3. 清除时遵守 Never inject、C 级禁动、删除比例；对照库优先 `ai_to_human_replacements.json` 的 `map`
+3. 清除时遵守 Never inject、保真/scope、C 级禁动、删除比例；真删套话不换汤；对照库优先 `ai_to_human_replacements.json` 的 `map`
 4. 写入 `_humanized` 产物（默认）→ 文件模式收尾：`check-ai-patterns.js` → `check-degeneration.js` →（按策略）`normalize-punctuation.js` →（推荐）`slop_gauge.py --profile novel`〔可选 `--diff`〕
