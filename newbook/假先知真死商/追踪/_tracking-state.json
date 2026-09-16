@@ -1,0 +1,55 @@
+{
+  "book_title": "假先知，真死商",
+  "characters": {
+    "沈烬": {
+      "abilities_resources": [
+        "前世命数层经验（未具现账本）",
+        "即将启用的假先知壳"
+      ],
+      "goal": "赴死失败后，先活着把死亡做成生意",
+      "identity": "重生女主；前世空城幸存者；尚未公开的死契庄家",
+      "knowledge": [
+        "命数副本将开",
+        "大众「可复活」宣传不可信"
+      ],
+      "location": "旧居",
+      "open_threads": [
+        "空城名册缺页",
+        "如何获客开盘"
+      ],
+      "relationships": [
+        "前世队友：仅存名册执念"
+      ],
+      "state": "心智苍老、情绪钝化、赴死惯性未消"
+    }
+  },
+  "context": {
+    "active_character_names": [
+      "沈烬"
+    ],
+    "continuity_risks": [],
+    "long_term_constraints": [
+      "战斗是结算不是日常刷怪",
+      "卷一不揭「不许复活」法理全文",
+      "定价权与拒单权归沈烬"
+    ],
+    "next_chapter_commitments": [
+      "第1章兑现空城赴死→重生",
+      "黄金三章立假先知壳与首单死亡生意"
+    ],
+    "position": {
+      "scene": "旧居",
+      "story_time": "沈烬重生入场前夜，尚未支摊",
+      "volume": "第一卷·假摊真账",
+      "volume_start_chapter": 1
+    },
+    "recent_chapters": []
+  },
+  "foreshadow": {},
+  "imported_through_chapter": 0,
+  "last_committed_chapter": 0,
+  "schema_version": 4,
+  "state_revision": 0,
+  "timeline": {},
+  "wordcount_records": {}
+}
