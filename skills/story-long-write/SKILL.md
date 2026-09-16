@@ -17,7 +17,7 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 1. 开书/补纲先完整读取 `references/workflow-setup.md`；写指定章读取 `references/workflow-chapter.md`；日更/大修先读取 `references/workflow-daily.md` 或 `references/workflow-revision.md`，进入正文前再完整读取 `workflow-chapter.md`。
 2. 主会话直接写正文时，首次落笔前完整读取 `references/long-format.md`、`references/writing-craft.md`、`references/long-chapter-quality.md`、`references/long-chapter-hooks.md`、`references/generation-constraints.md`（写前去模板硬约束）；交给 narrative-writer 时，由该 agent 按自己的 reference 表完成同等写前读取，主会话不得用未读 reference 的临时 prompt 替代。
 3. 悬疑、惊悚、异常线索章加读 `references/long-suspense.md`；身份/认知/立场反转章加读 `references/long-reversal.md`。
-4. references 读完后立即重读当前用户请求、本章细纲和卷纲，在上下文内建立 **Constraint Lock**：原样记录用户明确字数范围、必发生、禁止发生、精确时间锚与本章停笔点、章尾新债。references 只提供技法，不得覆盖这些项目事实；用户明确范围优先于自动 ± 比例带。交付前逐项复核：字数带外按 `workflow-chapter.md` 的收口流程交用户处置，不自动补字；其余项越界不算完成。
+4. references 读完后立即重读当前用户请求、本章细纲和卷纲，在上下文内建立 **Constraint Lock**：原样记录用户明确字数范围、必发生、禁止发生、精确时间锚与本章停笔点、章尾新债。references 只提供技法，不得覆盖这些项目事实；用户明确范围优先于自动 ± 比例带。**本仓库硬规则**见 [references/local-production-rules.md](references/local-production-rules.md)：默认 **3 章细纲 → 1 章正文**；字数 **≥2000 即合格、不强制贴目标、改短可接受、紧凑快节奏、禁止用水话回填**。交付前逐项复核：相对目标 `under` 但 ≥2000 时接受自然长度、不自动补字/不水话回填；仅 <2000 才走合并/处置；其余项越界不算完成。
 
 任一必需路径不存在、不可读或未读完时立即停止，报告准确路径，**不得先写正文再补读**。门禁按当前任务、当前会话重新执行；旧会话的“读过”不能沿用。
 
@@ -58,8 +58,8 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 | 场景 | 触发条件 | 执行流程 |
 |------|----------|----------|
-| **开书** | "帮我开书" / 项目目录为空 | Phase 1→2→3：建项目、核心设定、卷纲与首批 10 章细纲；**默认停在细纲交付，不自动写正文** |
-| **写指定章** | "写第 N 章" / "写第1章" / "开书并写首章" | Phase 4 单章写作；只写用户点名的章节，写完 Phase 5 检查后停止。空项目/无细纲（如"开书并写首章"）先补 Phase 1→3 再写点名章 |
+| **开书** | "帮我开书" / 项目目录为空 | Phase 1→2→3：建项目、核心设定（含**标题脑洞×3 + 用户选 3 卖点杂糅**）、卷纲与首批细纲；**默认停在细纲交付，不自动写正文** |
+| **写指定章** | "写第 N 章" / "写第1章" / "开书并写首章" | Phase 4；**默认正文第 N 章 = 合并细纲第 (3N-2)–(3N) 章**；写完 Phase 5 检查后停止。空项目/无细纲先补 Phase 1→3 再写 |
 | **补纲/扩纲** | "出细纲/补细纲/规划下一段剧情/接下来写XX剧情（先出细纲）" **且**项目已有大纲 | Phase 3「中途补纲/扩纲小流程」（见 `references/workflow-setup.md`）：选同类剧情单元→追加剧情单元卡→按剧情批滚动补细纲；**默认停在细纲交付，不自动写正文** |
 | **日更续写** | 关键词（"日更"/"续写"/"继续写"）**且**项目已有正文+追踪 | 加载 `references/workflow-daily.md` |
 | **大修** | "修改第X章" / "回炉" / "重写第X章" | 加载 `references/workflow-revision.md` |
@@ -71,12 +71,12 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 `/story-long-write` 或 `$story-long-write` **裸调用**（没有"开书/写第N章/日更/续写/修改"等明确意图）时，先只做项目状态诊断并列出下一步选项，**不得自动进入正文写作，也不得把已有项目默认为日更 3 章**：
 
 - 空项目 → 建议说「帮我开书」或先提供 `选题决策.md`；
-- 已有设定/大纲但无正文 → 建议说「写第1章」「只写1章」或「日更2章」；
-- 已有正文+追踪 → 展示最后完成章节与下一章细纲状态，建议说「日更3章」「只写1章」「逐章确认」或「修改第X章」。
+- 已有设定/大纲但无正文 → 建议说「写第1章」「只写1章」或「日更2章」（均为正文章；每章正文默认吃 3 章细纲）；
+- 已有正文+追踪 → 同时展示 **正文已写到第几章** 与 **细纲已消费到第几章**（读 `追踪/章号映射.md`），建议说「日更3章」「只写1章」「逐章确认」或「修改第X章」。
 
 **开书默认停靠**：用户只说"开书/写大纲/帮我开书"时，完成 Phase 1→3 与首批 10 章细纲后停止，报告已生成文件和下一步命令；除非用户同一句明确说"并写第1章/写 N 章/日更"，否则不要自动进入 Phase 4 正文。
 
-**正文批量上限**：写正文必须由用户显式给出章节范围或日更意图。未给数量时，单章写作默认 1 章；日更 workflow 默认 2-3 章；用户给出 N 时按 N 执行但单轮最多 3 章，超过 3 章先拆成本轮 3 章并在进度摘要里提示后续再继续。
+**正文批量上限**：写正文必须由用户显式给出章节范围或日更意图。未给数量时，单章写作默认 **1 章正文**（消费 3 章细纲）；日更 workflow 默认 2-3 **章正文**；用户给出 N 时按 N 章正文执行但单轮最多 3 章正文，超过则拆本轮。硬规则全文：[references/local-production-rules.md](references/local-production-rules.md)。
 
 **匹配优先级**：同时命中多行时，按 大修 → 写指定章 → 补纲/扩纲 → 日更续写 → 开书 的顺序匹配。用户点名要"细纲/补纲/规划剧情"而未要正文时，优先入 补纲/扩纲，不入日更。日更续写的 AND 条件（项目已有正文+追踪）不满足时，提示用户"项目还没有正文，建议先开书/写第1章"。
 
@@ -136,11 +136,11 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 #### 单章写作流程
 
-**执行前先读 [references/workflow-chapter.md](references/workflow-chapter.md)**，按其中的单章写作流程（步骤 1-13）、写作技巧提醒、字数验收权威与 Phase 5 质量检查执行。日更批量另加载 `references/workflow-daily.md` 控制批次。
+**执行前先读** [references/local-production-rules.md](references/local-production-rules.md)（三纲并一文、字数≥2000、禁水话）与 [references/workflow-chapter.md](references/workflow-chapter.md)，按其中的单章写作流程、写作技巧提醒、字数验收权威与 Phase 5 质量检查执行。日更批量另加载 `references/workflow-daily.md` 控制批次。
 
 #### 追踪文件体积
 
-`追踪/_tracking-state.json` 是唯一结构化权威；`上下文.md`、核心角色快照、`伏笔.md`、作者真相与读者已知时间线都由它确定性派生，程序不反向解析 Markdown。`上下文.md` 固定 7 栏且 ≤12KB。`逐章记录/第NNN章.md` 每章只记录会影响后续连续性的紧凑变化，目标 ≤1536 字节、硬上限 3072 字节，不承诺单独重放出全部当前状态。阶段/卷级回看按需查询逐章记录或正文，不维护另一套长期摘要。所有追踪写入都通过 `scripts/tracking_commit.py`，禁止手改派生文件。
+`追踪/_tracking-state.json` 是唯一结构化权威；`上下文.md`、核心角色快照、`伏笔.md`、作者真相与读者已知时间线都由它确定性派生，程序不反向解析 Markdown。`上下文.md` 固定 7 栏且 ≤12KB。**另维护** `追踪/章号映射.md`（正文进度 ↔ 细纲消费进度）。`逐章记录/第NNN章.md` 每章只记录会影响后续连续性的紧凑变化，目标 ≤1536 字节、硬上限 3072 字节，不承诺单独重放出全部当前状态。阶段/卷级回看按需查询逐章记录或正文，不维护另一套长期摘要。所有追踪写入都通过 `scripts/tracking_commit.py`，禁止手改派生文件；章号映射由主会话在 commit 后更新。
 
 ---
 

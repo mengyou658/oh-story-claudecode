@@ -8,9 +8,9 @@
  * 输出 Markdown 格式匹配 scan-output-format.md 规范。
  *
  * 用法：
- *   node fanqie-rank-scraper.js --channel 1 --type 2              # 男频阅读榜
+ *   node fanqie-rank-scraper.js --channel all --type 2              # 默认：男女频阅读榜
+ *   node fanqie-rank-scraper.js --channel 1 --type 2              # 仅男频阅读榜
  *   node fanqie-rank-scraper.js --channel 0 --type 1              # 女频新书榜
- *   node fanqie-rank-scraper.js --channel 1 --type 2 --outdir ./  # 指定输出目录
  *   node fanqie-rank-scraper.js --channel all                     # 全部采集
  *   node fanqie-rank-scraper.js --channel 1 --top 15              # 每题材只取前 15 本
  *
@@ -226,7 +226,7 @@ function cleanDesc(raw) {
 const args = process.argv.slice(2);
 const PORT = parseInt(getArg(args, "--port") || "9222", 10);
 const OUTDIR = getArg(args, "--outdir") || ".";
-const CHANNEL = getArg(args, "--channel") || "1";
+const CHANNEL = getArg(args, "--channel") || "all";
 const TYPE = getArg(args, "--type") || "2";
 const TOP = parseInt(getArg(args, "--top") || "20", 10);
 

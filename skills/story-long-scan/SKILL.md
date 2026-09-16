@@ -38,6 +38,7 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 - 用户已有方向 → 针对该方向做深度扫榜
 - 用户没有方向 → 做全榜概览 + 找趋势
 - 用户想跨平台比较 → 做平台对比分析
+- **番茄默认**：未指定只扫某一侧时，**男频 + 女频榜单都要扫到**（阅读榜优先；新书榜按需）。不得默认只跑男频或只跑女频。
 
 ---
 
@@ -79,7 +80,7 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 | 收藏榜 | qidian.com/rank/collect/ | 读者关注热度 |
 | 原创推荐榜 | qidian.com/rank/recom/ | |
 
-**番茄采集目标**：
+**番茄采集目标**（**默认男频+女频都采**；用户书面只要一侧时才收窄）：
 
 | 榜单 | URL格式 | 核心字段 |
 |------|---------|----------|
@@ -91,11 +92,15 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 URL 参数：`/rank/{channel}_{type}_{cat_id}`，channel 0=女频/1=男频，type 1=新书榜/2=阅读榜。番茄列表页有字体反爬，须用 `scripts/fanqie-rank-scraper.js` 从详情页多策略解码书名/作者/题材/评分/标签/简介，配合 browser-cdp 使用：
 
 ```bash
-node scripts/fanqie-rank-scraper.js --channel 1 --type 2 --outdir {输出目录}   # 男频阅读榜
-node scripts/fanqie-rank-scraper.js --channel all --top 15 --outdir {输出目录}   # 男女频，每题材前 15 本
+# 默认：男女频都扫（阅读榜；可加 --type 1 补新书榜）
+node scripts/fanqie-rank-scraper.js --channel all --type 2 --outdir {输出目录}
+node scripts/fanqie-rank-scraper.js --channel all --top 15 --outdir {输出目录}   # 每题材前 15 本
+# 仅当用户明确只要一侧时：
+node scripts/fanqie-rank-scraper.js --channel 1 --type 2 --outdir {输出目录}   # 仅男频
+node scripts/fanqie-rank-scraper.js --channel 0 --type 2 --outdir {输出目录}   # 仅女频
 ```
 
-> **番茄采集后必查文件头 `数据质量`**，异常排查步骤见 [references/scan-output-format.md](references/scan-output-format.md)。
+> **番茄默认组合**见 [references/scan-output-format.md](references/scan-output-format.md)「批量采集」：男频阅读榜全题材 + 女频阅读榜全题材。采集后必查文件头 `数据质量`。
 
 **七猫采集目标**：
 
