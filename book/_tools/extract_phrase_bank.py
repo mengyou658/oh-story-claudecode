@@ -1149,8 +1149,8 @@ def build_pairs(curated, buckets_data):
         ai_sents = b["ai_examples"]
         hu_sents = b["human_examples"]
         # denser cross for short items
-        for a in ai_sents[:12]:
-            for h in hu_sents[:8]:
+        for a in ai_sents[:18]:
+            for h in hu_sents[:10]:
                 if len(a) > 36 or len(h) > 28:
                     continue
                 pairs.append(
@@ -1178,18 +1178,25 @@ def main():
     for b in VERDICTS["books"]:
         by[b["verdict"]].append(b["file"])
 
-    ai_side = by["ai"] + by["mixed"]
-    human_side = by["human"]
+    # verdict labels + relative score tops/bottoms for richer mining on large corpus
+    ranked = sorted(VERDICTS["books"], key=lambda x: -x.get("ai_score", 0))
+    top_ai_score = [b["file"] for b in ranked[:50]]
+    bottom_human_score = [b["file"] for b in ranked[-120:]]
+
+    ai_side = list(dict.fromkeys(by["ai"] + by["mixed"] + top_ai_score))
+    human_side = list(dict.fromkeys(by["human"] + bottom_human_score))
+    # cap human harvest sources for speed while keeping diversity
+    if len(human_side) > 160:
+        human_side = human_side[:160]
 
     # larger corpus slices for richer harvest
-    ai_corpus = "\n".join(load_text(f)[:120000] for f in ai_side)
-    hu_corpus = "\n".join(load_text(f)[:120000] for f in human_side)
+    ai_corpus = "\n".join(load_text(f)[:100000] for f in ai_side)
+    hu_corpus = "\n".join(load_text(f)[:80000] for f in human_side)
 
     bucket_rows = []
     for b in BUCKETS:
-        ai_ex = harvest(ai_corpus, b["ai_patterns"], limit=45)
-        hu_ex = harvest(hu_corpus, b["human_patterns"], limit=45)
-        # if human harvest thin, also allow from mixed lightly? keep pure
+        ai_ex = harvest(ai_corpus, b["ai_patterns"], limit=80)
+        hu_ex = harvest(hu_corpus, b["human_patterns"], limit=80)
         bucket_rows.append(
             {
                 "id": b["id"],
@@ -1232,7 +1239,8 @@ def main():
             "human_source_books": human_side,
             "categories": {k: v for k, v in by_cat.items()},
             "note": "同义近义对照；替换时按语境改人称/时态，禁止无脑全局替换",
-            "version": "2.0-expanded",
+            "version": "2.1-fullrank-partial",
+            "corpus_note": "含游戏体育榜+全题材阅读榜已下载部分；未下完见 book/_pending_download_全题材_20260916.*",
         },
         "buckets": bucket_rows,
         "curated_groups": CURATED,
