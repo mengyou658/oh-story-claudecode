@@ -1,0 +1,1297 @@
+{
+  "total": 40,
+  "likely_ai": 0,
+  "mixed_or_template": 0,
+  "likely_human": 40,
+  "books": [
+    {
+      "file": "公路求生：开局抽中旅游餐车.txt",
+      "path": "e:\\oh-story-claudecode\\book\\公路求生：开局抽中旅游餐车.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 27638,
+      "ai_score": 17.5,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.072,
+        "mid_hits_per1k": 0.434,
+        "humanish_hits_per1k": 1.013,
+        "sentence_uniformity": 0.72,
+        "dialogue_count_in_sample": 230,
+        "para_uniform": 0.8950686490755883,
+        "para_count": 930,
+        "para_mean": 25.2
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "更重要的是": 1
+      },
+      "mid_hits": {
+        "与此同时": 1,
+        "就在这时": 3,
+        "深吸一口气": 3,
+        "脑海闪过": 1,
+        "仿佛…": 1,
+        "似乎…": 3
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 1,
+        "情绪语气崩坏": 3,
+        "口语助词": 24
+      }
+    },
+    {
+      "file": "武侠网游，开局三个神级词条.txt",
+      "path": "e:\\oh-story-claudecode\\book\\武侠网游，开局三个神级词条.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28638,
+      "ai_score": 13.1,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.0,
+        "mid_hits_per1k": 0.279,
+        "humanish_hits_per1k": 1.187,
+        "sentence_uniformity": 0.676,
+        "dialogue_count_in_sample": 128,
+        "para_uniform": 0.9300087752467715,
+        "para_count": 1096,
+        "para_mean": 19.2
+      },
+      "strong_hits": {},
+      "mid_hits": {
+        "似乎…": 8
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 8,
+        "情绪语气崩坏": 8,
+        "省略号毛边": 3,
+        "口语助词": 15
+      }
+    },
+    {
+      "file": "恐怖大航海.txt",
+      "path": "e:\\oh-story-claudecode\\book\\恐怖大航海.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 29990,
+      "ai_score": 12.4,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.133,
+        "mid_hits_per1k": 0.6,
+        "humanish_hits_per1k": 1.067,
+        "sentence_uniformity": 0.461,
+        "dialogue_count_in_sample": 247,
+        "para_uniform": 0.7285463562199276,
+        "para_count": 983,
+        "para_mean": 24.1
+      },
+      "strong_hits": {
+        "不是X而是Y": 2,
+        "并非X而是Y": 2
+      },
+      "mid_hits": {
+        "与此同时": 2,
+        "就在这时": 1,
+        "深吸一口气": 1,
+        "仿佛…": 2,
+        "似乎…": 12
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 3,
+        "情绪语气崩坏": 5,
+        "口语助词": 24
+      }
+    },
+    {
+      "file": "游戏入侵：你个厨子怎么变城主了.txt",
+      "path": "e:\\oh-story-claudecode\\book\\游戏入侵：你个厨子怎么变城主了.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 29129,
+      "ai_score": 7.5,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.034,
+        "mid_hits_per1k": 0.378,
+        "humanish_hits_per1k": 1.236,
+        "sentence_uniformity": 0.456,
+        "dialogue_count_in_sample": 297,
+        "para_uniform": 0.728859776847124,
+        "para_count": 963,
+        "para_mean": 22.1
+      },
+      "strong_hits": {
+        "不是X而是Y": 1
+      },
+      "mid_hits": {
+        "与此同时": 2,
+        "就在这时": 4,
+        "似乎…": 5
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 2,
+        "情绪语气崩坏": 10,
+        "省略号毛边": 11,
+        "口语助词": 13
+      }
+    },
+    {
+      "file": "不会踢球？却成了足球巨星！.txt",
+      "path": "e:\\oh-story-claudecode\\book\\不会踢球？却成了足球巨星！.txt",
+      "chapter_count_detected": 47,
+      "sample_chars": 28188,
+      "ai_score": 5.7,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.106,
+        "mid_hits_per1k": 0.461,
+        "humanish_hits_per1k": 1.384,
+        "sentence_uniformity": 0.427,
+        "dialogue_count_in_sample": 98,
+        "para_uniform": 0.5996040970707631,
+        "para_count": 851,
+        "para_mean": 27.5
+      },
+      "strong_hits": {
+        "不是X而是Y": 2,
+        "更重要的是": 1
+      },
+      "mid_hits": {
+        "与此同时": 5,
+        "就在这时": 1,
+        "仿佛…": 7
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 2,
+        "情绪语气崩坏": 7,
+        "省略号毛边": 12,
+        "口语助词": 18
+      }
+    },
+    {
+      "file": "开局光击球，你说这是网球？.txt",
+      "path": "e:\\oh-story-claudecode\\book\\开局光击球，你说这是网球？.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 29216,
+      "ai_score": 4.9,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.034,
+        "mid_hits_per1k": 0.034,
+        "humanish_hits_per1k": 1.13,
+        "sentence_uniformity": 0.443,
+        "dialogue_count_in_sample": 146,
+        "para_uniform": 0.6152960077497771,
+        "para_count": 710,
+        "para_mean": 35.7
+      },
+      "strong_hits": {
+        "更重要的是": 1
+      },
+      "mid_hits": {
+        "就在这时": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 14,
+        "情绪语气崩坏": 6,
+        "省略号毛边": 2,
+        "口语助词": 11
+      }
+    },
+    {
+      "file": "开局属性拉满，三角洲第一武将.txt",
+      "path": "e:\\oh-story-claudecode\\book\\开局属性拉满，三角洲第一武将.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28371,
+      "ai_score": 4.9,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.07,
+        "mid_hits_per1k": 0.141,
+        "humanish_hits_per1k": 1.375,
+        "sentence_uniformity": 0.439,
+        "dialogue_count_in_sample": 195,
+        "para_uniform": 0.7156040252860953,
+        "para_count": 778,
+        "para_mean": 31.1
+      },
+      "strong_hits": {
+        "更重要的是": 2
+      },
+      "mid_hits": {
+        "与此同时": 1,
+        "脑海闪过": 1,
+        "仿佛…": 1,
+        "似乎…": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 15,
+        "情绪语气崩坏": 6,
+        "口语助词": 18
+      }
+    },
+    {
+      "file": "万界沦为游戏，拜神不如拜我.txt",
+      "path": "e:\\oh-story-claudecode\\book\\万界沦为游戏，拜神不如拜我.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 29796,
+      "ai_score": 3.6,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.067,
+        "mid_hits_per1k": 1.04,
+        "humanish_hits_per1k": 1.879,
+        "sentence_uniformity": 0.46,
+        "dialogue_count_in_sample": 262,
+        "para_uniform": 0.5543301450635427,
+        "para_count": 886,
+        "para_mean": 28.1
+      },
+      "strong_hits": {
+        "不是X而是Y": 2
+      },
+      "mid_hits": {
+        "与此同时": 2,
+        "就在这时": 5,
+        "深吸一口气": 1,
+        "仿佛…": 10,
+        "似乎…": 13
+      },
+      "humanish_hits": {
+        "情绪语气崩坏": 12,
+        "省略号毛边": 31,
+        "口语助词": 13
+      }
+    },
+    {
+      "file": "这难道不是乙女游戏？.txt",
+      "path": "e:\\oh-story-claudecode\\book\\这难道不是乙女游戏？.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 31071,
+      "ai_score": 3.2,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.0,
+        "mid_hits_per1k": 0.837,
+        "humanish_hits_per1k": 1.835,
+        "sentence_uniformity": 0.416,
+        "dialogue_count_in_sample": 296,
+        "para_uniform": 0.7517345722130481,
+        "para_count": 1038,
+        "para_mean": 21.3
+      },
+      "strong_hits": {},
+      "mid_hits": {
+        "就在这时": 1,
+        "深吸一口气": 2,
+        "仿佛…": 9,
+        "似乎…": 14
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 2,
+        "情绪语气崩坏": 8,
+        "省略号毛边": 32,
+        "口语助词": 15
+      }
+    },
+    {
+      "file": "还木筏求生呢？我幽灵船上吃烤肉.txt",
+      "path": "e:\\oh-story-claudecode\\book\\还木筏求生呢？我幽灵船上吃烤肉.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 27572,
+      "ai_score": 0.3,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.0,
+        "mid_hits_per1k": 0.617,
+        "humanish_hits_per1k": 1.378,
+        "sentence_uniformity": 0.289,
+        "dialogue_count_in_sample": 143,
+        "para_uniform": 0.43284414695440865,
+        "para_count": 670,
+        "para_mean": 35.8
+      },
+      "strong_hits": {},
+      "mid_hits": {
+        "与此同时": 3,
+        "心中暗道": 1,
+        "仿佛…": 6,
+        "似乎…": 7
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 2,
+        "情绪语气崩坏": 10,
+        "省略号毛边": 19,
+        "口语助词": 7
+      }
+    },
+    {
+      "file": "求生游戏：我有一座花朵安全屋.txt",
+      "path": "e:\\oh-story-claudecode\\book\\求生游戏：我有一座花朵安全屋.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28207,
+      "ai_score": 0.2,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.071,
+        "mid_hits_per1k": 0.248,
+        "humanish_hits_per1k": 2.021,
+        "sentence_uniformity": 0.5,
+        "dialogue_count_in_sample": 207,
+        "para_uniform": 0.7181575743310439,
+        "para_count": 896,
+        "para_mean": 25.9
+      },
+      "strong_hits": {
+        "不是X而是Y": 2
+      },
+      "mid_hits": {
+        "仿佛…": 2,
+        "似乎…": 5
+      },
+      "humanish_hits": {
+        "情绪语气崩坏": 23,
+        "省略号毛边": 19,
+        "口语助词": 15
+      }
+    },
+    {
+      "file": "CS：每回合必杀一个能打职业吗.txt",
+      "path": "e:\\oh-story-claudecode\\book\\CS：每回合必杀一个能打职业吗.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 30789,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.032,
+        "mid_hits_per1k": 0.357,
+        "humanish_hits_per1k": 3.475,
+        "sentence_uniformity": 0.211,
+        "dialogue_count_in_sample": 381,
+        "para_uniform": 0.48871390928469954,
+        "para_count": 955,
+        "para_mean": 23.9
+      },
+      "strong_hits": {
+        "不是X而是Y": 1
+      },
+      "mid_hits": {
+        "与此同时": 1,
+        "就在这时": 7,
+        "心中暗道": 1,
+        "深吸一口气": 1,
+        "仿佛…": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 12,
+        "情绪语气崩坏": 31,
+        "省略号毛边": 53,
+        "口语助词": 11
+      }
+    },
+    {
+      "file": "万人迷救世主以为自己是万人嫌.txt",
+      "path": "e:\\oh-story-claudecode\\book\\万人迷救世主以为自己是万人嫌.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 27875,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.072,
+        "mid_hits_per1k": 0.538,
+        "humanish_hits_per1k": 4.197,
+        "sentence_uniformity": 0.265,
+        "dialogue_count_in_sample": 290,
+        "para_uniform": 0.5526729648666151,
+        "para_count": 906,
+        "para_mean": 23.3
+      },
+      "strong_hits": {
+        "不是X而是Y": 2
+      },
+      "mid_hits": {
+        "与此同时": 4,
+        "仿佛…": 8,
+        "似乎…": 3
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 4,
+        "情绪语气崩坏": 7,
+        "省略号毛边": 96,
+        "口语助词": 10
+      }
+    },
+    {
+      "file": "三角洲：这野人魔了，是个魔王！.txt",
+      "path": "e:\\oh-story-claudecode\\book\\三角洲：这野人魔了，是个魔王！.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 26097,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.038,
+        "mid_hits_per1k": 0.498,
+        "humanish_hits_per1k": 6.361,
+        "sentence_uniformity": 0.268,
+        "dialogue_count_in_sample": 184,
+        "para_uniform": 0.5286452773862527,
+        "para_count": 812,
+        "para_mean": 25.4
+      },
+      "strong_hits": {
+        "与其说不如说": 1
+      },
+      "mid_hits": {
+        "就在这时": 1,
+        "仿佛…": 4,
+        "似乎…": 8
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 12,
+        "情绪语气崩坏": 16,
+        "省略号毛边": 118,
+        "口语助词": 20
+      }
+    },
+    {
+      "file": "不许偷菜！这是榜一魔女后花园.txt",
+      "path": "e:\\oh-story-claudecode\\book\\不许偷菜！这是榜一魔女后花园.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28893,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.0,
+        "mid_hits_per1k": 0.138,
+        "humanish_hits_per1k": 1.904,
+        "sentence_uniformity": 0.291,
+        "dialogue_count_in_sample": 18,
+        "para_uniform": 0.4858741053808788,
+        "para_count": 830,
+        "para_mean": 27.9
+      },
+      "strong_hits": {},
+      "mid_hits": {
+        "目光套话": 1,
+        "似乎…": 3
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 1,
+        "情绪语气崩坏": 12,
+        "省略号毛边": 39,
+        "口语助词": 3
+      }
+    },
+    {
+      "file": "光遇：每天都在串线.txt",
+      "path": "e:\\oh-story-claudecode\\book\\光遇：每天都在串线.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 29583,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.0,
+        "mid_hits_per1k": 0.237,
+        "humanish_hits_per1k": 2.839,
+        "sentence_uniformity": 0.271,
+        "dialogue_count_in_sample": 365,
+        "para_uniform": 0.4814361776713841,
+        "para_count": 806,
+        "para_mean": 30.2
+      },
+      "strong_hits": {},
+      "mid_hits": {
+        "就在这时": 2,
+        "心中暗道": 1,
+        "深吸一口气": 2,
+        "仿佛…": 2
+      },
+      "humanish_hits": {
+        "情绪语气崩坏": 5,
+        "省略号毛边": 62,
+        "口语助词": 17
+      }
+    },
+    {
+      "file": "全息游戏当神偷，偷完他的偷你的.txt",
+      "path": "e:\\oh-story-claudecode\\book\\全息游戏当神偷，偷完他的偷你的.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 25431,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.197,
+        "mid_hits_per1k": 0.472,
+        "humanish_hits_per1k": 4.05,
+        "sentence_uniformity": 0.165,
+        "dialogue_count_in_sample": 207,
+        "para_uniform": 0.08459478769498707,
+        "para_count": 734,
+        "para_mean": 27.0
+      },
+      "strong_hits": {
+        "不是X而是Y": 3,
+        "更重要的是": 2
+      },
+      "mid_hits": {
+        "与此同时": 2,
+        "就在这时": 4,
+        "深吸一口气": 2,
+        "目光套话": 1,
+        "仿佛…": 2,
+        "似乎…": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 12,
+        "情绪语气崩坏": 17,
+        "省略号毛边": 67,
+        "口语助词": 7
+      }
+    },
+    {
+      "file": "全民公路求生：我的房车无限进化.txt",
+      "path": "e:\\oh-story-claudecode\\book\\全民公路求生：我的房车无限进化.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28442,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.105,
+        "mid_hits_per1k": 0.809,
+        "humanish_hits_per1k": 3.762,
+        "sentence_uniformity": 0.247,
+        "dialogue_count_in_sample": 326,
+        "para_uniform": 0.5905788803318734,
+        "para_count": 841,
+        "para_mean": 26.1
+      },
+      "strong_hits": {
+        "不是X而是Y": 3
+      },
+      "mid_hits": {
+        "与此同时": 4,
+        "就在这时": 9,
+        "深吸一口气": 1,
+        "嘴角微扬": 1,
+        "仿佛…": 5,
+        "似乎…": 2,
+        "不仅仅是更是": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 4,
+        "情绪语气崩坏": 3,
+        "省略号毛边": 83,
+        "口语助词": 17
+      }
+    },
+    {
+      "file": "全民荒岛求生，队员五位顶级重女.txt",
+      "path": "e:\\oh-story-claudecode\\book\\全民荒岛求生，队员五位顶级重女.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 29075,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.0,
+        "mid_hits_per1k": 0.138,
+        "humanish_hits_per1k": 2.132,
+        "sentence_uniformity": 0.496,
+        "dialogue_count_in_sample": 284,
+        "para_uniform": 0.7724063334199613,
+        "para_count": 927,
+        "para_mean": 25.6
+      },
+      "strong_hits": {},
+      "mid_hits": {
+        "与此同时": 1,
+        "深吸一口气": 1,
+        "仿佛…": 1,
+        "似乎…": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 1,
+        "情绪语气崩坏": 6,
+        "省略号毛边": 36,
+        "口语助词": 19
+      }
+    },
+    {
+      "file": "全球公路求生，幸运龙崽躺赢啦.txt",
+      "path": "e:\\oh-story-claudecode\\book\\全球公路求生，幸运龙崽躺赢啦.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28128,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.0,
+        "mid_hits_per1k": 0.142,
+        "humanish_hits_per1k": 4.622,
+        "sentence_uniformity": 0.557,
+        "dialogue_count_in_sample": 260,
+        "para_uniform": 0.7733489632186172,
+        "para_count": 931,
+        "para_mean": 24.4
+      },
+      "strong_hits": {},
+      "mid_hits": {
+        "与此同时": 1,
+        "深吸一口气": 1,
+        "嘴角微扬": 1,
+        "似乎…": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 2,
+        "情绪语气崩坏": 50,
+        "省略号毛边": 61,
+        "口语助词": 17
+      }
+    },
+    {
+      "file": "内卷猝死后，我在海洋求生当大佬.txt",
+      "path": "e:\\oh-story-claudecode\\book\\内卷猝死后，我在海洋求生当大佬.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 27998,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.0,
+        "mid_hits_per1k": 0.036,
+        "humanish_hits_per1k": 4.393,
+        "sentence_uniformity": 0.304,
+        "dialogue_count_in_sample": 255,
+        "para_uniform": 0.5678327253327903,
+        "para_count": 779,
+        "para_mean": 30.2
+      },
+      "strong_hits": {},
+      "mid_hits": {
+        "似乎…": 1
+      },
+      "humanish_hits": {
+        "情绪语气崩坏": 49,
+        "省略号毛边": 52,
+        "口语助词": 22
+      }
+    },
+    {
+      "file": "国运三角洲，开局航天堵桥.txt",
+      "path": "e:\\oh-story-claudecode\\book\\国运三角洲，开局航天堵桥.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 30889,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.0,
+        "mid_hits_per1k": 0.55,
+        "humanish_hits_per1k": 7.478,
+        "sentence_uniformity": 0.193,
+        "dialogue_count_in_sample": 597,
+        "para_uniform": 0.5219862679712008,
+        "para_count": 992,
+        "para_mean": 23.8
+      },
+      "strong_hits": {},
+      "mid_hits": {
+        "与此同时": 4,
+        "就在这时": 3,
+        "深吸一口气": 3,
+        "嘴角微扬": 2,
+        "仿佛…": 2,
+        "似乎…": 3
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 12,
+        "情绪语气崩坏": 19,
+        "省略号毛边": 169,
+        "口语助词": 31
+      }
+    },
+    {
+      "file": "序列：升华.txt",
+      "path": "e:\\oh-story-claudecode\\book\\序列：升华.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 29786,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.101,
+        "mid_hits_per1k": 0.47,
+        "humanish_hits_per1k": 1.343,
+        "sentence_uniformity": 0.087,
+        "dialogue_count_in_sample": 227,
+        "para_uniform": 0.35611538068883397,
+        "para_count": 824,
+        "para_mean": 28.8
+      },
+      "strong_hits": {
+        "不是X而是Y": 3
+      },
+      "mid_hits": {
+        "就在这时": 1,
+        "深吸一口气": 4,
+        "仿佛…": 4,
+        "似乎…": 5
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 4,
+        "情绪语气崩坏": 7,
+        "省略号毛边": 1,
+        "口语助词": 28
+      }
+    },
+    {
+      "file": "求生大舞台，挂小你别来.txt",
+      "path": "e:\\oh-story-claudecode\\book\\求生大舞台，挂小你别来.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28151,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.107,
+        "mid_hits_per1k": 0.497,
+        "humanish_hits_per1k": 5.577,
+        "sentence_uniformity": 0.105,
+        "dialogue_count_in_sample": 123,
+        "para_uniform": 0.28005854148052817,
+        "para_count": 760,
+        "para_mean": 30.5
+      },
+      "strong_hits": {
+        "并非X而是Y": 1,
+        "值得注意的是": 1,
+        "总结升维词": 1
+      },
+      "mid_hits": {
+        "与此同时": 1,
+        "就在这时": 1,
+        "仿佛…": 9,
+        "似乎…": 3
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 2,
+        "情绪语气崩坏": 9,
+        "省略号毛边": 129,
+        "口语助词": 17
+      }
+    },
+    {
+      "file": "求生游戏：每天一个滑跪小技巧.txt",
+      "path": "e:\\oh-story-claudecode\\book\\求生游戏：每天一个滑跪小技巧.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 29109,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.172,
+        "mid_hits_per1k": 0.24,
+        "humanish_hits_per1k": 1.305,
+        "sentence_uniformity": 0.035,
+        "dialogue_count_in_sample": 190,
+        "para_uniform": 0.2680371274316373,
+        "para_count": 826,
+        "para_mean": 27.9
+      },
+      "strong_hits": {
+        "不是X而是Y": 5
+      },
+      "mid_hits": {
+        "与此同时": 1,
+        "仿佛…": 1,
+        "似乎…": 5
+      },
+      "humanish_hits": {
+        "情绪语气崩坏": 10,
+        "省略号毛边": 20,
+        "口语助词": 8
+      }
+    },
+    {
+      "file": "求生：从小木屋开始抵御寒流.txt",
+      "path": "e:\\oh-story-claudecode\\book\\求生：从小木屋开始抵御寒流.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 30586,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.065,
+        "mid_hits_per1k": 0.36,
+        "humanish_hits_per1k": 2.943,
+        "sentence_uniformity": 0.554,
+        "dialogue_count_in_sample": 254,
+        "para_uniform": 0.7500160910017862,
+        "para_count": 1018,
+        "para_mean": 24.4
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "并非X而是Y": 1
+      },
+      "mid_hits": {
+        "就在这时": 2,
+        "仿佛…": 1,
+        "似乎…": 8
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 7,
+        "情绪语气崩坏": 28,
+        "省略号毛边": 45,
+        "口语助词": 10
+      }
+    },
+    {
+      "file": "淡人也可以登顶求生游戏吗.txt",
+      "path": "e:\\oh-story-claudecode\\book\\淡人也可以登顶求生游戏吗.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28284,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.141,
+        "mid_hits_per1k": 0.318,
+        "humanish_hits_per1k": 1.591,
+        "sentence_uniformity": 0.256,
+        "dialogue_count_in_sample": 47,
+        "para_uniform": 0.1237792382548153,
+        "para_count": 549,
+        "para_mean": 46.1
+      },
+      "strong_hits": {
+        "不是X而是Y": 2,
+        "并非X而是Y": 1,
+        "总结升维词": 1
+      },
+      "mid_hits": {
+        "与此同时": 2,
+        "仿佛…": 2,
+        "似乎…": 5
+      },
+      "humanish_hits": {
+        "情绪语气崩坏": 33,
+        "省略号毛边": 3,
+        "口语助词": 9
+      }
+    },
+    {
+      "file": "游戏入侵.txt",
+      "path": "e:\\oh-story-claudecode\\book\\游戏入侵.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28901,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.138,
+        "mid_hits_per1k": 0.277,
+        "humanish_hits_per1k": 2.145,
+        "sentence_uniformity": 0.0,
+        "dialogue_count_in_sample": 108,
+        "para_uniform": 0.13667008907439437,
+        "para_count": 589,
+        "para_mean": 43.7
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "与其说不如说": 1,
+        "更重要的是": 2
+      },
+      "mid_hits": {
+        "与此同时": 2,
+        "深吸一口气": 1,
+        "仿佛…": 5
+      },
+      "humanish_hits": {
+        "情绪语气崩坏": 19,
+        "省略号毛边": 31,
+        "口语助词": 12
+      }
+    },
+    {
+      "file": "游戏降临：没人比我更幸运.txt",
+      "path": "e:\\oh-story-claudecode\\book\\游戏降临：没人比我更幸运.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28645,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.035,
+        "mid_hits_per1k": 0.454,
+        "humanish_hits_per1k": 1.711,
+        "sentence_uniformity": 0.177,
+        "dialogue_count_in_sample": 151,
+        "para_uniform": 0.3923529912303039,
+        "para_count": 657,
+        "para_mean": 38.3
+      },
+      "strong_hits": {
+        "不是X而是Y": 1
+      },
+      "mid_hits": {
+        "仿佛…": 7,
+        "似乎…": 6
+      },
+      "humanish_hits": {
+        "情绪语气崩坏": 23,
+        "省略号毛边": 13,
+        "口语助词": 13
+      }
+    },
+    {
+      "file": "猫耳萝莉抡大锤，你这么求生的？.txt",
+      "path": "e:\\oh-story-claudecode\\book\\猫耳萝莉抡大锤，你这么求生的？.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 29874,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.167,
+        "mid_hits_per1k": 0.234,
+        "humanish_hits_per1k": 2.979,
+        "sentence_uniformity": 0.375,
+        "dialogue_count_in_sample": 362,
+        "para_uniform": 0.4120711467446639,
+        "para_count": 859,
+        "para_mean": 26.9
+      },
+      "strong_hits": {
+        "不是X而是Y": 4,
+        "更重要的是": 1
+      },
+      "mid_hits": {
+        "与此同时": 1,
+        "仿佛…": 3,
+        "似乎…": 3
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 9,
+        "情绪语气崩坏": 3,
+        "省略号毛边": 62,
+        "口语助词": 15
+      }
+    },
+    {
+      "file": "王者：破防就变强？那我不当人了.txt",
+      "path": "e:\\oh-story-claudecode\\book\\王者：破防就变强？那我不当人了.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28273,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.106,
+        "mid_hits_per1k": 0.389,
+        "humanish_hits_per1k": 6.508,
+        "sentence_uniformity": 0.534,
+        "dialogue_count_in_sample": 336,
+        "para_uniform": 0.7805128227280217,
+        "para_count": 894,
+        "para_mean": 26.5
+      },
+      "strong_hits": {
+        "不是X而是Y": 2,
+        "更重要的是": 1
+      },
+      "mid_hits": {
+        "与此同时": 8,
+        "似乎…": 3
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 11,
+        "情绪语气崩坏": 29,
+        "省略号毛边": 125,
+        "口语助词": 19
+      }
+    },
+    {
+      "file": "网游之死亡武侠.txt",
+      "path": "e:\\oh-story-claudecode\\book\\网游之死亡武侠.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 27963,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.072,
+        "mid_hits_per1k": 0.608,
+        "humanish_hits_per1k": 3.576,
+        "sentence_uniformity": 0.0,
+        "dialogue_count_in_sample": 308,
+        "para_uniform": 0.2363792059905323,
+        "para_count": 720,
+        "para_mean": 29.3
+      },
+      "strong_hits": {
+        "不是X而是Y": 2
+      },
+      "mid_hits": {
+        "目光套话": 1,
+        "仿佛…": 5,
+        "似乎…": 9,
+        "一种…的感觉": 2
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 3,
+        "情绪语气崩坏": 3,
+        "省略号毛边": 74,
+        "口语助词": 20
+      }
+    },
+    {
+      "file": "网游：我的毒能屠神.txt",
+      "path": "e:\\oh-story-claudecode\\book\\网游：我的毒能屠神.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28645,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.209,
+        "mid_hits_per1k": 0.14,
+        "humanish_hits_per1k": 1.396,
+        "sentence_uniformity": 0.0,
+        "dialogue_count_in_sample": 219,
+        "para_uniform": 0.011333963524950696,
+        "para_count": 515,
+        "para_mean": 49.2
+      },
+      "strong_hits": {
+        "不是X而是Y": 6
+      },
+      "mid_hits": {
+        "就在这时": 1,
+        "心中暗道": 1,
+        "似乎…": 2
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 10,
+        "情绪语气崩坏": 9,
+        "省略号毛边": 7,
+        "口语助词": 14
+      }
+    },
+    {
+      "file": "网游：神级刺客，我即是暗影！.txt",
+      "path": "e:\\oh-story-claudecode\\book\\网游：神级刺客，我即是暗影！.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 29955,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.167,
+        "mid_hits_per1k": 0.367,
+        "humanish_hits_per1k": 6.877,
+        "sentence_uniformity": 0.407,
+        "dialogue_count_in_sample": 290,
+        "para_uniform": 0.5925779949695568,
+        "para_count": 925,
+        "para_mean": 25.4
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "并非X而是Y": 2,
+        "换句话说": 1,
+        "总结升维词": 1
+      },
+      "mid_hits": {
+        "与此同时": 1,
+        "就在这时": 2,
+        "仿佛…": 3,
+        "似乎…": 4,
+        "一种…的感觉": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 5,
+        "情绪语气崩坏": 5,
+        "省略号毛边": 191,
+        "口语助词": 5
+      }
+    },
+    {
+      "file": "网游：神级盗贼，我即是无法无天.txt",
+      "path": "e:\\oh-story-claudecode\\book\\网游：神级盗贼，我即是无法无天.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 30615,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.131,
+        "mid_hits_per1k": 0.359,
+        "humanish_hits_per1k": 2.842,
+        "sentence_uniformity": 0.309,
+        "dialogue_count_in_sample": 300,
+        "para_uniform": 0.566134427758447,
+        "para_count": 910,
+        "para_mean": 26.9
+      },
+      "strong_hits": {
+        "不是X而是Y": 3,
+        "换句话说": 1
+      },
+      "mid_hits": {
+        "与此同时": 2,
+        "就在这时": 2,
+        "似乎…": 7
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 4,
+        "情绪语气崩坏": 7,
+        "省略号毛边": 59,
+        "口语助词": 17
+      }
+    },
+    {
+      "file": "联盟：在全神ig，我会拦住T1.txt",
+      "path": "e:\\oh-story-claudecode\\book\\联盟：在全神ig，我会拦住T1.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 26336,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.076,
+        "mid_hits_per1k": 0.19,
+        "humanish_hits_per1k": 2.164,
+        "sentence_uniformity": 0.402,
+        "dialogue_count_in_sample": 343,
+        "para_uniform": 0.45232405454172675,
+        "para_count": 789,
+        "para_mean": 26.6
+      },
+      "strong_hits": {
+        "不是X而是Y": 2
+      },
+      "mid_hits": {
+        "与此同时": 1,
+        "深吸一口气": 3,
+        "仿佛…": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 3,
+        "情绪语气崩坏": 32,
+        "省略号毛边": 11,
+        "口语助词": 11
+      }
+    },
+    {
+      "file": "让你求生！没让你把诡异薅秃了！.txt",
+      "path": "e:\\oh-story-claudecode\\book\\让你求生！没让你把诡异薅秃了！.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 27153,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.037,
+        "mid_hits_per1k": 0.221,
+        "humanish_hits_per1k": 3.13,
+        "sentence_uniformity": 0.441,
+        "dialogue_count_in_sample": 160,
+        "para_uniform": 0.6426421468658613,
+        "para_count": 699,
+        "para_mean": 33.5
+      },
+      "strong_hits": {
+        "不是X而是Y": 1
+      },
+      "mid_hits": {
+        "与此同时": 2,
+        "仿佛…": 3,
+        "一种…的感觉": 1
+      },
+      "humanish_hits": {
+        "情绪语气崩坏": 30,
+        "省略号毛边": 28,
+        "口语助词": 27
+      }
+    },
+    {
+      "file": "诸神游戏：你们管大圣叫吗喽？.txt",
+      "path": "e:\\oh-story-claudecode\\book\\诸神游戏：你们管大圣叫吗喽？.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 31712,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.158,
+        "mid_hits_per1k": 0.473,
+        "humanish_hits_per1k": 5.392,
+        "sentence_uniformity": 0.432,
+        "dialogue_count_in_sample": 483,
+        "para_uniform": 0.8183419083631338,
+        "para_count": 1109,
+        "para_mean": 19.2
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "并非X而是Y": 1,
+        "换句话说": 3
+      },
+      "mid_hits": {
+        "就在这时": 1,
+        "深吸一口气": 2,
+        "嘴角微扬": 1,
+        "仿佛…": 3,
+        "似乎…": 7,
+        "一种…的感觉": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 13,
+        "情绪语气崩坏": 14,
+        "省略号毛边": 121,
+        "口语助词": 23
+      }
+    },
+    {
+      "file": "车越粉人越狠这榜一我当定了.txt",
+      "path": "e:\\oh-story-claudecode\\book\\车越粉人越狠这榜一我当定了.txt",
+      "chapter_count_detected": 1,
+      "sample_chars": 4510,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.0,
+        "mid_hits_per1k": 0.222,
+        "humanish_hits_per1k": 1.109,
+        "sentence_uniformity": 0.377,
+        "dialogue_count_in_sample": 15,
+        "para_uniform": 0.0,
+        "para_count": 99,
+        "para_mean": 40.7
+      },
+      "strong_hits": {},
+      "mid_hits": {
+        "深吸一口气": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 1,
+        "情绪语气崩坏": 2,
+        "口语助词": 2
+      }
+    },
+    {
+      "file": "退游六年，剑仙老婆现实找上门了.txt",
+      "path": "e:\\oh-story-claudecode\\book\\退游六年，剑仙老婆现实找上门了.txt",
+      "chapter_count_detected": 60,
+      "sample_chars": 28418,
+      "ai_score": 0.0,
+      "label": "likely_human",
+      "metrics": {
+        "strong_hits_per1k": 0.07,
+        "mid_hits_per1k": 0.317,
+        "humanish_hits_per1k": 4.856,
+        "sentence_uniformity": 0.077,
+        "dialogue_count_in_sample": 738,
+        "para_uniform": 0.5205845228965541,
+        "para_count": 858,
+        "para_mean": 21.5
+      },
+      "strong_hits": {
+        "不是X而是Y": 2
+      },
+      "mid_hits": {
+        "就在这时": 1,
+        "深吸一口气": 3,
+        "仿佛…": 2,
+        "似乎…": 2,
+        "一种…的感觉": 1
+      },
+      "humanish_hits": {
+        "口语脏话/梗": 17,
+        "情绪语气崩坏": 15,
+        "省略号毛边": 101,
+        "口语助词": 5
+      }
+    }
+  ]
+}
