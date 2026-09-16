@@ -103,7 +103,7 @@
   "imported_through_chapter": 0,
   "last_committed_chapter": 1,
   "schema_version": 4,
-  "state_revision": 1,
+  "state_revision": 2,
   "timeline": {
     "E001": {
       "characters": [
@@ -122,8 +122,8 @@
   },
   "wordcount_records": {
     "1": {
-      "actual": 2004,
-      "body_sha256": "4c63d4234ceaf47a077385791d8fc7bed148c2f6d54774433de2f1bc573ffb18",
+      "actual": 1688,
+      "body_sha256": "0816a027d64ef23720a61ebe020fb8a9f879285ef23f8d79974da8ccf968584b",
       "metric": "visible_chars_v1",
       "resolution": "accepted_current_length",
       "status": "under",
