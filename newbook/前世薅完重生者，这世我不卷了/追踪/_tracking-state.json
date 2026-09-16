@@ -1,9 +1,62 @@
 {
   "book_title": "前世薅完重生者，这世我不卷了",
-  "characters": {},
+  "characters": {
+    "沈晚宁": {
+      "abilities_resources": [
+        "Level Max 面板",
+        "前世情报与结账经验",
+        "库存物资仍在"
+      ],
+      "goal": "躺平过日子；先私下处理陆昭",
+      "identity": "重生满级玩家；表面普通都市女青年",
+      "knowledge": [
+        "自己真的回来了",
+        "陆昭看不见面板",
+        "边角有登录倒计时毛边"
+      ],
+      "location": "居所客厅岛台前",
+      "open_threads": [
+        "抬手未落",
+        "倒计时未读全",
+        "尚未联系周晏"
+      ],
+      "relationships": [
+        "陆昭=待结清旧账",
+        "周晏=计划联系的闺蜜",
+        "遗照众人=未展开的独活债"
+      ],
+      "state": "已确认 Level Max；肩背放松；抬手估力待落"
+    },
+    "陆昭": {
+      "abilities_resources": [
+        "红酒与话术",
+        "所谓陈总项目说辞"
+      ],
+      "goal": "要到五十万启动金并试探复合",
+      "identity": "前男友；今生仍活着的开局靶",
+      "knowledge": [
+        "不知女主重生与满级",
+        "不知前世已被结账"
+      ],
+      "location": "沈晚宁居所客厅",
+      "open_threads": [
+        "即将被收力处理"
+      ],
+      "relationships": [
+        "自以为对沈晚宁仍有软饭空间"
+      ],
+      "state": "误判女主松口，正提高音量催促"
+    }
+  },
   "context": {
-    "active_character_names": [],
-    "continuity_risks": [],
+    "active_character_names": [
+      "沈晚宁",
+      "陆昭"
+    ],
+    "continuity_risks": [
+      "呼晕尚未落下，下章必须兑现且不可当众撕破",
+      "登录倒计时数字未读全，不可提前写成完整入侵课"
+    ],
     "long_term_constraints": [
       "有人在场避锋芒，无人处一次结清",
       "第1卷不抽命数、不揭寿命买重生全貌",
@@ -11,22 +64,70 @@
       "女主不当先锋，国家线只做间接交易"
     ],
     "next_chapter_commitments": [
-      "第1章完成遗照问好仪式并被今生打断",
-      "黄金三章兑现 Level Max 与收力呼晕"
+      "收力呼晕陆昭，兑现无人处一次结清",
+      "呼晕后处理现场并推进联系周晏/入侵预兆"
     ],
     "position": {
-      "scene": "沈晚宁居所 / 遗照与海景记忆",
-      "story_time": "重生落点当日清晨，游戏入侵前",
+      "scene": "沈晚宁居所客厅 / 岛台红酒场面",
+      "story_time": "重生落点当日清晨，陆昭上门纠缠中",
       "volume": "第一卷·我不卷了",
       "volume_start_chapter": 1
     },
-    "recent_chapters": []
+    "recent_chapters": [
+      {
+        "chapter": 1,
+        "summary": "正文第1章 ← 细纲第1–3章。沈晚宁完成遗照问好、被陆昭上门纠缠，唤出面板确认 Level Max，边角闪过登录倒计时；她放下酒杯估力抬手，停在呼晕前。"
+      }
+    ]
   },
-  "foreshadow": {},
+  "foreshadow": {
+    "F001": {
+      "id": "F001",
+      "importance": "高",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 1,
+      "status": "已埋",
+      "summary": "遗照里多人身份与独活岁月未展开",
+      "updated_chapter": 1
+    },
+    "F002": {
+      "id": "F002",
+      "importance": "中",
+      "planned_resolution_chapter": 2,
+      "planted_chapter": 1,
+      "status": "已埋",
+      "summary": "陆昭前世账已结过；今生仍活着纠缠，结清方式未兑现",
+      "updated_chapter": 1
+    }
+  },
   "imported_through_chapter": 0,
-  "last_committed_chapter": 0,
+  "last_committed_chapter": 1,
   "schema_version": 4,
-  "state_revision": 0,
-  "timeline": {},
-  "wordcount_records": {}
+  "state_revision": 1,
+  "timeline": {
+    "E001": {
+      "characters": [
+        "沈晚宁",
+        "陆昭"
+      ],
+      "first_recorded_chapter": 1,
+      "id": "E001",
+      "objective_fact": "沈晚宁完成遗照问好后遭陆昭上门要五十万；她唤出面板见 Level Max，边角闪过登录倒计时，估力抬手未落下",
+      "reader_knowledge": "读者已知她重生、独活过、面板满级、入侵预兆一闪，以及她即将对陆昭动手",
+      "reveal_chapter": 1,
+      "reveal_status": "已揭示",
+      "story_time": "重生落点当日清晨",
+      "updated_chapter": 1
+    }
+  },
+  "wordcount_records": {
+    "1": {
+      "actual": 2004,
+      "body_sha256": "4c63d4234ceaf47a077385791d8fc7bed148c2f6d54774433de2f1bc573ffb18",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    }
+  }
 }
