@@ -1,0 +1,445 @@
+{
+  "meta": {
+    "chapterCount": 60,
+    "totalChars": 140792,
+    "dups": [],
+    "missing": [],
+    "medianGap": 107,
+    "first": {
+      "num": 1,
+      "title": "神谕",
+      "startLine": 19,
+      "endLine": 131,
+      "chars": 2214
+    },
+    "last": {
+      "num": 60,
+      "title": "我哥是尘封",
+      "startLine": 6356,
+      "endLine": 6471,
+      "chars": 2472
+    }
+  },
+  "chapters": [
+    {
+      "num": 1,
+      "title": "神谕",
+      "startLine": 19,
+      "endLine": 131,
+      "chars": 2214
+    },
+    {
+      "num": 2,
+      "title": "剧毒之源",
+      "startLine": 132,
+      "endLine": 272,
+      "chars": 2336
+    },
+    {
+      "num": 3,
+      "title": "无赖的打法",
+      "startLine": 273,
+      "endLine": 385,
+      "chars": 2403
+    },
+    {
+      "num": 4,
+      "title": "天赋提升",
+      "startLine": 386,
+      "endLine": 488,
+      "chars": 2374
+    },
+    {
+      "num": 5,
+      "title": "极限操作",
+      "startLine": 489,
+      "endLine": 613,
+      "chars": 2538
+    },
+    {
+      "num": 6,
+      "title": "野猪王",
+      "startLine": 614,
+      "endLine": 742,
+      "chars": 2664
+    },
+    {
+      "num": 7,
+      "title": "第一桶金",
+      "startLine": 743,
+      "endLine": 863,
+      "chars": 2579
+    },
+    {
+      "num": 8,
+      "title": "野猪装备",
+      "startLine": 864,
+      "endLine": 990,
+      "chars": 2608
+    },
+    {
+      "num": 9,
+      "title": "搞野狼去",
+      "startLine": 991,
+      "endLine": 1147,
+      "chars": 2555
+    },
+    {
+      "num": 10,
+      "title": "这糟老头子坏的很",
+      "startLine": 1148,
+      "endLine": 1232,
+      "chars": 2219
+    },
+    {
+      "num": 11,
+      "title": "狼牙项链",
+      "startLine": 1233,
+      "endLine": 1331,
+      "chars": 2152
+    },
+    {
+      "num": 12,
+      "title": "银狼",
+      "startLine": 1332,
+      "endLine": 1438,
+      "chars": 2274
+    },
+    {
+      "num": 13,
+      "title": "对战野猪王",
+      "startLine": 1439,
+      "endLine": 1553,
+      "chars": 2277
+    },
+    {
+      "num": 14,
+      "title": "全服通告，震惊全场",
+      "startLine": 1554,
+      "endLine": 1714,
+      "chars": 2420
+    },
+    {
+      "num": 15,
+      "title": "试探",
+      "startLine": 1715,
+      "endLine": 1815,
+      "chars": 2221
+    },
+    {
+      "num": 16,
+      "title": "獠牙巨刃拍卖",
+      "startLine": 1816,
+      "endLine": 1902,
+      "chars": 2341
+    },
+    {
+      "num": 17,
+      "title": "是机缘也是悲哀",
+      "startLine": 1903,
+      "endLine": 1977,
+      "chars": 2197
+    },
+    {
+      "num": 18,
+      "title": "银狼王",
+      "startLine": 1978,
+      "endLine": 2058,
+      "chars": 2247
+    },
+    {
+      "num": 19,
+      "title": "加好友",
+      "startLine": 2059,
+      "endLine": 2145,
+      "chars": 2422
+    },
+    {
+      "num": 20,
+      "title": "对战银狼王",
+      "startLine": 2146,
+      "endLine": 2250,
+      "chars": 2228
+    },
+    {
+      "num": 21,
+      "title": "属性炸裂",
+      "startLine": 2251,
+      "endLine": 2377,
+      "chars": 2160
+    },
+    {
+      "num": 22,
+      "title": "金陵城",
+      "startLine": 2378,
+      "endLine": 2466,
+      "chars": 2215
+    },
+    {
+      "num": 23,
+      "title": "转职",
+      "startLine": 2467,
+      "endLine": 2541,
+      "chars": 2063
+    },
+    {
+      "num": 24,
+      "title": "战神殿",
+      "startLine": 2542,
+      "endLine": 2614,
+      "chars": 2285
+    },
+    {
+      "num": 25,
+      "title": "境界提升",
+      "startLine": 2615,
+      "endLine": 2753,
+      "chars": 2464
+    },
+    {
+      "num": 26,
+      "title": "银太狼",
+      "startLine": 2754,
+      "endLine": 2904,
+      "chars": 2400
+    },
+    {
+      "num": 27,
+      "title": "转职通告",
+      "startLine": 2905,
+      "endLine": 3037,
+      "chars": 2661
+    },
+    {
+      "num": 28,
+      "title": "天赋不提升了？",
+      "startLine": 3038,
+      "endLine": 3140,
+      "chars": 2466
+    },
+    {
+      "num": 29,
+      "title": "天赋潜力",
+      "startLine": 3141,
+      "endLine": 3249,
+      "chars": 2249
+    },
+    {
+      "num": 30,
+      "title": "击杀黑熊王",
+      "startLine": 3250,
+      "endLine": 3332,
+      "chars": 2169
+    },
+    {
+      "num": 31,
+      "title": "青铜级",
+      "startLine": 3333,
+      "endLine": 3491,
+      "chars": 2452
+    },
+    {
+      "num": 32,
+      "title": "首次PK",
+      "startLine": 3492,
+      "endLine": 3606,
+      "chars": 2326
+    },
+    {
+      "num": 33,
+      "title": "法师装备",
+      "startLine": 3607,
+      "endLine": 3713,
+      "chars": 2113
+    },
+    {
+      "num": 34,
+      "title": "黑风寨",
+      "startLine": 3714,
+      "endLine": 3850,
+      "chars": 2308
+    },
+    {
+      "num": 35,
+      "title": "这才叫群刷",
+      "startLine": 3851,
+      "endLine": 3927,
+      "chars": 2424
+    },
+    {
+      "num": 36,
+      "title": "对战法师群",
+      "startLine": 3928,
+      "endLine": 4014,
+      "chars": 2342
+    },
+    {
+      "num": 37,
+      "title": "黑风寨军师",
+      "startLine": 4015,
+      "endLine": 4115,
+      "chars": 2298
+    },
+    {
+      "num": 38,
+      "title": "黑风寨寨主",
+      "startLine": 4116,
+      "endLine": 4244,
+      "chars": 2356
+    },
+    {
+      "num": 39,
+      "title": "白银首杀",
+      "startLine": 4245,
+      "endLine": 4351,
+      "chars": 2609
+    },
+    {
+      "num": 40,
+      "title": "我要这攻击有啥用",
+      "startLine": 4352,
+      "endLine": 4470,
+      "chars": 2070
+    },
+    {
+      "num": 41,
+      "title": "开宝箱",
+      "startLine": 4471,
+      "endLine": 4597,
+      "chars": 2327
+    },
+    {
+      "num": 42,
+      "title": "刘家村",
+      "startLine": 4598,
+      "endLine": 4712,
+      "chars": 2253
+    },
+    {
+      "num": 43,
+      "title": "绝尘面具",
+      "startLine": 4713,
+      "endLine": 4807,
+      "chars": 2326
+    },
+    {
+      "num": 44,
+      "title": "十大公会",
+      "startLine": 4808,
+      "endLine": 4880,
+      "chars": 2286
+    },
+    {
+      "num": 45,
+      "title": "冲突",
+      "startLine": 4881,
+      "endLine": 4987,
+      "chars": 2514
+    },
+    {
+      "num": 46,
+      "title": "又火了",
+      "startLine": 4988,
+      "endLine": 5096,
+      "chars": 2415
+    },
+    {
+      "num": 47,
+      "title": "团战",
+      "startLine": 5097,
+      "endLine": 5177,
+      "chars": 2282
+    },
+    {
+      "num": 48,
+      "title": "魔化丛林虎王",
+      "startLine": 5178,
+      "endLine": 5290,
+      "chars": 2458
+    },
+    {
+      "num": 49,
+      "title": "万人队伍败退",
+      "startLine": 5291,
+      "endLine": 5395,
+      "chars": 2268
+    },
+    {
+      "num": 50,
+      "title": "冷月",
+      "startLine": 5396,
+      "endLine": 5518,
+      "chars": 2090
+    },
+    {
+      "num": 51,
+      "title": "他来了…",
+      "startLine": 5519,
+      "endLine": 5599,
+      "chars": 2509
+    },
+    {
+      "num": 52,
+      "title": "这就进来了？",
+      "startLine": 5600,
+      "endLine": 5688,
+      "chars": 2311
+    },
+    {
+      "num": 53,
+      "title": "不要命的打法",
+      "startLine": 5689,
+      "endLine": 5779,
+      "chars": 2194
+    },
+    {
+      "num": 54,
+      "title": "抢BOSS",
+      "startLine": 5780,
+      "endLine": 5864,
+      "chars": 2557
+    },
+    {
+      "num": 55,
+      "title": "白银装备拍卖",
+      "startLine": 5865,
+      "endLine": 5939,
+      "chars": 2417
+    },
+    {
+      "num": 56,
+      "title": "白银级",
+      "startLine": 5940,
+      "endLine": 6062,
+      "chars": 2292
+    },
+    {
+      "num": 57,
+      "title": "全城任务个人接",
+      "startLine": 6063,
+      "endLine": 6117,
+      "chars": 2330
+    },
+    {
+      "num": 58,
+      "title": "我何德何能跟那个变态比",
+      "startLine": 6118,
+      "endLine": 6168,
+      "chars": 2300
+    },
+    {
+      "num": 59,
+      "title": "排行榜开启，霸榜",
+      "startLine": 6169,
+      "endLine": 6355,
+      "chars": 2492
+    },
+    {
+      "num": 60,
+      "title": "我哥是尘封",
+      "startLine": 6356,
+      "endLine": 6471,
+      "chars": 2472
+    }
+  ]
+}
