@@ -1,0 +1,1271 @@
+{
+  "disclaimer": "heuristic triage only",
+  "counts": {
+    "ai": 0,
+    "mixed": 0,
+    "human": 40
+  },
+  "books": [
+    {
+      "file": "公路求生：开局抽中旅游餐车.txt",
+      "verdict": "human",
+      "ai_score": 3.2,
+      "metrics": {
+        "strong_per1k": 0.109,
+        "soft_per1k": 0.509,
+        "human_per1k": 0.145,
+        "ttr": 0.5987,
+        "sent_cv": 0.4254,
+        "short_line_ratio": 0.091,
+        "dialogue_count": 230,
+        "sample_chars": 27524
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "意味深长": 1,
+        "议论连接词": 1
+      },
+      "soft_hits": {
+        "深吸一口气": 3,
+        "嘴角上扬": 2,
+        "脑海闪过": 1,
+        "下一秒": 5,
+        "就在这时": 3
+      },
+      "human_hits": {
+        "脏话梗": 1,
+        "情绪崩": 3
+      },
+      "evidence_snippets": [
+        "的尿性，财富之路很有可能不是让你发财，而是让你破财。 但智力之路，同样风险很",
+        "” 她说完这句话，意味深长地看了谢柠一眼，然后转身离开了。 谢",
+        "到脚，想怎么搭就怎么搭！更重要的是免洗，还包括头发！ 平常洗头发时，"
+      ]
+    },
+    {
+      "file": "CS：每回合必杀一个能打职业吗.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.033,
+        "soft_per1k": 0.294,
+        "human_per1k": 4.048,
+        "ttr": 0.5528,
+        "sent_cv": 0.6595,
+        "short_line_ratio": 0.369,
+        "dialogue_count": 379,
+        "sample_chars": 30631
+      },
+      "strong_hits": {
+        "不是X而是Y": 1
+      },
+      "soft_hits": {
+        "深吸一口气": 1,
+        "下一秒": 1,
+        "就在这时": 7
+      },
+      "human_hits": {
+        "脏话梗": 29,
+        "情绪崩": 13,
+        "游戏黑话": 24,
+        "省略毛边": 58
+      },
+      "evidence_snippets": [
+        "了一下！ 这抖一下不是吓到的，而是体内力量在快速流逝！ 回马考的BU"
+      ]
+    },
+    {
+      "file": "万人迷救世主以为自己是万人嫌.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.072,
+        "soft_per1k": 0.036,
+        "human_per1k": 3.856,
+        "ttr": 0.5445,
+        "sent_cv": 0.6321,
+        "short_line_ratio": 0.316,
+        "dialogue_count": 288,
+        "sample_chars": 27748
+      },
+      "strong_hits": {
+        "不是X而是Y": 2
+      },
+      "soft_hits": {
+        "嘴角上扬": 1
+      },
+      "human_hits": {
+        "脏话梗": 8,
+        "情绪崩": 3,
+        "省略毛边": 96
+      },
+      "evidence_snippets": [
+        "实际上岑厌所生气的不是因为这个，而是因为玩家们的安危。 前世的世界对这"
+      ]
+    },
+    {
+      "file": "万界沦为游戏，拜神不如拜我.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.125,
+        "soft_per1k": 0.282,
+        "human_per1k": 1.506,
+        "ttr": 0.6106,
+        "sent_cv": 0.5528,
+        "short_line_ratio": 0.184,
+        "dialogue_count": 275,
+        "sample_chars": 31883
+      },
+      "strong_hits": {
+        "不是X而是Y": 3,
+        "瞳孔一缩": 1
+      },
+      "soft_hits": {
+        "深吸一口气": 1,
+        "话音刚落": 1,
+        "下一秒": 1,
+        "就在这时": 6
+      },
+      "human_hits": {
+        "脏话梗": 5,
+        "情绪崩": 8,
+        "游戏黑话": 1,
+        "省略毛边": 34
+      },
+      "evidence_snippets": [
+        "不会那个邮差出现的意义，不是为了让我接取委托，而是为了让我杀死他、得到礼装吧？ 可是",
+        "爆裂】子弹！ 钟临瞳孔一缩，“野兽本能”再度发出死亡预警。"
+      ]
+    },
+    {
+      "file": "三角洲：这野人魔了，是个魔王！.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.0,
+        "soft_per1k": 0.116,
+        "human_per1k": 7.28,
+        "ttr": 0.5456,
+        "sent_cv": 0.6284,
+        "short_line_ratio": 0.272,
+        "dialogue_count": 184,
+        "sample_chars": 25961
+      },
+      "strong_hits": {},
+      "soft_hits": {
+        "话音刚落": 2,
+        "就在这时": 1
+      },
+      "human_hits": {
+        "脏话梗": 18,
+        "情绪崩": 10,
+        "游戏黑话": 43,
+        "省略毛边": 118
+      },
+      "evidence_snippets": []
+    },
+    {
+      "file": "不会踢球？却成了足球巨星！.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.099,
+        "soft_per1k": 0.033,
+        "human_per1k": 0.691,
+        "ttr": 0.5342,
+        "sent_cv": 0.5532,
+        "short_line_ratio": 0.172,
+        "dialogue_count": 99,
+        "sample_chars": 30377
+      },
+      "strong_hits": {
+        "不是X而是Y": 2,
+        "议论连接词": 1
+      },
+      "soft_hits": {
+        "就在这时": 1
+      },
+      "human_hits": {
+        "脏话梗": 2,
+        "情绪崩": 7,
+        "省略毛边": 12
+      },
+      "evidence_snippets": [
+        "阿森纳球员脚下快速流转，不是那种慢吞吞的倒脚，而是一种带有目的性的快速拉扯防线，让对方防守",
+        "点太看得起他了。 更重要的是。 系统现在好像卡了。 声音"
+      ]
+    },
+    {
+      "file": "不许偷菜！这是榜一魔女后花园.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.0,
+        "soft_per1k": 0.035,
+        "human_per1k": 1.805,
+        "ttr": 0.5132,
+        "sent_cv": 0.6261,
+        "short_line_ratio": 0.261,
+        "dialogue_count": 18,
+        "sample_chars": 28809
+      },
+      "strong_hits": {},
+      "soft_hits": {
+        "目光套话": 1
+      },
+      "human_hits": {
+        "脏话梗": 2,
+        "情绪崩": 11,
+        "省略毛边": 39
+      },
+      "evidence_snippets": []
+    },
+    {
+      "file": "光遇：每天都在串线.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.0,
+        "soft_per1k": 0.301,
+        "human_per1k": 2.459,
+        "ttr": 0.5483,
+        "sent_cv": 0.6308,
+        "short_line_ratio": 0.219,
+        "dialogue_count": 434,
+        "sample_chars": 36597
+      },
+      "strong_hits": {},
+      "soft_hits": {
+        "深吸一口气": 2,
+        "话音刚落": 2,
+        "下一秒": 5,
+        "就在这时": 2
+      },
+      "human_hits": {
+        "脏话梗": 3,
+        "情绪崩": 7,
+        "省略毛边": 80
+      },
+      "evidence_snippets": []
+    },
+    {
+      "file": "全息游戏当神偷，偷完他的偷你的.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.237,
+        "soft_per1k": 0.592,
+        "human_per1k": 3.788,
+        "ttr": 0.549,
+        "sent_cv": 0.6872,
+        "short_line_ratio": 0.355,
+        "dialogue_count": 205,
+        "sample_chars": 25343
+      },
+      "strong_hits": {
+        "不是X而是Y": 3,
+        "缓缓开口道": 1,
+        "议论连接词": 2
+      },
+      "soft_hits": {
+        "深吸一口气": 2,
+        "目光套话": 1,
+        "话音刚落": 2,
+        "下一秒": 6,
+        "就在这时": 4
+      },
+      "human_hits": {
+        "脏话梗": 18,
+        "情绪崩": 11,
+        "省略毛边": 67
+      },
+      "evidence_snippets": [
+        "如果我是她，发包月打八折不是自信，而是能坑一个是一个，毕竟如果DT真的找她包月",
+        "的预感。 只听时西缓缓开口。 “教皇的秘密是，他并不是真正的",
+        "冲到了45级。 但更重要的是，她拿到了8000银币。 相当于现"
+      ]
+    },
+    {
+      "file": "全民公路求生：我的房车无限进化.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.127,
+        "soft_per1k": 0.445,
+        "human_per1k": 3.334,
+        "ttr": 0.5806,
+        "sent_cv": 0.645,
+        "short_line_ratio": 0.322,
+        "dialogue_count": 371,
+        "sample_chars": 31496
+      },
+      "strong_hits": {
+        "不是X而是Y": 3,
+        "空气凝固": 1
+      },
+      "soft_hits": {
+        "深吸一口气": 1,
+        "嘴角上扬": 1,
+        "话音刚落": 1,
+        "下一秒": 1,
+        "就在这时": 10
+      },
+      "human_hits": {
+        "脏话梗": 4,
+        "情绪崩": 3,
+        "游戏黑话": 1,
+        "省略毛边": 97
+      },
+      "evidence_snippets": [
+        "开眼。 映入眼帘的不是熟悉的卧室天花板，而是一块挡风玻璃。 玻璃外，天色阴沉得",
+        "的暖风还在呼呼地吹着，但空气仿佛凝固了。 “在左侧，车门位置。”"
+      ]
+    },
+    {
+      "file": "全民荒岛求生，队员五位顶级重女.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.032,
+        "soft_per1k": 0.032,
+        "human_per1k": 1.361,
+        "ttr": 0.5599,
+        "sent_cv": 0.5219,
+        "short_line_ratio": 0.179,
+        "dialogue_count": 300,
+        "sample_chars": 31590
+      },
+      "strong_hits": {
+        "缓缓开口道": 1
+      },
+      "soft_hits": {
+        "深吸一口气": 1
+      },
+      "human_hits": {
+        "脏话梗": 1,
+        "情绪崩": 6,
+        "省略毛边": 36
+      },
+      "evidence_snippets": [
+        "除，它们就该跑了。”陈闲缓缓说道。 他看向夏雨谣等人，“要不你们先"
+      ]
+    },
+    {
+      "file": "全球公路求生，幸运龙崽躺赢啦.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.036,
+        "soft_per1k": 0.357,
+        "human_per1k": 4.065,
+        "ttr": 0.5497,
+        "sent_cv": 0.4982,
+        "short_line_ratio": 0.206,
+        "dialogue_count": 260,
+        "sample_chars": 28041
+      },
+      "strong_hits": {
+        "缓缓开口道": 1
+      },
+      "soft_hits": {
+        "深吸一口气": 1,
+        "嘴角上扬": 1,
+        "下一秒": 8
+      },
+      "human_hits": {
+        "脏话梗": 28,
+        "情绪崩": 24,
+        "游戏黑话": 1,
+        "省略毛边": 61
+      },
+      "evidence_snippets": [
+        "站在她身后，听见动静后，缓缓开口。 “是从我们进来的方向传来的。”"
+      ]
+    },
+    {
+      "file": "内卷猝死后，我在海洋求生当大佬.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.0,
+        "soft_per1k": 0.036,
+        "human_per1k": 3.694,
+        "ttr": 0.5195,
+        "sent_cv": 0.6135,
+        "short_line_ratio": 0.168,
+        "dialogue_count": 250,
+        "sample_chars": 27882
+      },
+      "strong_hits": {},
+      "soft_hits": {
+        "下一秒": 1
+      },
+      "human_hits": {
+        "脏话梗": 2,
+        "情绪崩": 47,
+        "游戏黑话": 2,
+        "省略毛边": 52
+      },
+      "evidence_snippets": []
+    },
+    {
+      "file": "国运三角洲，开局航天堵桥.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.0,
+        "soft_per1k": 0.357,
+        "human_per1k": 6.757,
+        "ttr": 0.5131,
+        "sent_cv": 0.6669,
+        "short_line_ratio": 0.319,
+        "dialogue_count": 594,
+        "sample_chars": 30783
+      },
+      "strong_hits": {},
+      "soft_hits": {
+        "深吸一口气": 3,
+        "嘴角上扬": 4,
+        "下一秒": 1,
+        "就在这时": 3
+      },
+      "human_hits": {
+        "脏话梗": 16,
+        "情绪崩": 15,
+        "游戏黑话": 5,
+        "省略毛边": 172
+      },
+      "evidence_snippets": []
+    },
+    {
+      "file": "序列：升华.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.099,
+        "soft_per1k": 0.166,
+        "human_per1k": 0.365,
+        "ttr": 0.5193,
+        "sent_cv": 0.7104,
+        "short_line_ratio": 0.299,
+        "dialogue_count": 225,
+        "sample_chars": 30161
+      },
+      "strong_hits": {
+        "不是X而是Y": 3
+      },
+      "soft_hits": {
+        "深吸一口气": 4,
+        "就在这时": 1
+      },
+      "human_hits": {
+        "脏话梗": 4,
+        "情绪崩": 6,
+        "省略毛边": 1
+      },
+      "evidence_snippets": [
+        "可能猜到，叶七言的目标并不是升级列车，而是制造他的第一节车厢。 李晓生深吸一"
+      ]
+    },
+    {
+      "file": "开局光击球，你说这是网球？.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.054,
+        "soft_per1k": 0.19,
+        "human_per1k": 0.731,
+        "ttr": 0.5018,
+        "sent_cv": 0.5824,
+        "short_line_ratio": 0.183,
+        "dialogue_count": 192,
+        "sample_chars": 36934
+      },
+      "strong_hits": {
+        "议论连接词": 2
+      },
+      "soft_hits": {
+        "深吸一口气": 1,
+        "下一秒": 4,
+        "就在这时": 2
+      },
+      "human_hits": {
+        "脏话梗": 22,
+        "情绪崩": 3,
+        "省略毛边": 2
+      },
+      "evidence_snippets": [
+        "把球拍都接飞了。 更重要的是，他好像，还是在力量较量方面落于下风。"
+      ]
+    },
+    {
+      "file": "开局属性拉满，三角洲第一武将.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.065,
+        "soft_per1k": 0.161,
+        "human_per1k": 1.452,
+        "ttr": 0.5515,
+        "sent_cv": 0.5543,
+        "short_line_ratio": 0.172,
+        "dialogue_count": 231,
+        "sample_chars": 31000
+      },
+      "strong_hits": {
+        "议论连接词": 2
+      },
+      "soft_hits": {
+        "脑海闪过": 1,
+        "下一秒": 4
+      },
+      "human_hits": {
+        "脏话梗": 21,
+        "情绪崩": 5,
+        "游戏黑话": 19
+      },
+      "evidence_snippets": [
+        "管，不仅仅只是腰射舒服，更重要的是能够提升爆头系数，爆头伤害高达105点。"
+      ]
+    },
+    {
+      "file": "恐怖大航海.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.121,
+        "soft_per1k": 0.121,
+        "human_per1k": 0.242,
+        "ttr": 0.5774,
+        "sent_cv": 0.5367,
+        "short_line_ratio": 0.237,
+        "dialogue_count": 257,
+        "sample_chars": 33070
+      },
+      "strong_hits": {
+        "不是X而是Y": 2,
+        "并非X而是Y": 2
+      },
+      "soft_hits": {
+        "深吸一口气": 1,
+        "下一秒": 2,
+        "就在这时": 1
+      },
+      "human_hits": {
+        "脏话梗": 7,
+        "情绪崩": 1
+      },
+      "evidence_snippets": [
+        "据舱体的一半，地板整洁，不是那种腐烂发霉的木地板，而是黝黑光滑的石板，脚感结实。 房间很",
+        "也撞了上去。 但他并非是要造成杀伤，而是急着离开船长室。 只有逃出这狭窄的"
+      ]
+    },
+    {
+      "file": "武侠网游，开局三个神级词条.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.0,
+        "soft_per1k": 0.0,
+        "human_per1k": 0.682,
+        "ttr": 0.5509,
+        "sent_cv": 0.4411,
+        "short_line_ratio": 0.297,
+        "dialogue_count": 159,
+        "sample_chars": 33714
+      },
+      "strong_hits": {},
+      "soft_hits": {},
+      "human_hits": {
+        "脏话梗": 15,
+        "情绪崩": 4,
+        "游戏黑话": 1,
+        "省略毛边": 3
+      },
+      "evidence_snippets": []
+    },
+    {
+      "file": "求生大舞台，挂小你别来.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.071,
+        "soft_per1k": 0.142,
+        "human_per1k": 5.021,
+        "ttr": 0.6156,
+        "sent_cv": 0.7039,
+        "short_line_ratio": 0.263,
+        "dialogue_count": 120,
+        "sample_chars": 28080
+      },
+      "strong_hits": {
+        "并非X而是Y": 1,
+        "议论连接词": 1
+      },
+      "soft_hits": {
+        "话音刚落": 1,
+        "下一秒": 2,
+        "就在这时": 1
+      },
+      "human_hits": {
+        "脏话梗": 3,
+        "情绪崩": 8,
+        "游戏黑话": 1,
+        "省略毛边": 129
+      },
+      "evidence_snippets": [
+        "呼吸为之一窒！ 那并非简单的法术影像，而是一个无比复杂、精细、立体的全息能量架构图",
+        "作所为，可不像法师……更值得注意的是，他的形貌与我们一般无二。陛下不觉得奇怪"
+      ]
+    },
+    {
+      "file": "求生游戏：我有一座花朵安全屋.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.107,
+        "soft_per1k": 0.036,
+        "human_per1k": 1.494,
+        "ttr": 0.5649,
+        "sent_cv": 0.5235,
+        "short_line_ratio": 0.18,
+        "dialogue_count": 207,
+        "sample_chars": 28111
+      },
+      "strong_hits": {
+        "不是X而是Y": 2,
+        "不可置信": 1
+      },
+      "soft_hits": {
+        "下一秒": 1
+      },
+      "human_hits": {
+        "情绪崩": 23,
+        "省略毛边": 19
+      },
+      "evidence_snippets": [
+        "只是扩容果种子的嫩芽并不是常见的绿色，而是跟种子一样的橙色，小小一颗，却极为鲜艳。",
+        "6 司序瞪大眼睛，不可置信地看着面板。 她的体质好像又加了一点？"
+      ]
+    },
+    {
+      "file": "求生游戏：每天一个滑跪小技巧.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.172,
+        "soft_per1k": 0.034,
+        "human_per1k": 1.103,
+        "ttr": 0.5742,
+        "sent_cv": 0.7464,
+        "short_line_ratio": 0.303,
+        "dialogue_count": 185,
+        "sample_chars": 29011
+      },
+      "strong_hits": {
+        "不是X而是Y": 5
+      },
+      "soft_hits": {
+        "下一秒": 1
+      },
+      "human_hits": {
+        "脏话梗": 1,
+        "情绪崩": 9,
+        "游戏黑话": 2,
+        "省略毛边": 20
+      },
+      "evidence_snippets": [
+        "卡。 可令她震惊的不是原始气息与近代科技的结合，而是在这些摊位上穿梭的生物。 长着人脸"
+      ]
+    },
+    {
+      "file": "求生：从小木屋开始抵御寒流.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.056,
+        "soft_per1k": 0.084,
+        "human_per1k": 2.893,
+        "ttr": 0.5196,
+        "sent_cv": 0.5102,
+        "short_line_ratio": 0.179,
+        "dialogue_count": 327,
+        "sample_chars": 35609
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "并非X而是Y": 1
+      },
+      "soft_hits": {
+        "下一秒": 1,
+        "就在这时": 2
+      },
+      "human_hits": {
+        "脏话梗": 9,
+        "情绪崩": 29,
+        "省略毛边": 65
+      },
+      "evidence_snippets": [
+        "量体内粘液。 这并不是黑虎蜂王的尸体，而是它蜕下的壳。 齐原还是第一次知道，",
+        "抗住这种寒冷。 这并非是某一处地方，而是整个迷雾世界的每一个角落，都在发生的事。"
+      ]
+    },
+    {
+      "file": "淡人也可以登顶求生游戏吗.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.1,
+        "soft_per1k": 0.033,
+        "human_per1k": 1.231,
+        "ttr": 0.5635,
+        "sent_cv": 0.6599,
+        "short_line_ratio": 0.15,
+        "dialogue_count": 49,
+        "sample_chars": 30062
+      },
+      "strong_hits": {
+        "不是X而是Y": 2,
+        "并非X而是Y": 1
+      },
+      "soft_hits": {
+        "话音刚落": 1
+      },
+      "human_hits": {
+        "情绪崩": 33,
+        "游戏黑话": 1,
+        "省略毛边": 3
+      },
+      "evidence_snippets": [
+        "象中好像不太一样。竹子并不是她见过的那种青色的竹子，而是蓝紫色的，表面带着黑色的雷击纹。",
+        "大的空间是“空白”的——并非颜色的空白，而是雨幕细细密密落下，那块空间顶部偶尔溅起水"
+      ]
+    },
+    {
+      "file": "游戏入侵.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.104,
+        "soft_per1k": 0.139,
+        "human_per1k": 1.84,
+        "ttr": 0.5441,
+        "sent_cv": 0.7585,
+        "short_line_ratio": 0.174,
+        "dialogue_count": 106,
+        "sample_chars": 28810
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "议论连接词": 2
+      },
+      "soft_hits": {
+        "深吸一口气": 1,
+        "下一秒": 3
+      },
+      "human_hits": {
+        "脏话梗": 2,
+        "情绪崩": 17,
+        "省略毛边": 34
+      },
+      "evidence_snippets": [
+        "业的工匠定制，因为他要的不是模型，而是和原版陨石手枪一样，是真正的能用的枪，更",
+        "能压制她的敌人。 更重要的是，关于技能2的技能，她有个极为大胆的想法"
+      ]
+    },
+    {
+      "file": "游戏入侵：你个厨子怎么变城主了.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.034,
+        "soft_per1k": 0.31,
+        "human_per1k": 0.826,
+        "ttr": 0.6176,
+        "sent_cv": 0.5448,
+        "short_line_ratio": 0.377,
+        "dialogue_count": 297,
+        "sample_chars": 29045
+      },
+      "strong_hits": {
+        "不是X而是Y": 1
+      },
+      "soft_hits": {
+        "话音刚落": 1,
+        "下一秒": 4,
+        "就在这时": 4
+      },
+      "human_hits": {
+        "脏话梗": 3,
+        "情绪崩": 9,
+        "游戏黑话": 1,
+        "省略毛边": 11
+      },
+      "evidence_snippets": [
+        "对一个家族来说，这不是一笔横财，而是成为世家大族的必经之路。 齐百川的"
+      ]
+    },
+    {
+      "file": "游戏降临：没人比我更幸运.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.056,
+        "soft_per1k": 0.056,
+        "human_per1k": 1.368,
+        "ttr": 0.5834,
+        "sent_cv": 0.6734,
+        "short_line_ratio": 0.134,
+        "dialogue_count": 209,
+        "sample_chars": 35813
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "意味深长": 1
+      },
+      "soft_hits": {
+        "话音刚落": 1,
+        "下一秒": 1
+      },
+      "human_hits": {
+        "脏话梗": 5,
+        "情绪崩": 22,
+        "游戏黑话": 3,
+        "省略毛边": 19
+      },
+      "evidence_snippets": [
+        "仔细观察才发现，这里并不是所谓的观景平台，而是围绕着里侧洞穴分布的岩洞开口，只是因为地",
+        "的教棍。” 刘老师意味深长地看他一眼，称赞道，“不错啊刘小三同学，表"
+      ]
+    },
+    {
+      "file": "猫耳萝莉抡大锤，你这么求生的？.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.163,
+        "soft_per1k": 0.027,
+        "human_per1k": 2.559,
+        "ttr": 0.6059,
+        "sent_cv": 0.595,
+        "short_line_ratio": 0.293,
+        "dialogue_count": 406,
+        "sample_chars": 36728
+      },
+      "strong_hits": {
+        "不是X而是Y": 4,
+        "瞳孔一缩": 1,
+        "议论连接词": 1
+      },
+      "soft_hits": {
+        "下一秒": 1
+      },
+      "human_hits": {
+        "脏话梗": 10,
+        "情绪崩": 2,
+        "游戏黑话": 3,
+        "省略毛边": 79
+      },
+      "evidence_snippets": [
+        "从画面上看，根本不是人在抡锤，而是锤子拽着人在飞。 “四！”",
+        "捉到了关键的变化，忍不住瞳孔一缩。 慕青现在留下的伤痕，比最开始时",
+        "的代价只会更大。 更重要的是，她已经因为系统异常吃过一次亏。"
+      ]
+    },
+    {
+      "file": "王者：破防就变强？那我不当人了.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.107,
+        "soft_per1k": 0.142,
+        "human_per1k": 6.181,
+        "ttr": 0.5605,
+        "sent_cv": 0.509,
+        "short_line_ratio": 0.169,
+        "dialogue_count": 335,
+        "sample_chars": 28150
+      },
+      "strong_hits": {
+        "不是X而是Y": 2,
+        "议论连接词": 1
+      },
+      "soft_hits": {
+        "话音刚落": 1,
+        "下一秒": 3
+      },
+      "human_hits": {
+        "脏话梗": 25,
+        "情绪崩": 15,
+        "游戏黑话": 9,
+        "省略毛边": 125
+      },
+      "evidence_snippets": [
+        "啊，当士兵的对手，那就是不是狙击，而是以德报怨，纯纯送福利啊！】 —【主",
+        "整活系统，其实不止整活，更重要的是让对手破防。 一旦对手的破防值达到"
+      ]
+    },
+    {
+      "file": "网游之死亡武侠.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.144,
+        "soft_per1k": 0.036,
+        "human_per1k": 2.87,
+        "ttr": 0.5894,
+        "sent_cv": 0.7899,
+        "short_line_ratio": 0.42,
+        "dialogue_count": 296,
+        "sample_chars": 27871
+      },
+      "strong_hits": {
+        "不是X而是Y": 2,
+        "一种…的感觉": 2
+      },
+      "soft_hits": {
+        "目光套话": 1
+      },
+      "human_hits": {
+        "脏话梗": 4,
+        "情绪崩": 2,
+        "省略毛边": 74
+      },
+      "evidence_snippets": [
+        "G。 这意味着，这不是对外营业的健身馆，而是游戏工作室的内部训练场。 “苏姐，",
+        "纹路和字迹都无比清晰，有一种盲摸麻将的感觉。 卧槽。 这游戏……真实度"
+      ]
+    },
+    {
+      "file": "网游：我的毒能屠神.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.21,
+        "soft_per1k": 0.105,
+        "human_per1k": 0.91,
+        "ttr": 0.5069,
+        "sent_cv": 0.9445,
+        "short_line_ratio": 0.236,
+        "dialogue_count": 211,
+        "sample_chars": 28563
+      },
+      "strong_hits": {
+        "不是X而是Y": 6
+      },
+      "soft_hits": {
+        "心中暗道": 1,
+        "话音刚落": 1,
+        "就在这时": 1
+      },
+      "human_hits": {
+        "脏话梗": 12,
+        "情绪崩": 7,
+        "省略毛边": 7
+      },
+      "evidence_snippets": [
+        "天盖地，听说游戏的主脑并不是现有的文明，而是跨时代的产物，具体主脑怎么来的并没有公布"
+      ]
+    },
+    {
+      "file": "网游：神级刺客，我即是暗影！.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.201,
+        "soft_per1k": 0.101,
+        "human_per1k": 6.816,
+        "ttr": 0.5158,
+        "sent_cv": 0.5658,
+        "short_line_ratio": 0.302,
+        "dialogue_count": 290,
+        "sample_chars": 29781
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "并非X而是Y": 2,
+        "一种…的感觉": 1,
+        "议论连接词": 2
+      },
+      "soft_hits": {
+        "下一秒": 1,
+        "就在这时": 2
+      },
+      "human_hits": {
+        "脏话梗": 10,
+        "游戏黑话": 2,
+        "省略毛边": 191
+      },
+      "evidence_snippets": [
+        "手，带人跟上。 倒不是对别人怎么死感兴趣，而是这陌生的地方，太诡异，她想要观察别人，获",
+        "神弃游戏内的NPC，并非程式化的存在，而是其他文明的智慧生物。 跟那些NPC",
+        "散去。 他逐渐有了一种脚踏实地的感觉。 随着周围黑暗散去，出现在他面前",
+        "个世界一样。” “换句话说，我们意识进入神弃游戏后，现实中的肉身处"
+      ]
+    },
+    {
+      "file": "网游：神级盗贼，我即是无法无天.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.131,
+        "soft_per1k": 0.131,
+        "human_per1k": 2.394,
+        "ttr": 0.543,
+        "sent_cv": 0.6107,
+        "short_line_ratio": 0.28,
+        "dialogue_count": 298,
+        "sample_chars": 30492
+      },
+      "strong_hits": {
+        "不是X而是Y": 3,
+        "议论连接词": 1
+      },
+      "soft_hits": {
+        "下一秒": 2,
+        "就在这时": 2
+      },
+      "human_hits": {
+        "脏话梗": 7,
+        "情绪崩": 4,
+        "游戏黑话": 4,
+        "省略毛边": 58
+      },
+      "evidence_snippets": [
+        "攻击性果然很低，受到惊吓不是回头攻击，而是直接跑路。 这反而更让周明心动，不",
+        "没找到BOSS。 换句话说，这霸王鸡很可能是游戏内最先被发现的第一"
+      ]
+    },
+    {
+      "file": "联盟：在全神ig，我会拦住T1.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.076,
+        "soft_per1k": 0.152,
+        "human_per1k": 3.467,
+        "ttr": 0.5708,
+        "sent_cv": 0.5693,
+        "short_line_ratio": 0.275,
+        "dialogue_count": 337,
+        "sample_chars": 26247
+      },
+      "strong_hits": {
+        "不是X而是Y": 2
+      },
+      "soft_hits": {
+        "深吸一口气": 3,
+        "下一秒": 1
+      },
+      "human_hits": {
+        "脏话梗": 4,
+        "情绪崩": 30,
+        "游戏黑话": 46,
+        "省略毛边": 11
+      },
+      "evidence_snippets": [
+        "和命运。 金色光波不是飞向洛，而是飞向嘎子和鸡哥的站位。 光圈在滑板"
+      ]
+    },
+    {
+      "file": "让你求生！没让你把诡异薅秃了！.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.111,
+        "soft_per1k": 0.037,
+        "human_per1k": 2.143,
+        "ttr": 0.5178,
+        "sent_cv": 0.5468,
+        "short_line_ratio": 0.133,
+        "dialogue_count": 152,
+        "sample_chars": 27068
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "缓缓开口道": 1,
+        "一种…的感觉": 1
+      },
+      "soft_hits": {
+        "下一秒": 1
+      },
+      "human_hits": {
+        "脏话梗": 1,
+        "情绪崩": 29,
+        "省略毛边": 28
+      },
+      "evidence_snippets": [
+        "，林岁岁闲不住。 不是她自己不愿意休息的，而是病性的。 自从化疗后，各种药物的副",
+        "着拐杖，坐在一块礁石上，缓缓说着游戏规则。 “各位玩家，你们的任",
+        "。 不是不想睡，是一种焦躁的感觉，不能停下来，停下来之后，脑子里各种复杂"
+      ]
+    },
+    {
+      "file": "诸神游戏：你们管大圣叫吗喽？.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.245,
+        "soft_per1k": 0.353,
+        "human_per1k": 4.296,
+        "ttr": 0.5808,
+        "sent_cv": 0.5549,
+        "short_line_ratio": 0.438,
+        "dialogue_count": 605,
+        "sample_chars": 36778
+      },
+      "strong_hits": {
+        "不是X而是Y": 1,
+        "并非X而是Y": 1,
+        "瞳孔一缩": 1,
+        "不可置信": 1,
+        "缓缓开口道": 1,
+        "一种…的感觉": 1,
+        "议论连接词": 3
+      },
+      "soft_hits": {
+        "深吸一口气": 2,
+        "嘴角上扬": 1,
+        "下一秒": 7,
+        "就在这时": 3
+      },
+      "human_hits": {
+        "脏话梗": 16,
+        "情绪崩": 12,
+        "游戏黑话": 1,
+        "省略毛边": 129
+      },
+      "evidence_snippets": [
+        "正的难关。 她指的不是萧何或者沈烬，而是…… 周景川。 没错，是被萧",
+        "这个世界上。 可这并非恩赐，而是灾厄。 副本里的怪物会杀人，副本失",
+        "是……结缘？！”沈烬也是瞳孔一缩，“不对！江梨要是走了——” 两人",
+        "什么……” 魏舒瑶不可置信地看着面前的两个人。 青梅竹马的男友杜",
+        "川双目倒映着神王的光辉，缓缓开口： “江梨——” “我命你，",
+        "他心中忽然就生出一种说不清道不明的感觉。 不知为何。 他总觉得这小"
+      ]
+    },
+    {
+      "file": "车越粉人越狠这榜一我当定了.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.139,
+        "soft_per1k": 0.083,
+        "human_per1k": 0.694,
+        "ttr": 0.5109,
+        "sent_cv": 0.6053,
+        "short_line_ratio": 0.12,
+        "dialogue_count": 219,
+        "sample_chars": 36000
+      },
+      "strong_hits": {
+        "一种…的感觉": 4,
+        "议论连接词": 1
+      },
+      "soft_hits": {
+        "深吸一口气": 1,
+        "话音刚落": 1,
+        "下一秒": 1
+      },
+      "human_hits": {
+        "脏话梗": 16,
+        "情绪崩": 9
+      },
+      "evidence_snippets": [
+        "可能很玄幻，但就能感觉到一种食物有灵魂的感觉。 就和自动料理机做出来的不如人工",
+        "，可又不想太直白的炫耀，总而言之，你们知道我过得很好就够了，方便面好吃是"
+      ]
+    },
+    {
+      "file": "还木筏求生呢？我幽灵船上吃烤肉.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.0,
+        "soft_per1k": 0.145,
+        "human_per1k": 1.164,
+        "ttr": 0.5859,
+        "sent_cv": 0.6141,
+        "short_line_ratio": 0.149,
+        "dialogue_count": 139,
+        "sample_chars": 27497
+      },
+      "strong_hits": {},
+      "soft_hits": {
+        "下一秒": 3,
+        "就在这时": 1
+      },
+      "human_hits": {
+        "脏话梗": 2,
+        "情绪崩": 10,
+        "游戏黑话": 1,
+        "省略毛边": 19
+      },
+      "evidence_snippets": []
+    },
+    {
+      "file": "这难道不是乙女游戏？.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.0,
+        "soft_per1k": 0.225,
+        "human_per1k": 1.353,
+        "ttr": 0.5809,
+        "sent_cv": 0.5562,
+        "short_line_ratio": 0.375,
+        "dialogue_count": 324,
+        "sample_chars": 35484
+      },
+      "strong_hits": {},
+      "soft_hits": {
+        "深吸一口气": 2,
+        "话音刚落": 3,
+        "下一秒": 2,
+        "就在这时": 1
+      },
+      "human_hits": {
+        "脏话梗": 4,
+        "情绪崩": 7,
+        "省略毛边": 37
+      },
+      "evidence_snippets": []
+    },
+    {
+      "file": "退游六年，剑仙老婆现实找上门了.txt",
+      "verdict": "human",
+      "ai_score": 0,
+      "metrics": {
+        "strong_per1k": 0.128,
+        "soft_per1k": 0.153,
+        "human_per1k": 4.092,
+        "ttr": 0.5176,
+        "sent_cv": 0.7188,
+        "short_line_ratio": 0.537,
+        "dialogue_count": 1054,
+        "sample_chars": 39101
+      },
+      "strong_hits": {
+        "不是X而是Y": 3,
+        "缓缓开口道": 1,
+        "一种…的感觉": 1
+      },
+      "soft_hits": {
+        "深吸一口气": 3,
+        "下一秒": 2,
+        "就在这时": 1
+      },
+      "human_hits": {
+        "脏话梗": 20,
+        "情绪崩": 13,
+        "省略毛边": 127
+      },
+      "evidence_snippets": [
+        "但真正让陈凡僵住的不是颜值，而是那股说不清道不明的熟悉感。 很熟。",
+        "陈凡轻轻吸了口气，缓缓开口： “九歌……” 啪！",
+        "” 两人同时产生了一种非常微妙的感觉。 他们这几天…… 好像一直"
+      ]
+    }
+  ]
+}

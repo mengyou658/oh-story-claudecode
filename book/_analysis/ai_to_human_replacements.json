@@ -1,0 +1,1542 @@
+{
+  "purpose": "AI/模板句 → 人味句 替换词典（短表达优先）",
+  "usage": "写作时按 meaning 选一组；替换后按语境改人称/时态，禁止无脑全局替换",
+  "pair_count": 159,
+  "unique_ai_expr": 52,
+  "pairs": [
+    {
+      "meaning": "穿越反应",
+      "ai_expr": "记忆如潮水般涌来",
+      "human_expr": "等等，这不对劲",
+      "source": "curated"
+    },
+    {
+      "meaning": "穿越反应",
+      "ai_expr": "记忆如潮水般涌来",
+      "human_expr": "这儿哪儿啊",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪",
+      "ai_expr": "努力让自己冷静下来",
+      "human_expr": "别整这些",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "下一秒，1600金到账了",
+      "human_expr": "“得了别吹牛逼了，赶紧接着打",
+      "source": "harvested"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "龚煜瞳孔骤缩",
+      "human_expr": "“我操真服了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "不是A是B",
+      "ai_expr": "这不是结束，而是开始",
+      "human_expr": "别美化了，就是",
+      "source": "curated"
+    },
+    {
+      "meaning": "得意",
+      "ai_expr": "意味深长地笑了笑",
+      "human_expr": "他乐了",
+      "source": "curated"
+    },
+    {
+      "meaning": "内心独白/暗自判断",
+      "ai_expr": "他的脑海中浮现出了沙娅抓住了小女孩顷刻炼化的场景",
+      "human_expr": "到了这种程度，比他想象中还要细碎",
+      "source": "harvested"
+    },
+    {
+      "meaning": "转折强调（不是A而是B）",
+      "ai_expr": "副本降临的本质不是毁灭现实区域，而是吞并",
+      "human_expr": "这挑水砍柴的，哪是学本事的做派啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "他的嘴角微微上扬",
+      "human_expr": "jee憋不住笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "内心独白/暗自判断",
+      "ai_expr": "他的脑海中浮现出了沙娅抓住了小女孩顷刻炼化的场景",
+      "human_expr": "结果天禄跟他想象的完全两码事啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "下一秒，宝箱猛地一颤",
+      "human_expr": "第一颗闪光弹后，紧接着上方又来了一颗",
+      "source": "harvested"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "不可置信地看着眼前的一切",
+      "human_expr": "我去，这什么情况",
+      "source": "curated"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "瞳孔猛地一缩",
+      "human_expr": "我去，这什么情况",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "话音刚落",
+      "human_expr": "忽然",
+      "source": "curated"
+    },
+    {
+      "meaning": "不是A是B",
+      "ai_expr": "这不是结束，而是开始",
+      "human_expr": "哪是什么…，根本就是",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "钟临深吸一口气",
+      "human_expr": "“得了别吹牛逼了，赶紧接着打",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "他嘴角上扬，露出个真心实意开心的笑",
+      "human_expr": "jee憋不住笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "充满祈求的话语，李晓生的嘴角上扬",
+      "human_expr": "漠一点，有时候还真不好判断是不是笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "眼神",
+      "ai_expr": "目光深邃",
+      "human_expr": "盯着不放",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪",
+      "ai_expr": "努力让自己冷静下来",
+      "human_expr": "行吧行吧",
+      "source": "curated"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "空气仿佛瞬间凝固",
+      "human_expr": "吓我一跳",
+      "source": "curated"
+    },
+    {
+      "meaning": "转折强调（不是A而是B）",
+      "ai_expr": "拿下幸运药水，也不是抽卡，而是——",
+      "human_expr": "“这哪是储物柜",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意",
+      "ai_expr": "意味深长地笑了笑",
+      "human_expr": "笑出声来",
+      "source": "curated"
+    },
+    {
+      "meaning": "穿越反应",
+      "ai_expr": "记忆如潮水般涌来",
+      "human_expr": "我穿越了？",
+      "source": "curated"
+    },
+    {
+      "meaning": "转折强调（不是A而是B）",
+      "ai_expr": "打包票，这人一定不是维拉的同事，而是维拉的上司",
+      "human_expr": "这挑水砍柴的，哪是学本事的做派啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "话音刚落",
+      "human_expr": "紧接着",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "做好准备后，谢柠深吸一口气，缓缓开启了宝箱",
+      "human_expr": "“得了别吹牛逼了，赶紧接着打",
+      "source": "harvested"
+    },
+    {
+      "meaning": "内心独白",
+      "ai_expr": "脑海中闪过一个念头",
+      "human_expr": "这合理吗",
+      "source": "curated"
+    },
+    {
+      "meaning": "转折强调（不是A而是B）",
+      "ai_expr": "副本降临的本质不是毁灭现实区域，而是吞并",
+      "human_expr": "“这哪是储物柜",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "下一秒，伴随着刺耳的破风声，一道银光闪过",
+      "human_expr": "“得了别吹牛逼了，赶紧接着打",
+      "source": "harvested"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "龚煜瞳孔骤缩",
+      "human_expr": "我去，刚刚还坐在这的大哥呢",
+      "source": "harvested"
+    },
+    {
+      "meaning": "内心独白/暗自判断",
+      "ai_expr": "齐原心中暗道",
+      "human_expr": "训练室的气氛比他想象中松弛",
+      "source": "harvested"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "机油和蒸汽的热浪扑面而来，眼前的景象让她瞳孔骤缩",
+      "human_expr": "“我操真服了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "不可置信地看着眼前的一切",
+      "human_expr": "愣住了",
+      "source": "curated"
+    },
+    {
+      "meaning": "内心独白",
+      "ai_expr": "脑海中闪过一个念头",
+      "human_expr": "他寻思",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "下一秒，1600金到账了",
+      "human_expr": "紧接着再转头，又是一枪",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意",
+      "ai_expr": "嘴角微微上扬",
+      "human_expr": "笑出声来",
+      "source": "curated"
+    },
+    {
+      "meaning": "系统提示接收",
+      "ai_expr": "一行行冰冷的文字浮现眼前",
+      "human_expr": "提示刷了一屏",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "下一秒",
+      "human_expr": "紧接着",
+      "source": "curated"
+    },
+    {
+      "meaning": "转折强调（不是A而是B）",
+      "ai_expr": "但他的下意识不是放开枪，而是握紧了枪",
+      "human_expr": "这挑水砍柴的，哪是学本事的做派啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "不可置信地看着眼前的一切",
+      "human_expr": "吓我一跳",
+      "source": "curated"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "充满祈求的话语，李晓生的嘴角上扬",
+      "human_expr": "李东科笑了笑",
+      "source": "harvested"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "空气仿佛瞬间凝固",
+      "human_expr": "我去，这什么情况",
+      "source": "curated"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "充满祈求的话语，李晓生的嘴角上扬",
+      "human_expr": "jee憋不住笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "内心独白/暗自判断",
+      "ai_expr": "他心中暗道，已下了杀心",
+      "human_expr": "训练室的气氛比他想象中松弛",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意",
+      "ai_expr": "嘴角微微上扬",
+      "human_expr": "哈哈",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "币从交易区提了出来，下一秒脑中传来了一道声音",
+      "human_expr": "第一颗闪光弹后，紧接着上方又来了一颗",
+      "source": "harvested"
+    },
+    {
+      "meaning": "描写眼神/目光",
+      "ai_expr": "陈环眼神复杂无比",
+      "human_expr": "他转头看了一眼李东科",
+      "source": "harvested"
+    },
+    {
+      "meaning": "系统提示接收",
+      "ai_expr": "机械的提示音在耳边响起",
+      "human_expr": "面板弹出来了",
+      "source": "curated"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "女子嘴角上扬",
+      "human_expr": "jee憋不住笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "就在这时",
+      "human_expr": "这会儿",
+      "source": "curated"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "女子嘴角上扬",
+      "human_expr": "到CT方的李东科，已经在尽全力憋笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "瞳孔涣散的那一秒，邮差的双眼惊惧地瞪大了",
+      "human_expr": "“我操真服了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "机油和蒸汽的热浪扑面而来，眼前的景象让她瞳孔骤缩",
+      "human_expr": "“我去，双子星的双架还是这么叼啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "钟临瞳孔紧缩，左手举起圆盾，狠狠砸向猎枪的枪身",
+      "human_expr": "“我操真服了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "谢柠深吸一口气，把心一横",
+      "human_expr": "“得了别吹牛逼了，赶紧接着打",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "他嘴角上扬，露出个真心实意开心的笑",
+      "human_expr": "到CT方的李东科，已经在尽全力憋笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "战斗自信",
+      "ai_expr": "胜局已定",
+      "human_expr": "对面别跳了",
+      "source": "curated"
+    },
+    {
+      "meaning": "得意",
+      "ai_expr": "意味深长地笑了笑",
+      "human_expr": "哼了一声",
+      "source": "curated"
+    },
+    {
+      "meaning": "内心独白",
+      "ai_expr": "他心中暗道",
+      "human_expr": "他琢磨了一下",
+      "source": "curated"
+    },
+    {
+      "meaning": "穿越反应",
+      "ai_expr": "他很快整理好了当下的情况",
+      "human_expr": "我穿越了？",
+      "source": "curated"
+    },
+    {
+      "meaning": "眼神",
+      "ai_expr": "眼神复杂",
+      "human_expr": "看了他一眼",
+      "source": "curated"
+    },
+    {
+      "meaning": "内心独白/暗自判断",
+      "ai_expr": "齐原心中暗道",
+      "human_expr": "到了这种程度，比他想象中还要细碎",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "他的嘴角微微上扬",
+      "human_expr": "李东科笑了笑",
+      "source": "harvested"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "空气仿佛瞬间凝固",
+      "human_expr": "愣住了",
+      "source": "curated"
+    },
+    {
+      "meaning": "转折强调（不是A而是B）",
+      "ai_expr": "但他的下意识不是放开枪，而是握紧了枪",
+      "human_expr": "“这哪是储物柜",
+      "source": "harvested"
+    },
+    {
+      "meaning": "眼神",
+      "ai_expr": "眼神复杂",
+      "human_expr": "盯着不放",
+      "source": "curated"
+    },
+    {
+      "meaning": "战斗自信",
+      "ai_expr": "一切尽在掌握",
+      "human_expr": "稳了",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "于则青深吸一口气，随后开口",
+      "human_expr": "“得了别吹牛逼了，赶紧接着打",
+      "source": "harvested"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "不可置信地看着眼前的一切",
+      "human_expr": "我靠？",
+      "source": "curated"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "骨很高，眼窝处的阴影几乎覆盖了他琥珀色的瞳孔",
+      "human_expr": "我去，刚刚还坐在这的大哥呢",
+      "source": "harvested"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "谢柠深吸一口气，快速思考对策",
+      "human_expr": "“得了别吹牛逼了，赶紧接着打",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "下一秒，宝箱猛地一颤",
+      "human_expr": "“得了别吹牛逼了，赶紧接着打",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "就在这时",
+      "human_expr": "紧接着",
+      "source": "curated"
+    },
+    {
+      "meaning": "战斗自信",
+      "ai_expr": "胜局已定",
+      "human_expr": "这把有了",
+      "source": "curated"
+    },
+    {
+      "meaning": "内心独白",
+      "ai_expr": "脑海中闪过一个念头",
+      "human_expr": "想了想",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "下一秒",
+      "human_expr": "结果",
+      "source": "curated"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "瞳孔猛地一缩",
+      "human_expr": "我靠？",
+      "source": "curated"
+    },
+    {
+      "meaning": "转折强调（不是A而是B）",
+      "ai_expr": "打包票，这人一定不是维拉的同事，而是维拉的上司",
+      "human_expr": "“这哪是储物柜",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "下一秒，1600金到账了",
+      "human_expr": "第一颗闪光弹后，紧接着上方又来了一颗",
+      "source": "harvested"
+    },
+    {
+      "meaning": "战斗自信",
+      "ai_expr": "胜局已定",
+      "human_expr": "稳了",
+      "source": "curated"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "机油和蒸汽的热浪扑面而来，眼前的景象让她瞳孔骤缩",
+      "human_expr": "我去，刚刚还坐在这的大哥呢",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意",
+      "ai_expr": "嘴角微微上扬",
+      "human_expr": "哼了一声",
+      "source": "curated"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "瞳孔猛地一缩",
+      "human_expr": "愣住了",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "过了大约一分钟，谢柠深吸一口气，试着握了握拳",
+      "human_expr": "“得了别吹牛逼了，赶紧接着打",
+      "source": "harvested"
+    },
+    {
+      "meaning": "系统提示接收",
+      "ai_expr": "一行行冰冷的文字浮现眼前",
+      "human_expr": "系统又开始哔哔",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "币从交易区提了出来，下一秒脑中传来了一道声音",
+      "human_expr": "“得了别吹牛逼了，赶紧接着打",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "充满祈求的话语，李晓生的嘴角上扬",
+      "human_expr": "到CT方的李东科，已经在尽全力憋笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "龚煜瞳孔骤缩",
+      "human_expr": "“我去，双子星的双架还是这么叼啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "于则青深吸一口气，随后开口",
+      "human_expr": "“说一次调节调节氛围就差不多得了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "不是A是B",
+      "ai_expr": "他感受到的不是恐惧，而是兴奋",
+      "human_expr": "说白了就是",
+      "source": "curated"
+    },
+    {
+      "meaning": "得意",
+      "ai_expr": "嘴角微微上扬",
+      "human_expr": "他乐了",
+      "source": "curated"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "瞳孔涣散的那一秒，邮差的双眼惊惧地瞪大了",
+      "human_expr": "我去，刚刚还坐在这的大哥呢",
+      "source": "harvested"
+    },
+    {
+      "meaning": "系统提示接收",
+      "ai_expr": "机械的提示音在耳边响起",
+      "human_expr": "系统又开始哔哔",
+      "source": "curated"
+    },
+    {
+      "meaning": "不是A是B",
+      "ai_expr": "这不是结束，而是开始",
+      "human_expr": "说白了就是",
+      "source": "curated"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "”谢柠瞳孔猛地收缩，嘴巴张的老大",
+      "human_expr": "我去，刚刚还坐在这的大哥呢",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "下一秒，宝箱猛地一颤",
+      "human_expr": "紧接着再转头，又是一枪",
+      "source": "harvested"
+    },
+    {
+      "meaning": "内心独白/暗自判断",
+      "ai_expr": "齐原心中暗道",
+      "human_expr": "结果天禄跟他想象的完全两码事啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "下一秒，伴随着刺耳的破风声，一道银光闪过",
+      "human_expr": "第一颗闪光弹后，紧接着上方又来了一颗",
+      "source": "harvested"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "过了大约一分钟，谢柠深吸一口气，试着握了握拳",
+      "human_expr": "“说一次调节调节氛围就差不多得了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "眼神",
+      "ai_expr": "目光深邃",
+      "human_expr": "看了他一眼",
+      "source": "curated"
+    },
+    {
+      "meaning": "战斗自信",
+      "ai_expr": "一切尽在掌握",
+      "human_expr": "对面别跳了",
+      "source": "curated"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "空气仿佛瞬间凝固",
+      "human_expr": "我靠？",
+      "source": "curated"
+    },
+    {
+      "meaning": "眼神",
+      "ai_expr": "目光微眯",
+      "human_expr": "盯着不放",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪",
+      "ai_expr": "深吸一口气，强压下心中的激动",
+      "human_expr": "先缓缓",
+      "source": "curated"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "他嘴角上扬，露出个真心实意开心的笑",
+      "human_expr": "漠一点，有时候还真不好判断是不是笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "他嘴角上扬，露出个真心实意开心的笑",
+      "human_expr": "李东科笑了笑",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "他的嘴角微微上扬",
+      "human_expr": "到CT方的李东科，已经在尽全力憋笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "骨很高，眼窝处的阴影几乎覆盖了他琥珀色的瞳孔",
+      "human_expr": "“我去，双子星的双架还是这么叼啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "眼神",
+      "ai_expr": "目光深邃",
+      "human_expr": "斜了他一眼",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "下一秒，伴随着刺耳的破风声，一道银光闪过",
+      "human_expr": "紧接着再转头，又是一枪",
+      "source": "harvested"
+    },
+    {
+      "meaning": "内心独白/暗自判断",
+      "ai_expr": "他心中暗道，已下了杀心",
+      "human_expr": "到了这种程度，比他想象中还要细碎",
+      "source": "harvested"
+    },
+    {
+      "meaning": "穿越反应",
+      "ai_expr": "他很快整理好了当下的情况",
+      "human_expr": "这儿哪儿啊",
+      "source": "curated"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "”谢柠瞳孔猛地收缩，嘴巴张的老大",
+      "human_expr": "“我去，双子星的双架还是这么叼啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "眼神",
+      "ai_expr": "眼神复杂",
+      "human_expr": "斜了他一眼",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "她深吸一口气，唐刀用力一挑",
+      "human_expr": "“得了别吹牛逼了，赶紧接着打",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "下一秒",
+      "human_expr": "这会儿",
+      "source": "curated"
+    },
+    {
+      "meaning": "转折强调（不是A而是B）",
+      "ai_expr": "拿下幸运药水，也不是抽卡，而是——",
+      "human_expr": "这挑水砍柴的，哪是学本事的做派啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "谢柠深吸一口气，快速思考对策",
+      "human_expr": "“说一次调节调节氛围就差不多得了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "强压情绪",
+      "ai_expr": "努力让自己冷静下来",
+      "human_expr": "先缓缓",
+      "source": "curated"
+    },
+    {
+      "meaning": "系统提示接收",
+      "ai_expr": "机械的提示音在耳边响起",
+      "human_expr": "提示刷了一屏",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "就在这时",
+      "human_expr": "结果",
+      "source": "curated"
+    },
+    {
+      "meaning": "不是A是B",
+      "ai_expr": "他感受到的不是恐惧，而是兴奋",
+      "human_expr": "别美化了，就是",
+      "source": "curated"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "瞳孔涣散的那一秒，邮差的双眼惊惧地瞪大了",
+      "human_expr": "“我去，双子星的双架还是这么叼啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "他的嘴角微微上扬",
+      "human_expr": "漠一点，有时候还真不好判断是不是笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "内心独白/暗自判断",
+      "ai_expr": "他心中暗道，已下了杀心",
+      "human_expr": "结果天禄跟他想象的完全两码事啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "钟临瞳孔紧缩，左手举起圆盾，狠狠砸向猎枪的枪身",
+      "human_expr": "我去，刚刚还坐在这的大哥呢",
+      "source": "harvested"
+    },
+    {
+      "meaning": "内心独白",
+      "ai_expr": "脑海中闪过一个念头",
+      "human_expr": "他琢磨了一下",
+      "source": "curated"
+    },
+    {
+      "meaning": "眼神",
+      "ai_expr": "目光微眯",
+      "human_expr": "斜了他一眼",
+      "source": "curated"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "女子嘴角上扬",
+      "human_expr": "漠一点，有时候还真不好判断是不是笑了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "内心独白",
+      "ai_expr": "他心中暗道",
+      "human_expr": "他寻思",
+      "source": "curated"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "”谢柠瞳孔猛地收缩，嘴巴张的老大",
+      "human_expr": "“我操真服了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "内心独白",
+      "ai_expr": "他心中暗道",
+      "human_expr": "想了想",
+      "source": "curated"
+    },
+    {
+      "meaning": "得意",
+      "ai_expr": "意味深长地笑了笑",
+      "human_expr": "哈哈",
+      "source": "curated"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "钟临瞳孔紧缩，左手举起圆盾，狠狠砸向猎枪的枪身",
+      "human_expr": "“我去，双子星的双架还是这么叼啊",
+      "source": "harvested"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "谢柠深吸一口气，把心一横",
+      "human_expr": "“说一次调节调节氛围就差不多得了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "不是A是B",
+      "ai_expr": "他感受到的不是恐惧，而是兴奋",
+      "human_expr": "哪是什么…，根本就是",
+      "source": "curated"
+    },
+    {
+      "meaning": "系统提示接收",
+      "ai_expr": "一行行冰冷的文字浮现眼前",
+      "human_expr": "面板弹出来了",
+      "source": "curated"
+    },
+    {
+      "meaning": "内心独白",
+      "ai_expr": "他心中暗道",
+      "human_expr": "这合理吗",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "做好准备后，谢柠深吸一口气，缓缓开启了宝箱",
+      "human_expr": "“说一次调节调节氛围就差不多得了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "内心独白/暗自判断",
+      "ai_expr": "他的脑海中浮现出了沙娅抓住了小女孩顷刻炼化的场景",
+      "human_expr": "训练室的气氛比他想象中松弛",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "话音刚落",
+      "human_expr": "结果",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折/下一拍发生",
+      "ai_expr": "币从交易区提了出来，下一秒脑中传来了一道声音",
+      "human_expr": "紧接着再转头，又是一枪",
+      "source": "harvested"
+    },
+    {
+      "meaning": "战斗自信",
+      "ai_expr": "一切尽在掌握",
+      "human_expr": "这把有了",
+      "source": "curated"
+    },
+    {
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_expr": "骨很高，眼窝处的阴影几乎覆盖了他琥珀色的瞳孔",
+      "human_expr": "“我操真服了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "震惊",
+      "ai_expr": "瞳孔猛地一缩",
+      "human_expr": "吓我一跳",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪",
+      "ai_expr": "深吸一口气，强压下心中的激动",
+      "human_expr": "行吧行吧",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "话音刚落",
+      "human_expr": "这会儿",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪",
+      "ai_expr": "深吸一口气，强压下心中的激动",
+      "human_expr": "别整这些",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪",
+      "ai_expr": "努力让自己冷静下来",
+      "human_expr": "他骂了一句",
+      "source": "curated"
+    },
+    {
+      "meaning": "得意/轻笑的表情",
+      "ai_expr": "女子嘴角上扬",
+      "human_expr": "李东科笑了笑",
+      "source": "harvested"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "下一秒",
+      "human_expr": "忽然",
+      "source": "curated"
+    },
+    {
+      "meaning": "突然转折",
+      "ai_expr": "就在这时",
+      "human_expr": "忽然",
+      "source": "curated"
+    },
+    {
+      "meaning": "穿越反应",
+      "ai_expr": "他很快整理好了当下的情况",
+      "human_expr": "等等，这不对劲",
+      "source": "curated"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "钟临深吸一口气",
+      "human_expr": "“说一次调节调节氛围就差不多得了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "强压情绪/让自己冷静",
+      "ai_expr": "她深吸一口气，唐刀用力一挑",
+      "human_expr": "“说一次调节调节氛围就差不多得了",
+      "source": "harvested"
+    },
+    {
+      "meaning": "强压情绪",
+      "ai_expr": "深吸一口气，强压下心中的激动",
+      "human_expr": "他骂了一句",
+      "source": "curated"
+    },
+    {
+      "meaning": "眼神",
+      "ai_expr": "目光微眯",
+      "human_expr": "看了他一眼",
+      "source": "curated"
+    }
+  ],
+  "map": {
+    "记忆如潮水般涌来": {
+      "meaning": "穿越反应",
+      "replace_with": [
+        "等等，这不对劲",
+        "这儿哪儿啊",
+        "我穿越了？"
+      ]
+    },
+    "努力让自己冷静下来": {
+      "meaning": "强压情绪",
+      "replace_with": [
+        "别整这些",
+        "行吧行吧",
+        "先缓缓",
+        "他骂了一句"
+      ]
+    },
+    "下一秒，1600金到账了": {
+      "meaning": "突然转折/下一拍发生",
+      "replace_with": [
+        "“得了别吹牛逼了，赶紧接着打",
+        "紧接着再转头，又是一枪",
+        "第一颗闪光弹后，紧接着上方又来了一颗"
+      ]
+    },
+    "龚煜瞳孔骤缩": {
+      "meaning": "受到惊吓/震惊时的反应",
+      "replace_with": [
+        "“我操真服了",
+        "我去，刚刚还坐在这的大哥呢",
+        "“我去，双子星的双架还是这么叼啊"
+      ]
+    },
+    "这不是结束，而是开始": {
+      "meaning": "不是A是B",
+      "replace_with": [
+        "别美化了，就是",
+        "哪是什么…，根本就是",
+        "说白了就是"
+      ]
+    },
+    "意味深长地笑了笑": {
+      "meaning": "得意",
+      "replace_with": [
+        "他乐了",
+        "笑出声来",
+        "哼了一声",
+        "哈哈"
+      ]
+    },
+    "他的脑海中浮现出了沙娅抓住了小女孩顷刻炼化的场景": {
+      "meaning": "内心独白/暗自判断",
+      "replace_with": [
+        "到了这种程度，比他想象中还要细碎",
+        "结果天禄跟他想象的完全两码事啊",
+        "训练室的气氛比他想象中松弛"
+      ]
+    },
+    "副本降临的本质不是毁灭现实区域，而是吞并": {
+      "meaning": "转折强调（不是A而是B）",
+      "replace_with": [
+        "这挑水砍柴的，哪是学本事的做派啊",
+        "“这哪是储物柜"
+      ]
+    },
+    "他的嘴角微微上扬": {
+      "meaning": "得意/轻笑的表情",
+      "replace_with": [
+        "jee憋不住笑了",
+        "李东科笑了笑",
+        "到CT方的李东科，已经在尽全力憋笑了",
+        "漠一点，有时候还真不好判断是不是笑了"
+      ]
+    },
+    "下一秒，宝箱猛地一颤": {
+      "meaning": "突然转折/下一拍发生",
+      "replace_with": [
+        "第一颗闪光弹后，紧接着上方又来了一颗",
+        "“得了别吹牛逼了，赶紧接着打",
+        "紧接着再转头，又是一枪"
+      ]
+    },
+    "不可置信地看着眼前的一切": {
+      "meaning": "震惊",
+      "replace_with": [
+        "我去，这什么情况",
+        "愣住了",
+        "吓我一跳",
+        "我靠？"
+      ]
+    },
+    "瞳孔猛地一缩": {
+      "meaning": "震惊",
+      "replace_with": [
+        "我去，这什么情况",
+        "我靠？",
+        "愣住了",
+        "吓我一跳"
+      ]
+    },
+    "话音刚落": {
+      "meaning": "突然转折",
+      "replace_with": [
+        "忽然",
+        "紧接着",
+        "结果",
+        "这会儿"
+      ]
+    },
+    "钟临深吸一口气": {
+      "meaning": "强压情绪/让自己冷静",
+      "replace_with": [
+        "“得了别吹牛逼了，赶紧接着打",
+        "“说一次调节调节氛围就差不多得了"
+      ]
+    },
+    "他嘴角上扬，露出个真心实意开心的笑": {
+      "meaning": "得意/轻笑的表情",
+      "replace_with": [
+        "jee憋不住笑了",
+        "到CT方的李东科，已经在尽全力憋笑了",
+        "漠一点，有时候还真不好判断是不是笑了",
+        "李东科笑了笑"
+      ]
+    },
+    "充满祈求的话语，李晓生的嘴角上扬": {
+      "meaning": "得意/轻笑的表情",
+      "replace_with": [
+        "漠一点，有时候还真不好判断是不是笑了",
+        "李东科笑了笑",
+        "jee憋不住笑了",
+        "到CT方的李东科，已经在尽全力憋笑了"
+      ]
+    },
+    "目光深邃": {
+      "meaning": "眼神",
+      "replace_with": [
+        "盯着不放",
+        "看了他一眼",
+        "斜了他一眼"
+      ]
+    },
+    "空气仿佛瞬间凝固": {
+      "meaning": "震惊",
+      "replace_with": [
+        "吓我一跳",
+        "我去，这什么情况",
+        "愣住了",
+        "我靠？"
+      ]
+    },
+    "拿下幸运药水，也不是抽卡，而是——": {
+      "meaning": "转折强调（不是A而是B）",
+      "replace_with": [
+        "“这哪是储物柜",
+        "这挑水砍柴的，哪是学本事的做派啊"
+      ]
+    },
+    "打包票，这人一定不是维拉的同事，而是维拉的上司": {
+      "meaning": "转折强调（不是A而是B）",
+      "replace_with": [
+        "这挑水砍柴的，哪是学本事的做派啊",
+        "“这哪是储物柜"
+      ]
+    },
+    "做好准备后，谢柠深吸一口气，缓缓开启了宝箱": {
+      "meaning": "强压情绪/让自己冷静",
+      "replace_with": [
+        "“得了别吹牛逼了，赶紧接着打",
+        "“说一次调节调节氛围就差不多得了"
+      ]
+    },
+    "脑海中闪过一个念头": {
+      "meaning": "内心独白",
+      "replace_with": [
+        "这合理吗",
+        "他寻思",
+        "想了想",
+        "他琢磨了一下"
+      ]
+    },
+    "下一秒，伴随着刺耳的破风声，一道银光闪过": {
+      "meaning": "突然转折/下一拍发生",
+      "replace_with": [
+        "“得了别吹牛逼了，赶紧接着打",
+        "第一颗闪光弹后，紧接着上方又来了一颗",
+        "紧接着再转头，又是一枪"
+      ]
+    },
+    "齐原心中暗道": {
+      "meaning": "内心独白/暗自判断",
+      "replace_with": [
+        "训练室的气氛比他想象中松弛",
+        "到了这种程度，比他想象中还要细碎",
+        "结果天禄跟他想象的完全两码事啊"
+      ]
+    },
+    "机油和蒸汽的热浪扑面而来，眼前的景象让她瞳孔骤缩": {
+      "meaning": "受到惊吓/震惊时的反应",
+      "replace_with": [
+        "“我操真服了",
+        "“我去，双子星的双架还是这么叼啊",
+        "我去，刚刚还坐在这的大哥呢"
+      ]
+    },
+    "嘴角微微上扬": {
+      "meaning": "得意",
+      "replace_with": [
+        "笑出声来",
+        "哈哈",
+        "哼了一声",
+        "他乐了"
+      ]
+    },
+    "一行行冰冷的文字浮现眼前": {
+      "meaning": "系统提示接收",
+      "replace_with": [
+        "提示刷了一屏",
+        "系统又开始哔哔",
+        "面板弹出来了"
+      ]
+    },
+    "下一秒": {
+      "meaning": "突然转折",
+      "replace_with": [
+        "紧接着",
+        "结果",
+        "这会儿",
+        "忽然"
+      ]
+    },
+    "但他的下意识不是放开枪，而是握紧了枪": {
+      "meaning": "转折强调（不是A而是B）",
+      "replace_with": [
+        "这挑水砍柴的，哪是学本事的做派啊",
+        "“这哪是储物柜"
+      ]
+    },
+    "他心中暗道，已下了杀心": {
+      "meaning": "内心独白/暗自判断",
+      "replace_with": [
+        "训练室的气氛比他想象中松弛",
+        "到了这种程度，比他想象中还要细碎",
+        "结果天禄跟他想象的完全两码事啊"
+      ]
+    },
+    "币从交易区提了出来，下一秒脑中传来了一道声音": {
+      "meaning": "突然转折/下一拍发生",
+      "replace_with": [
+        "第一颗闪光弹后，紧接着上方又来了一颗",
+        "“得了别吹牛逼了，赶紧接着打",
+        "紧接着再转头，又是一枪"
+      ]
+    },
+    "陈环眼神复杂无比": {
+      "meaning": "描写眼神/目光",
+      "replace_with": [
+        "他转头看了一眼李东科"
+      ]
+    },
+    "机械的提示音在耳边响起": {
+      "meaning": "系统提示接收",
+      "replace_with": [
+        "面板弹出来了",
+        "系统又开始哔哔",
+        "提示刷了一屏"
+      ]
+    },
+    "女子嘴角上扬": {
+      "meaning": "得意/轻笑的表情",
+      "replace_with": [
+        "jee憋不住笑了",
+        "到CT方的李东科，已经在尽全力憋笑了",
+        "漠一点，有时候还真不好判断是不是笑了",
+        "李东科笑了笑"
+      ]
+    },
+    "就在这时": {
+      "meaning": "突然转折",
+      "replace_with": [
+        "这会儿",
+        "紧接着",
+        "结果",
+        "忽然"
+      ]
+    },
+    "瞳孔涣散的那一秒，邮差的双眼惊惧地瞪大了": {
+      "meaning": "受到惊吓/震惊时的反应",
+      "replace_with": [
+        "“我操真服了",
+        "我去，刚刚还坐在这的大哥呢",
+        "“我去，双子星的双架还是这么叼啊"
+      ]
+    },
+    "钟临瞳孔紧缩，左手举起圆盾，狠狠砸向猎枪的枪身": {
+      "meaning": "受到惊吓/震惊时的反应",
+      "replace_with": [
+        "“我操真服了",
+        "我去，刚刚还坐在这的大哥呢",
+        "“我去，双子星的双架还是这么叼啊"
+      ]
+    },
+    "谢柠深吸一口气，把心一横": {
+      "meaning": "强压情绪/让自己冷静",
+      "replace_with": [
+        "“得了别吹牛逼了，赶紧接着打",
+        "“说一次调节调节氛围就差不多得了"
+      ]
+    },
+    "胜局已定": {
+      "meaning": "战斗自信",
+      "replace_with": [
+        "对面别跳了",
+        "这把有了",
+        "稳了"
+      ]
+    },
+    "他心中暗道": {
+      "meaning": "内心独白",
+      "replace_with": [
+        "他琢磨了一下",
+        "他寻思",
+        "想了想",
+        "这合理吗"
+      ]
+    },
+    "他很快整理好了当下的情况": {
+      "meaning": "穿越反应",
+      "replace_with": [
+        "我穿越了？",
+        "这儿哪儿啊",
+        "等等，这不对劲"
+      ]
+    },
+    "眼神复杂": {
+      "meaning": "眼神",
+      "replace_with": [
+        "看了他一眼",
+        "盯着不放",
+        "斜了他一眼"
+      ]
+    },
+    "一切尽在掌握": {
+      "meaning": "战斗自信",
+      "replace_with": [
+        "稳了",
+        "对面别跳了",
+        "这把有了"
+      ]
+    },
+    "于则青深吸一口气，随后开口": {
+      "meaning": "强压情绪/让自己冷静",
+      "replace_with": [
+        "“得了别吹牛逼了，赶紧接着打",
+        "“说一次调节调节氛围就差不多得了"
+      ]
+    },
+    "骨很高，眼窝处的阴影几乎覆盖了他琥珀色的瞳孔": {
+      "meaning": "受到惊吓/震惊时的反应",
+      "replace_with": [
+        "我去，刚刚还坐在这的大哥呢",
+        "“我去，双子星的双架还是这么叼啊",
+        "“我操真服了"
+      ]
+    },
+    "谢柠深吸一口气，快速思考对策": {
+      "meaning": "强压情绪/让自己冷静",
+      "replace_with": [
+        "“得了别吹牛逼了，赶紧接着打",
+        "“说一次调节调节氛围就差不多得了"
+      ]
+    },
+    "过了大约一分钟，谢柠深吸一口气，试着握了握拳": {
+      "meaning": "强压情绪/让自己冷静",
+      "replace_with": [
+        "“得了别吹牛逼了，赶紧接着打",
+        "“说一次调节调节氛围就差不多得了"
+      ]
+    },
+    "他感受到的不是恐惧，而是兴奋": {
+      "meaning": "不是A是B",
+      "replace_with": [
+        "说白了就是",
+        "别美化了，就是",
+        "哪是什么…，根本就是"
+      ]
+    },
+    "”谢柠瞳孔猛地收缩，嘴巴张的老大": {
+      "meaning": "受到惊吓/震惊时的反应",
+      "replace_with": [
+        "我去，刚刚还坐在这的大哥呢",
+        "“我去，双子星的双架还是这么叼啊",
+        "“我操真服了"
+      ]
+    },
+    "目光微眯": {
+      "meaning": "眼神",
+      "replace_with": [
+        "盯着不放",
+        "斜了他一眼",
+        "看了他一眼"
+      ]
+    },
+    "深吸一口气，强压下心中的激动": {
+      "meaning": "强压情绪",
+      "replace_with": [
+        "先缓缓",
+        "行吧行吧",
+        "别整这些",
+        "他骂了一句"
+      ]
+    },
+    "她深吸一口气，唐刀用力一挑": {
+      "meaning": "强压情绪/让自己冷静",
+      "replace_with": [
+        "“得了别吹牛逼了，赶紧接着打",
+        "“说一次调节调节氛围就差不多得了"
+      ]
+    }
+  },
+  "buckets_summary": [
+    {
+      "id": "shock_reaction",
+      "meaning": "受到惊吓/震惊时的反应",
+      "ai_top": [
+        "骨很高，眼窝处的阴影几乎覆盖了他琥珀色的瞳孔",
+        "机油和蒸汽的热浪扑面而来，眼前的景象让她瞳孔骤缩",
+        "瞳孔涣散的那一秒，邮差的双眼惊惧地瞪大了",
+        "钟临瞳孔紧缩，左手举起圆盾，狠狠砸向猎枪的枪身",
+        "钟临捕捉到了她瞳孔中那转瞬即逝的紧缩，以及身体下意识绷紧的",
+        "龚煜瞳孔骤缩",
+        "灯光下，那金属物的反光恰好刺入龚煜的瞳孔，晃了他的眼",
+        "”谢柠瞳孔猛地收缩，嘴巴张的老大"
+      ],
+      "human_top": [
+        "“我操真服了",
+        "我去，刚刚还坐在这的大哥呢",
+        "“我去，双子星的双架还是这么叼啊",
+        "“我去，原来这个技能使用后的感觉是这样",
+        "“我去，jee和jamyoung都架不住他",
+        "“我去，又是这个李东科啊",
+        "“我去，这枪j神太准了",
+        "“我去大哥，你疯了"
+      ]
+    },
+    {
+      "id": "calm_down",
+      "meaning": "强压情绪/让自己冷静",
+      "ai_top": [
+        "钟临深吸一口气",
+        "钟临深吸一口气，将重心放低，微闭上眼，用精神感受着自己的每一寸血肉",
+        "做好准备后，谢柠深吸一口气，缓缓开启了宝箱",
+        "她深吸一口气，唐刀用力一挑",
+        "过了大约一分钟，谢柠深吸一口气，试着握了握拳",
+        "谢柠深吸一口气，把心一横",
+        "谢柠深吸一口气，快速思考对策",
+        "于则青深吸一口气，随后开口"
+      ],
+      "human_top": [
+        "“得了别吹牛逼了，赶紧接着打",
+        "“得了，不用打了，直接把这小子拉进来吧",
+        "李东科挠了挠头，没想到挂开猛了……咳咳，不是，打得太好了",
+        "“得了发什么疯呢jee，大伙都看着东科打，东科上哪插U",
+        "“说一次调节调节氛围就差不多得了",
+        "“咳咳，J神，我是运气枪，运气枪",
+        "“咳咳，没啥，接着打",
+        "“咳咳，呼吸说，跟jee，哦，也就是跟东科的配合很舒服"
+      ]
+    },
+    {
+      "id": "inner_thought",
+      "meaning": "内心独白/暗自判断",
+      "ai_top": [
+        "他心中暗道，已下了杀心",
+        "齐原心中暗道",
+        "原，皱了皱眉头，暗暗想道：果然没那么容易，泉水的效果还是不能完全替代药物",
+        "他的脑海中浮现出了沙娅抓住了小女孩顷刻炼化的场景"
+      ],
+      "human_top": [
+        "训练室的气氛比他想象中松弛",
+        "结果天禄跟他想象的完全两码事啊",
+        "到了这种程度，比他想象中还要细碎",
+        "可当他想帮队友输出，反应过来想开枪的时候，许博又回拉走了",
+        "他想带着这些东西出去，他要得吃，他要爽吃",
+        "他想自己找找机会",
+        "对手比他想象的更硬，无论是护甲，还是枪法",
+        "突然，他想到了击杀自己的枪械和子弹"
+      ]
+    },
+    {
+      "id": "smug_smile",
+      "meaning": "得意/轻笑的表情",
+      "ai_top": [
+        "哥】，眸底闪过一丝狡黠，嘴角微微上扬",
+        "谢柠嘴角一勾，大运重卡引擎发出野兽般的咆哮，直奔牧马",
+        "面对曲谭风的问题，岑厌嘴角上扬，露出个难以捉摸的笑容",
+        "他嘴角上扬，露出个真心实意开心的笑",
+        "充满祈求的话语，李晓生的嘴角上扬",
+        "司序的嘴角上扬，很好，跟她预想的一样，物资箱在没有打开",
+        "他的嘴角微微上扬",
+        "女子嘴角上扬"
+      ],
+      "human_top": [
+        "李东科笑了笑",
+        "jee憋不住笑了",
+        "漠一点，有时候还真不好判断是不是笑了",
+        "哈……”李东科摸了摸鼻子，尴尬地笑了笑",
+        "到CT方的李东科，已经在尽全力憋笑了",
+        "话，刀妹像是酒醉中怀着一丝清醒，笑了笑",
+        "被老板现场抓包，许博尴尬的笑了笑，随后点开了配装界面",
+        "大伙都被逗乐了"
+      ]
+    },
+    {
+      "id": "contrast_not_but",
+      "meaning": "转折强调（不是A而是B）",
+      "ai_top": [
+        "邮差出现的意义，不是为了让我接取委托，而是为了让我杀死他、得到礼装吧",
+        "戏的升级奖励竟然不是固定的，而是需要通过抽卡来获取……",
+        "次众人围观的对象不是被抓的玩家，而是铜匠街三号，公共驿站",
+        "但他的下意识不是放开枪，而是握紧了枪",
+        "拿下幸运药水，也不是抽卡，而是——",
+        "打包票，这人一定不是维拉的同事，而是维拉的上司",
+        "副本降临的本质不是毁灭现实区域，而是吞并",
+        "想说，我们输给的不是一个16岁小将，而是一个天才球员的灵光乍现"
+      ],
+      "human_top": [
+        "“这哪是储物柜",
+        "猛地转身，拼了命地往后场跑，可身体的惯性哪是说停就能停的",
+        "仔细一看，哪是什么光点，那分明是怪物的眼睛",
+        "这哪是她想的，只是踩着前人的肩膀看得远罢了",
+        "这挑水砍柴的，哪是学本事的做派啊",
+        "戚许没有太早兴奋，黄金物资箱哪是那么容易碰见的，里面八成是怪物，戚许拎着",
+        "忧的事情不会发生，因为这最强一队根本不是冲着正常搜打撤来的",
+        "那股力道蛮横得不讲道理，根本不是单手握力能抗衡的，他拼尽全力也只坚持了不到半秒"
+      ]
+    },
+    {
+      "id": "sudden_turn",
+      "meaning": "突然转折/下一拍发生",
+      "ai_top": [
+        "是什么、该怎么破解，下一秒，他看到她仰头闷了一瓶药水",
+        "下一秒，伴随着刺耳的破风声，一道银光闪过",
+        "下一秒，1600金到账了",
+        "驰站着对他们笑，结果下一秒就发现林驰被埋进了人堆里",
+        "下一秒，她面前的空气微微扭曲，一辆庞然大物凭空出现，稳稳地停在公路中央",
+        "下一秒，宝箱猛地一颤",
+        "币从交易区提了出来，下一秒脑中传来了一道声音",
+        "下一秒，谢柠将唐刀收入了背包中，跟着车载音乐哼唱起来"
+      ],
+      "human_top": [
+        "“得了别吹牛逼了，赶紧接着打",
+        "火烟把火给灭了，然后紧接着高抛近点闪，把石板位置的给白了",
+        "紧接着再转头，又是一枪",
+        "第一颗闪光弹后，紧接着上方又来了一颗",
+        "确认了裤子的安全，紧接着又被阿尔弗雷德用毯子包裹起来",
+        "眼里有一瞬间的茫然，紧接着看清了时西——",
+        "紧接着，梅洛蕾丝的声音响起",
+        "墙壁又开了，紧接着是一阵脚步声"
+      ]
+    },
+    {
+      "id": "gaze_desc",
+      "meaning": "描写眼神/目光",
+      "ai_top": [
+        "陈环眼神复杂无比"
+      ],
+      "human_top": [
+        "前台看了一眼台面上的本子，露出了然的表情，随即一脸微",
+        "李东科看了一眼，此时他们好像在跑图练道具，练的图是Mi",
+        "旁坐着的S1x和zero也下意识看了一眼李东科",
+        "Jamyoung斜着看了一眼jee，淡淡地吐槽道",
+        "他转头看了一眼李东科",
+        "认集装箱被吃完，许博打开背包界面看了一眼目前的收入",
+        "边的威龙也很委屈，他趴着转过头了看了一眼队友，然后回了几枪",
+        "立马当上捧哏，蛋包饭老哥只是回头看了他一眼，又换了一个大红原地检视"
+      ]
+    }
+  ]
+}
