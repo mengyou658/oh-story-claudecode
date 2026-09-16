@@ -17,15 +17,15 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 1. 开书/补纲先完整读取 `references/workflow-setup.md`；写指定章读取 `references/workflow-chapter.md`；日更/大修先读取 `references/workflow-daily.md` 或 `references/workflow-revision.md`，进入正文前再完整读取 `workflow-chapter.md`。
 2. 主会话直接写正文时，首次落笔前完整读取 `references/long-format.md`、`references/writing-craft.md`、`references/long-chapter-quality.md`、`references/long-chapter-hooks.md`、`references/generation-constraints.md`（写前去模板硬约束）；交给 narrative-writer 时，由该 agent 按自己的 reference 表完成同等写前读取，主会话不得用未读 reference 的临时 prompt 替代。
 3. 悬疑、惊悚、异常线索章加读 `references/long-suspense.md`；身份/认知/立场反转章加读 `references/long-reversal.md`。
-4. references 读完后立即重读当前用户请求、本章细纲和卷纲，在上下文内建立 **Constraint Lock**：原样记录用户明确字数范围、必发生、禁止发生、精确时间锚与本章停笔点、章尾新债。references 只提供技法，不得覆盖这些项目事实；用户明确范围优先于自动 ± 比例带。**本仓库硬规则**见 [references/local-production-rules.md](references/local-production-rules.md)：默认 **3 章细纲 → 1 章正文**；字数 **≥2000 即合格、不强制贴目标、改短可接受、紧凑快节奏、禁止用水话回填**。交付前逐项复核：相对目标 `under` 但 ≥2000 时接受自然长度、不自动补字/不水话回填；仅 <2000 才走合并/处置；其余项越界不算完成。
+4. references 读完后立即重读当前用户请求、本章细纲和卷纲，在上下文内建立 **Constraint Lock**：原样记录用户明确字数范围（仅当用户书面给出时才约束）、必发生、禁止发生、精确时间锚与本章停笔点、章尾新债。references 只提供技法，不得覆盖这些项目事实。**本仓库硬规则**见 [references/local-production-rules.md](references/local-production-rules.md)：默认 **3 章细纲 → 1 章正文**；**不按目标字数生成**——生成多少就是多少；比 2000 少也不加厚/不合并；禁止用水话回填；每章字数写入 `追踪/字数记录/第XXX章.md`。交付前逐项复核：情节齐即停；`under`/`over` 相对细纲目标只记账，不追写。
 
 任一必需路径不存在、不可读或未读完时立即停止，报告准确路径，**不得先写正文再补读**。门禁按当前任务、当前会话重新执行；旧会话的“读过”不能沿用。
 
 ---
 
-> 内置适配 Claude Code / OpenCode / Codex / Antigravity / ZCode / OpenClaw。专业 agent 只查当前端 canonical 目录（`.claude/agents`、`.opencode/agents`、`.codex/agents` TOML、`.agents/agents`）；Antigravity 用 `invoke_subagent` + 同名 `TypeName`。文件或运行时能力缺失、返回 unknown agent，或当前为不执行 custom agents 的 ZCode 3.3.4 时，报告 fallback 并 solo/direct 执行。
+> 内置适配 Claude Code / OpenCode / Codex / Antigravity / ZCode / OpenClaw / **Cursor**。专业 agent 只查当前端 canonical 目录（`.claude/agents`、`.opencode/agents`、`.codex/agents` TOML、`.agents/agents`）；Antigravity 用 `invoke_subagent` + 同名 `TypeName`。**Cursor** 无项目 custom-agent registry：不要查 `.claude/agents` 当部署前提；写正文与去AI味一律 **solo/direct**（可读 `skills/*/SKILL.md` 执行；可用 Task/`generalPurpose` 分担，但不得因「无 agent 文件」跳过步骤）。文件或运行时能力缺失、返回 unknown agent，或当前为不执行 custom agents 的 ZCode 3.3.4 / Cursor 时，报告 fallback 并 **立刻** solo/direct 执行同一工作——**Fallback 只换执行者，不取消去AI味 / 一致性核 / 字数记账**。
 >
-> Spawn 版本提示（不阻断 spawn）：先读取项目根 `.story-deployed` 的 `agents_version`。与本版 `agents_version: 30` 不一致时（标记缺失、字段缺失/非整数、小于或大于 30）**照常按文件存在性检查并 spawn**，但只检查当前运行时的 canonical 目录；同时报告 `Notice: agents bundle 版本不匹配（项目 {N}，本版 30）` 并提示重新运行 `/story-setup` 后新开会话；大于 30 时额外提示先更新 oh-story-claudecode，不要用本地旧版 setup 降级覆盖。只有 agent 文件缺失、或运行时不暴露 custom agent 时才降级 solo/direct，报告 `Fallback: ... -> solo`。
+> Spawn 版本提示（不阻断 spawn）：先读取项目根 `.story-deployed` 的 `agents_version`。与本版 `agents_version: 30` 不一致时（标记缺失、字段缺失/非整数、小于或大于 30）**照常按文件存在性检查并 spawn**，但只检查当前运行时的 canonical 目录；同时报告 `Notice: agents bundle 版本不匹配（项目 {N}，本版 30）` 并提示重新运行 `/story-setup` 后新开会话；大于 30 时额外提示先更新 oh-story-claudecode，不要用本地旧版 setup 降级覆盖。只有 agent 文件缺失、或运行时不暴露 custom agent 时才降级 solo/direct，报告 `Fallback: ... -> solo`，并在同一轮内完成被降级角色的全部义务（含 narrative-writer 的语义去AI味，不只跑 `check-ai-patterns.js`）。
 
 **文风裁决**：正文写作、改写或审稿前先读 [references/style-resolution.md](references/style-resolution.md)，加载本书文风并形成 `style_resolution`；无作者记忆也执行。当前请求、本书文风和 active 偏好按维度覆盖通用 references；同一裁决交给后续执行者。
 
@@ -136,7 +136,7 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 #### 单章写作流程
 
-**执行前先读** [references/local-production-rules.md](references/local-production-rules.md)（三纲并一文、字数≥2000、禁水话）与 [references/workflow-chapter.md](references/workflow-chapter.md)，按其中的单章写作流程、写作技巧提醒、字数验收权威与 Phase 5 质量检查执行。日更批量另加载 `references/workflow-daily.md` 控制批次。
+**执行前先读** [references/local-production-rules.md](references/local-production-rules.md)（三纲并一文、不追字数目标、禁水话、独立字数账本）与 [references/workflow-chapter.md](references/workflow-chapter.md)，按其中的单章写作流程、写作技巧提醒、字数验收权威与 Phase 5 质量检查执行。日更批量另加载 `references/workflow-daily.md` 控制批次。
 
 #### 追踪文件体积
 

@@ -37,7 +37,8 @@
 
 - 写正文前必须先有对应大纲：长篇需要 `大纲/细纲_第N章*.md`，短篇需要 `小节大纲.md`。PreToolUse Hook 会做机械守卫，Skill 流程本身也必须遵守。
 - 正文写入后，PostToolUse Hook 会检查落盘、截断、占位符、工程词泄漏、复读和标题重复；字数只由写作流程最终的一次 `chapter check` 测量。
-- ZCode 3.3.4 不执行项目/plugin 自定义 Agent。遇到 `story-architect`、`narrative-writer`、`consistency-checker` 等角色调用时，由当前 Agent 按同一规则直接完成，并在结果中报告 `Fallback: project custom agents unavailable -> solo`。
+- ZCode 3.3.4 不执行项目/plugin 自定义 Agent。遇到 `story-architect`、`narrative-writer`、`consistency-checker` 等角色调用时，由当前 Agent 按同一规则直接完成，并在结果中报告 `Fallback: project custom agents unavailable -> solo`。**Fallback 只换执行者，不取消去AI味**：须在同一轮完成语义去AI味（`story-deslop` 或 Gate A-G），机械扫描不能代替。
+- **字数**：不按目标字数生成；生成多少就是多少；<2000 不加厚。每章写入 `{书名}/追踪/字数记录/第NNN章.md`。
 - 不读取 `.zcode/rules` 或嵌套 `AGENTS.md`；关键规则以本文件和对应 Skill 为准。
 - Compact 后优先读取 `{书名}/追踪/上下文.md` 恢复当前写作状态。
 
