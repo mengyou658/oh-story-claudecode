@@ -3,48 +3,49 @@
   "characters": {
     "周晏": {
       "abilities_resources": [
-        "普通人初始面板"
+        "普通人初始面板",
+        "共享备忘录条约"
       ],
-      "goal": "想冲传送点看隐藏福利；被劝后改明天再说",
+      "goal": "三天内听晚宁；等那份稳的",
       "identity": "沈晚宁最好的朋友；享受人生计划搭子",
       "knowledge": [
         "不知晚宁满级与前世",
-        "知开服与传送点存在"
+        "知条约与「一份稳的」承诺"
       ],
-      "location": "步行街，被按在店铺门口",
+      "location": "沈晚宁居所客房，刷面板过夜",
       "open_threads": [
-        "明天想再看传送点"
+        "天亮收机缘",
+        "第四天是否再冲"
       ],
       "relationships": [
-        "沈晚宁=闺蜜、今晚听她的"
+        "沈晚宁=闺蜜、三天听她的"
       ],
-      "state": "兴奋被压住，短暂别扭但仍信任晚宁"
+      "state": "别扭后有条件服从；仍兴奋但不冲传送点"
     },
     "沈晚宁": {
       "abilities_resources": [
         "Level Max（未公开）",
-        "稳坐标：城西旧码头三号仓库侧门",
-        "前世首波经验"
+        "可转交登录补给箱（待赠予周晏）",
+        "前世首波与稳坐标经验"
       ],
-      "goal": "护周晏活过首波；拿稳坐标且不暴露",
+      "goal": "天亮把稳机缘交给周晏；继续不出名",
       "identity": "重生满级玩家；表面普通都市女青年",
       "knowledge": [
-        "首波死亡率高",
-        "隐藏层可看稳坐标",
-        "倒计时未读全"
+        "稳坐标操作与抹痕迹手法",
+        "周晏游戏ID可绑赠予"
       ],
-      "location": "步行街店铺门口阴影",
+      "location": "离开旧码头，夜归路上",
       "open_threads": [
-        "稳坐标未跑",
-        "周晏明日再看的冲动",
-        "倒计时具体数值"
+        "天亮交付",
+        "周晏是否追问门路",
+        "散人醒来后的反应"
       ],
       "relationships": [
-        "周晏=已立陪浪公约、需按头",
+        "周晏=三天听我的条约+欠一份稳的待交付",
         "陆昭=已暂时静音",
-        "遗照众人=未展开"
+        "顾衡=前世闪回样本"
       ],
-      "state": "已呼晕陆昭；公约已立；开服中冷静接管"
+      "state": "条约已立；占坑清障完成；顾衡余影未散"
     },
     "陆昭": {
       "abilities_resources": [
@@ -71,9 +72,9 @@
       "周晏"
     ],
     "continuity_risks": [
-      "周晏仍想明天再冲，需继续按头",
-      "稳坐标未兑现，窗口倒计时在走",
-      "陆昭醒后可能再缠，但本阶段不必主动追打"
+      "天亮交付前补给箱仍在沈晚宁侧袋",
+      "两名散人醒来后可能记得坐标但不知对手是谁",
+      "周晏仍不知满级与前世"
     ],
     "long_term_constraints": [
       "有人在场避锋芒，无人处一次结清",
@@ -82,12 +83,12 @@
       "女主不当先锋，国家线只做间接交易"
     ],
     "next_chapter_commitments": [
-      "在安全窗口内处理稳坐标/周晏想再看的冲动",
-      "避免首波传送点送死与满级暴露"
+      "天亮交付稳机缘给周晏并收束条约债",
+      "承接小公会/路人开始注意「幸运的周晏」的压力钩"
     ],
     "position": {
-      "scene": "步行街店铺门口阴影；全城面板弹出",
-      "story_time": "重生落点当日傍晚，游戏强制开服中",
+      "scene": "沈晚宁居所→城西旧码头三号仓库侧门",
+      "story_time": "开服当夜，条约后至旧码头清障完毕",
       "volume": "第一卷·我不卷了",
       "volume_start_chapter": 1
     },
@@ -99,6 +100,10 @@
       {
         "chapter": 2,
         "summary": "正文第2章 ← 细纲第4–6章。沈晚宁收力呼晕陆昭并善后，约上周晏立下陪浪公约；街面异象后全城强制开服，她按住周晏记下城西旧码头稳坐标，远处已有尖叫。"
+      },
+      {
+        "chapter": 3,
+        "summary": "正文第3章 ← 细纲第7–9章。沈晚宁与周晏立下三天听我的条约并承诺一份稳的；夜入城西旧码头占坑清障，把可转交补给箱备好天亮给周晏；顾衡闪回两处切断。"
       }
     ]
   },
@@ -124,17 +129,26 @@
     "F003": {
       "id": "F003",
       "importance": "高",
-      "planned_resolution_chapter": null,
+      "planned_resolution_chapter": 4,
       "planted_chapter": 2,
       "status": "已埋",
-      "summary": "城西旧码头三号仓库侧门为稳坐标，收益薄但可活着拿满；尚未兑现",
-      "updated_chapter": 2
+      "summary": "城西旧码头稳坐标已占坑；登录补给箱改可转交待指定周晏，天亮交付；女主未上榜",
+      "updated_chapter": 3
+    },
+    "F004": {
+      "id": "F004",
+      "importance": "中",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 3,
+      "status": "已埋",
+      "summary": "周晏重生玩笑触发顾衡闪回：假笑试探、推队友进毒雾；清障后余音「没事，她弱」",
+      "updated_chapter": 3
     }
   },
   "imported_through_chapter": 0,
-  "last_committed_chapter": 2,
+  "last_committed_chapter": 3,
   "schema_version": 4,
-  "state_revision": 3,
+  "state_revision": 4,
   "timeline": {
     "E001": {
       "characters": [
@@ -164,6 +178,20 @@
       "reveal_status": "已揭示",
       "story_time": "重生落点当日：晨呼晕陆昭→午后约周晏→傍晚开服",
       "updated_chapter": 2
+    },
+    "E003": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 3,
+      "id": "E003",
+      "objective_fact": "沈晚宁与周晏立三天临时条约并承诺稳机缘；独自占坑登录补给箱并击晕两名散人竞争者，改可转交待给周晏；顾衡闪回两处",
+      "reader_knowledge": "读者已知条约成立、稳坐标已私下兑现前置、女主仍不出名；顾衡曾假笑害队友",
+      "reveal_chapter": 3,
+      "reveal_status": "已揭示",
+      "story_time": "开服夜：回家条约→夜入旧码头→清障后离开",
+      "updated_chapter": 3
     }
   },
   "wordcount_records": {
@@ -178,6 +206,14 @@
     "2": {
       "actual": 1658,
       "body_sha256": "033dbddeda4bc205a1111860dc1f07def4ea1808b982e471a51f62d78f594580",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "3": {
+      "actual": 1908,
+      "body_sha256": "60b4000f221fba088dabc860a767b5e09e5ef4219494ca1ad57a6dda007ebf1e",
       "metric": "visible_chars_v1",
       "resolution": "accepted_current_length",
       "status": "under",
