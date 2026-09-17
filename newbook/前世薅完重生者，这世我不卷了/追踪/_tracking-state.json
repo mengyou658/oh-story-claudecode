@@ -4,44 +4,44 @@
     "周晏": {
       "abilities_resources": [
         "浅灰护层",
-        "续约备忘"
+        "散人志向"
       ],
-      "goal": "等陪玩低危；七天内听晚宁",
+      "goal": "想冲二次首波；被按住等稳路线",
       "identity": "沈晚宁最好的朋友；享受人生计划搭子",
       "knowledge": [
         "不知满级与前世",
-        "知邀请是收租"
+        "知将有稳路线承诺"
       ],
       "location": "沈晚宁居所",
       "open_threads": [
-        "两次低危日常"
+        "二次窗口怎么玩"
       ],
       "relationships": [
-        "沈晚宁=管束与陪玩承诺"
+        "沈晚宁=门路与刹车"
       ],
-      "state": "已拒阿拾；不知跟梢"
+      "state": "做饭日常后兴奋再起；仍听条约"
     },
     "沈晚宁": {
       "abilities_resources": [
         "Level Max（未公开）",
-        "码头拾荒画像"
+        "前世窗口经验"
       ],
-      "goal": "卸掉跟梢；履约陪玩；继续不出名",
+      "goal": "按住周晏过二次窗口；盘间接送机缘；更藏",
       "identity": "重生满级玩家；表面普通都市女青年",
       "knowledge": [
-        "养号收租结构",
-        "跟梢指令"
+        "苏醒失神个案",
+        "二次窗口规则预告"
       ],
       "location": "沈晚宁居所",
       "open_threads": [
-        "卸梢",
-        "陪玩兑现"
+        "稳路线怎么给",
+        "多余机缘送给谁"
       ],
       "relationships": [
-        "周晏=七天条约+欠陪玩",
-        "阿拾=已拒面邀的对手"
+        "周晏=海边计划搭子",
+        "国家线=远景未拨号"
       ],
-      "state": "摸底完成；知跟两天计划；准备夜里卸"
+      "state": "见过命数毛边；日常半松；倒计时已挂"
     },
     "陆昭": {
       "abilities_resources": [
@@ -69,8 +69,9 @@
     ],
     "continuity_risks": [
       "周晏仍不知满级与前世",
-      "线下跟梢已启动",
-      "女主欠两次低危陪玩"
+      "二次窗口72小时压迫",
+      "命数毛边已入眼仍禁抽",
+      "阿拾线可能死灰复燃（低优）"
     ],
     "long_term_constraints": [
       "有人在场避锋芒，无人处一次结清",
@@ -79,27 +80,27 @@
       "女主不当先锋，国家线只做间接交易"
     ],
     "next_chapter_commitments": [
-      "承接线下跟梢；无人处卸梢留警告",
-      "兑现陪低危日常的条约交换"
+      "二次窗口临近：给周晏稳路线且自己缩影",
+      "间接送机缘换清净可开毛边，不接编制"
     ],
     "position": {
-      "scene": "沈晚宁居所；曾至城西登录点外围",
-      "story_time": "开服第三日晚饭后",
+      "scene": "沈晚宁居所",
+      "story_time": "二次登录窗口倒计时72小时",
       "volume": "第一卷·我不卷了",
       "volume_start_chapter": 1
     },
     "recent_chapters": [
       {
-        "chapter": 4,
-        "summary": "正文第4章 ← 细纲第10–12章。天亮交付补给箱并启用见效；周晏群里显摆引来夸赞与「跟车」私聊打听；女主按住炫耀、教话术、反查判定嗅探型；群转发再起，她让周晏念群名。"
+        "chapter": 7,
+        "summary": "正文第7章 ← 细纲第19–21章。履约第一次低危陪玩并确认跟梢；夜巷卸马仔留警告；次日发现堵点改签，周晏冷战；女主抛假独行诱饵准备结清。"
       },
       {
-        "chapter": 5,
-        "summary": "正文第5章 ← 细纲第13–15章。码头拾荒转发周晏截图；女主按住进群并潜水；便利店偶遇当面追问，周晏话术险过、女主装路人；夜间小号搅浑水稀释热度；阿拾收藏周晏为可养幸运号。"
+        "chapter": 8,
+        "summary": "正文第8章 ← 细纲第22–24章。假饵引盯梢核心入废弃冷库；女主无人处结清并留警告；周晏以为欧皇清净；第二次低危陪玩兑现；阿拾号暂时沉默。"
       },
       {
-        "chapter": 6,
-        "summary": "正文第6章 ← 细纲第16–18章。阿拾发福利面邀；女主拆穿养号收租；续约七天换陪低危，周晏拒绝邀请；女主摸底码头拾荒，确认跟梢计划，窗外似有人影。"
+        "chapter": 9,
+        "summary": "正文第9章 ← 细纲第25–27章。目击苏醒失神命数毛边后更藏；闺蜜做饭日常松一拍；二次登录窗口72小时预告弹出，按住周晏并盘算间接送机缘换清净（远景未落地）。"
       }
     ]
   },
@@ -140,14 +141,23 @@
       "summary": "周晏重生玩笑触发顾衡闪回：假笑试探、推队友进毒雾；清障后余音「没事，她弱」",
       "updated_chapter": 3
     },
+    "F005": {
+      "id": "F005",
+      "importance": "高",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 9,
+      "status": "已埋",
+      "summary": "有人濒死跳过后苏醒失神半拍（命数毛边）；女主本卷不抽离",
+      "updated_chapter": 9
+    },
     "F006": {
       "id": "F006",
       "importance": "高",
-      "planned_resolution_chapter": 20,
+      "planned_resolution_chapter": 8,
       "planted_chapter": 5,
-      "status": "已埋",
-      "summary": "阿拾已面邀被拒；语音下令跟两天；线下跟梢将至",
-      "updated_chapter": 6
+      "status": "已回收",
+      "summary": "盯梢核心已在冷库被私下结清；阿拾号暂时沉默，可能酝酿反弹",
+      "updated_chapter": 8
     },
     "F007": {
       "id": "F007",
@@ -157,12 +167,30 @@
       "status": "已回收",
       "summary": "群转发与当面跟车已兑现；热度被搅浑水稀释",
       "updated_chapter": 5
+    },
+    "F008": {
+      "id": "F008",
+      "importance": "中",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 8,
+      "status": "已埋",
+      "summary": "阿拾沉默；是否知道有高手下场仍未知",
+      "updated_chapter": 8
+    },
+    "F009": {
+      "id": "F009",
+      "importance": "高",
+      "planned_resolution_chapter": 10,
+      "planted_chapter": 9,
+      "status": "已埋",
+      "summary": "二次登录窗口倒计时72小时；女主拟间接送机缘换清净，尚未联系官方",
+      "updated_chapter": 9
     }
   },
   "imported_through_chapter": 0,
-  "last_committed_chapter": 6,
+  "last_committed_chapter": 9,
   "schema_version": 4,
-  "state_revision": 7,
+  "state_revision": 10,
   "timeline": {
     "E001": {
       "characters": [
@@ -250,6 +278,50 @@
       "reveal_status": "已揭示",
       "story_time": "开服第三日",
       "updated_chapter": 6
+    },
+    "E007": {
+      "characters": [
+        "沈晚宁",
+        "周晏",
+        "阿拾"
+      ],
+      "first_recorded_chapter": 7,
+      "id": "E007",
+      "objective_fact": "沈晚宁陪周晏刷低危后夜卸跟梢；发现堵点改签并抛出周晏独行假饵",
+      "reader_knowledge": "读者已知警告已出、诱饵已下、结清在即",
+      "reveal_chapter": 7,
+      "reveal_status": "已揭示",
+      "story_time": "开服第四至五日",
+      "updated_chapter": 7
+    },
+    "E008": {
+      "characters": [
+        "沈晚宁",
+        "周晏",
+        "阿拾"
+      ],
+      "first_recorded_chapter": 8,
+      "id": "E008",
+      "objective_fact": "沈晚宁在废弃冷库卸倒两名盯梢核心并留警告；次日陪周晏完成第二次低危；阿拾通讯暂时沉默",
+      "reader_knowledge": "读者已知盯梢线实质结清、周晏仍归因运气、沉默可能有后手",
+      "reveal_chapter": 8,
+      "reveal_status": "已揭示",
+      "story_time": "开服第六日前后",
+      "updated_chapter": 8
+    },
+    "E009": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 9,
+      "id": "E009",
+      "objective_fact": "沈晚宁目击苏醒失神个案；与周晏日常聚餐；全城二次登录窗口预告启动，周晏被按住未冲",
+      "reader_knowledge": "读者已知命数毛边存在、二次窗口将至、女主仍拒当先锋只盘间接送机缘",
+      "reveal_chapter": 9,
+      "reveal_status": "已揭示",
+      "story_time": "结清后数日；二次窗口倒计时72小时起",
+      "updated_chapter": 9
     }
   },
   "wordcount_records": {
@@ -296,6 +368,30 @@
     "6": {
       "actual": 927,
       "body_sha256": "0ee38ceb6a549257ba8af80a875888776615957c88eb7401996ecdb13d4355a3",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "7": {
+      "actual": 746,
+      "body_sha256": "a64af1fad64af2f073e205e0716cdd4edb4ffeed47981376fe478108989687cb",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "8": {
+      "actual": 723,
+      "body_sha256": "dbf501e09c107ec67f133e1dff6e8c6ef7f655953957126a4e83e2e873a49a4d",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "9": {
+      "actual": 633,
+      "body_sha256": "397a2dcc3f31720a43d4970d0b66b8f4294128ab9cddaa51631328a9eb2e12d0",
       "metric": "visible_chars_v1",
       "resolution": "accepted_current_length",
       "status": "under",
