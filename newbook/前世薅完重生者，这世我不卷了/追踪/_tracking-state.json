@@ -4,44 +4,45 @@
     "周晏": {
       "abilities_resources": [
         "浅灰护层",
-        "散人志向"
+        "稳路线清单"
       ],
-      "goal": "想冲二次首波；被按住等稳路线",
+      "goal": "按稳路线吃首波边缘红利",
       "identity": "沈晚宁最好的朋友；享受人生计划搭子",
       "knowledge": [
         "不知满级与前世",
-        "知将有稳路线承诺"
+        "知走边缘不冲中心"
       ],
-      "location": "沈晚宁居所",
+      "location": "城北轻轨废弃站边缘刷新带",
       "open_threads": [
-        "二次窗口怎么玩"
+        "窗口内收获与风险"
       ],
       "relationships": [
-        "沈晚宁=门路与刹车"
+        "沈晚宁=目送的刹车与门路"
       ],
-      "state": "做饭日常后兴奋再起；仍听条约"
+      "state": "已进点；不知匿名投放与疑云细节"
     },
     "沈晚宁": {
       "abilities_resources": [
         "Level Max（未公开）",
-        "前世窗口经验"
+        "暗库余量",
+        "不可回溯投放经验"
       ],
-      "goal": "按住周晏过二次窗口；盘间接送机缘；更藏",
+      "goal": "窗口期内继续护周晏且不出名",
       "identity": "重生满级玩家；表面普通都市女青年",
       "knowledge": [
-        "苏醒失神个案",
-        "二次窗口规则预告"
+        "投放来源已断",
+        "疑云存在"
       ],
-      "location": "沈晚宁居所",
+      "location": "与光柱反向的巷子",
       "open_threads": [
-        "稳路线怎么给",
-        "多余机缘送给谁"
+        "窗口内新抢夺",
+        "疑云会否升级"
       ],
       "relationships": [
-        "周晏=海边计划搭子",
-        "国家线=远景未拨号"
+        "周晏=稳路线接收者",
+        "国家线=仍未拨号"
       ],
-      "state": "见过命数毛边；日常半松；倒计时已挂"
+      "state": "稳路线与匿名投放已完成；开窗缩影成功；榜上无名"
     },
     "陆昭": {
       "abilities_resources": [
@@ -69,9 +70,10 @@
     ],
     "continuity_risks": [
       "周晏仍不知满级与前世",
-      "二次窗口72小时压迫",
       "命数毛边已入眼仍禁抽",
-      "阿拾线可能死灰复燃（低优）"
+      "身边有人疑云已挂",
+      "阿拾线可能死灰复燃（低优）",
+      "匿名投放或被有心人追来源"
     ],
     "long_term_constraints": [
       "有人在场避锋芒，无人处一次结清",
@@ -80,20 +82,16 @@
       "女主不当先锋，国家线只做间接交易"
     ],
     "next_chapter_commitments": [
-      "二次窗口临近：给周晏稳路线且自己缩影",
-      "间接送机缘换清净可开毛边，不接编制"
+      "二次窗口内护周晏边缘收益且继续缩影",
+      "「身边有人」疑云加压但不自我曝光"
     ],
     "position": {
-      "scene": "沈晚宁居所",
-      "story_time": "二次登录窗口倒计时72小时",
+      "scene": "城市街巷；周晏已入城北边缘点",
+      "story_time": "二次登录窗口开启当日",
       "volume": "第一卷·我不卷了",
       "volume_start_chapter": 1
     },
     "recent_chapters": [
-      {
-        "chapter": 7,
-        "summary": "正文第7章 ← 细纲第19–21章。履约第一次低危陪玩并确认跟梢；夜巷卸马仔留警告；次日发现堵点改签，周晏冷战；女主抛假独行诱饵准备结清。"
-      },
       {
         "chapter": 8,
         "summary": "正文第8章 ← 细纲第22–24章。假饵引盯梢核心入废弃冷库；女主无人处结清并留警告；周晏以为欧皇清净；第二次低危陪玩兑现；阿拾号暂时沉默。"
@@ -101,6 +99,10 @@
       {
         "chapter": 9,
         "summary": "正文第9章 ← 细纲第25–27章。目击苏醒失神命数毛边后更藏；闺蜜做饭日常松一拍；二次登录窗口72小时预告弹出，按住周晏并盘算间接送机缘换清净（远景未落地）。"
+      },
+      {
+        "chapter": 10,
+        "summary": "正文第10章 ← 细纲第28–30章。倒计时末段交出二次窗口稳路线；匿名投放多余低危机缘且来源不可回溯；窗口开启周晏走边缘稳点，旁人嘀咕身边有人却查不到；女主不上榜、反向入巷。"
       }
     ]
   },
@@ -182,15 +184,24 @@
       "importance": "高",
       "planned_resolution_chapter": 10,
       "planted_chapter": 9,
+      "status": "已回收",
+      "summary": "稳路线已交周晏；匿名投放完成；二次窗口已开启",
+      "updated_chapter": 10
+    },
+    "F010": {
+      "id": "F010",
+      "importance": "高",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 10,
       "status": "已埋",
-      "summary": "二次登录窗口倒计时72小时；女主拟间接送机缘换清净，尚未联系官方",
-      "updated_chapter": 9
+      "summary": "旁人嘀咕周晏身边像有高人，查无可查；窗口内抢夺刚起",
+      "updated_chapter": 10
     }
   },
   "imported_through_chapter": 0,
-  "last_committed_chapter": 9,
+  "last_committed_chapter": 10,
   "schema_version": 4,
-  "state_revision": 10,
+  "state_revision": 11,
   "timeline": {
     "E001": {
       "characters": [
@@ -322,12 +333,34 @@
       "reveal_status": "已揭示",
       "story_time": "结清后数日；二次窗口倒计时72小时起",
       "updated_chapter": 9
+    },
+    "E010": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 10,
+      "id": "E010",
+      "objective_fact": "沈晚宁交付边缘稳路线并匿名投放低危机缘；窗口开启后周晏按线进点；有人怀疑其身边有高人但查不到；沈晚宁未上榜",
+      "reader_knowledge": "读者已知投放不可回溯、疑云已挂、女主继续缩影",
+      "reveal_chapter": 10,
+      "reveal_status": "已揭示",
+      "story_time": "二次登录窗口开启当日",
+      "updated_chapter": 10
     }
   },
   "wordcount_records": {
     "1": {
       "actual": 1688,
       "body_sha256": "0816a027d64ef23720a61ebe020fb8a9f879285ef23f8d79974da8ccf968584b",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "10": {
+      "actual": 882,
+      "body_sha256": "4d59d8078739eb89ba6c39ed66d13bf506ef04af708213b3d0a1607ff40b5b1d",
       "metric": "visible_chars_v1",
       "resolution": "accepted_current_length",
       "status": "under",
