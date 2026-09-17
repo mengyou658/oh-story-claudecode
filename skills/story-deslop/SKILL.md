@@ -14,7 +14,19 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 **开场定档**：清理（默认）/ 重构（须用户授权）/ 检测 / 新写。合同见 [references/deslop-process.md](references/deslop-process.md)（Never inject、保真/浓度计、C 级禁动、检测器边界、双道门禁）。保真细则见 [references/fidelity-constraints.md](references/fidelity-constraints.md)（蒸馏自说人话 + 韩愈）。正文**写前**约束见 [references/generation-constraints.md](references/generation-constraints.md)。中文原生模式 25–33 见 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)。场景档见 [references/scene-profiles.md](references/scene-profiles.md)。无书短文旁路见 [references/shortform-sidepath.md](references/shortform-sidepath.md)。
 
-**对照库 + ainovel 判据**：文件模式默认叠加 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)（ainovel-cli 机械基线/五类语义判据/自定义规则映射 + `book/_analysis` 语句对照库）。对照库替换**必须先**备份到 `_revision-backups/`，再写出 `{原名}_humanized{后缀}`，默认不覆盖原稿（见该文件「输出契约」）。**清理/重构档硬门禁**：须完成精确 map + **逐句语义对齐**（句意与表内 `meaning` 一致且能表达同一意思 → 从 `replace_with` 挑 1 条）；报告无 `对照库:已执行` 则**去味未完成**。只跑 Gate/机械脚本不算。
+**对照库 + ainovel 判据**：文件模式默认叠加 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)（ainovel-cli 机械基线/五类语义判据/自定义规则映射 + `book/_analysis` 语句对照库）。对照库替换**必须先**备份到 `_revision-backups/`，再写出 `{原名}_humanized{后缀}`；**单独调用**默认不覆盖原稿（见该文件「输出契约」）。**写后定稿模式**（由 `story-long-write` / `story-short-write` 写正文后同轮触发，或用户说「定稿覆盖/写后去味」）除外：人味结果**必须**覆盖回正式正文路径，该路径才是最终正文。**清理/重构档硬门禁**：须完成精确 map + **逐句语义对齐**（句意与表内 `meaning` 一致且能表达同一意思 → 从 `replace_with` 挑 1 条）；报告无 `对照库:已执行` 则**去味未完成**；写后定稿模式另须 `定稿覆盖:已执行`。只跑 Gate/机械脚本不算。
+
+### 写后定稿模式（长篇/短篇写正文后同轮必走）
+
+当调用方是写正文流水线，或用户明确要求「写完定稿 / 覆盖回正文」时：
+
+1. 定档默认**清理**；先备份 → 对照库 → Gate → 人味产物（可写 `{stem}_humanized{ext}` 作中间件）。
+2. Phase 4 脚本先对人味产物跑通。
+3. **硬步骤**：将人味结果**覆盖**到正式正文路径（长篇 `正文/第XXX章_*.md`，短篇 `正文.md`）。覆盖后该路径＝最终正文。
+4. 中间 `_humanized` 可留同目录或移入 `_revision-backups/`，避免与正式正文并列成双正文。
+5. 报告必须含 `对照库:已执行` + `定稿覆盖:已执行` + 备份路径；缺任一项 → 本章/本稿去味未完成，写流程不得宣称「写完」。
+
+单独 `/story-deslop` 润色旧稿、用户未要求覆盖时，仍可只出 `_humanized`；但若目标是「让正式正文成为最终正文」，必须走本模式。
 
 ---
 
@@ -95,7 +107,7 @@ AI味不按语法错误处理，也不需要"修正"。它属于风格问题：�
 2. 读 [references/deslop-process.md](references/deslop-process.md)；重构档须已获用户授权。选场景档（默认 novel），见 [references/scene-profiles.md](references/scene-profiles.md)。
 3. 文风：`style_resolution` + 可选作者记忆 query（见上）。
 4. 新写或用户只要「写时少 AI」→ 先读 generation-constraints（含写前密度上限），再写/再改。
-5. **文件模式（章节/正文路径）且非「只要检测」**：加载 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)；确定输出路径为 `{stem}_humanized{ext}`（原稿只读）。用户原话要求「原地改/覆盖原稿」时除外。
+5. **文件模式（章节/正文路径）且非「只要检测」**：加载 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)；默认输出路径为 `{stem}_humanized{ext}`（原稿只读）。**写后定稿模式**或用户原话「原地改/覆盖原稿/定稿覆盖」时：仍先写人味结果（或备份后直接改），再**必须**覆盖正式正文路径。
 6. **改前备份（文件模式硬步骤；检测档跳过）**：凡将写出 `_humanized`、原地改、或后续用人味稿覆盖正文路径——**先**把当前要改的章节文件原样复制到同目录 `_revision-backups/`，再进入扫描/改写。命名：`{stem}_原稿_pre-deslop_{YYYYMMDD}{ext}`（同日已存在则追加 `_{HHmm}`）。目录不存在则创建。文件名须含 `_原稿_`（写后 hook / 上一章探测会排除，避免当正式正文）。备份失败则停止改写。报告写明备份路径。对比改动时：备份＝去味前，人味稿/定稿＝去味后。
 7. 扫描前可对照 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)（模式 25–33）、[references/scan-lexicon.md](references/scan-lexicon.md) 与 [references/fidelity-constraints.md](references/fidelity-constraints.md)（保真/真删/浓度计）。
 
@@ -186,7 +198,7 @@ node scripts/check-ai-patterns.js --check --fail-on=blocking <正文文件...>
 「诊断与分级」完成后，按以下顺序选择执行路径：
 
 1. **已在 narrative-writer 子代理内**：按选定 Gate 范围 inline 执行，不再 spawn（嵌套 spawn 会被静默降级）。
-2. **未在子代理内且按顶部顺序找到 `narrative-writer` agent**：按当前运行时调用；Antigravity 用 `invoke_subagent(TypeName: "narrative-writer")`，Claude/OpenCode/Codex 用各自字段。prompt 保持：`项目目录：{dir}\n任务描述：去AI味\nGate 细则：执行前按你的参考表读取 deslop-gates.md 的删除保护与所选 Gate（部署副本与本 skill 同源）\n改前备份：文件模式先把当前章节复制到同目录 _revision-backups/{stem}_原稿_pre-deslop_{YYYYMMDD}{ext}（须含 _原稿_；同日冲突追加 _{HHmm}），再改写；备份路径写入报告\n对照库（硬步骤）：读取 phrase-bank-humanize.md；用 book/_analysis/ai_to_human_replacements.json——先精确 map，再逐句语义对齐（句意与表内 meaning 一致且能表达同一意思则从 replace_with 挑 1 条；不一致不换）；报告必须含「对照库:已执行」，缺则去味未完成；人味句里的 {xx} 必须回填本书角色名（设定/角色、关系.md、本章 POV）；写出 {stem}_humanized{ext}，不覆盖原稿（用户明确原地改除外，原地改也须先备份）\n检查分工：你负责本次语义去味；父流程负责 Phase 4 最终文件扫描，不重复整轮改稿\n检查范围：{待处理的正文文件}\n文风路径：{本书文风全文路径，无则写无}\nstyle_resolution：{本次生效要求及来源、被覆盖的默认条款、事实边界}\n作者偏好：{query 命中的 prose_style 项}\nAI味等级：{诊断与分级结果}\n处理策略：{实际选定的 Gate 范围；优先使用用户指定范围}\n删除优先：每条 AI 味项先判能否删除——删后不丢伏笔/钩子/角色/情节/人物记忆/情绪承接/因果锚点/必要信息/必要转折的直接删，会丢才进 Gate 润色；看似解释/评价但承担小连贯的句子，压成白话承接、动作或物件锚点，不机械删除；已有任务/手续/物件/证据缺口可以压成角色当下要处理的具体卡点，但不新增原文没有的事件链；删除服从比例上限与字数下限，跌破下限改降AI重写。\n模式处理：按 references/anti-ai-writing.md 的问题模式目录执行；模式 8（解释腔/上帝视角/安排感）归入 Gate G，其余新增模式归入 Gate A-F 的对应处理。相邻段重复表达同一信息/动作/情绪时，按 Gate C/D 合并去重；`。
+2. **未在子代理内且按顶部顺序找到 `narrative-writer` agent**：按当前运行时调用；Antigravity 用 `invoke_subagent(TypeName: "narrative-writer")`，Claude/OpenCode/Codex 用各自字段。prompt 保持：`项目目录：{dir}\n任务描述：去AI味\nGate 细则：执行前按你的参考表读取 deslop-gates.md 的删除保护与所选 Gate（部署副本与本 skill 同源）\n改前备份：文件模式先把当前章节复制到同目录 _revision-backups/{stem}_原稿_pre-deslop_{YYYYMMDD}{ext}（须含 _原稿_；同日冲突追加 _{HHmm}），再改写；备份路径写入报告\n对照库（硬步骤）：读取 phrase-bank-humanize.md；用 book/_analysis/ai_to_human_replacements.json——先精确 map，再逐句语义对齐（句意与表内 meaning 一致且能表达同一意思则从 replace_with 挑 1 条；不一致不换）；报告必须含「对照库:已执行」，缺则去味未完成；人味句里的 {xx} 必须回填本书角色名（设定/角色、关系.md、本章 POV）；写出 {stem}_humanized{ext}；**写后定稿模式**须再覆盖正式正文路径并报告「定稿覆盖:已执行」（单独调用默认不覆盖原稿；用户明确原地改除外，原地改也须先备份）\n检查分工：你负责本次语义去味；父流程负责 Phase 4 最终文件扫描，不重复整轮改稿\n检查范围：{待处理的正文文件}\n文风路径：{本书文风全文路径，无则写无}\nstyle_resolution：{本次生效要求及来源、被覆盖的默认条款、事实边界}\n作者偏好：{query 命中的 prose_style 项}\nAI味等级：{诊断与分级结果}\n处理策略：{实际选定的 Gate 范围；优先使用用户指定范围}\n删除优先：每条 AI 味项先判能否删除——删后不丢伏笔/钩子/角色/情节/人物记忆/情绪承接/因果锚点/必要信息/必要转折的直接删，会丢才进 Gate 润色；看似解释/评价但承担小连贯的句子，压成白话承接、动作或物件锚点，不机械删除；已有任务/手续/物件/证据缺口可以压成角色当下要处理的具体卡点，但不新增原文没有的事件链；删除服从比例上限与字数下限，跌破下限改降AI重写。\n模式处理：按 references/anti-ai-writing.md 的问题模式目录执行；模式 8（解释腔/上帝视角/安排感）归入 Gate G，其余新增模式归入 Gate A-F 的对应处理。相邻段重复表达同一信息/动作/情绪时，按 Gate C/D 合并去重；`。
 3. **agent 不存在或 spawn 失败（含 Cursor）**：主线程 **立即** inline 执行本 skill 剩余 Phase（诊断→**对照库**→Gate→收尾），报告 `Deslop: solo inline`；禁止只跑 `check-ai-patterns.js` 后结束；报告无 `对照库:已执行` 不得结案。
 
 #### Gate 规则入口
@@ -202,8 +214,8 @@ node scripts/check-ai-patterns.js --check --fail-on=blocking <正文文件...>
 3. **语义层（硬步骤）**：精确命中为 0 也不能收工。对正文**逐句**判断意思是否对齐表内某一 `meaning`；若一致、能表达同一意思且不漂命题，从该组 `replace_with` / `human_expr` / `human_top` **挑 1 条**替换；不一致则不换。
 4. **禁止无脑全局替换**；按 category/meaning 与人称语气适配；剧情保护与疲劳词阈值同时生效。
 5. **`{xx}` → 本书角色名**：人味句（`human_expr` / `human_top`）里的 `{xx}` 写入正文前必须回填（角色卡/`设定/关系.md`/本章 POV）；禁止残留 `{xx}` 或源书人名。细则见 phrase-bank-humanize。
-6. 将 Gate 润色 + 对照库替换的结果写入 **`{stem}_humanized{ext}`**，原稿不动（除非用户明确要求原地改；原地改亦须已备份）。
-7. 报告必须含 `对照库:已执行`、扫描句数、精确 map 命中/替换、语义对齐命中/替换、`{xx}` 回填、跳过/`[需复核]`，并列出原文件、改前备份与人味文件路径。替换数可为 0，须写语义扫描结论。
+6. 将 Gate 润色 + 对照库替换的结果写入 **`{stem}_humanized{ext}`**（单独调用默认；原稿不动）。**写后定稿模式**或用户要求原地改/定稿覆盖：备份后写入人味结果，再**覆盖正式正文路径**；报告须 `定稿覆盖:已执行`。
+7. 报告必须含 `对照库:已执行`、扫描句数、精确 map 命中/替换、语义对齐命中/替换、`{xx}` 回填、跳过/`[需复核]`，并列出原文件、改前备份与人味文件路径；写后定稿另列正式正文路径与 `定稿覆盖:已执行`。替换数可为 0，须写语义扫描结论。
 
 ### Phase 4：确定性收尾（文件模式）
 
@@ -238,6 +250,7 @@ python scripts/slop_gauge.py --profile novel <人味或已改正文文件...>
 - 原文件：{path}
 - 改前备份：{path/_revision-backups/{stem}_原稿_pre-deslop_… 或「检测档未备份」}
 - 人味文件：{path_humanized 或「原地改」}
+- 定稿覆盖：{正式正文路径 +「定稿覆盖:已执行」/「单独调用未覆盖」/「检测档未改」}
 - 原文字符数：{N0}
 - 修订后字符数：{N1}
 - 净变化：{N1 - N0}（{百分比}）
@@ -290,7 +303,8 @@ python scripts/slop_gauge.py --profile novel <人味或已改正文文件...>
 | 用户说"检查下有没有AI味" | 定档检测 → 只做检测，不做修改 |
 | 用户明确授权"重写结构/重构" | 定档重构 → 每章 2–5 个结构动作 + Gate |
 | 用户写作中要求 `仅标注 / 只检测 / 不要改` | 嵌入式提醒模式：执行「AI味扫描」和「诊断与分级」，跳过「逐项清除」「确定性收尾」「输出润色结果」；输出问题标记表（含 Gate 列），不修改原文，不写文件 |
-| 章节文件去味（默认） | 先备份到 `_revision-backups/` → 对照库 + Gate → 写出 `{stem}_humanized{ext}`，原稿不动 |
+| 章节文件去味（单独调用默认） | 先备份到 `_revision-backups/` → 对照库 + Gate → 写出 `{stem}_humanized{ext}`，原稿不动 |
+| **写后定稿模式**（写正文同轮 / 「定稿覆盖」） | 先备份 → 对照库 + Gate → 人味产物 → **覆盖正式正文路径**；报告须 `定稿覆盖:已执行` |
 | 用户说「原地改 / 覆盖原稿」 | 先备份到 `_revision-backups/` → 对照库 + Gate → 直接改原文件 |
 | 无活跃书，仅润色公众号/小红书等短文 | [references/shortform-sidepath.md](references/shortform-sidepath.md)，不建小说目录 |
 

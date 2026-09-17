@@ -109,10 +109,9 @@ Phase 2 必须在第一次写入 `设定.md` / `小节大纲.md` 前按顺序完
 - [ ] 节数 = 小节大纲规划节数（不得合并/省略）
 - [ ] 身体细节按叙事功能判断，不设次数上限；不对“手、眼、心”等单字计数改稿
 - [ ] 「像/好像/仿佛/如同」不成片堆叠；超过 10 处需逐处复核功能，不机械全删
-- [ ] `node scripts/check-ai-patterns.js --check --fail-on=blocking 正文.md` 无 blocking 命中；其余提示先通读，确属问题再改
-- [ ] `node scripts/check-degeneration.js --check 正文.md` 无 blocking 退化命中（复读/截断/工程词泄漏）
+- [ ] `正文.md` 已落盘（此时仍是中间稿；**必须同轮进入 Phase 4 / story-deslop 写后定稿**，覆盖后才是最终正文）
 
-**不通过 → 回退补足，不得进入精修。**
+**不通过 → 回退补足，不得进入精修。** 机械 `check-ai-patterns` / `check-degeneration` 放到 Phase 4 定稿覆盖之后跑，不得用「只跑脚本」代替语义去味。
 
 ---
 
@@ -129,8 +128,9 @@ Phase 2 必须在第一次写入 `设定.md` / `小节大纲.md` 前按顺序完
 
 | 时机 | 跳转到 | 命令 |
 |---|---|---|
+| **写正文后（同轮内嵌，非可选）** | story-deslop 写后定稿模式 | Phase 3 落盘后立即执行；人味结果覆盖回 `正文.md` 才算交付 |
+| 事后补跑 / 单独去味 | story-deslop | `/story-deslop`（补跑也须覆盖正式正文） |
 | 有参考小说想对标 | story-short-analyze | `/story-short-analyze` → 输出存入 `拆文库/{书名}/` |
-| 写完，去 AI 味 | story-deslop | `/story-deslop` |
 | 想自检 | 本 skill 质量自检 | 用 Phase 4 自检流程 + `references/short-prose-quality.md` 逐项核对 |
 | 需要市场方向 | story-short-scan | `/story-short-scan` |
 | 设定太大，适合长篇 | story-long-write | `/story-long-write` |

@@ -57,3 +57,16 @@ Phase 2 定书名前必须执行（用户已给定唯一书名且书面确认可
 - **独立字数账本**（与 tracking 并行，不进正文）：每章定稿后写入 `追踪/字数记录/第XXX章.md`，只记 `visible_chars_v1` 实际字数与正文路径；不据此触发改写。
 
 字数细则执行面：`workflow-chapter.md`「字数测量权威」、`long-format.md`「长篇章级约束」。
+
+---
+
+## 4. 写正文后必须同轮 story-deslop（最终正文＝去味后）
+
+> 未去味的落盘稿只是中间产物；**`正文/第XXX章_*.md` 必须是去味后的定稿**。
+
+1. **同轮硬步骤**：每章正文首次写入 `正文/` 后，**不得**先汇报「写完」或进入下一章；必须在**同一轮**立即执行 `story-deslop` 全流程（定档清理 → 改前备份 → 对照库精确 map + 逐句语义对齐 → Gate → 确定性收尾）。只跑 `check-ai-patterns.js` / `normalize-punctuation.js` **不算**完成。
+2. **定稿覆盖**：去味完成后，**必须**用人味结果覆盖回正式正文路径 `正文/第XXX章_*.md`。覆盖后的该路径才是最终正文；字数账本、chapter check、tracking commit、上一章承接均以该路径为准。
+3. **备份与中间件**：改前原稿进 `_revision-backups/{stem}_原稿_pre-deslop_{YYYYMMDD}{ext}`；中间 `{stem}_humanized{ext}` 写完并验收后，可保留在同目录或移入 `_revision-backups/`，**不得**与正式正文并列成「双正文」导致 chapter check 歧义。
+4. **唯一豁免**：用户显式说「本章不去味/跳过检查」——在标题行下加 `<!-- 去味:跳过 -->`。除此之外，Fallback / Cursor / solo **不得**跳过本步。
+
+执行面：`workflow-chapter.md`「写后同轮清零」+ `skills/story-deslop/SKILL.md`「写后定稿模式」。

@@ -32,7 +32,7 @@
    - (12) 对标书路径下 `剧情/节奏.md`（按对标书路径查找）— 仅全量召回时读取；关键信息推进、情绪触动点、爆发节奏；缺失按 `project-files.md` 的「缺失文件处理」设置 `missing_primary_contract` 并停止准备
    - (13) `设定/题材正文提示卡.md`（如存在）— 本书正文层题材卡。**加工在 3(c)，本项只列路径与兜底链**，读一次就直接产出 `genre_prose_card`，不在这里先读一遍再去 3(c) 召回一遍；缺失时从 `设定/题材定位.md` + `references/genre-prose-cards.md` 索引 + `references/genre-prose-cards/` 单题材卡目录（按题材分类优先）+ `references/style-genre-modules.md`（兜底）即时生成 `genre_prose_card`，不阻塞写作
 3. **写前准备**（下面的 3 步是核心方法在单章写作中的落地：筛选状态 → 召回模块 → 确认意图）：
-   - **第 0 步：先跑组装脚本**（可用时）。`{PYTHON} {skill 根}/scripts/build_writer_prompt.py --project {项目根} --chapter {B} --out {留档文件}`，脚本统一输出 UTF-8。stdout 的 `====` 分隔线以上是 prompt 正文、以下是核对报告。主会话只填 `［主会话填］` 空槽。退出码 2 ＝ 数据问题，先修数据再重跑，不得手拼绕过；脚本跑不起来才按步骤 7 回落。落笔前对照 `references/generation-constraints.md` 硬约束（无开场八股、无三段升华、无假想辩论）；写后去味仍走 story-deslop。**三纲并一文时**：组装前把细纲 A–C 的批准情节合并成一份「执行用细纲摘要」填进本节速记/执行安排，避免脚本只读到单份细纲漏情节。
+   - **第 0 步：先跑组装脚本**（可用时）。`{PYTHON} {skill 根}/scripts/build_writer_prompt.py --project {项目根} --chapter {B} --out {留档文件}`，脚本统一输出 UTF-8。stdout 的 `====` 分隔线以上是 prompt 正文、以下是核对报告。主会话只填 `［主会话填］` 空槽。退出码 2 ＝ 数据问题，先修数据再重跑，不得手拼绕过；脚本跑不起来才按步骤 7 回落。落笔前对照 `references/generation-constraints.md` 硬约束（无开场八股、无三段升华、无假想辩论）；**写后同轮必须走 story-deslop 写后定稿模式，用人味稿覆盖正式正文路径后才算本章交付**。**三纲并一文时**：组装前把细纲 A–C 的批准情节合并成一份「执行用细纲摘要」填进本节速记/执行安排，避免脚本只读到单份细纲漏情节。
    - **状态筛选**：从 `追踪/上下文.md` 的 `## 核心角色状态` 取当前角色，从 `## 活跃伏笔` 取需回收/推进项，从 `## 下一章承诺` 取本章必须履行项，输出本节速记（参考 state-tracking.md）。久别角色按名读取 `追踪/角色状态/{名}.md`；只有追查变化原因时才定点查逐章增量。续写状态卡或 meta 不存在时按 workflow-daily 的当前协议处理，不手写替代文件
    - **模块召回、题材卡与文风召回**：写前完整读取 [benchmark-recall.md](benchmark-recall.md)，执行其中 (a)-(g)、成熟项目降档与 explorer 快捷路径。组装脚本的降档结论、情绪/节奏缺失阻断、本书文风全文及主副对标预算均按该文件执行。
 
@@ -82,7 +82,7 @@
 
 ## 检查分工
 
-步骤 7 写手负责编排、内容覆盖和格式自检；步骤 9–11 及本文件质量检查阶段由主会话统筹。**语义去味**交给一个执行者（已部署的 narrative-writer，或 Cursor/solo 下降级后的主会话执行 `story-deslop` / Gate A-G），完成原 Gate、三遍法与抽查项目——**Fallback 不得跳过此步**。确定性收尾由主会话对最终文件运行；其后若修改正文或白名单，只重跑受影响检查和最终 chapter check，不重新安排一轮全篇语义去味。手动组装时也须把此分工传给写手。
+步骤 7 写手负责编排、内容覆盖和格式自检；步骤 9–11 及本文件质量检查阶段由主会话统筹。**语义去味 + 定稿覆盖**交给一个执行者（已部署的 narrative-writer，或 Cursor/solo 下降级后的主会话执行 `story-deslop` 写后定稿模式 / Gate A-G），完成原 Gate、三遍法、抽查项目，并将人味结果覆盖回正式正文路径——**Fallback 不得跳过此步；未覆盖则本章未交付**。确定性收尾由主会话对**覆盖后的正文路径**运行；其后若修改正文或白名单，只重跑受影响检查和最终 chapter check，不重新安排一轮全篇语义去味。手动组装时也须把此分工传给写手。
 
 ## 写作技巧提醒
 
@@ -127,17 +127,19 @@
 
 **正文元信息扫描**：按上方步骤 10 清掉标题行以外的写作工程词，再进入其他检查。`check-degeneration.js` 会确定性复扫这一项。
 
-**写后同轮清零（含 Cursor / solo）**：正文落盘不是汇报时机——每章落盘后必须在**同一轮**内完成：
+**写后同轮清零（含 Cursor / solo；最终正文＝去味后）**：正文首次落盘不是汇报时机——每章写入 `正文/第XXX章_*.md` 后必须在**同一轮**内完成 story-deslop，再用定稿覆盖该路径；**未完成去味前不得宣称「写完」、不得 chapter commit、不得开写下一章**（权威：[local-production-rules.md](local-production-rules.md) §4）。顺序：
 1. 步骤 10-11 扫描；
-2. **语义去AI味**（见下方「Agent 调用：narrative-writer」——已部署则 spawn；**Cursor / 无 `.claude/agents` / Fallback→solo 时主会话必须读取并执行 `skills/story-deslop/SKILL.md` 全流程**，或按 `references/anti-ai-writing.md` + Gate A-G + **对照库（精确 map + 逐句语义对齐）** inline 改写；**只跑 `check-ai-patterns.js` 不算完成去AI味**；**报告无 `对照库:已执行` 也不算完成**）；
-3. 确定性收尾脚本；
-4. consistency-checker（不可用则主线程按 long-chapter-quality 核）。
+2. **语义去AI味 / story-deslop**（见下方「Agent 调用：narrative-writer」——已部署则 spawn；**Cursor / 无 `.claude/agents` / Fallback→solo 时主会话必须读取并执行 `skills/story-deslop/SKILL.md` 全流程（写后定稿模式）**，或按 `references/anti-ai-writing.md` + Gate A-G + **对照库（精确 map + 逐句语义对齐）** inline 改写；**只跑 `check-ai-patterns.js` 不算完成去AI味**；**报告无 `对照库:已执行` 也不算完成**）；
+3. **定稿覆盖（硬步骤）**：用人味结果覆盖回 `正文/第XXX章_*.md`；该路径才是最终正文。改前原稿已在 `_revision-backups/`；中间 `_humanized` 可留同目录或移入备份目录，不得与正式正文并列成双正文；
+4. 对**覆盖后的正文路径**跑确定性收尾脚本；
+5. consistency-checker（不可用则主线程按 long-chapter-quality 核）；
+6. 字数账本按**去味后**正文重测并写入；再进入步骤 12 的 tracking 提交。
 
-blocking 清零才算本章完成；不得先汇报"已写完"再等指示。写后 hook 会对落盘正文自动扫描确定性毒句式并把命中推回——那是兜底网不是替代，hook 报出的命中当轮清零。**唯一豁免**：用户显式说"本章不去味/跳过检查"——豁免时在该章标题行下加一行 `<!-- 去味:跳过 -->`（写后 hook 的毒句式推回与写下一章前的欠账拦截都认这个标记；其余网照常）。
+blocking 清零且正文路径已是去味定稿，才算本章完成；不得先汇报"已写完"再等指示，也不得把未去味稿留给用户事后 `/story-deslop`。写后 hook 会对落盘正文自动扫描确定性毒句式并把命中推回——那是兜底网不是替代，hook 报出的命中当轮清零。**唯一豁免**：用户显式说"本章不去味/跳过检查"——豁免时在该章标题行下加一行 `<!-- 去味:跳过 -->`（写后 hook 的毒句式推回与写下一章前的欠账拦截都认这个标记；其余网照常）。
 
-报告 `Fallback: narrative-writer → solo` 后**禁止停在机械扫描**：须在同一轮继续完成语义去味，并在章报告写明 `Deslop: solo inline`（或 `Deslop: story-deslop skill`）与改动摘要。
+报告 `Fallback: narrative-writer → solo` 后**禁止停在机械扫描**：须在同一轮继续完成语义去味与定稿覆盖，并在章报告写明 `Deslop: solo inline`（或 `Deslop: story-deslop skill`）、改前备份路径、`对照库:已执行`、`定稿覆盖:已执行` 与改动摘要。
 
-**确定性收尾**：本批正文写完后，主会话对实际落盘文件运行 `node scripts/check-ai-patterns.js --check --fail-on=blocking 正文/第XXX章_*.md` 与 `node scripts/check-outline-copy.js 正文/第XXX章_*.md`（细纲照搬复扫）。blocking 命中先回正文改写并复扫；advisory 与细纲重合逐条读原文判断，确属问题才改，功能性写法标 `[需复核]`——每条都要有结论，不为归零机械改写；细纲重合里判定保留的补进细纲「复沓锚句」，下章起不再复报。其中 `formulaic-parallelism` 必须连同对话一起复核，不能因为 hook 不阻断台词就略过；`stock-reaction-tic` 的候选交下方 narrative-writer 质检 spawn 逐处做「反套话四问」删除测试并直接改——**写手不写验收短文**（验收由质检 spawn 的删除测试承担），质检报告列出候选数、删改数与保留理由即可。
+**确定性收尾**：本批**去味定稿覆盖完成后**，主会话对实际正式正文路径运行 `node scripts/check-ai-patterns.js --check --fail-on=blocking 正文/第XXX章_*.md` 与 `node scripts/check-outline-copy.js 正文/第XXX章_*.md`（细纲照搬复扫）。blocking 命中先回正文改写并复扫；advisory 与细纲重合逐条读原文判断，确属问题才改，功能性写法标 `[需复核]`——每条都要有结论，不为归零机械改写；细纲重合里判定保留的补进细纲「复沓锚句」，下章起不再复报。其中 `formulaic-parallelism` 必须连同对话一起复核，不能因为 hook 不阻断台词就略过；`stock-reaction-tic` 的候选交下方 narrative-writer 质检 spawn 逐处做「反套话四问」删除测试并直接改——**写手不写验收短文**（验收由质检 spawn 的删除测试承担），质检报告列出候选数、删改数与保留理由即可。
 随后运行 `node scripts/normalize-punctuation.js 正文/第XXX章_*.md`（默认 `--quote-mode keep`）清理无功能省略号、破折号、双连字符和独立分隔线；盐言「」不受影响。主会话以最终落盘文件复扫验收，不以 agent 自检代替。
 
 **退化防护**：正文落盘后运行 `node scripts/check-degeneration.js --check 正文/第XXX章_*.md`。blocking（复读、截断、拒绝语、tier1 工程词泄漏）只重写受影响章节，最多 2 次；仍失败就报告证据让用户定夺。
@@ -165,8 +167,8 @@ advisory 只提示可疑处，先看脚本给出的例外；故事内系统/界�
 
 **不可用 / Cursor / Fallback→solo（强制）**：不得跳过。主会话须：
 1. 报告 `Fallback: narrative-writer → solo`；
-2. **立即**读取并执行 `skills/story-deslop/SKILL.md`（定档→**改前备份到 `_revision-backups/`**→诊断→**对照库硬步骤**（`ai_to_human_replacements.json`：精确 map + 逐句语义对齐，意思一致才从 `replace_with` 挑 1 条）→Gate→收尾；长篇写后默认清理档；用户未说「原地改」时写 `{stem}_humanized{ext}`，再由主会话决定是否用其人味稿替换正文路径——替换前确认 Phase 0 备份已存在，缺则先补备份再覆盖）；或至少完整执行 `references/anti-ai-writing.md` 三遍法 + `references/banned-words.md` + Gate A-G + **对照库语义遍**；
-3. 章报告标注 `Deslop: solo inline` / `Deslop: story-deslop skill`（含改前备份路径 + **`对照库:已执行`**）。机械脚本（`check-ai-patterns.js` 等）是收尾，**不能替代**本步；缺对照库标记则本章去味未完成。
+2. **立即**读取并执行 `skills/story-deslop/SKILL.md` **写后定稿模式**（定档清理→**改前备份到 `_revision-backups/`**→诊断→**对照库硬步骤**（`ai_to_human_replacements.json`：精确 map + 逐句语义对齐，意思一致才从 `replace_with` 挑 1 条）→Gate→写出 `{stem}_humanized{ext}` 或等价人味结果→**必须用人味稿覆盖正式正文路径**→对覆盖后路径做确定性收尾）；或至少完整执行 `references/anti-ai-writing.md` 三遍法 + `references/banned-words.md` + Gate A-G + **对照库语义遍**，同样以覆盖后的正文路径为定稿。替换前确认 Phase 0 备份已存在，缺则先补备份再覆盖；
+3. 章报告标注 `Deslop: solo inline` / `Deslop: story-deslop skill`（含改前备份路径 + **`对照库:已执行`** + **`定稿覆盖:已执行`**）。机械脚本（`check-ai-patterns.js` 等）是收尾，**不能替代**本步；缺对照库或定稿覆盖标记则本章去味未完成——正文路径仍是中间稿，不算交付。
 
 检查后若正文修订改变了连续性事实，必须构造 `mode=revision` 的同章追踪事务并执行 `scripts/tracking_commit.py commit`：
 - 伏笔变化用 `foreshadow_changes` 更新同一 ID 的当前行，不追加重复历史；

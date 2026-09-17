@@ -17,7 +17,7 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 1. 开书/补纲先完整读取 `references/workflow-setup.md`；写指定章读取 `references/workflow-chapter.md`；日更/大修先读取 `references/workflow-daily.md` 或 `references/workflow-revision.md`，进入正文前再完整读取 `workflow-chapter.md`。
 2. 主会话直接写正文时，首次落笔前完整读取 `references/long-format.md`、`references/writing-craft.md`、`references/long-chapter-quality.md`、`references/long-chapter-hooks.md`、`references/generation-constraints.md`（写前去模板硬约束）；交给 narrative-writer 时，由该 agent 按自己的 reference 表完成同等写前读取，主会话不得用未读 reference 的临时 prompt 替代。
 3. 悬疑、惊悚、异常线索章加读 `references/long-suspense.md`；身份/认知/立场反转章加读 `references/long-reversal.md`。
-4. references 读完后立即重读当前用户请求、本章细纲和卷纲，在上下文内建立 **Constraint Lock**：原样记录用户明确字数范围（仅当用户书面给出时才约束）、必发生、禁止发生、精确时间锚与本章停笔点、章尾新债。references 只提供技法，不得覆盖这些项目事实。**本仓库硬规则**见 [references/local-production-rules.md](references/local-production-rules.md)：默认 **3 章细纲 → 1 章正文**；**不按目标字数生成**——生成多少就是多少；比 2000 少也不加厚/不合并；禁止用水话回填；每章字数写入 `追踪/字数记录/第XXX章.md`。交付前逐项复核：情节齐即停；`under`/`over` 相对细纲目标只记账，不追写。
+4. references 读完后立即重读当前用户请求、本章细纲和卷纲，在上下文内建立 **Constraint Lock**：原样记录用户明确字数范围（仅当用户书面给出时才约束）、必发生、禁止发生、精确时间锚与本章停笔点、章尾新债。references 只提供技法，不得覆盖这些项目事实。**本仓库硬规则**见 [references/local-production-rules.md](references/local-production-rules.md)：默认 **3 章细纲 → 1 章正文**；**不按目标字数生成**——生成多少就是多少；比 2000 少也不加厚/不合并；禁止用水话回填；**写后同轮 story-deslop 定稿覆盖**——`正文/第XXX章_*.md` 必须是去味后的最终正文；每章字数写入 `追踪/字数记录/第XXX章.md`。交付前逐项复核：情节齐即停；`under`/`over` 相对细纲目标只记账，不追写。
 
 任一必需路径不存在、不可读或未读完时立即停止，报告准确路径，**不得先写正文再补读**。门禁按当前任务、当前会话重新执行；旧会话的“读过”不能沿用。
 
@@ -136,7 +136,9 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 #### 单章写作流程
 
-**执行前先读** [references/local-production-rules.md](references/local-production-rules.md)（三纲并一文、不追字数目标、禁水话、独立字数账本）与 [references/workflow-chapter.md](references/workflow-chapter.md)，按其中的单章写作流程、写作技巧提醒、字数验收权威与 Phase 5 质量检查执行。日更批量另加载 `references/workflow-daily.md` 控制批次。
+**执行前先读** [references/local-production-rules.md](references/local-production-rules.md)（三纲并一文、不追字数目标、禁水话、独立字数账本、**写后同轮 deslop 定稿**）与 [references/workflow-chapter.md](references/workflow-chapter.md)，按其中的单章写作流程、写作技巧提醒、字数验收权威与 Phase 5 质量检查执行。日更批量另加载 `references/workflow-daily.md` 控制批次。
+
+> **交付定义**：每章「写完」= 正文落盘 + **同轮** `story-deslop`（写后定稿模式）+ 人味稿已覆盖回 `正文/第XXX章_*.md`。未去味的落盘稿不是最终正文；不得把去味留给用户事后单独调用。
 
 #### 追踪文件体积
 
@@ -151,7 +153,8 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 | 时机 | 跳转到 | 命令 |
 |---|---|---|
-| 写完，去 AI 味 | story-deslop | `/story-deslop` |
+| **写正文后（同轮内嵌，非可选）** | story-deslop 写后定稿模式 | 读并执行 `/story-deslop` 全流程 → 覆盖回正文路径；见 local-production-rules §4 |
+| 事后补跑 / 单独去味旧章 | story-deslop | `/story-deslop`（仍须备份；写后补跑也要覆盖正式正文） |
 | 想对比参考书 | story-long-analyze | `/story-long-analyze` |
 | 需要市场方向 | story-long-scan | `/story-long-scan` |
 | 太长，适合短篇 | story-short-write | `/story-short-write` |
