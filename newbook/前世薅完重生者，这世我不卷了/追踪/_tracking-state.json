@@ -3,46 +3,46 @@
   "characters": {
     "周晏": {
       "abilities_resources": [
-        "浅灰护层",
-        "稳路线清单"
+        "窄边清单收益",
+        "话术"
       ],
-      "goal": "按稳路线吃首波边缘红利",
+      "goal": "不当幸运号，把窄边收益用一阵",
       "identity": "沈晚宁最好的朋友；享受人生计划搭子",
       "knowledge": [
-        "不知满级与前世",
-        "知走边缘不冲中心"
+        "知窗后低调",
+        "不知短清与满级"
       ],
-      "location": "城北轻轨废弃站边缘刷新带",
+      "location": "居所",
       "open_threads": [
-        "窗口内收获与风险"
+        "享受人生计划"
       ],
       "relationships": [
-        "沈晚宁=目送的刹车与门路"
+        "沈晚宁=护着躺平的人"
       ],
-      "state": "已进点；不知匿名投放与疑云细节"
+      "state": "窗口尾声；接受低调；仍不知满级"
     },
     "沈晚宁": {
       "abilities_resources": [
         "Level Max（未公开）",
-        "暗库余量",
-        "不可回溯投放经验"
+        "窄边清单",
+        "断链与卸梢经验"
       ],
-      "goal": "窗口期内继续护周晏且不出名",
+      "goal": "窗后更低调护周晏过日子",
       "identity": "重生满级玩家；表面普通都市女青年",
       "knowledge": [
-        "投放来源已断",
-        "疑云存在"
+        "疑云查不到",
+        "下阶段有新压"
       ],
-      "location": "与光柱反向的巷子",
+      "location": "居所",
       "open_threads": [
-        "窗口内新抢夺",
-        "疑云会否升级"
+        "下阶段远压",
+        "命数仍禁碰"
       ],
       "relationships": [
-        "周晏=稳路线接收者",
-        "国家线=仍未拨号"
+        "周晏=要护着把日子过完的人",
+        "国家线=仍不拨号"
       ],
-      "state": "稳路线与匿名投放已完成；开窗缩影成功；榜上无名"
+      "state": "窗口收束；短清完成；名字仍不响；更低调已定"
     },
     "陆昭": {
       "abilities_resources": [
@@ -82,27 +82,27 @@
       "女主不当先锋，国家线只做间接交易"
     ],
     "next_chapter_commitments": [
-      "二次窗口内护周晏边缘收益且继续缩影",
-      "「身边有人」疑云加压但不自我曝光"
+      "窗口后更低调执行",
+      "下阶段新压力到时再应，不提前揭命数与编制"
     ],
     "position": {
-      "scene": "城市街巷；周晏已入城北边缘点",
-      "story_time": "二次登录窗口开启当日",
+      "scene": "居所；光柱淡去；更低调策略已立",
+      "story_time": "二次登录窗口尾声",
       "volume": "第一卷·我不卷了",
       "volume_start_chapter": 1
     },
     "recent_chapters": [
       {
-        "chapter": 8,
-        "summary": "正文第8章 ← 细纲第22–24章。假饵引盯梢核心入废弃冷库；女主无人处结清并留警告；周晏以为欧皇清净；第二次低危陪玩兑现；阿拾号暂时沉默。"
+        "chapter": 18,
+        "summary": "正文第18章 ← 细纲第52–54章。假饵断链成功；周晏二次边缘收获；疑云差点咬到单元楼，女主改轨擦过。"
       },
       {
-        "chapter": 9,
-        "summary": "正文第9章 ← 细纲第25–27章。目击苏醒失神命数毛边后更藏；闺蜜做饭日常松一拍；二次登录窗口72小时预告弹出，按住周晏并盘算间接送机缘换清净（远景未落地）。"
+        "chapter": 19,
+        "summary": "正文第19章 ← 细纲第55–57章。周晏话术挡枪+女主暗搅，F07收束摘干净；窗口后半更挤；别碰清单大幅缩窄并签字，准备短清堵点。"
       },
       {
-        "chapter": 10,
-        "summary": "正文第10章 ← 细纲第28–30章。倒计时末段交出二次窗口稳路线；匿名投放多余低危机缘且来源不可回溯；窗口开启周晏走边缘稳点，旁人嘀咕身边有人却查不到；女主不上榜、反向入巷。"
+        "chapter": 20,
+        "summary": "正文第20章 ← 细纲第58–60章。无人处短清窄边堵点；身边有人议论更大仍查不到；二次窗口尾声女主定更低调策略，不接编制不抽命数，挂下阶段远压。"
       }
     ]
   },
@@ -149,8 +149,8 @@
       "planned_resolution_chapter": null,
       "planted_chapter": 9,
       "status": "已埋",
-      "summary": "有人濒死跳过后苏醒失神半拍（命数毛边）；女主本卷不抽离",
-      "updated_chapter": 9
+      "summary": "命数毛边再闪：死醒失神三秒；女主仍不抽",
+      "updated_chapter": 17
     },
     "F006": {
       "id": "F006",
@@ -163,21 +163,21 @@
     },
     "F007": {
       "id": "F007",
-      "importance": "中",
-      "planned_resolution_chapter": 5,
-      "planted_chapter": 4,
+      "importance": "高",
+      "planned_resolution_chapter": 19,
+      "planted_chapter": 16,
       "status": "已回收",
-      "summary": "群转发与当面跟车已兑现；热度被搅浑水稀释",
-      "updated_chapter": 5
+      "summary": "匿名溯源被幸运人设挡枪收束；女主摘干净",
+      "updated_chapter": 19
     },
     "F008": {
       "id": "F008",
-      "importance": "中",
-      "planned_resolution_chapter": null,
-      "planted_chapter": 8,
+      "importance": "高",
+      "planned_resolution_chapter": 16,
+      "planted_chapter": 14,
       "status": "已埋",
-      "summary": "阿拾沉默；是否知道有高手下场仍未知",
-      "updated_chapter": 8
+      "summary": "别家路灯面邀：养幸运号收租结构露出（F08）",
+      "updated_chapter": 14
     },
     "F009": {
       "id": "F009",
@@ -194,14 +194,68 @@
       "planned_resolution_chapter": null,
       "planted_chapter": 10,
       "status": "已埋",
-      "summary": "旁人嘀咕周晏身边像有高人，查无可查；窗口内抢夺刚起",
-      "updated_chapter": 10
+      "summary": "身边有人议论扩散仍查无可查；作长期背景税",
+      "updated_chapter": 20
+    },
+    "F011": {
+      "id": "F011",
+      "importance": "中",
+      "planned_resolution_chapter": 12,
+      "planted_chapter": 11,
+      "status": "已回收",
+      "summary": "对外话术已在边缘实战说出「自己摸的」",
+      "updated_chapter": 12
+    },
+    "F012": {
+      "id": "F012",
+      "importance": "高",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 12,
+      "status": "已埋",
+      "summary": "带躺私信来自群传同拨嗅探网；对方也在查周晏身边有没有人",
+      "updated_chapter": 13
+    },
+    "F013": {
+      "id": "F013",
+      "importance": "中",
+      "planned_resolution_chapter": 14,
+      "planted_chapter": 13,
+      "status": "已回收",
+      "summary": "街面装路人+暗搅已执行；群聊热度下降",
+      "updated_chapter": 14
+    },
+    "F014": {
+      "id": "F014",
+      "importance": "高",
+      "planned_resolution_chapter": 16,
+      "planted_chapter": 15,
+      "status": "已回收",
+      "summary": "路灯跟梢核心已卸；养号线实质停摆",
+      "updated_chapter": 16
+    },
+    "F015": {
+      "id": "F015",
+      "importance": "中",
+      "planned_resolution_chapter": 20,
+      "planted_chapter": 19,
+      "status": "已回收",
+      "summary": "窄边短清完成；窗口收束",
+      "updated_chapter": 20
+    },
+    "F016": {
+      "id": "F016",
+      "importance": "中",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 20,
+      "status": "已埋",
+      "summary": "窗口后更低调；下阶段新压力远景未展开",
+      "updated_chapter": 20
     }
   },
   "imported_through_chapter": 0,
-  "last_committed_chapter": 10,
+  "last_committed_chapter": 20,
   "schema_version": 4,
-  "state_revision": 11,
+  "state_revision": 21,
   "timeline": {
     "E001": {
       "characters": [
@@ -347,6 +401,146 @@
       "reveal_status": "已揭示",
       "story_time": "二次登录窗口开启当日",
       "updated_chapter": 10
+    },
+    "E011": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 11,
+      "id": "E011",
+      "objective_fact": "周晏带回边缘稳收获；遭私聊盘问谁教路线；沈晚宁掐话并教三句对外话术",
+      "reader_knowledge": "读者已知话术已立、盘问者记下周晏、女主继续缩影",
+      "reveal_chapter": 11,
+      "reveal_status": "已揭示",
+      "story_time": "二次登录窗口开启后首日傍晚至夜",
+      "updated_chapter": 11
+    },
+    "E012": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 12,
+      "id": "E012",
+      "objective_fact": "边缘路标被捣乱；沈晚宁暗改路径无署名；周晏再进获更稳掉落；群传幸运并出现带躺私信",
+      "reader_knowledge": "读者已知女主改标、周晏欧皇错觉加深、带躺诱惑已挂",
+      "reveal_chapter": 12,
+      "reveal_status": "已揭示",
+      "story_time": "二次窗口次日城北边缘",
+      "updated_chapter": 12
+    },
+    "E013": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 13,
+      "id": "E013",
+      "objective_fact": "沈晚宁拆穿带躺收租并续签条约；马甲反查确认嗅探同拨且对方在查身边高人；决定次日装路人",
+      "reader_knowledge": "读者已知条约加码、嗅探名单在手、明日街面可能撞上",
+      "reveal_chapter": 13,
+      "reveal_status": "已揭示",
+      "story_time": "二次窗口次日夜",
+      "updated_chapter": 13
+    },
+    "E014": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 14,
+      "id": "E014",
+      "objective_fact": "沈晚宁装路人并暗搅降温；拒绝路灯面邀并延长条约换陪玩报备",
+      "reader_knowledge": "读者已知路灯=养号结构、条约已延长、女主将摸底",
+      "reveal_chapter": 14,
+      "reveal_status": "已揭示",
+      "story_time": "二次窗口第三日",
+      "updated_chapter": 14
+    },
+    "E015": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 15,
+      "id": "E015",
+      "objective_fact": "沈晚宁摸清路灯节点与跟梢；截获养幸运号内部话术；获加码堵点预兆",
+      "reader_knowledge": "读者已知养号意图确认、女主将布局卸梢",
+      "reveal_chapter": 15,
+      "reveal_status": "已揭示",
+      "story_time": "二次窗口第四日",
+      "updated_chapter": 15
+    },
+    "E016": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 16,
+      "id": "E016",
+      "objective_fact": "沈晚宁引开并卸梢路灯跟梢；周晏获清净错觉；有人开始追匿名投放来源",
+      "reader_knowledge": "读者已知卸梢与警告、周晏不知情、F07溯源挂上",
+      "reveal_chapter": 16,
+      "reveal_status": "已揭示",
+      "story_time": "二次窗口第五日前后",
+      "updated_chapter": 16
+    },
+    "E017": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 17,
+      "id": "E017",
+      "objective_fact": "沈晚宁再目击死醒失神毛边；窗口中段风险上调；有人溯源互助箱匿名投放",
+      "reader_knowledge": "读者已知女主仍不抽命数、假饵将布、中段加压",
+      "reveal_chapter": 17,
+      "reveal_status": "已揭示",
+      "story_time": "二次窗口中段前夜",
+      "updated_chapter": 17
+    },
+    "E018": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 18,
+      "id": "E018",
+      "objective_fact": "沈晚宁假饵切断匿名回溯；周晏再获边缘掉落；溯源拼图擦过居所被改轨带偏",
+      "reader_knowledge": "读者已知断链成功、暴露险擦过、需幸运挡枪收束",
+      "reveal_chapter": 18,
+      "reveal_status": "已揭示",
+      "story_time": "二次窗口中段",
+      "updated_chapter": 18
+    },
+    "E019": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 19,
+      "id": "E019",
+      "objective_fact": "周晏话术挡住嗅探；沈晚宁暗搅收束溯源；清单缩窄并准备短清",
+      "reader_knowledge": "读者已知F07回收、窄边策略、短清将至",
+      "reveal_chapter": 19,
+      "reveal_status": "已揭示",
+      "story_time": "二次窗口后半开始",
+      "updated_chapter": 19
+    },
+    "E020": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 20,
+      "id": "E020",
+      "objective_fact": "沈晚宁短清窄边堵点；疑云声更大仍查不到；窗口收束后定更低调且不接编制",
+      "reader_knowledge": "读者已知窗内段收束、女主继续躺平契约、下阶段压力仅远挂",
+      "reveal_chapter": 20,
+      "reveal_status": "已揭示",
+      "story_time": "二次登录窗口尾声",
+      "updated_chapter": 20
     }
   },
   "wordcount_records": {
@@ -366,9 +560,89 @@
       "status": "under",
       "target": 2500
     },
+    "11": {
+      "actual": 670,
+      "body_sha256": "667b66f322fe5788bae6ad69650c94e8eb72c90aff048a0c7c2b4a8c4278fd5c",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "12": {
+      "actual": 676,
+      "body_sha256": "bbcb6cdf9003fb143e9ab341b4e748e69fca33861c76ce33541222b57b250de7",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "13": {
+      "actual": 628,
+      "body_sha256": "4d13d30b0ca0fd5f435ae439976f01edbe0feab50d6b98d23a6fc1999fac328a",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2200
+    },
+    "14": {
+      "actual": 561,
+      "body_sha256": "5884c581c6e31533591d472a058d1ea43d4f3cb747316f1d590fc618a8f13abc",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "15": {
+      "actual": 418,
+      "body_sha256": "9ea40cfb57d3c50612c2739af22561690407838fb0421af0a421b30c790fa6df",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "16": {
+      "actual": 472,
+      "body_sha256": "a13b7d011b95d2d5f7fbf5f5ee85077c5604db4488fff3c4614b90042781d2ea",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2300
+    },
+    "17": {
+      "actual": 360,
+      "body_sha256": "0ad48b06aa52b2560b3be29a3b38aa0dd350d4a4ce73e19acfed5ab84371936e",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2400
+    },
+    "18": {
+      "actual": 435,
+      "body_sha256": "25aef28fa319efba65c5b91003aeb94b55c7ea800dda11f21f9c492c20bb9654",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "19": {
+      "actual": 446,
+      "body_sha256": "a4a7807218317de3dfb1de4634e8a6712c21c0f29b5118da4ef42320ea075427",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2400
+    },
     "2": {
       "actual": 1658,
       "body_sha256": "033dbddeda4bc205a1111860dc1f07def4ea1808b982e471a51f62d78f594580",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "20": {
+      "actual": 460,
+      "body_sha256": "36478f6865deea342c95808c6122602d19813ba0bad2f8679bd9b085652ca688",
       "metric": "visible_chars_v1",
       "resolution": "accepted_current_length",
       "status": "under",
