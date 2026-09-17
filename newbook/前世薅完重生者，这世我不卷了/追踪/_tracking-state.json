@@ -1,61 +1,79 @@
 {
   "book_title": "前世薅完重生者，这世我不卷了",
   "characters": {
-    "沈晚宁": {
+    "周晏": {
       "abilities_resources": [
-        "Level Max 面板",
-        "前世情报与结账经验",
-        "库存物资仍在"
+        "普通人初始面板"
       ],
-      "goal": "躺平过日子；先私下处理陆昭",
-      "identity": "重生满级玩家；表面普通都市女青年",
+      "goal": "想冲传送点看隐藏福利；被劝后改明天再说",
+      "identity": "沈晚宁最好的朋友；享受人生计划搭子",
       "knowledge": [
-        "自己真的回来了",
-        "陆昭看不见面板",
-        "边角有登录倒计时毛边"
+        "不知晚宁满级与前世",
+        "知开服与传送点存在"
       ],
-      "location": "居所客厅岛台前",
+      "location": "步行街，被按在店铺门口",
       "open_threads": [
-        "抬手未落",
-        "倒计时未读全",
-        "尚未联系周晏"
+        "明天想再看传送点"
       ],
       "relationships": [
-        "陆昭=待结清旧账",
-        "周晏=计划联系的闺蜜",
-        "遗照众人=未展开的独活债"
+        "沈晚宁=闺蜜、今晚听她的"
       ],
-      "state": "已确认 Level Max；肩背放松；抬手估力待落"
+      "state": "兴奋被压住，短暂别扭但仍信任晚宁"
+    },
+    "沈晚宁": {
+      "abilities_resources": [
+        "Level Max（未公开）",
+        "稳坐标：城西旧码头三号仓库侧门",
+        "前世首波经验"
+      ],
+      "goal": "护周晏活过首波；拿稳坐标且不暴露",
+      "identity": "重生满级玩家；表面普通都市女青年",
+      "knowledge": [
+        "首波死亡率高",
+        "隐藏层可看稳坐标",
+        "倒计时未读全"
+      ],
+      "location": "步行街店铺门口阴影",
+      "open_threads": [
+        "稳坐标未跑",
+        "周晏明日再看的冲动",
+        "倒计时具体数值"
+      ],
+      "relationships": [
+        "周晏=已立陪浪公约、需按头",
+        "陆昭=已暂时静音",
+        "遗照众人=未展开"
+      ],
+      "state": "已呼晕陆昭；公约已立；开服中冷静接管"
     },
     "陆昭": {
       "abilities_resources": [
-        "红酒与话术",
-        "所谓陈总项目说辞"
+        "无"
       ],
-      "goal": "要到五十万启动金并试探复合",
-      "identity": "前男友；今生仍活着的开局靶",
+      "goal": "（暂无行动力）",
+      "identity": "前男友；今生开局靶",
       "knowledge": [
-        "不知女主重生与满级",
-        "不知前世已被结账"
+        "未见面板，不知被满级处理"
       ],
-      "location": "沈晚宁居所客厅",
+      "location": "沈晚宁居所沙发，呼晕中",
       "open_threads": [
-        "即将被收力处理"
+        "醒来后如何反应"
       ],
       "relationships": [
-        "自以为对沈晚宁仍有软饭空间"
+        "对沈晚宁的软饭幻想被打断"
       ],
-      "state": "误判女主松口，正提高音量催促"
+      "state": "被收力呼晕，手腕被鞋带松绕，手机难立刻摸到"
     }
   },
   "context": {
     "active_character_names": [
       "沈晚宁",
-      "陆昭"
+      "周晏"
     ],
     "continuity_risks": [
-      "呼晕尚未落下，下章必须兑现且不可当众撕破",
-      "登录倒计时数字未读全，不可提前写成完整入侵课"
+      "周晏仍想明天再冲，需继续按头",
+      "稳坐标未兑现，窗口倒计时在走",
+      "陆昭醒后可能再缠，但本阶段不必主动追打"
     ],
     "long_term_constraints": [
       "有人在场避锋芒，无人处一次结清",
@@ -64,12 +82,12 @@
       "女主不当先锋，国家线只做间接交易"
     ],
     "next_chapter_commitments": [
-      "收力呼晕陆昭，兑现无人处一次结清",
-      "呼晕后处理现场并推进联系周晏/入侵预兆"
+      "在安全窗口内处理稳坐标/周晏想再看的冲动",
+      "避免首波传送点送死与满级暴露"
     ],
     "position": {
-      "scene": "沈晚宁居所客厅 / 岛台红酒场面",
-      "story_time": "重生落点当日清晨，陆昭上门纠缠中",
+      "scene": "步行街店铺门口阴影；全城面板弹出",
+      "story_time": "重生落点当日傍晚，游戏强制开服中",
       "volume": "第一卷·我不卷了",
       "volume_start_chapter": 1
     },
@@ -77,6 +95,10 @@
       {
         "chapter": 1,
         "summary": "正文第1章 ← 细纲第1–3章。沈晚宁完成遗照问好、被陆昭上门纠缠，唤出面板确认 Level Max，边角闪过登录倒计时；她放下酒杯估力抬手，停在呼晕前。"
+      },
+      {
+        "chapter": 2,
+        "summary": "正文第2章 ← 细纲第4–6章。沈晚宁收力呼晕陆昭并善后，约上周晏立下陪浪公约；街面异象后全城强制开服，她按住周晏记下城西旧码头稳坐标，远处已有尖叫。"
       }
     ]
   },
@@ -88,22 +110,31 @@
       "planted_chapter": 1,
       "status": "已埋",
       "summary": "遗照里多人身份与独活岁月未展开",
-      "updated_chapter": 1
+      "updated_chapter": 2
     },
     "F002": {
       "id": "F002",
       "importance": "中",
       "planned_resolution_chapter": 2,
       "planted_chapter": 1,
+      "status": "已回收",
+      "summary": "陆昭今生开局纠缠已用收力呼晕结清；后续若再犯再处理",
+      "updated_chapter": 2
+    },
+    "F003": {
+      "id": "F003",
+      "importance": "高",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 2,
       "status": "已埋",
-      "summary": "陆昭前世账已结过；今生仍活着纠缠，结清方式未兑现",
-      "updated_chapter": 1
+      "summary": "城西旧码头三号仓库侧门为稳坐标，收益薄但可活着拿满；尚未兑现",
+      "updated_chapter": 2
     }
   },
   "imported_through_chapter": 0,
-  "last_committed_chapter": 1,
+  "last_committed_chapter": 2,
   "schema_version": 4,
-  "state_revision": 2,
+  "state_revision": 3,
   "timeline": {
     "E001": {
       "characters": [
@@ -118,12 +149,35 @@
       "reveal_status": "已揭示",
       "story_time": "重生落点当日清晨",
       "updated_chapter": 1
+    },
+    "E002": {
+      "characters": [
+        "沈晚宁",
+        "陆昭",
+        "周晏"
+      ],
+      "first_recorded_chapter": 2,
+      "id": "E002",
+      "objective_fact": "沈晚宁呼晕陆昭后与周晏立陪浪公约；全城强制登录面板弹出，她按住周晏并记下城西旧码头稳坐标",
+      "reader_knowledge": "读者已知陆昭被私下结清、公约成立、开服首波危险、女主已拿稳坐标且未露满级",
+      "reveal_chapter": 2,
+      "reveal_status": "已揭示",
+      "story_time": "重生落点当日：晨呼晕陆昭→午后约周晏→傍晚开服",
+      "updated_chapter": 2
     }
   },
   "wordcount_records": {
     "1": {
       "actual": 1688,
       "body_sha256": "0816a027d64ef23720a61ebe020fb8a9f879285ef23f8d79974da8ccf968584b",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2500
+    },
+    "2": {
+      "actual": 1658,
+      "body_sha256": "033dbddeda4bc205a1111860dc1f07def4ea1808b982e471a51f62d78f594580",
       "metric": "visible_chars_v1",
       "resolution": "accepted_current_length",
       "status": "under",
