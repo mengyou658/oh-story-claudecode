@@ -1,0 +1,47 @@
+{
+  "book_title": "我的师兄们，帅是真帅，穷是真穷",
+  "author": "脑洞炸了锅",
+  "source_path": "拆文库/我的师兄们，帅是真帅，穷是真穷/原文/原文.txt",
+  "platform_meta": {
+    "book_id": "7613292466841586713",
+    "genre": "玄幻言情",
+    "tags": ["幻想言情", "剑修", "第一人称", "古色古香"],
+    "stated_chars": 716607,
+    "boundary_chars_sum": 874938,
+    "chapters": 290
+  },
+  "output_dir": "拆文库/我的师兄们，帅是真帅，穷是真穷/",
+  "stages": {
+    "0": {
+      "status": "completed",
+      "artifacts": ["概要.md", "_progress.md#章节边界", "_chapter_meta.json"]
+    },
+    "1": {
+      "status": "completed",
+      "artifacts": [
+        "章节/第1章_深度拆解.md",
+        "章节/第2章_深度拆解.md",
+        "章节/第3章_深度拆解.md",
+        "快速预览.md"
+      ]
+    },
+    "2": {
+      "status": "partial",
+      "completed_chapters": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "pending_from": 21,
+      "total_chapters": 290,
+      "mode": "solo_direct",
+      "artifacts_glob": "章节/第1章_摘要.md … 章节/第20章_摘要.md"
+    },
+    "3": { "status": "pending" },
+    "4": { "status": "pending" },
+    "5": { "status": "pending" },
+    "6": {
+      "status": "completed",
+      "artifacts": ["文风.md", "_style-sample.txt"],
+      "style_available": true,
+      "note": "无拆文报告；技巧段自 Stage1/2 归纳；定位为轻快+欢乐+沉稳默认文风底"
+    }
+  },
+  "updated_at": "2026-09-17"
+}
