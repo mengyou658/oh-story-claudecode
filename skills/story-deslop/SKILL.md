@@ -14,7 +14,7 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 **开场定档**：清理（默认）/ 重构（须用户授权）/ 检测 / 新写。合同见 [references/deslop-process.md](references/deslop-process.md)（Never inject、保真/浓度计、C 级禁动、检测器边界、双道门禁）。保真细则见 [references/fidelity-constraints.md](references/fidelity-constraints.md)（蒸馏自说人话 + 韩愈）。正文**写前**约束见 [references/generation-constraints.md](references/generation-constraints.md)。中文原生模式 25–33 见 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)。场景档见 [references/scene-profiles.md](references/scene-profiles.md)。无书短文旁路见 [references/shortform-sidepath.md](references/shortform-sidepath.md)。
 
-**对照库 + ainovel 判据**：文件模式默认叠加 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)（ainovel-cli 机械基线/五类语义判据/自定义规则映射 + `book/_analysis` 语句对照库）。对照库替换**必须先**备份到 `_revision-backups/`，再写出 `{原名}_humanized{后缀}`，默认不覆盖原稿（见该文件「输出契约」）。
+**对照库 + ainovel 判据**：文件模式默认叠加 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)（ainovel-cli 机械基线/五类语义判据/自定义规则映射 + `book/_analysis` 语句对照库）。对照库替换**必须先**备份到 `_revision-backups/`，再写出 `{原名}_humanized{后缀}`，默认不覆盖原稿（见该文件「输出契约」）。**清理/重构档硬门禁**：须完成精确 map + **逐句语义对齐**（句意与表内 `meaning` 一致且能表达同一意思 → 从 `replace_with` 挑 1 条）；报告无 `对照库:已执行` 则**去味未完成**。只跑 Gate/机械脚本不算。
 
 ---
 
@@ -186,23 +186,24 @@ node scripts/check-ai-patterns.js --check --fail-on=blocking <正文文件...>
 「诊断与分级」完成后，按以下顺序选择执行路径：
 
 1. **已在 narrative-writer 子代理内**：按选定 Gate 范围 inline 执行，不再 spawn（嵌套 spawn 会被静默降级）。
-2. **未在子代理内且按顶部顺序找到 `narrative-writer` agent**：按当前运行时调用；Antigravity 用 `invoke_subagent(TypeName: "narrative-writer")`，Claude/OpenCode/Codex 用各自字段。prompt 保持：`项目目录：{dir}\n任务描述：去AI味\nGate 细则：执行前按你的参考表读取 deslop-gates.md 的删除保护与所选 Gate（部署副本与本 skill 同源）\n改前备份：文件模式先把当前章节复制到同目录 _revision-backups/{stem}_原稿_pre-deslop_{YYYYMMDD}{ext}（须含 _原稿_；同日冲突追加 _{HHmm}），再改写；备份路径写入报告\n对照库：读取 phrase-bank-humanize.md；替换优先用 book/_analysis/ai_to_human_replacements.json 的 map；人味句里的 {xx} 必须回填本书角色名（设定/角色、关系.md、本章 POV）；写出 {stem}_humanized{ext}，不覆盖原稿（用户明确原地改除外，原地改也须先备份）\n检查分工：你负责本次语义去味；父流程负责 Phase 4 最终文件扫描，不重复整轮改稿\n检查范围：{待处理的正文文件}\n文风路径：{本书文风全文路径，无则写无}\nstyle_resolution：{本次生效要求及来源、被覆盖的默认条款、事实边界}\n作者偏好：{query 命中的 prose_style 项}\nAI味等级：{诊断与分级结果}\n处理策略：{实际选定的 Gate 范围；优先使用用户指定范围}\n删除优先：每条 AI 味项先判能否删除——删后不丢伏笔/钩子/角色/情节/人物记忆/情绪承接/因果锚点/必要信息/必要转折的直接删，会丢才进 Gate 润色；看似解释/评价但承担小连贯的句子，压成白话承接、动作或物件锚点，不机械删除；已有任务/手续/物件/证据缺口可以压成角色当下要处理的具体卡点，但不新增原文没有的事件链；删除服从比例上限与字数下限，跌破下限改降AI重写。\n模式处理：按 references/anti-ai-writing.md 的问题模式目录执行；模式 8（解释腔/上帝视角/安排感）归入 Gate G，其余新增模式归入 Gate A-F 的对应处理。相邻段重复表达同一信息/动作/情绪时，按 Gate C/D 合并去重；`。
-3. **agent 不存在或 spawn 失败（含 Cursor）**：主线程 **立即** inline 执行本 skill 剩余 Phase（诊断→Gate→对照库→收尾），报告 `Deslop: solo inline`；禁止只跑 `check-ai-patterns.js` 后结束。
+2. **未在子代理内且按顶部顺序找到 `narrative-writer` agent**：按当前运行时调用；Antigravity 用 `invoke_subagent(TypeName: "narrative-writer")`，Claude/OpenCode/Codex 用各自字段。prompt 保持：`项目目录：{dir}\n任务描述：去AI味\nGate 细则：执行前按你的参考表读取 deslop-gates.md 的删除保护与所选 Gate（部署副本与本 skill 同源）\n改前备份：文件模式先把当前章节复制到同目录 _revision-backups/{stem}_原稿_pre-deslop_{YYYYMMDD}{ext}（须含 _原稿_；同日冲突追加 _{HHmm}），再改写；备份路径写入报告\n对照库（硬步骤）：读取 phrase-bank-humanize.md；用 book/_analysis/ai_to_human_replacements.json——先精确 map，再逐句语义对齐（句意与表内 meaning 一致且能表达同一意思则从 replace_with 挑 1 条；不一致不换）；报告必须含「对照库:已执行」，缺则去味未完成；人味句里的 {xx} 必须回填本书角色名（设定/角色、关系.md、本章 POV）；写出 {stem}_humanized{ext}，不覆盖原稿（用户明确原地改除外，原地改也须先备份）\n检查分工：你负责本次语义去味；父流程负责 Phase 4 最终文件扫描，不重复整轮改稿\n检查范围：{待处理的正文文件}\n文风路径：{本书文风全文路径，无则写无}\nstyle_resolution：{本次生效要求及来源、被覆盖的默认条款、事实边界}\n作者偏好：{query 命中的 prose_style 项}\nAI味等级：{诊断与分级结果}\n处理策略：{实际选定的 Gate 范围；优先使用用户指定范围}\n删除优先：每条 AI 味项先判能否删除——删后不丢伏笔/钩子/角色/情节/人物记忆/情绪承接/因果锚点/必要信息/必要转折的直接删，会丢才进 Gate 润色；看似解释/评价但承担小连贯的句子，压成白话承接、动作或物件锚点，不机械删除；已有任务/手续/物件/证据缺口可以压成角色当下要处理的具体卡点，但不新增原文没有的事件链；删除服从比例上限与字数下限，跌破下限改降AI重写。\n模式处理：按 references/anti-ai-writing.md 的问题模式目录执行；模式 8（解释腔/上帝视角/安排感）归入 Gate G，其余新增模式归入 Gate A-F 的对应处理。相邻段重复表达同一信息/动作/情绪时，按 Gate C/D 合并去重；`。
+3. **agent 不存在或 spawn 失败（含 Cursor）**：主线程 **立即** inline 执行本 skill 剩余 Phase（诊断→**对照库**→Gate→收尾），报告 `Deslop: solo inline`；禁止只跑 `check-ai-patterns.js` 后结束；报告无 `对照库:已执行` 不得结案。
 
 #### Gate 规则入口
 
 实际执行者在逐项清除前读取 [references/deslop-gates.md](references/deslop-gates.md) 的删除保护与所选 Gate 细则；inline 与 agent 使用同源规则。三遍法仍按前文安排所选 Gate 的执行顺序，不另起一次全篇去味。
 
-#### 对照库替换（文件模式默认）
+#### 对照库替换（文件模式默认；清理/重构档硬步骤）
 
-按 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md) 执行：
+按 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md) 执行。**跳过本步 = 去味未完成**（仅检测档或用户原话豁免除外）。
 
 1. **若 Phase 0 尚未备份**：先复制当前章节到 `_revision-backups/{stem}_原稿_pre-deslop_{YYYYMMDD}{ext}`（见输出契约第 0 步）。
-2. 优先用 `book/_analysis/ai_to_human_replacements.json` 的 **`map` 按键查** `replace_with`；辅以 `pairs`、以及 `ai_human_phrase_bank.json` 的 buckets/精选组、`phrase_bank_index.md` 类目示例。
-3. **禁止无脑全局替换**；按 category/meaning 与人称语气适配；剧情保护与疲劳词阈值同时生效。
-4. **`{xx}` → 本书角色名**：人味句（`human_expr` / `human_top`）里的 `{xx}` 写入正文前必须回填（角色卡/`设定/关系.md`/本章 POV）；禁止残留 `{xx}` 或源书人名。细则见 phrase-bank-humanize。
-5. 将 Gate 润色 + 对照库替换的结果写入 **`{stem}_humanized{ext}`**，原稿不动（除非用户明确要求原地改；原地改亦须已备份）。
-6. 报告统计 map 命中、挑词替换数、`{xx}` 回填数、跳过/`[需复核]` 数，并列出原文件、改前备份与人味文件路径。
+2. **精确层**：用 `book/_analysis/ai_to_human_replacements.json` 的 **`map` 按键查** `replace_with`；辅以 `pairs`、以及 `ai_human_phrase_bank.json` 的 buckets/精选组、`phrase_bank_index.md` 类目示例。
+3. **语义层（硬步骤）**：精确命中为 0 也不能收工。对正文**逐句**判断意思是否对齐表内某一 `meaning`；若一致、能表达同一意思且不漂命题，从该组 `replace_with` / `human_expr` / `human_top` **挑 1 条**替换；不一致则不换。
+4. **禁止无脑全局替换**；按 category/meaning 与人称语气适配；剧情保护与疲劳词阈值同时生效。
+5. **`{xx}` → 本书角色名**：人味句（`human_expr` / `human_top`）里的 `{xx}` 写入正文前必须回填（角色卡/`设定/关系.md`/本章 POV）；禁止残留 `{xx}` 或源书人名。细则见 phrase-bank-humanize。
+6. 将 Gate 润色 + 对照库替换的结果写入 **`{stem}_humanized{ext}`**，原稿不动（除非用户明确要求原地改；原地改亦须已备份）。
+7. 报告必须含 `对照库:已执行`、扫描句数、精确 map 命中/替换、语义对齐命中/替换、`{xx}` 回填、跳过/`[需复核]`，并列出原文件、改前备份与人味文件路径。替换数可为 0，须写语义扫描结论。
 
 ### Phase 4：确定性收尾（文件模式）
 
@@ -244,9 +245,11 @@ python scripts/slop_gauge.py --profile novel <人味或已改正文文件...>
 
 ### 修改统计
 - 总修改数：{N} 处
-- 对照库 map 命中/替换：{N}/{N}（跳过或 [需复核] {N}）
+- **对照库:已执行**（缺此项 = 去味未完成）
+- 对照库扫描句数：{N}
+- 对照库精确 map 命中/替换：{N}/{N}
+- 对照库语义对齐命中/替换：{N}/{N}（跳过或 [需复核] {N}；0 替换须附「无可替句」理由）
 - `{xx}` 角色名回填：{N}（残留 0；无法判定 [需复核：角色名] {N}）
-- `{xx}` 角色名回填：{N}（残留/无法判定 [需复核] {N}）
 - 禁用词替换：{N} 处
 - 句式调整：{N} 处（含否定翻转句式 {N}、"，带着..." {N}、声音描写 {N}）
 - 修饰词清扫：{N} 处
@@ -274,6 +277,7 @@ python scripts/slop_gauge.py --profile novel <人味或已改正文文件...>
 1. 同一段连续两轮去 AI 后没有新改动 → 停止该段处理
 2. 全文上限 3 轮重扫；第 3 轮仍有 ≥10 处改动 → 在报告里标 `[需复核]`，移交人工
 3. 每轮结束前都要做一遍"再检一次"：是否有不符合的地方，有则继续；没有则停
+4. **对照库门禁**：清理/重构档在宣称完成前，报告必须已有 `对照库:已执行`（含语义层）；否则继续本轮，不得结案
 
 ---
 

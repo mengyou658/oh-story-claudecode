@@ -129,7 +129,7 @@
 
 **写后同轮清零（含 Cursor / solo）**：正文落盘不是汇报时机——每章落盘后必须在**同一轮**内完成：
 1. 步骤 10-11 扫描；
-2. **语义去AI味**（见下方「Agent 调用：narrative-writer」——已部署则 spawn；**Cursor / 无 `.claude/agents` / Fallback→solo 时主会话必须读取并执行 `skills/story-deslop/SKILL.md` 全流程**，或按 `references/anti-ai-writing.md` + Gate A-G + 对照库 inline 改写；**只跑 `check-ai-patterns.js` 不算完成去AI味**）；
+2. **语义去AI味**（见下方「Agent 调用：narrative-writer」——已部署则 spawn；**Cursor / 无 `.claude/agents` / Fallback→solo 时主会话必须读取并执行 `skills/story-deslop/SKILL.md` 全流程**，或按 `references/anti-ai-writing.md` + Gate A-G + **对照库（精确 map + 逐句语义对齐）** inline 改写；**只跑 `check-ai-patterns.js` 不算完成去AI味**；**报告无 `对照库:已执行` 也不算完成**）；
 3. 确定性收尾脚本；
 4. consistency-checker（不可用则主线程按 long-chapter-quality 核）。
 
@@ -161,12 +161,12 @@ advisory 只提示可疑处，先看脚本给出的例外；故事内系统/界�
 
 ### Agent 调用：narrative-writer（去AI味审查）
 
-质量检查阶段，narrative-writer 已部署时可 spawn 文字质量与去AI味检查。Prompt：`项目目录：{dir}\n任务描述：审查+去AI味\n检查分工：你负责本次语义去味及原定自检；最终文件扫描由主会话执行，不在子代理内重复\n检查范围：{本次写作的章节}\n文风路径：{与写作 spawn 同一口径——传 `设定/文风.md` 全文路径，摘要仅作索引}\nstyle_resolution：{与写作一致的本次文风裁决，含全文路径}\n作者偏好：{本章 query 命中的 prose_style/story_design 项}\n删除优先：每条 AI 味项先判能否删除——删后不丢伏笔/钩子/角色/情节/必要信息的直接删，会丢才润色（删除受比例上限约束；本仓库不设字数下限回灌）\n检查项按你自己的 7 Gate、禁止事项与写完后对话自检全量执行，其中否定翻转句式和台词里的工整否定清单不因脚本豁免台词而跳过\n反套话删除测试：对 stock-reaction-tic 报出的每处候选按 writing-craft.md「反套话四问」做删除测试——删后不丢信息/选择/关系/物件变化/物理后果的直接删，保留的在报告里写明它新增了什么；报告列候选数/删改数/保留理由\n写法抽查（删除测试口径，只指认已有问题、不回头补内容）：对爽点/高潮段与 detector 标记处抽查四项——状态台阶（强弱变化有没有台阶）、同类递减（并列同类项是否递减）、密处禁概括（慢镜头段有没有用概括句糊过去）、最重的一句最短；命中即改并在报告列出，不通读全文逐句追问`。
+质量检查阶段，narrative-writer 已部署时可 spawn 文字质量与去AI味检查。Prompt：`项目目录：{dir}\n任务描述：审查+去AI味\n检查分工：你负责本次语义去味及原定自检；最终文件扫描由主会话执行，不在子代理内重复\n检查范围：{本次写作的章节}\n文风路径：{与写作 spawn 同一口径——传 `设定/文风.md` 全文路径，摘要仅作索引}\nstyle_resolution：{与写作一致的本次文风裁决，含全文路径}\n作者偏好：{本章 query 命中的 prose_style/story_design 项}\n对照库（硬步骤）：按 phrase-bank-humanize 对 book/_analysis/ai_to_human_replacements.json 先精确 map 再逐句语义对齐；意思一致才从 replace_with 挑 1 条；报告必须含「对照库:已执行」，缺则去味未完成\n删除优先：每条 AI 味项先判能否删除——删后不丢伏笔/钩子/角色/情节/必要信息的直接删，会丢才润色（删除受比例上限约束；本仓库不设字数下限回灌）\n检查项按你自己的 7 Gate、禁止事项与写完后对话自检全量执行，其中否定翻转句式和台词里的工整否定清单不因脚本豁免台词而跳过\n反套话删除测试：对 stock-reaction-tic 报出的每处候选按 writing-craft.md「反套话四问」做删除测试——删后不丢信息/选择/关系/物件变化/物理后果的直接删，保留的在报告里写明它新增了什么；报告列候选数/删改数/保留理由\n写法抽查（删除测试口径，只指认已有问题、不回头补内容）：对爽点/高潮段与 detector 标记处抽查四项——状态台阶（强弱变化有没有台阶）、同类递减（并列同类项是否递减）、密处禁概括（慢镜头段有没有用概括句糊过去）、最重的一句最短；命中即改并在报告列出，不通读全文逐句追问`。
 
 **不可用 / Cursor / Fallback→solo（强制）**：不得跳过。主会话须：
 1. 报告 `Fallback: narrative-writer → solo`；
-2. **立即**读取并执行 `skills/story-deslop/SKILL.md`（定档→**改前备份到 `_revision-backups/`**→诊断→Gate→对照库；长篇写后默认清理档；用户未说「原地改」时写 `{stem}_humanized{ext}`，再由主会话决定是否用其人味稿替换正文路径——替换前确认 Phase 0 备份已存在，缺则先补备份再覆盖）；或至少完整执行 `references/anti-ai-writing.md` 三遍法 + `references/banned-words.md` + Gate A-G；
-3. 章报告标注 `Deslop: solo inline` / `Deslop: story-deslop skill`（含改前备份路径）。机械脚本（`check-ai-patterns.js` 等）是收尾，**不能替代**本步。
+2. **立即**读取并执行 `skills/story-deslop/SKILL.md`（定档→**改前备份到 `_revision-backups/`**→诊断→**对照库硬步骤**（`ai_to_human_replacements.json`：精确 map + 逐句语义对齐，意思一致才从 `replace_with` 挑 1 条）→Gate→收尾；长篇写后默认清理档；用户未说「原地改」时写 `{stem}_humanized{ext}`，再由主会话决定是否用其人味稿替换正文路径——替换前确认 Phase 0 备份已存在，缺则先补备份再覆盖）；或至少完整执行 `references/anti-ai-writing.md` 三遍法 + `references/banned-words.md` + Gate A-G + **对照库语义遍**；
+3. 章报告标注 `Deslop: solo inline` / `Deslop: story-deslop skill`（含改前备份路径 + **`对照库:已执行`**）。机械脚本（`check-ai-patterns.js` 等）是收尾，**不能替代**本步；缺对照库标记则本章去味未完成。
 
 检查后若正文修订改变了连续性事实，必须构造 `mode=revision` 的同章追踪事务并执行 `scripts/tracking_commit.py commit`：
 - 伏笔变化用 `foreshadow_changes` 更新同一 ID 的当前行，不追加重复历史；
