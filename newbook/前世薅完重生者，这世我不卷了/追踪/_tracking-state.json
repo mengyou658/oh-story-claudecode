@@ -5,41 +5,44 @@
       "abilities_resources": [
         "普通人"
       ],
-      "goal": "仍想试登录窗口",
+      "goal": "未知（待回复）",
       "identity": "沈晚宁最好的朋友；享受人生计划搭子",
       "knowledge": [
-        "入侵与倒计时",
-        "晚宁说明天再看"
+        "未知晚宁满级与重生"
       ],
-      "location": "沈晚宁居所睡觉",
+      "location": "未现身（通讯另一端）",
       "open_threads": [
-        "明天是否还要冲"
+        "是否回复、如何约见"
       ],
       "relationships": [
-        "沈晚宁：信任中带疑惑"
+        "沈晚宁：闺蜜"
       ],
-      "state": "被按住睡觉；不知晚宁夜出与机缘"
+      "state": "仅可能已读「在吗」；旧约见/入侵情节作废"
     },
     "沈晚宁": {
       "abilities_resources": [
-        "Level Max（限用手段）",
-        "稳坐标资格·可转交（暗库/鞋柜夹层）"
+        "Level Max（当库存，不主动用）",
+        "月内布局（缺备用钥匙，已换锁）",
+        "假身份复印件",
+        "现金"
       ],
-      "goal": "把稳坐标交给周晏且不出名",
+      "goal": "等周晏回复，守住躺平，不暴露满级",
       "identity": "重生满级玩家；表面普通都市女青年",
       "knowledge": [
-        "外围有组织竞争者",
-        "互咬清障可用"
+        "自己满级为真",
+        "月内多数准备到位",
+        "备用钥匙失踪"
       ],
-      "location": "自己居所",
+      "location": "都市住所",
       "open_threads": [
-        "交付话术",
-        "周晏仍想冲"
+        "周晏是否回复",
+        "钥匙因何失踪",
+        "满级价码不对外说"
       ],
       "relationships": [
-        "周晏：护她的账加重，仍瞒满级"
+        "周晏：待接上；逝者照片：单向再会"
       ],
-      "state": "体力小耗；暗库有可转交稳坐标；第一次破例已兑现"
+      "state": "已确认 Level Max；换锁补毛边；已发「在吗」"
     }
   },
   "context": {
@@ -49,27 +52,30 @@
     ],
     "continuity_risks": [
       "周晏不知满级与重生，误以为晚宁胆小",
-      "交付稳坐标时易露馅或被炫耀"
+      "交付稳坐标时易露馅或被炫耀",
+      "第2–3章正文已清空，旧入侵/稳坐标线作废，须按新细纲回炉",
+      "tracking last_committed 仍为3，与现存正文仅第1章不一致，回炉第2章前须修订"
     ],
     "long_term_constraints": [
       "周围有人避锋芒，无人处一次结清，国家线只谈交换",
       "第1-2卷不揭寿命买重生全貌、不公开命数抽离",
       "不让女主主动当救世主先锋",
-      "禁止无脑路人嘲讽打脸流水线"
+      "禁止无脑路人嘲讽打脸流水线",
+      "开局禁止呼晕陆昭当主冲突；陆昭最多无视/私下使坏"
     ],
     "next_chapter_commitments": [
       "把稳坐标交付周晏且不露满级；防炫耀漏嘴"
     ],
     "position": {
-      "scene": "沈晚宁居所，鞋柜夹层已藏稳坐标",
-      "story_time": "入侵当日夜，清障归来",
+      "scene": "都市住所，新锁已换，面板已收",
+      "story_time": "重生后一个月，刚发完「在吗」",
       "volume": "第一卷·我不卷了",
       "volume_start_chapter": 1
     },
     "recent_chapters": [
       {
         "chapter": 1,
-        "summary": "正文第1章 ← 细纲第1–3章。沈晚宁重生落点确认 Level Max，有人处避锋装死，无人处收力呼晕陆昭，留下这世不卷并给周晏发「在吗」。"
+        "summary": "正文第1章 ← 细纲第1–3章。海景屋顶向逝者照片问好并立志出发；跳月后发现储物间备用钥匙失踪，换锁补毛边；确认 Level Max 后立下这世不卷，给周晏发「在吗」。"
       },
       {
         "chapter": 2,
@@ -97,67 +103,48 @@
       "planned_resolution_chapter": null,
       "planted_chapter": 1,
       "status": "已埋",
-      "summary": "海景/浪声独活碎片开场闪过",
+      "summary": "海景屋顶逝者照片与独活余味（身份未点名）",
       "updated_chapter": 1
     },
     "F003": {
       "id": "F003",
       "importance": "中",
       "planned_resolution_chapter": null,
-      "planted_chapter": 2,
+      "planted_chapter": 1,
       "status": "已埋",
-      "summary": "登录窗口异常感官（耳压/金属腥/未知信号角标）",
+      "summary": "月内准备毛边：储物间备用钥匙失踪，已换锁；其余倒铺项待遇事展开",
       "updated_chapter": 2
     }
   },
   "imported_through_chapter": 0,
   "last_committed_chapter": 3,
   "schema_version": 4,
-  "state_revision": 3,
+  "state_revision": 4,
   "timeline": {
     "E001": {
       "characters": [
         "沈晚宁",
-        "陆昭"
+        "周晏"
       ],
       "first_recorded_chapter": 1,
       "id": "E001",
-      "objective_fact": "沈晚宁于酒局应付陆昭后回屋确认 Level Max，次日无人处将其呼晕",
-      "reader_knowledge": "读者已知她满级归来、呼晕陆昭、准备联系周晏",
+      "objective_fact": "沈晚宁向逝者照片问好并决定出发；一个月后核对月内布局，因备用钥匙失踪而换锁；打开面板确认 Level Max，立下这世不卷，向周晏发送「在吗」",
+      "reader_knowledge": "读者已知她满级归来、想躺平、已联系周晏；不知照片里是谁、钥匙因何失踪、满级价码",
       "reveal_chapter": 1,
       "reveal_status": "已揭示",
-      "story_time": "重生落点当日夜至次日晨",
+      "story_time": "独活终点海景屋顶 → 重生后一个月的都市住所",
       "updated_chapter": 1
-    },
-    "E002": {
-      "characters": [
-        "沈晚宁",
-        "周晏"
-      ],
-      "first_recorded_chapter": 2,
-      "id": "E002",
-      "objective_fact": "沈晚宁与周晏约定躺平；城市登录窗口开启，两人锁门观望倒计时",
-      "reader_knowledge": "读者已知入侵正式开始、女主按住周晏未冲登录点",
-      "reveal_chapter": 2,
-      "reveal_status": "已揭示",
-      "story_time": "约见当日到入侵当日",
-      "updated_chapter": 2
-    },
-    "E003": {
-      "characters": [
-        "沈晚宁"
-      ],
-      "first_recorded_chapter": 3,
-      "id": "E003",
-      "objective_fact": "沈晚宁于登录点外围匿名清障，取得可转交稳坐标资格并藏入鞋柜夹层",
-      "reader_knowledge": "读者已知机缘在夹层，待交付周晏且需不露馅",
-      "reveal_chapter": 3,
-      "reveal_status": "已揭示",
-      "story_time": "入侵当日夜",
-      "updated_chapter": 3
     }
   },
   "wordcount_records": {
+    "1": {
+      "actual": 672,
+      "body_sha256": "b81ce4fa0f3246f8dfd4642b590b099fbf8f271dca6f84ac5f0b3c1628d88263",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 5400
+    },
     "2": {
       "actual": 990,
       "body_sha256": "9f7aae697f52400fdfd0aac3268db13abf44648d5f9ce2e84d0167716e0171e1",
