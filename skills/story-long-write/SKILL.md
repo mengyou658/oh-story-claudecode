@@ -124,7 +124,10 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 产出全书体量与阶段总览、卷级大纲、逐章细纲；含大纲安全七检、大纲安全审查、分批建纲与「中途补纲/扩纲小流程」。
 
-**执行前先读 [references/workflow-setup.md](references/workflow-setup.md) 的「Phase 3：大纲搭建」节**。
+**大纲生成要求：其中包含三次大两难性时刻以及20个小的冲突(可以是自我或者外部爆发升级反转或者处理)以及一个清晰的道德前提。**  
+**细纲生成要求：每章节都有一个小冲突(可以是自我或者外部爆发升级（反转或处理或打脸或突然想起重要的事情忘记处理或者其他的冲突）)。**
+
+**执行前先读 [references/workflow-setup.md](references/workflow-setup.md) 的「Phase 3：大纲搭建」节**（含上述硬约束与字段模板）；本仓库另见 [references/local-production-rules.md](references/local-production-rules.md) §0。
 
 ---
 

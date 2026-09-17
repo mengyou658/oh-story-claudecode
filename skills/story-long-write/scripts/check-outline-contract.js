@@ -21,14 +21,14 @@ const path = require('path')
 // 权威模板：references/workflow-setup.md「细纲（全书每章）」
 const FIELDS = [
   '核心事件', '字数目标', '字数口径', '阶段位置', '单元ID/位置', '目标情绪',
-  '主角目标/关键选择', '章节定位', '本章结构公式', '章首钩子', '爽点',
+  '主角目标/关键选择', '本章小冲突', '章节定位', '本章结构公式', '章首钩子', '爽点',
   '本章标价', '闭环状态', '本章禁止提前释放', '写手自由区', '契约风险',
 ]
 const SUBSECTIONS = ['内容概括', '情节安排', '人物关系和出场顺序', '情节细化']
 const FIVE_ACT = ['起因', '发展', '转折', '高潮', '结尾']
 const PLOT_HEADER_FIRST = /^(?:#|序号)$/
 // 这两个字段实测直接影响正文质量，必须有实际内容
-const INTENT_FIELDS = ['目标情绪', '主角目标/关键选择']
+const INTENT_FIELDS = ['目标情绪', '主角目标/关键选择', '本章小冲突']
 const CALIBER = 'visible_chars_v1'
 
 function fieldPattern(name) {
@@ -144,9 +144,9 @@ function verify(file, projectRoot = null) {
     'outline.intent-fields-substantive',
     hollow.length === 0,
     name,
-    hollow.length ? `只有占位符，没有实际内容：${hollow.join('、')}` : '目标情绪与主角目标/关键选择都写了实际内容',
-    '目标情绪写清前状态→后状态；主角目标/关键选择写清本章要什么、必须做出的判断。这两项不接受 [待补充]',
-    '只把这两个字段替换成本章的实际情绪变化与实际取舍；其余字段不动。'
+    hollow.length ? `只有占位符，没有实际内容：${hollow.join('、')}` : '目标情绪、主角目标/关键选择与本章小冲突都写了实际内容',
+    '目标情绪写清前状态→后状态；主角目标/关键选择写清本章要什么、必须做出的判断；本章小冲突写清自我/外部与形态（爆发/升级/反转/处理/打脸/想起忘办/其他）及一句话冲突。这三项不接受 [待补充]',
+    '只把这三个字段替换成本章的实际情绪变化、实际取舍与实际小冲突；其余字段不动。'
   ))
 
   const missingSubs = SUBSECTIONS.filter((sub) => !new RegExp(`^#{3,4}\\s*${sub}`, 'm').test(text))
