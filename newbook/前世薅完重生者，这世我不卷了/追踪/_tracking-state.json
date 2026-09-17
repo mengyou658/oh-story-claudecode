@@ -1,9 +1,56 @@
 {
   "book_title": "前世薅完重生者，这世我不卷了",
-  "characters": {},
+  "characters": {
+    "周晏": {
+      "abilities_resources": [
+        "普通人"
+      ],
+      "goal": "仍想试登录窗口",
+      "identity": "沈晚宁最好的朋友；享受人生计划搭子",
+      "knowledge": [
+        "入侵与倒计时",
+        "晚宁说明天再看"
+      ],
+      "location": "沈晚宁居所睡觉",
+      "open_threads": [
+        "明天是否还要冲"
+      ],
+      "relationships": [
+        "沈晚宁：信任中带疑惑"
+      ],
+      "state": "被按住睡觉；不知晚宁夜出与机缘"
+    },
+    "沈晚宁": {
+      "abilities_resources": [
+        "Level Max（限用手段）",
+        "稳坐标资格·可转交（暗库/鞋柜夹层）"
+      ],
+      "goal": "把稳坐标交给周晏且不出名",
+      "identity": "重生满级玩家；表面普通都市女青年",
+      "knowledge": [
+        "外围有组织竞争者",
+        "互咬清障可用"
+      ],
+      "location": "自己居所",
+      "open_threads": [
+        "交付话术",
+        "周晏仍想冲"
+      ],
+      "relationships": [
+        "周晏：护她的账加重，仍瞒满级"
+      ],
+      "state": "体力小耗；暗库有可转交稳坐标；第一次破例已兑现"
+    }
+  },
   "context": {
-    "active_character_names": [],
-    "continuity_risks": [],
+    "active_character_names": [
+      "沈晚宁",
+      "周晏"
+    ],
+    "continuity_risks": [
+      "周晏不知满级与重生，误以为晚宁胆小",
+      "交付稳坐标时易露馅或被炫耀"
+    ],
     "long_term_constraints": [
       "周围有人避锋芒，无人处一次结清，国家线只谈交换",
       "第1-2卷不揭寿命买重生全貌、不公开命数抽离",
@@ -11,21 +58,121 @@
       "禁止无脑路人嘲讽打脸流水线"
     ],
     "next_chapter_commitments": [
-      "按细纲第001-003章合并写正文第1章：重生落点、满级确认、呼晕陆昭"
+      "把稳坐标交付周晏且不露满级；防炫耀漏嘴"
     ],
     "position": {
-      "scene": "都市酒局 / 沈晚宁居所",
-      "story_time": "重生落点当日，游戏入侵前",
+      "scene": "沈晚宁居所，鞋柜夹层已藏稳坐标",
+      "story_time": "入侵当日夜，清障归来",
       "volume": "第一卷·我不卷了",
       "volume_start_chapter": 1
     },
-    "recent_chapters": []
+    "recent_chapters": [
+      {
+        "chapter": 1,
+        "summary": "正文第1章 ← 细纲第1–3章。沈晚宁重生落点确认 Level Max，有人处避锋装死，无人处收力呼晕陆昭，留下这世不卷并给周晏发「在吗」。"
+      },
+      {
+        "chapter": 2,
+        "summary": "正文第2章 ← 细纲第4–6章。约上周晏立躺平口头约；异常感官与海景闪回后仍选再躺三天；入侵公告砸下，按头闺蜜锁门，倒计时挂起。"
+      },
+      {
+        "chapter": 3,
+        "summary": "正文第3章 ← 细纲第7–9章。按头周晏后借口买菜踩点；竞争者过狠改窄稳线；夜里挑拨互咬截到可转交稳坐标，藏进鞋柜夹层待交付。"
+      }
+    ]
   },
-  "foreshadow": {},
+  "foreshadow": {
+    "F001": {
+      "id": "F001",
+      "importance": "高",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 1,
+      "status": "已埋",
+      "summary": "她为何能满级回来（面板 Level Max 已见，价码未揭）",
+      "updated_chapter": 1
+    },
+    "F002": {
+      "id": "F002",
+      "importance": "中",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 1,
+      "status": "已埋",
+      "summary": "海景/浪声独活碎片开场闪过",
+      "updated_chapter": 1
+    },
+    "F003": {
+      "id": "F003",
+      "importance": "中",
+      "planned_resolution_chapter": null,
+      "planted_chapter": 2,
+      "status": "已埋",
+      "summary": "登录窗口异常感官（耳压/金属腥/未知信号角标）",
+      "updated_chapter": 2
+    }
+  },
   "imported_through_chapter": 0,
-  "last_committed_chapter": 0,
+  "last_committed_chapter": 3,
   "schema_version": 4,
-  "state_revision": 0,
-  "timeline": {},
-  "wordcount_records": {}
+  "state_revision": 3,
+  "timeline": {
+    "E001": {
+      "characters": [
+        "沈晚宁",
+        "陆昭"
+      ],
+      "first_recorded_chapter": 1,
+      "id": "E001",
+      "objective_fact": "沈晚宁于酒局应付陆昭后回屋确认 Level Max，次日无人处将其呼晕",
+      "reader_knowledge": "读者已知她满级归来、呼晕陆昭、准备联系周晏",
+      "reveal_chapter": 1,
+      "reveal_status": "已揭示",
+      "story_time": "重生落点当日夜至次日晨",
+      "updated_chapter": 1
+    },
+    "E002": {
+      "characters": [
+        "沈晚宁",
+        "周晏"
+      ],
+      "first_recorded_chapter": 2,
+      "id": "E002",
+      "objective_fact": "沈晚宁与周晏约定躺平；城市登录窗口开启，两人锁门观望倒计时",
+      "reader_knowledge": "读者已知入侵正式开始、女主按住周晏未冲登录点",
+      "reveal_chapter": 2,
+      "reveal_status": "已揭示",
+      "story_time": "约见当日到入侵当日",
+      "updated_chapter": 2
+    },
+    "E003": {
+      "characters": [
+        "沈晚宁"
+      ],
+      "first_recorded_chapter": 3,
+      "id": "E003",
+      "objective_fact": "沈晚宁于登录点外围匿名清障，取得可转交稳坐标资格并藏入鞋柜夹层",
+      "reader_knowledge": "读者已知机缘在夹层，待交付周晏且需不露馅",
+      "reveal_chapter": 3,
+      "reveal_status": "已揭示",
+      "story_time": "入侵当日夜",
+      "updated_chapter": 3
+    }
+  },
+  "wordcount_records": {
+    "2": {
+      "actual": 990,
+      "body_sha256": "9f7aae697f52400fdfd0aac3268db13abf44648d5f9ce2e84d0167716e0171e1",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2000
+    },
+    "3": {
+      "actual": 880,
+      "body_sha256": "caa2c26f4f002ef192239b39daedb1fbc58af3abfb6cb6dbc9a9d0edb6ff64b3",
+      "metric": "visible_chars_v1",
+      "resolution": "accepted_current_length",
+      "status": "under",
+      "target": 2000
+    }
+  }
 }
