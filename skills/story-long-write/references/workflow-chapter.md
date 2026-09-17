@@ -165,8 +165,8 @@ advisory 只提示可疑处，先看脚本给出的例外；故事内系统/界�
 
 **不可用 / Cursor / Fallback→solo（强制）**：不得跳过。主会话须：
 1. 报告 `Fallback: narrative-writer → solo`；
-2. **立即**读取并执行 `skills/story-deslop/SKILL.md`（定档→诊断→Gate→对照库；长篇写后默认清理档；用户未说「原地改」时写 `{stem}_humanized{ext}`，再由主会话决定是否用其人味稿替换正文路径）；或至少完整执行 `references/anti-ai-writing.md` 三遍法 + `references/banned-words.md` + Gate A-G；
-3. 章报告标注 `Deslop: solo inline` / `Deslop: story-deslop skill`。机械脚本（`check-ai-patterns.js` 等）是收尾，**不能替代**本步。
+2. **立即**读取并执行 `skills/story-deslop/SKILL.md`（定档→**改前备份到 `_revision-backups/`**→诊断→Gate→对照库；长篇写后默认清理档；用户未说「原地改」时写 `{stem}_humanized{ext}`，再由主会话决定是否用其人味稿替换正文路径——替换前确认 Phase 0 备份已存在，缺则先补备份再覆盖）；或至少完整执行 `references/anti-ai-writing.md` 三遍法 + `references/banned-words.md` + Gate A-G；
+3. 章报告标注 `Deslop: solo inline` / `Deslop: story-deslop skill`（含改前备份路径）。机械脚本（`check-ai-patterns.js` 等）是收尾，**不能替代**本步。
 
 检查后若正文修订改变了连续性事实，必须构造 `mode=revision` 的同章追踪事务并执行 `scripts/tracking_commit.py commit`：
 - 伏笔变化用 `foreshadow_changes` 更新同一 ID 的当前行，不追加重复历史；

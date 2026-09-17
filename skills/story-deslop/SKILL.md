@@ -14,7 +14,7 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 **开场定档**：清理（默认）/ 重构（须用户授权）/ 检测 / 新写。合同见 [references/deslop-process.md](references/deslop-process.md)（Never inject、保真/浓度计、C 级禁动、检测器边界、双道门禁）。保真细则见 [references/fidelity-constraints.md](references/fidelity-constraints.md)（蒸馏自说人话 + 韩愈）。正文**写前**约束见 [references/generation-constraints.md](references/generation-constraints.md)。中文原生模式 25–33 见 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)。场景档见 [references/scene-profiles.md](references/scene-profiles.md)。无书短文旁路见 [references/shortform-sidepath.md](references/shortform-sidepath.md)。
 
-**对照库 + ainovel 判据**：文件模式默认叠加 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)（ainovel-cli 机械基线/五类语义判据/自定义规则映射 + `book/_analysis` 语句对照库）。对照库替换**必须**写出 `{原名}_humanized{后缀}`，默认不覆盖原稿（见该文件「输出契约」）。
+**对照库 + ainovel 判据**：文件模式默认叠加 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)（ainovel-cli 机械基线/五类语义判据/自定义规则映射 + `book/_analysis` 语句对照库）。对照库替换**必须先**备份到 `_revision-backups/`，再写出 `{原名}_humanized{后缀}`，默认不覆盖原稿（见该文件「输出契约」）。
 
 ---
 
@@ -96,7 +96,8 @@ AI味不按语法错误处理，也不需要"修正"。它属于风格问题：�
 3. 文风：`style_resolution` + 可选作者记忆 query（见上）。
 4. 新写或用户只要「写时少 AI」→ 先读 generation-constraints（含写前密度上限），再写/再改。
 5. **文件模式（章节/正文路径）且非「只要检测」**：加载 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md)；确定输出路径为 `{stem}_humanized{ext}`（原稿只读）。用户原话要求「原地改/覆盖原稿」时除外。
-6. 扫描前可对照 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)（模式 25–33）、[references/scan-lexicon.md](references/scan-lexicon.md) 与 [references/fidelity-constraints.md](references/fidelity-constraints.md)（保真/真删/浓度计）。
+6. **改前备份（文件模式硬步骤；检测档跳过）**：凡将写出 `_humanized`、原地改、或后续用人味稿覆盖正文路径——**先**把当前要改的章节文件原样复制到同目录 `_revision-backups/`，再进入扫描/改写。命名：`{stem}_原稿_pre-deslop_{YYYYMMDD}{ext}`（同日已存在则追加 `_{HHmm}`）。目录不存在则创建。文件名须含 `_原稿_`（写后 hook / 上一章探测会排除，避免当正式正文）。备份失败则停止改写。报告写明备份路径。对比改动时：备份＝去味前，人味稿/定稿＝去味后。
+7. 扫描前可对照 [references/chinese-native-patterns.md](references/chinese-native-patterns.md)（模式 25–33）、[references/scan-lexicon.md](references/scan-lexicon.md) 与 [references/fidelity-constraints.md](references/fidelity-constraints.md)（保真/真删/浓度计）。
 
 ### Phase 1：AI味扫描
 
@@ -185,7 +186,7 @@ node scripts/check-ai-patterns.js --check --fail-on=blocking <正文文件...>
 「诊断与分级」完成后，按以下顺序选择执行路径：
 
 1. **已在 narrative-writer 子代理内**：按选定 Gate 范围 inline 执行，不再 spawn（嵌套 spawn 会被静默降级）。
-2. **未在子代理内且按顶部顺序找到 `narrative-writer` agent**：按当前运行时调用；Antigravity 用 `invoke_subagent(TypeName: "narrative-writer")`，Claude/OpenCode/Codex 用各自字段。prompt 保持：`项目目录：{dir}\n任务描述：去AI味\nGate 细则：执行前按你的参考表读取 deslop-gates.md 的删除保护与所选 Gate（部署副本与本 skill 同源）\n对照库：读取 phrase-bank-humanize.md；替换优先用 book/_analysis/ai_to_human_replacements.json 的 map；人味句里的 {xx} 必须回填本书角色名（设定/角色、关系.md、本章 POV）；写出 {stem}_humanized{ext}，不覆盖原稿（用户明确原地改除外）\n检查分工：你负责本次语义去味；父流程负责 Phase 4 最终文件扫描，不重复整轮改稿\n检查范围：{待处理的正文文件}\n文风路径：{本书文风全文路径，无则写无}\nstyle_resolution：{本次生效要求及来源、被覆盖的默认条款、事实边界}\n作者偏好：{query 命中的 prose_style 项}\nAI味等级：{诊断与分级结果}\n处理策略：{实际选定的 Gate 范围；优先使用用户指定范围}\n删除优先：每条 AI 味项先判能否删除——删后不丢伏笔/钩子/角色/情节/人物记忆/情绪承接/因果锚点/必要信息/必要转折的直接删，会丢才进 Gate 润色；看似解释/评价但承担小连贯的句子，压成白话承接、动作或物件锚点，不机械删除；已有任务/手续/物件/证据缺口可以压成角色当下要处理的具体卡点，但不新增原文没有的事件链；删除服从比例上限与字数下限，跌破下限改降AI重写。\n模式处理：按 references/anti-ai-writing.md 的问题模式目录执行；模式 8（解释腔/上帝视角/安排感）归入 Gate G，其余新增模式归入 Gate A-F 的对应处理。相邻段重复表达同一信息/动作/情绪时，按 Gate C/D 合并去重；`。
+2. **未在子代理内且按顶部顺序找到 `narrative-writer` agent**：按当前运行时调用；Antigravity 用 `invoke_subagent(TypeName: "narrative-writer")`，Claude/OpenCode/Codex 用各自字段。prompt 保持：`项目目录：{dir}\n任务描述：去AI味\nGate 细则：执行前按你的参考表读取 deslop-gates.md 的删除保护与所选 Gate（部署副本与本 skill 同源）\n改前备份：文件模式先把当前章节复制到同目录 _revision-backups/{stem}_原稿_pre-deslop_{YYYYMMDD}{ext}（须含 _原稿_；同日冲突追加 _{HHmm}），再改写；备份路径写入报告\n对照库：读取 phrase-bank-humanize.md；替换优先用 book/_analysis/ai_to_human_replacements.json 的 map；人味句里的 {xx} 必须回填本书角色名（设定/角色、关系.md、本章 POV）；写出 {stem}_humanized{ext}，不覆盖原稿（用户明确原地改除外，原地改也须先备份）\n检查分工：你负责本次语义去味；父流程负责 Phase 4 最终文件扫描，不重复整轮改稿\n检查范围：{待处理的正文文件}\n文风路径：{本书文风全文路径，无则写无}\nstyle_resolution：{本次生效要求及来源、被覆盖的默认条款、事实边界}\n作者偏好：{query 命中的 prose_style 项}\nAI味等级：{诊断与分级结果}\n处理策略：{实际选定的 Gate 范围；优先使用用户指定范围}\n删除优先：每条 AI 味项先判能否删除——删后不丢伏笔/钩子/角色/情节/人物记忆/情绪承接/因果锚点/必要信息/必要转折的直接删，会丢才进 Gate 润色；看似解释/评价但承担小连贯的句子，压成白话承接、动作或物件锚点，不机械删除；已有任务/手续/物件/证据缺口可以压成角色当下要处理的具体卡点，但不新增原文没有的事件链；删除服从比例上限与字数下限，跌破下限改降AI重写。\n模式处理：按 references/anti-ai-writing.md 的问题模式目录执行；模式 8（解释腔/上帝视角/安排感）归入 Gate G，其余新增模式归入 Gate A-F 的对应处理。相邻段重复表达同一信息/动作/情绪时，按 Gate C/D 合并去重；`。
 3. **agent 不存在或 spawn 失败（含 Cursor）**：主线程 **立即** inline 执行本 skill 剩余 Phase（诊断→Gate→对照库→收尾），报告 `Deslop: solo inline`；禁止只跑 `check-ai-patterns.js` 后结束。
 
 #### Gate 规则入口
@@ -196,11 +197,12 @@ node scripts/check-ai-patterns.js --check --fail-on=blocking <正文文件...>
 
 按 [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md) 执行：
 
-1. 优先用 `book/_analysis/ai_to_human_replacements.json` 的 **`map` 按键查** `replace_with`；辅以 `pairs`、以及 `ai_human_phrase_bank.json` 的 buckets/精选组、`phrase_bank_index.md` 类目示例。
-2. **禁止无脑全局替换**；按 category/meaning 与人称语气适配；剧情保护与疲劳词阈值同时生效。
-3. **`{xx}` → 本书角色名**：人味句（`human_expr` / `human_top`）里的 `{xx}` 写入正文前必须回填（角色卡/`设定/关系.md`/本章 POV）；禁止残留 `{xx}` 或源书人名。细则见 phrase-bank-humanize。
-4. 将 Gate 润色 + 对照库替换的结果写入 **`{stem}_humanized{ext}`**，原稿不动（除非用户明确要求原地改）。
-5. 报告统计 map 命中、挑词替换数、`{xx}` 回填数、跳过/`[需复核]` 数，并列出原文件与人味文件路径。
+1. **若 Phase 0 尚未备份**：先复制当前章节到 `_revision-backups/{stem}_原稿_pre-deslop_{YYYYMMDD}{ext}`（见输出契约第 0 步）。
+2. 优先用 `book/_analysis/ai_to_human_replacements.json` 的 **`map` 按键查** `replace_with`；辅以 `pairs`、以及 `ai_human_phrase_bank.json` 的 buckets/精选组、`phrase_bank_index.md` 类目示例。
+3. **禁止无脑全局替换**；按 category/meaning 与人称语气适配；剧情保护与疲劳词阈值同时生效。
+4. **`{xx}` → 本书角色名**：人味句（`human_expr` / `human_top`）里的 `{xx}` 写入正文前必须回填（角色卡/`设定/关系.md`/本章 POV）；禁止残留 `{xx}` 或源书人名。细则见 phrase-bank-humanize。
+5. 将 Gate 润色 + 对照库替换的结果写入 **`{stem}_humanized{ext}`**，原稿不动（除非用户明确要求原地改；原地改亦须已备份）。
+6. 报告统计 map 命中、挑词替换数、`{xx}` 回填数、跳过/`[需复核]` 数，并列出原文件、改前备份与人味文件路径。
 
 ### Phase 4：确定性收尾（文件模式）
 
@@ -233,6 +235,7 @@ python scripts/slop_gauge.py --profile novel <人味或已改正文文件...>
 
 ### 字数协议
 - 原文件：{path}
+- 改前备份：{path/_revision-backups/{stem}_原稿_pre-deslop_… 或「检测档未备份」}
 - 人味文件：{path_humanized 或「原地改」}
 - 原文字符数：{N0}
 - 修订后字符数：{N1}
@@ -283,8 +286,8 @@ python scripts/slop_gauge.py --profile novel <人味或已改正文文件...>
 | 用户说"检查下有没有AI味" | 定档检测 → 只做检测，不做修改 |
 | 用户明确授权"重写结构/重构" | 定档重构 → 每章 2–5 个结构动作 + Gate |
 | 用户写作中要求 `仅标注 / 只检测 / 不要改` | 嵌入式提醒模式：执行「AI味扫描」和「诊断与分级」，跳过「逐项清除」「确定性收尾」「输出润色结果」；输出问题标记表（含 Gate 列），不修改原文，不写文件 |
-| 章节文件去味（默认） | 对照库 + Gate → 写出 `{stem}_humanized{ext}`，原稿不动 |
-| 用户说「原地改 / 覆盖原稿」 | 对照库 + Gate → 直接改原文件 |
+| 章节文件去味（默认） | 先备份到 `_revision-backups/` → 对照库 + Gate → 写出 `{stem}_humanized{ext}`，原稿不动 |
+| 用户说「原地改 / 覆盖原稿」 | 先备份到 `_revision-backups/` → 对照库 + Gate → 直接改原文件 |
 | 无活跃书，仅润色公众号/小红书等短文 | [references/shortform-sidepath.md](references/shortform-sidepath.md)，不建小说目录 |
 
 ---
@@ -295,13 +298,13 @@ python scripts/slop_gauge.py --profile novel <人味或已改正文文件...>
 
 | 文件 | 何时加载 |
 |------|----------|
-| [references/deslop-process.md](references/deslop-process.md) | **开场必读**：定档、Never inject、保真摘要、C 级禁动、检测器边界 |
+| [references/deslop-process.md](references/deslop-process.md) | **开场必读**：定档、Never inject、保真摘要、C 级禁动、检测器边界、改前备份 |
 | [references/fidelity-constraints.md](references/fidelity-constraints.md) | 保真/scope/引号用途/无源分流/真删不换汤/浓度计边界（说人话×韩愈） |
 | [references/generation-constraints.md](references/generation-constraints.md) | 新写/写前自检；减少生成阶段模板节奏 |
 | [references/scan-lexicon.md](references/scan-lexicon.md) | 成簇扫描：八股/名词化/黑话/无立场退让/装腔/EN/泄漏 |
 | [references/shortform-sidepath.md](references/shortform-sidepath.md) | 无书短文旁路 |
 | [references/banned-words.md](references/banned-words.md) | 检测和替换禁用词时 |
-| [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md) | **文件模式必读（默认）**：ainovel-cli 判据合并 + 对照库替换 + `_humanized` 输出契约 |
+| [references/phrase-bank-humanize.md](references/phrase-bank-humanize.md) | **文件模式必读（默认）**：ainovel-cli 判据合并 + 对照库替换 + 改前备份 + `_humanized` 输出契约 |
 | [references/deslop-gates.md](references/deslop-gates.md) | 逐项清除前：删除保护与所选 Gate 的细则、示例 |
 | [references/anti-ai-writing.md](references/anti-ai-writing.md) | **去AI味完整指南**：预防+三遍法+范例 |
 | [scripts/normalize-punctuation.js](scripts/normalize-punctuation.js) | 文件模式落盘后做确定性标点收尾；默认保留引号风格 |

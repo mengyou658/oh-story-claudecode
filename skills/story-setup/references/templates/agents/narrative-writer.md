@@ -66,7 +66,7 @@ memory: project
 | `story-setup/references/agent-references/deslop-process.md` | 去味开场：定档、Never inject、保真摘要、C 级禁动、双道门禁、`_humanized` 落盘 |
 | `story-setup/references/agent-references/fidelity-constraints.md` | 去味时：保真/scope/真删不换汤/浓度计边界（说人话×韩愈） |
 | `story-setup/references/agent-references/deslop-gates.md` | 去味执行前读取删除保护与所选 Gate |
-| `story-setup/references/agent-references/phrase-bank-humanize.md` | 对照库替换 + `{xx}` 角色名回填 + ainovel 判据；写出 `{stem}_humanized{ext}` |
+| `story-setup/references/agent-references/phrase-bank-humanize.md` | 对照库替换 + `{xx}` 角色名回填 + ainovel 判据；**先**备份到 `_revision-backups/`，再写出 `{stem}_humanized{ext}` |
 | `story-setup/references/agent-references/scan-lexicon.md` | 去味扫描时成簇补扫八股/黑话/装腔/泄漏 |
 | `story-setup/references/agent-references/chinese-native-patterns.md` | 去味扫描时：中文原生模式 25–33 |
 | `story-setup/references/agent-references/scene-profiles.md` | 去味开场：场景档 novel/article/ecommerce |
@@ -93,7 +93,7 @@ memory: project
 
 只执行调用方选定的 Gate，未传范围时默认 A-G；不要把轻度或单 Gate 任务扩成全量。下述默认判据仅在对应 Gate 被选中时执行，表达选择服从 `style_resolution`。
 
-去味开场先读 `story-setup/references/agent-references/deslop-process.md` 定档并遵守 Never inject / 保真 / C 级禁动；保真细则读 `story-setup/references/agent-references/fidelity-constraints.md`。场景档读 `story-setup/references/agent-references/scene-profiles.md`。删除保护与 A-G 详细规则统一读取 `story-setup/references/agent-references/deslop-gates.md`；成簇补扫读 `story-setup/references/agent-references/scan-lexicon.md` + `story-setup/references/agent-references/chinese-native-patterns.md`。文件模式对照库替换读 `story-setup/references/agent-references/phrase-bank-humanize.md`：优先 `book/_analysis/ai_to_human_replacements.json` 的 `map`；人味句中的 `{xx}` 回填本书角色名（`设定/角色`、`设定/关系.md`、本章 POV）后再写入 `{stem}_humanized{ext}`（不覆盖原稿，除非用户明确原地改）。只执行所选 Gate，配合已读 `story-setup/references/agent-references/anti-ai-writing.md` 的模式、三遍法和范例，不在本定义重复规则。
+去味开场先读 `story-setup/references/agent-references/deslop-process.md` 定档并遵守 Never inject / 保真 / C 级禁动；保真细则读 `story-setup/references/agent-references/fidelity-constraints.md`。场景档读 `story-setup/references/agent-references/scene-profiles.md`。删除保护与 A-G 详细规则统一读取 `story-setup/references/agent-references/deslop-gates.md`；成簇补扫读 `story-setup/references/agent-references/scan-lexicon.md` + `story-setup/references/agent-references/chinese-native-patterns.md`。文件模式对照库替换读 `story-setup/references/agent-references/phrase-bank-humanize.md`：优先 `book/_analysis/ai_to_human_replacements.json` 的 `map`；**改写前**备份当前章节到 `_revision-backups/{stem}_原稿_pre-deslop_{YYYYMMDD}{ext}`；人味句中的 `{xx}` 回填本书角色名（`设定/角色`、`设定/关系.md`、本章 POV）后再写入 `{stem}_humanized{ext}`（不覆盖原稿，除非用户明确原地改——原地改也须先备份）。只执行所选 Gate，配合已读 `story-setup/references/agent-references/anti-ai-writing.md` 的模式、三遍法和范例，不在本定义重复规则。
 
 - 补充判据：比喻不是原罪——单个生活化、角色化、有功能的保留，堆叠与万能文学比喻删；套式轻微反应（头皮发紧/眼皮一跳类）写作时避免，候选处的删除测试由质检侧执行，你不写验收短文；任务卡点须卡出信息/关系/代价/选择/伏笔变化，删掉无损的不写；每句须推动情节/情绪/代入至少一项，空转句删。身体部位词按叙事功能判断，不设次数上限。
 
